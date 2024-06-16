@@ -1145,20 +1145,25 @@ h1 {
   text-transform: uppercase;
 }
 .whi-evk {
-  color: #fff;
+  /* color: #fff; */
   background-image: url(images/Clay/Heart1.gif);
   background-size: cover;
   background-position: center;
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+  font-size: 90px;
+  font-weight: 800;
+
+
 }
 .link-bc5 {
   line-height: 24px;
 }
 .link-bc5.link-e6e {
-  margin-left: 32px;
-  color: #fff;
+  /* margin-left: 32px; */
+  /* color: #fff; */
+  font-size: 25px;
 }
 .release-artwork-2ye {
   position: relative;
@@ -1278,6 +1283,8 @@ h1 {
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+
+  font-size: 18px;
 }
 .out-now-6xr {
   height: 1px;
@@ -1311,13 +1318,18 @@ h1 {
   padding-right: 12px;
   border-right-color: #fff;
   color: #fff;
-  font-weight: 400;
+  font-weight: 600;
   background-image: url(images/Clay/Heart1.gif);
   background-size: cover;
   background-position: center;
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+
+
+  font-size: 25px;
+
+
 }
 .link-roe:hover {
   color: hsla(0, 0%, 100%, 0.5);
@@ -1340,13 +1352,19 @@ h1 {
   padding-left: 12px;
   border-right-color: #fff;
   color: #fff;
-  font-weight: 400;
+  font-weight: 600;
   background-image: url(images/Clay/Heart1.gif);
   background-size: cover;
   background-position: center;
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+
+
+  font-size: 25px;
+
+
+
 }
 .link-opp.liwbp {
   padding-left: 8px;
@@ -1355,13 +1373,20 @@ h1 {
 .link-opp.liwbp.link-roe {
   margin-left: 0;
   color: #fff;
-  font-weight: 400;
+  font-weight: 600;
   background-image: url(images/Clay/Heart1.gif);
   background-size: cover;
   background-position: center;
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+
+
+
+  font-size: 25px;
+
+
+
 }
 .container-xo6 {
   position: absolute;
@@ -2010,12 +2035,18 @@ h4 {
     .container-zoa {
       max-width: 320px;
       margin-right: auto;
-      margin-bottom: 24px;
+      /* margin-bottom: 20px; */
       margin-left: auto;
       -webkit-box-pack: justify;
       -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
       justify-content: space-between;
+
+
+      font-weight: 900;
+
+
+
     }
     .link-bc5.link-e6e {
       margin-right: auto;
@@ -2192,7 +2223,7 @@ h4 {
 
 
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 400px) {
   .section-p4b.mus-p3z {
     padding-top: 6em;
     padding-bottom: 2em;
@@ -2387,15 +2418,6 @@ h4 {
     margin-right: auto;
     margin-left: auto;
   }
-  
-  
-  
-  
-  
-}
-
-
-@media screen and (max-width: 430px) {
   .rel-xsv {
     width: min(100%, 950px);
   }
@@ -2426,11 +2448,11 @@ h4 {
   .slide-23c.slide-68z {
     min-height: 480px;
   }
-
-
+  
+  
   /* NFT */
-
-
+  
+  
   .nft {
     user-select: none;
     /* max-width: 300px; */
@@ -2549,22 +2571,10 @@ h4 {
     top: -100%;
     left: 200%;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
+  
+  
+  
   
 }
 
@@ -2575,7 +2585,8 @@ h4 {
 
 
 
-/*  */
+
+
 
 
 
@@ -2965,6 +2976,20 @@ h4 {
 /* NFT */
 /* NFT */
 /* NFT */
+
+
+
+
+.bg{
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  h1 {
+    font-size: 10rem;
+    filter: opacity(0.5);
+  }
+}
 
 
 

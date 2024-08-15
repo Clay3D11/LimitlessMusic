@@ -22,7 +22,7 @@ let updateTimer;
 
 const music_list = [
     {
-        img : 'images/fatmelz.png',
+        img : 'images/Fatmelz.png',
         name : 'Ese Tatoo',
         artist : 'Fa Melz',
         music : 'music/EseTatoo.mp3'

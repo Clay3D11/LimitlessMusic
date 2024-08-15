@@ -936,7 +936,7 @@ body {
     /* width: 100%; */
     display: flex;
     
-    ;
+    
   }
   .nav-menu {
     font-size: Clamp(1rem, 0.3043rem + 3.4783vw, 3rem);

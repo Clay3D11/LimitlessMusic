@@ -34,7 +34,7 @@ const music_list = [
         music : 'music/notlikeus.mp3'
     },
     {
-        img : 'images/nory2.png',
+        img : 'images/Nory2.png',
         name : 'MT M1',
         artist : 'Nory Cash',
         music : 'music/HTm1.mp3'
@@ -46,7 +46,7 @@ const music_list = [
         music : 'music/kd-godamongus.mp3'
     },
     {
-        img : 'images/drake.png',
+        img : 'images/Drake.png',
         name : 'Push Up',
         artist : 'Drake',
         music : 'music/pushup.mp3'

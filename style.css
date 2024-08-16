@@ -305,9 +305,9 @@ body {
   max-width: 500px;
   display: flex;
   justify-content: space-around;
-  background-image: url(./img/Heart1.gif);
+  background-image: url(./img/Fatmelz.png);
   background-size: contain;
-  background-position: center;
+  /* background-position: center; */
   background-clip: text;
   color: transparent;
   font-size: 80px;
@@ -776,7 +776,7 @@ body {
     }
     
     .swiper-slide {
-      padding-bottom: 10px;
+      padding-bottom: 20px;
       /* padding-bottom: 80px; */
 
     

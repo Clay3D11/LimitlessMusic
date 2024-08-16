@@ -263,6 +263,8 @@ body {
 /* Music Video */
 /* Music Video */
 
+
+
 .videoheaderbtn {
   background-image: url(./img/Fatmelz.png);
   background-position: center;
@@ -274,15 +276,27 @@ body {
 /* Video Header btn */
 
 .videobtn {
+
   max-width: 500px;
   display: flex;
   justify-content: space-around;
-  background-image: url(./img/Heart1.gif);
+  /* background-image: url(./img/Heart1.gif); */
   background-size: contain;
   background-position: center;
   background-clip: text;
-  color: transparent;
+  /* color: transparent; */
+  color: #00fffb;
   font-size: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+  .videobtn a {
+    text-decoration: underline;
+    color: #00fffb;
+  }
+
+
+
 }
 
 .mainvideoheaderbtn {

@@ -37,19 +37,19 @@ const music_list = [
         img : 'images/Nory2.png',
         name : 'MT M1',
         artist : 'Nory Cash',
-        music : 'music/HTm1.mp3'
+        music : 'music/HTM1.mp3'
     },
     {
         img : 'images/kd.png',
         name : 'God Among US',
         artist : 'KD',
-        music : 'music/kd-godamongus.mp3'
+        music : 'music/kd-GodAmongUs.mp3'
     },
     {
         img : 'images/Drake.png',
         name : 'Push Up',
         artist : 'Drake',
-        music : 'music/pushup.mp3'
+        music : 'music/PushUp.mp3'
 
     }
 ];

@@ -31,7 +31,7 @@ const music_list = [
         img : 'images/notlikeus.png',
         name : 'Not Like Us',
         artist : 'Kendrick',
-        music : 'music/notlikeus.mp3'
+        music : 'music/notLikeus.mp3'
     },
     {
         img : 'images/Nory2.png',
@@ -43,7 +43,7 @@ const music_list = [
         img : 'images/kd.png',
         name : 'God Among US',
         artist : 'KD',
-        music : 'music/kd-GodAmongUs.mp3'
+        music : 'music/GodAmongUs.mp3'
     },
     {
         img : 'images/Drake.png',

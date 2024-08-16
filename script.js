@@ -31,7 +31,7 @@ const music_list = [
         img : 'images/notlikeus.png',
         name : 'Not Like Us',
         artist : 'Kendrick',
-        music : 'music/notLikeus.mp3'
+        music : 'music/NotLikeUs.mp3'
     },
     {
         img : 'images/Nory2.png',

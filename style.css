@@ -37,16 +37,17 @@ body {
 
 .nav-bar {
   background-color: #646262;
-  padding: 1em;
+  /* padding: 1em; */
   text-align: center;
   background: transparent;
   /* backdrop-filter: blur(10px); */
   position: fixed;
   z-index: 10;
+  width: 100%;
 }
 
 .nav-container {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -72,13 +73,15 @@ body {
 .nav-menu ul {
   list-style: none;
   margin: 0;
-  padding: 0;
+  /* padding: 0; */
   display: flex;
   justify-content: space-evenly;
 }
 
 .nav-menu li {
-  margin-right: 20px;
+  /* margin-right: 20px; */
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .nav-menu a {

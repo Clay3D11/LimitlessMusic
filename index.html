@@ -8,8 +8,356 @@
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 
+
+
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!-- Store Div Propperties -->
+  <style>
+    .product-container {
+      z-index: 100;
+max-width: 300px;
+margin: 40px auto;
+padding: 20px;
+/* border: 1px solid #ddd; */
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* .product-container img {
+width: 100%;
+height: 150px;
+object-fit: cover;
+border-radius: 10px 10px 0 0;
+} */
+
+
+.product-container img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  transition: transform 0.3s ease-in-out; /* added transition effect */
+}
+
+.product-container img:hover {
+  transform: scale(2.50); /* added hover effect */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.marquee-container {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: #fff;
+padding: 10px;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.marquee-container marquee {
+font-size: 18px;
+font-weight: bold;
+color: #333;
+}
+
+.product-info {
+  padding: 20px;
+  text-align: center; /* added center alignment */
+}
+
+
+.product-info h2 {
+font-size: 24px;
+margin-bottom: 10px;
+}
+
+.product-info p {
+font-size: 16px;
+margin-bottom: 20px;
+}
+
+
+/* .product-info button {
+background-color: #333;
+color: #fff;
+border: none;
+padding: 10px 20px;
+font-size: 16px;
+cursor: pointer;
+}
+
+.product-info button:hover {
+background-color: #444;
+} */
+
+
+.product-info button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px; /* added border radius */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* added box shadow */
+}
+
+.product-info button:hover {
+  background-color: #444;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+.product-container {
+max-width: 300px;
+}
+.product-container img {
+height: 100px;
+}
+
+.product-container img:hover {
+  transform: scale(1.90); /* added hover effect */
+}
+
+.marquee-container {
+font-size: 14px;
+}
+.product-info {
+padding: 10px;
+}
+.product-info h2 {
+font-size: 18px;
+}
+.product-info p {
+font-size: 14px;
+}
+.product-info button {
+padding: 8px 16px;
+font-size: 14px;
+}
+}
+  </style>
+  
+
+<!-- <style>
+  .product-container {
+  max-width: 300px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, #fff, #f7f7f7);
+  animation: fade-in 1s ease-in-out;
+}
+
+.product-container img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-container img:hover {
+  transform: scale(1.05);
+}
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.marquee-container marquee {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  animation: marquee 3s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.product-info {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fade-in 1s ease-in-out 0.5s;
+}
+
+.product-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-info p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #666;
+  text-align: justify;
+}
+
+.price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.original-price {
+  font-size: 18px;
+  color: #666;
+  text-decoration: line-through;
+}
+
+.discounted-price {
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+}
+
+.buy-now {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.buy-now:hover {
+  background-color: #444;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .product-container {
+    max-width: 300px;
+  }
+  .product-container img {
+    height: 100px;
+  }
+  .marquee-container {
+    font-size: 14px;
+  }
+  .product-info {
+    padding: 10px;
+  }
+  .product-info h2 {
+    font-size: 18px;
+  }
+  .product-info p {
+    font-size: 14px;
+  }
+  .price-container {
+    flex-direction: column;
+  }
+}
+</style> -->
+
+
+<!-- Marquee Properties-->
+  <style>
+    .marqueesocial {
+        width: 100%;
+        height: 100px;
+        overflow: hidden;
+        position: relative;
+        box-sizing: border-box;
+        padding: 10px;
+        /* border: 1px solid #ccc; */
+    }
+
+    .marqueesocial div {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        animation: scroll 20s linear infinite;
+    }
+
+    .marqueesocial div img {
+        width: auto;
+        height: 50px;
+        margin: 20px;
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+</style>
+
+
 </head>
 <!-- NoteToSelf: -->
 <!-- Id="" are to individualy select "one time" to edit separate section or Content -->
@@ -173,9 +521,9 @@
 
 
       <video autoplay muted loop plays-inline class="" id="" width="100%" >
-                <source src="./video/Fatmelz - ToLoDia.mp4" type="video/mp4" />
+                <source src="./video/Nory&Famelz-wowOffVideo-1min.mp4" type="video/mp4" />
             
-                <source src="./video/Fatmelz - ToLoDia.mp4" type="video/mp4" />
+                <source src="./video/Nory&Famelz-wowOffVideo-1min.mp4" type="video/mp4" />
             
                 Download the
                 <a href="">WEBM</a>
@@ -775,11 +1123,84 @@
 
 
 
-            <audio controls preload="auto" autoplay>
+            <audio controls preload="auto" >
 
 
               <source src="./music/GodAmongUs.mp3" type="audio/ogg">
-              <source src="./music/KD-GodAmongUs.mp3" type="audio/mpeg">
+              <source src="./music/GodAmongUs.mp3" type="audio/mpeg">
+
+
+              Your browser does not support the audio element
+              .
+            </audio>
+
+
+
+
+          </div>
+        </div>
+        
+        
+        
+
+
+
+
+
+        
+        <div class="swiper-slide">
+          <img src="./img/Nory-Code.png" />
+          <div class="slide-overlay">
+            <h2>Nory Money</h2>
+            <h3>Codigos</h3>
+            <button>
+              Listen Now <i class="fa-solid fa-circle-play"></i>
+            </button>
+
+
+
+            <audio controls preload="auto" >
+
+
+              <source src=".//music/Nory-Codigos.mp3" type="audio/ogg">
+              <source src="./music/Nory-Codigos.mp3" type="audio/mpeg">
+
+
+              Your browser does not support the audio element
+              .
+            </audio>
+
+
+
+
+          </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="swiper-slide">
+          <img src="./img/Fatmelz4.png" />
+          <div class="slide-overlay">
+            <h2>Fa mels</h2>
+            <h3>Que Fue</h3>
+            <button>
+              Listen Now <i class="fa-solid fa-circle-play"></i>
+            </button>
+
+
+
+            <audio controls preload="auto" autoplay>
+
+
+              <source src="./music/Fatmelz-QueFue.mp3" type="audio/ogg">
+              <source src="./music/Fatmelz-QueFue.mp3" type="audio/mpeg">
 
 
               Your browser does not support the audio element
@@ -814,19 +1235,119 @@
     <!--h3-->
     <!--P-->
     <!-- <h2>Services</h2> -->
-    <h2 class="merch" style="
+  <h2 class="merch" style="
         
-        display: flex; justify-content: space-around; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
+  display: flex; justify-content: space-around; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
 
 
-        left: auto;
-        bottom: 32px;
-        z-index: 0;
-        margin-top: 0;
-        color: rgb(255, 255, 255);
-        font-size: 7vw;
-        text-align: center;
-        letter-spacing: 0;">ΞΞΞMerchΞΞΞ</h2>
+  left: auto;
+  bottom: 32px;
+  z-index: 0;
+  margin-top: 0;
+  color: rgb(255, 255, 255);
+  font-size: 7vw;
+  text-align: center;
+  letter-spacing: 0;">ΞΞΞMerchΞΞΞ</h2>
+
+
+
+
+  <div class="product-container">
+          <!-- <img src="/LimitlessShop/images/nike_marquee_edge_mirrored_running_sunglasses_Oh8f9Gy7yP.webp"> -->
+          <img src="https://assets2.oakley.com/cdn-record-files-pi/41ce95cd-3eb9-42c5-8480-a6ba01218223/a07b3c7a-5942-42bd-8a62-afc70167b54a/0OJ9001__900105__P21__shad__qt.png?impolicy=OO_ratio&width=2000" alt="">
+          <div class="marquee -container">
+            <marquee behavior="scroll" direction="left">Coming Soon!</marquee>
+          </div>
+
+          <br>
+          <br>
+          <br>
+
+          <!-- <img src="https://assets2.oakley.com/cdn-record-files-pi/6868f1b5-0f5d-4eba-bf81-a6ba0121b6b5/5c5f1e63-2dfa-420a-8de1-afc701689482/0OJ9001__900106__P21__shad__qt.png?impolicy=OO_ratio&width=2000" alt="">
+          <div class="marquee -container">
+            <marquee behavior="scroll" direction="left">Coming Soon!</marquee>
+          </div>
+
+          <br>
+          <br>
+          <br> -->
+
+          <img src="https://assets2.oakley.com/cdn-record-files-pi/67eab5b4-f56f-4906-98f6-ab5700fe755e/dc86aa87-e056-4c2e-871c-afc7016e2725/0OJ9001__900115__P21__shad__qt.png?impolicy=OO_ratio&width=2000" alt="">
+          <div class="marquee -container">
+            <marquee behavior="scroll" direction="left">Coming Soon!</marquee>
+          </div>
+
+
+
+
+
+
+          <div class="product-info">
+            <h2>Sport-glasses</h2>
+            <p>Limitless Shop</p>
+            <a href="https://clay3d11.github.io/LimitlessMerch/"><button>Visit Store</button></a>
+          </div>
+  </div>
+
+  <!-- <div class="product-container">
+          <img src="https://assets2.oakley.com/cdn-record-files-pi/13bb41b2-ab71-4ea4-b51b-af17013161c5/f8c86aae-58f1-4c8f-9e4a-af330041a596/0OJ9001__900127__P21__shad__qt.png?impolicy=OO_ratio&width=2000" alt="Product Image">
+          <div class="marquee-container">
+            <marquee behavior="ease-in-out" direction="left" style="width: 100%;" >Coming Soon!!</marquee>
+          </div>
+          <div class="product-info">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <div class="price-container">
+              <span class="original-price">$99.99</span>
+              <span class="discounted-price">$79.99</span>
+            </div>
+            <button class="buy-now">Buy Now</button>
+          </div>
+        </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="marqueesocial">
+          <div>
+              <img src="./img/Cirujano.png" alt="">
+              <img src="./img/Clay11.png" alt="">
+              <img src="./img/Fatmelz.png" alt="">
+              <img src="./img/Nory2.png" alt="">
+              <img src="./img/Shadow1.png" alt="">
+              <img src="./img/Fatmelz4.png" alt="">
+              <img src="./img/Nory4.png" alt="">
+              <img src="./img/Shadow2.png" alt="">
+              <img src="" alt="">
+              <img src="" alt="">
+              <img src="" alt="">
+              <img src="" alt="">
+              <img src="" alt="">
+
+              <!-- 2nd -->
+
+              
+              
+          </div>
+  </div>
+
+
+
+
+
+
+
+
+
 
 
 

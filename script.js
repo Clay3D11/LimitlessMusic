@@ -25,7 +25,7 @@ const music_list = [
         img : 'images/Kulosa.png',
         name : 'Oxlade',
         artist : 'Kulosa',
-        music : 'music/Kulosa.mp3'
+        music : 'music/Oxlade-Kulosa.mp3'
     },
     {
         img : 'images/Lastlast.png',
@@ -241,7 +241,7 @@ class MusicPlayer {
     this.playBtn.addEventListener('click', this.play);
     this.controlPanel = document.getElementById('control-panel');
     this.infoBar = document.getElementById('info');
-    this.audio = new Audio("./music/Cirujano2.mp3"); // replace with your song's path
+    this.audio = new Audio("./music/Cirujano2"); // replace with your song's path
   }
 
   play() {

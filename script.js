@@ -22,22 +22,22 @@ let updateTimer;
 
 const music_list = [
     {
-        img : 'images/Fatmelz.png',
-        name : 'Ese Tatoo',
-        artist : 'Fa Melz',
-        music : 'music/EseTatoo.mp3'
+        img : 'images/Kulosa.png',
+        name : 'Oxlade',
+        artist : 'Kulosa',
+        music : 'music/Kulosa.mp3'
     },
     {
-        img : 'images/notlikeus.png',
-        name : 'Not Like Us',
-        artist : 'Kendrick',
-        music : 'music/NotLikeUs.mp3'
+        img : 'images/Lastlast.png',
+        name : 'Last last',
+        artist : 'Burna Boy',
+        music : 'music/Lastlast.mp3'
     },
     {
-        img : 'images/Nory2.png',
-        name : 'MT M1',
-        artist : 'Nory Cash',
-        music : 'music/HTM1.mp3'
+        img : 'images/Soweto.png',
+        name : 'Soweto',
+        artist : 'Victony & Tempoe',
+        music : 'music/Victony.Tempoe-Soweto.mp3'
     },
     {
         img : 'images/kd.png',
@@ -51,7 +51,42 @@ const music_list = [
         artist : 'Drake',
         music : 'music/PushUp.mp3'
 
-    }
+    },
+    {
+        img : 'images/notlikeus.png',
+        name : 'Not Like Us',
+        artist : 'Kendrick',
+        music : 'music/NotLikeUs.mp3'
+
+    },
+    {
+        img : 'images/Cirujano2.png',
+        name : 'Eh Eh EH',
+        artist : 'Cirujano',
+        music : 'music/Cirujano4.mp3'
+
+    },
+    {
+        img : 'images/pero.png',
+        name : 'Peru',
+        artist : 'Pero',
+        music : 'music/Peru.mp3'
+
+    },
+    {
+        img : 'images/Royal.png',
+        name : 'Push Up',
+        artist : 'Drake',
+        music : 'music/Royal.mp3'
+
+    },
+    {
+        img : 'images/essence.png',
+        name : 'Essence',
+        artist : 'Essence',
+        music : 'music/essence.mp3'
+
+    },
 ];
 
 loadTrack(track_index);
@@ -193,6 +228,38 @@ function setUpdate(){
 
 
 
+// small PLaylist
+// small PLaylist
+// small PLaylist
 
+console.clear();
+
+class MusicPlayer {
+  constructor() {
+    this.play = this.play.bind(this);
+    this.playBtn = document.getElementById('play');
+    this.playBtn.addEventListener('click', this.play);
+    this.controlPanel = document.getElementById('control-panel');
+    this.infoBar = document.getElementById('info');
+    this.audio = new Audio("./music/Cirujano2.mp3"); // replace with your song's path
+  }
+
+  play() {
+    let controlPanelObj = this.controlPanel,
+      infoBarObj = this.infoBar;
+
+    if (this.audio.paused) {
+      this.audio.play();
+      controlPanelObj.classList.add('active');
+      infoBarObj.classList.add('active');
+    } else {
+      this.audio.pause();
+      controlPanelObj.classList.remove('active');
+      infoBarObj.classList.remove('active');
+    }
+  }
+}
+
+const newMusicPlayer = new MusicPlayer();
 
 

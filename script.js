@@ -75,8 +75,8 @@ const music_list = [
     },
     {
         img : 'images/Royal.png',
-        name : 'Push Up',
-        artist : 'Drake',
+        name : 'Royal',
+        artist : 'Royal',
         music : 'music/Royal.mp3'
 
     },

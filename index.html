@@ -7,6 +7,7 @@
   <title>LimitlessMusic.com</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
+  
 
 
 
@@ -15,389 +16,389 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-<!-- Store Div Propperties -->
-<style>
-    .product-container {
-      z-index: 100;
-max-width: 300px;
-margin: 40px auto;
-padding: 20px;
-/* border: 1px solid #ddd; */
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* .product-container img {
-width: 100%;
-height: 150px;
-object-fit: cover;
-border-radius: 10px 10px 0 0;
-} */
-
-
-.product-container img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 10px 10px 0 0;
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-  transition: transform 0.3s ease-in-out; /* added transition effect */
-}
-
-.product-container img:hover {
-  transform: scale(2.50); /* added hover effect */
-}
-
-
-.marquee-container {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-background-color: #fff;
-padding: 10px;
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.marquee-container marquee {
-font-size: 18px;
-font-weight: bold;
-color: #333;
-}
-
-.product-info {
-  padding: 20px;
-  text-align: center; /* added center alignment */
-}
-
-
-.product-info h2 {
-font-size: 24px;
-margin-bottom: 10px;
-}
-
-.product-info p {
-font-size: 16px;
-margin-bottom: 20px;
-}
-
-
-/* .product-info button {
-background-color: #333;
-color: #fff;
-border: none;
-padding: 10px 20px;
-font-size: 16px;
-cursor: pointer;
-}
-
-.product-info button:hover {
-background-color: #444;
-} */
-
-
-.product-info button {
-  background-color: #333;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 10px; /* added border radius */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* added box shadow */
-}
-
-.product-info button:hover {
-  background-color: #444;
-}
-
-
-
-
-/* Responsive styles */
-@media (max-width: 768px) {
-.product-container {
-max-width: 300px;
-}
-.product-container img {
-height: 100px;
-}
-
-.product-container img:hover {
-  transform: scale(1.90); /* added hover effect */
-}
-
-.marquee-container {
-font-size: 14px;
-}
-.product-info {
-padding: 10px;
-}
-.product-info h2 {
-font-size: 18px;
-}
-.product-info p {
-font-size: 14px;
-}
-.product-info button {
-padding: 8px 16px;
-font-size: 14px;
-}
-}
-</style>
-  
-
-<!-- <style>
-  .product-container {
+  <!-- Store Div Propperties -->
+  <!-- Store Div Propperties -->
+  <!-- Store Div Propperties -->
+  <style>
+      .product-container {
+        z-index: 100;
   max-width: 300px;
   margin: 40px auto;
   padding: 20px;
+  /* border: 1px solid #ddd; */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-image: linear-gradient(to bottom, #fff, #f7f7f7);
-  animation: fade-in 1s ease-in-out;
-}
+  }
 
-.product-container img {
+  /* .product-container img {
   width: 100%;
   height: 150px;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-}
+  } */
 
-.product-container img:hover {
-  transform: scale(1.05);
-}
 
-.marquee-container {
-  width: 100%;
-  overflow: hidden;
-  padding: 10px;
+  .product-container img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    transition: transform 0.3s ease-in-out; /* added transition effect */
+  }
+
+  .product-container img:hover {
+    transform: scale(2.50); /* added hover effect */
+  }
+
+
+  .marquee-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: #fff;
-  border-radius: 0 0 10px 10px;
+  padding: 10px;
+  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+  }
 
-.marquee-container marquee {
+  .marquee-container marquee {
   font-size: 18px;
   font-weight: bold;
   color: #333;
-  text-transform: uppercase;
-  animation: marquee 3s linear infinite;
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
   }
-  100% {
-    transform: translateX(-100%);
+
+  .product-info {
+    padding: 20px;
+    text-align: center; /* added center alignment */
   }
-}
 
-.product-info {
-  padding: 20px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  animation: fade-in 1s ease-in-out 0.5s;
-}
 
-.product-info h2 {
+  .product-info h2 {
   font-size: 24px;
   margin-bottom: 10px;
-  font-weight: bold;
-  color: #333;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+  }
 
-.product-info p {
+  .product-info p {
   font-size: 16px;
   margin-bottom: 20px;
-  color: #666;
-  text-align: justify;
-}
+  }
 
-.price-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
 
-.original-price {
-  font-size: 18px;
-  color: #666;
-  text-decoration: line-through;
-}
-
-.discounted-price {
-  font-size: 24px;
-  color: #333;
-  font-weight: bold;
-}
-
-.buy-now {
+  /* .product-info button {
   background-color: #333;
   color: #fff;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease-in-out;
-}
+  }
 
-.buy-now:hover {
+  .product-info button:hover {
   background-color: #444;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-  .product-container {
-    max-width: 300px;
-  }
-  .product-container img {
-    height: 100px;
-  }
-  .marquee-container {
-    font-size: 14px;
-  }
-  .product-info {
-    padding: 10px;
-  }
-  .product-info h2 {
-    font-size: 18px;
-  }
-  .product-info p {
-    font-size: 14px;
-  }
-  .price-container {
-    flex-direction: column;
-  }
-}
-</style> -->
-
-
-<!-- Marquee Properties-->
-<style>
-    .marqueesocial {
-        width: 100%;
-        height: 100px;
-        overflow: hidden;
-        position: relative;
-        box-sizing: border-box;
-        padding: 10px;
-        /* border: 1px solid #ccc; */
-    }
-
-    .marqueesocial div {
-        display: flex;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        animation: scroll 20s linear infinite;
-      }
-      
-      .marqueesocial div img {
-        width: auto;
-        height: 90px;
-        margin: 20px;
-      }
-      
-      @keyframes scroll {
-        0% {
-          transform: translateX(0);
-        }
-        
-        100% {
-          transform: translateX(-100%);
-        }
-      }
-      
-      @media (max-width: 768px) {
-        .marqueesocial div {
-        animation: scroll 8s linear infinite;
-
-      }
-    }
-
-
-
-</style>
-
-
-
-
-
-
-
-<!-- Video Propperties -->
-<!-- Video Propperties -->
-<!-- Video Propperties -->
-
-<style>
-  /* .swiper-slide {
-    overflow: hidden;
-    overflow: visible;
-
-  }
-  .swiper-slide video {
-    width: 100%;
-    height: 100%;
-    transition: scale 400ms;
-  }
-  .swiper-slide:hover video {
-    scale: 120%;
   } */
+
+
+  .product-info button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px; /* added border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* added box shadow */
+  }
+
+  .product-info button:hover {
+    background-color: #444;
+  }
+
 
 
 
   /* Responsive styles */
-/* @media (max-width: 430px) {
-.swiper-slide {
-max-width: 350px;
-overflow: hidden;
-}
-.swiper-slide video {
-  max-width: 350px;
+  @media (max-width: 768px) {
+  .product-container {
+  max-width: 300px;
+  }
+  .product-container img {
   height: 100px;
-}
+  }
 
-.swiper-slide video:hover {
-  transform: scale(1.90); 
-} */
+  .product-container img:hover {
+    transform: scale(1.90); /* added hover effect */
+  }
 
-/* .marquee-container {
-font-size: 14px;
-}
-.product-info {
-padding: 10px;
-}
-.product-info h2 {
-font-size: 18px;
-}
-.product-info p {
-font-size: 14px;
-}
-.product-info button {
-padding: 8px 16px;
-font-size: 14px;
-} */
+  .marquee-container {
+  font-size: 14px;
+  }
+  .product-info {
+  padding: 10px;
+  }
+  .product-info h2 {
+  font-size: 18px;
+  }
+  .product-info p {
+  font-size: 14px;
+  }
+  .product-info button {
+  padding: 8px 16px;
+  font-size: 14px;
+  }
+  }
+  </style>
+    
+
+  <!-- <style>
+    .product-container {
+    max-width: 300px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, #fff, #f7f7f7);
+    animation: fade-in 1s ease-in-out;
+  }
+
+  .product-container img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .product-container img:hover {
+    transform: scale(1.05);
+  }
+
+  .marquee-container {
+    width: 100%;
+    overflow: hidden;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .marquee-container marquee {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    animation: marquee 3s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .product-info {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fade-in 1s ease-in-out 0.5s;
+  }
+
+  .product-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .product-info p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+    text-align: justify;
+  }
+
+  .price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .original-price {
+    font-size: 18px;
+    color: #666;
+    text-decoration: line-through;
+  }
+
+  .discounted-price {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+  }
+
+  .buy-now {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .buy-now:hover {
+    background-color: #444;
+  }
+
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .product-container {
+      max-width: 300px;
+    }
+    .product-container img {
+      height: 100px;
+    }
+    .marquee-container {
+      font-size: 14px;
+    }
+    .product-info {
+      padding: 10px;
+    }
+    .product-info h2 {
+      font-size: 18px;
+    }
+    .product-info p {
+      font-size: 14px;
+    }
+    .price-container {
+      flex-direction: column;
+    }
+  }
+  </style> -->
+
+
+
+  <!-- Marquee Properties-->
+  <!-- Marquee Properties-->
+  <!-- Marquee Properties-->
+  <style>
+      .marqueesocial {
+          width: 100%;
+          height: 100px;
+          overflow: hidden;
+          position: relative;
+          box-sizing: border-box;
+          padding: 10px;
+          /* border: 1px solid #ccc; */
+      }
+
+      .marqueesocial div {
+          display: flex;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          animation: scroll 20s linear infinite;
+        }
+        
+        .marqueesocial div img {
+          width: auto;
+          height: 90px;
+          margin: 20px;
+        }
+        
+        @keyframes scroll {
+          0% {
+            transform: translateX(0);
+          }
+          
+          100% {
+            transform: translateX(-100%);
+          }
+        }
+        
+        @media (max-width: 768px) {
+          .marqueesocial div {
+          animation: scroll 8s linear infinite;
+
+        }
+      }
+
+
+
+  </style>
+
+
+
+  <!-- Video Propperties -->
+  <!-- Video Propperties -->
+  <!-- Video Propperties -->
+  <style>
+    /* .swiper-slide {
+      overflow: hidden;
+      overflow: visible;
+
+    }
+    .swiper-slide video {
+      width: 100%;
+      height: 100%;
+      transition: scale 400ms;
+    }
+    .swiper-slide:hover video {
+      scale: 120%;
+    } */
+
+
+
+    /* Responsive styles */
+  /* @media (max-width: 430px) {
+  .swiper-slide {
+  max-width: 350px;
+  overflow: hidden;
+  }
+  .swiper-slide video {
+    max-width: 350px;
+    height: 100px;
+  }
+
+  .swiper-slide video:hover {
+    transform: scale(1.90); 
+  } */
+
+  /* .marquee-container {
+  font-size: 14px;
+  }
+  .product-info {
+  padding: 10px;
+  }
+  .product-info h2 {
+  font-size: 18px;
+  }
+  .product-info p {
+  font-size: 14px;
+  }
+  .product-info button {
+  padding: 8px 16px;
+  font-size: 14px;
+  } */
 
 
 
@@ -408,43 +409,15 @@ font-size: 14px;
 
 
 
-</style>
+  </style>
 
 
 </head>
 <!-- NoteToSelf: -->
 <!-- Id="" are to individualy select "one time" to edit separate section or Content -->
 <!-- Class are to individualy select to edit separate section or Content -->
-
 <!-- Header;is used accross all the websites pages -->
 
-
-<!--Header-->
-
-<!--NavBar-->
-
-<!--Main-->
-
-<!--Article-->
-<!--Figure-->
-<!--H1-->
-<!--P-->
-
-
-<!--1st Section-->
-<!--Data-->
-
-
-<!--2nd Section-->
-<!--Data-->
-
-
-<!--3rd Section-->
-<!--Data-->
-
-
-<!--Footer-->
-<!--Data-->
 
 <body>
 
@@ -699,7 +672,7 @@ font-size: 14px;
         z-index: 0;
         margin-top: 0;
         color: rgb(255, 255, 255);
-        font-size: 10vw;
+        font-size: 7vw;
         text-align: center;
         letter-spacing: 0;">ΞΞΞTop ArtistsΞΞΞ</h2>
 
@@ -798,233 +771,6 @@ font-size: 14px;
   </section>
 
 
-  <!-- Music Player -->
-  <!-- Music Player -->
-  <!-- Music Player -->
-  <section id="playlist">
-
-    <h2 class="" style="
-        display: flex; justify-content: space-around; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
-
-
-        left: auto;
-        /* bottom: 32px; */
-        z-index: 0;
-        margin-top: 0;
-        color: rgb(255, 255, 255);
-        font-size: 10vw;
-        text-align: center;
-        letter-spacing: 0;">ΞΞΞPlay ListΞΞΞ</h2>
-    
-    
-    <!-- Music Player -->
-    <!-- Music Player -->
-    <!-- Music Player -->
-    <div id="player" class="player">
-      <div class="wrapper">
-        <div class="details">
-          <div class="now-playing">PLAYING x OF y</div>
-          <div class="track-art"></div>
-          <div class="track-name">Track Name</div>
-          <div class="track-artist">Track Artist</div>
-        </div>
-
-        <div class="slider_container">
-          <div class="current-time">00:00</div>
-          <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
-          <div class="total-duration">00:00</div>
-        </div>
-
-        <div class="slider_container">
-          <i class="fa fa-volume-down"></i>
-          <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
-          <i class="fa fa-volume-up"></i>
-        </div>
-
-        <div class="buttons">
-          <div class="random-track" onclick="randomTrack()">
-            <i class="fas fa-random fa-2x" title="random"></i>
-          </div>
-          <div class="prev-track" onclick="prevTrack()">
-            <i class="fa fa-step-backward fa-2x"></i>
-          </div>
-          <div class="playpause-track" onclick="playpauseTrack()">
-            <i class="fa fa-play-circle fa-5x"></i>
-          </div>
-          <div class="next-track" onclick="nextTrack()">
-            <i class="fa fa-step-forward fa-2x"></i>
-          </div>
-          <div class="repeat-track" onclick="repeatTrack()">
-            <i class="fa fa-repeat fa-2x" title="repeat"></i>
-          </div>
-        </div>
-
-        <div id="wave">
-          <span class="stroke"></span>
-          <span class="stroke"></span>
-          <span class="stroke"></span>
-          <span class="stroke"></span>
-          <span class="stroke"></span>
-          <span class="stroke"></span>
-          <span class="stroke"></span>
-        </div>
-      </div>
-    </div>
-
-
-
-  </section>
-
-
-  <!-- Top Videos -->
-  <!-- Top Videos -->
-  <!-- Top Videos -->
-  <section id="videos">
-
-    <br>
-    <br>
-    <br>
-    
-    <h2 class="" style="
-        
-        display: flex; justify-content: space-around; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
-
-
-        left: auto;
-        /* bottom: 32px; */
-        z-index: 0;
-        margin-top: 0;
-        color: rgb(255, 255, 255);
-        font-size: 10vw;
-        text-align: center;
-        letter-spacing: 0;">ΞΞΞTop VideosΞΞΞ</h2>
-
-
-    <!-- Video -->
-    <!-- Video -->
-    <!-- Video -->
-
-
-        <!-- 1st Video -->
-        <!-- 1st Video -->
-        <!-- 1st Video -->
-         
-        <div id="video" class="swiper-slide">
-          <!-- <img src="./img/fa-melz.png" /> -->
-
-          <video
-           class="video" src="./video/Nory&Famels-Wowoffvideo(gif).mp4" controls autoplay muted loop  style="z-index: 100;
-          max-width: 350px;
-          margin: 40px auto;
-          padding: 0px;
-          /* border: 1px solid #ddd; */
-          border-radius: 10px;
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          display: flex;
-          justify-content: center;
-          align-items: center;"  >
-
-          </video>
-
-
-          <div class="slide-overlay">
-            <!-- <h2>Fa mels</h2> -->
-            <!-- <h3></h3> -->
-            <!-- <button>
-              Listen Now <i class="fa-solid fa-circle-play"></i>
-            </button> -->
-          </div>
-
-
-        </div>
-        
-        
-        
-        <!-- 2nd Video -->
-        <!-- 2nd Video -->
-        <!-- 2nd Video -->
-
-        <div id="video" class="swiper-slide">
-          <!-- <img src="./img/fa-melz.png" /> -->
-
-          <video
-           class="video" src="./video/Sniper.mp4" controls autoplay muted loop  style="z-index: 100;
-          max-width: 350px;
-          margin: 40px auto;
-          padding: 0px;
-          /* border: 1px solid #ddd; */
-          border-radius: 10px;
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          display: flex;
-          justify-content: center;
-          align-items: center;"  >
-
-          </video>
-
-
-          <div class="slide-overlay">
-            <!-- <h2>Fa mels</h2> -->
-            <!-- <h3></h3> -->
-            <!-- <button>
-              Listen Now <i class="fa-solid fa-circle-play"></i>
-            </button> -->
-          </div>
-
-
-        </div>
-        
-        
-        
-        <!-- 3rd Video -->
-        <!-- 3rd Video -->
-        <!-- 3rd Video -->
-
-        <div id="video" class="swiper-slide">
-          <!-- <img src="./img/fa-melz.png" /> -->
-          <video class="video" src="./video/KulosoEdit.mp4"  controls muted loop autoplay style="z-index: 100;
-          max-width: 350px;
-          margin: 40px auto;
-          padding: 0px;
-          /* border: 1px solid #ddd; */
-          border-radius: 10px;
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          display: flex;
-          justify-content: center;
-          align-items: center;
-
-          "  ></video>
-          <div class="slide-overlay">
-            <!-- <h2>Fa mels</h2> -->
-            <h3></h3>
-            <!-- <button>
-              Listen Now <i class="fa-solid fa-circle-play"></i>
-            </button> -->
-
-
-
-            <!-- <audio controls preload="auto">
-
-
-              <source src="./music/Fatmelz-QueFue.mp3" type="audio/ogg">
-              <source src="./music/Fatmelz-QueFue.mp3" type="audio/mpeg">
-
-
-              Your browser does not support the audio element
-              .
-            </audio> -->
-
-
-
-
-          </div>
-        </div>
-
-
-
-
-  </section>
-
-
   <!-- Popular Songs -->
   <!-- Popular Songs -->
   <!-- Popular Songs -->
@@ -1042,9 +788,9 @@ font-size: 14px;
         z-index: 0;
         margin-top: 0;
         color: rgb(255, 255, 255);
-        font-size: 10vw;
+        font-size: 7vw;
         text-align: center;
-        letter-spacing: 0;">ΞΞΞTop SongsΞΞΞ</h2>
+        letter-spacing: 0;">ΞΞΞTop HitsΞΞΞ</h2>
 
     <div id="popularsongs" class="swiper">
 
@@ -1518,6 +1264,524 @@ font-size: 14px;
 
   </section>
 
+
+  <!-- Top Videos -->
+  <!-- Top Videos -->
+  <!-- Top Videos -->
+  <h2 class="" style="
+        
+  display: flex; justify-content: space-around; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
+  
+  
+  left: auto;
+  /* bottom: 32px; */
+  z-index: 0;
+  margin-top: 0;
+  color: rgb(255, 255, 255);
+  font-size: 7vw;
+  text-align: center;
+  letter-spacing: 0;">ΞΞΞTop VideosΞΞΞ</h2>
+  <section class="vids" style="width: 100%;
+
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+
+  grid-template-columns: repeat(auto-fit,minmax(300px, 2fr));
+  grid-gap: 3.5rem;
+  width: 100%;">
+
+
+  
+
+
+
+    <div class="vids" >
+      <!-- 1st video -->
+      <!-- 1st video -->
+      <!-- 1st video -->
+
+      <div id="video" class="swiper-slide">
+        <!-- <img src="./img/fa-melz.png" /> -->
+
+        <video
+         class="video" src="./video/Nory&Famels-Wowoffvideo(gif).mp4" controls autoplay muted loop  style="z-index: 100;
+        max-width: 100%;
+        margin: 30px auto;
+        margin-left: 30px  auto;
+        
+        padding: 0px;
+        /* border: 1px solid #ddd; */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;"  >
+
+        </video>
+
+
+        <div class="slide-overlay">
+          <!-- <h2>Fa mels</h2> -->
+          <!-- <h3></h3> -->
+          <!-- <button>
+            Listen Now <i class="fa-solid fa-circle-play"></i>
+          </button> -->
+        </div>
+
+
+      </div>
+
+
+
+    </div>
+
+
+    <div class="vids" >
+      <!-- 2nd Video -->
+      <!-- 2nd Video -->
+      <!-- 2nd Video -->
+
+      
+
+      <div id="video" class="swiper-slide">
+        <!-- <img src="./img/fa-melz.png" /> -->
+        <video class="video" src="./video/UnFlowZaza.mp4"  controls muted loop autoplay style="z-index: 100;
+        max-width: 100%;
+        margin: 30px auto;
+        padding: 0px;
+        /* border: 1px solid #ddd; */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        "  ></video>
+        <div class="slide-overlay">
+          <!-- <h2>Fa mels</h2> -->
+          <h3></h3>
+          <!-- <button>
+            Listen Now <i class="fa-solid fa-circle-play"></i>
+          </button> -->
+
+
+
+          <!-- <audio controls preload="auto">
+
+
+            <source src="./music/Fatmelz-QueFue.mp3" type="audio/ogg">
+            <source src="./music/Fatmelz-QueFue.mp3" type="audio/mpeg">
+
+
+            Your browser does not support the audio element
+            .
+          </audio> -->
+
+
+
+
+        </div>
+    </div> 
+
+
+
+
+
+
+    </div>
+
+
+    <div class="vids">
+
+      <!-- 3rd Video -->
+      <!-- 3rd Video -->
+      <!-- 3rd Video -->
+
+      <div id="video" class="swiper-slide">
+          <!-- <img src="./img/fa-melz.png" /> -->
+          <video class="video" src="./video/KulosoEdit.mp4"  controls muted loop autoplay style="z-index: 100;
+          max-width: 100%;
+          min-width: 430;
+          margin: 30px auto;
+          padding: 0px;
+          /* border: 1px solid #ddd; */
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-position: center;
+
+          "  ></video>
+          <div class="slide-overlay">
+            <!-- <h2>Fa mels</h2> -->
+            <h3></h3>
+            <!-- <button>
+              Listen Now <i class="fa-solid fa-circle-play"></i>
+            </button> -->
+
+
+
+            <!-- <audio controls preload="auto">
+
+
+              <source src="./music/Fatmelz-QueFue.mp3" type="audio/ogg">
+              <source src="./music/Fatmelz-QueFue.mp3" type="audio/mpeg">
+
+
+              Your browser does not support the audio element
+              .
+            </audio> -->
+
+
+
+
+          </div>
+      </div>
+
+
+    </div>
+
+
+    <div class="vids">
+
+      <!-- 4rd Video -->
+      <!-- 4rd Video -->
+      <!-- 4rd Video -->
+
+      <div id="video" class="swiper-slide">
+        <!-- <img src="./img/fa-melz.png" /> -->
+        <video class="video" src="./video/Famelz-Quefue(1min).mp4"  controls muted loop autoplay style="z-index: 100;
+        max-width: 100%;
+        margin: 30px auto;
+        padding: 0px;
+        /* border: 1px solid #ddd; */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        "  ></video>
+        <div class="slide-overlay">
+          <!-- <h2>Fa mels</h2> -->
+          <h3></h3>
+          <!-- <button>
+            Listen Now <i class="fa-solid fa-circle-play"></i>
+          </button> -->
+
+
+
+          <!-- <audio controls preload="auto">
+
+
+            <source src="./music/Fatmelz-QueFue.mp3" type="audio/ogg">
+            <source src="./music/Fatmelz-QueFue.mp3" type="audio/mpeg">
+
+
+            Your browser does not support the audio element
+            .
+          </audio> -->
+
+
+
+
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+    <div>
+
+      <!-- 5th Video -->
+      <!-- 5th Video -->
+      <!-- 5th Video -->
+
+      <div id="video" class="swiper-slide">
+        <!-- <img src="./img/fa-melz.png" /> -->
+        <video class="video" src="./video/Famelz-Quefue(1min).mp4"  controls muted loop autoplay style="z-index: 100;
+        max-width: 100%;
+        margin: 30px auto;
+        padding: 0px;
+        /* border: 1px solid #ddd; */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        "  ></video>
+        <div class="slide-overlay">
+          <!-- <h2>Fa mels</h2> -->
+          <h3></h3>
+          <!-- <button>
+            Listen Now <i class="fa-solid fa-circle-play"></i>
+          </button> -->
+
+
+
+          <!-- <audio controls preload="auto">
+
+
+            <source src="./music/Fatmelz-QueFue.mp3" type="audio/ogg">
+            <source src="./music/Fatmelz-QueFue.mp3" type="audio/mpeg">
+
+
+            Your browser does not support the audio element
+            .
+          </audio> -->
+
+
+
+
+        </div>
+      </div>
+        
+
+
+    </div>
+
+
+    
+    <div>
+
+      <!-- 6th Video -->
+      <!-- 6th Video -->
+      <!-- 6th Video -->
+
+      <div id="video" class="swiper-slide">
+        <!-- <img src="./img/fa-melz.png" /> -->
+        <video class="video" src="./video/Sniper.mp4"  controls muted loop autoplay style="z-index: 100;
+        max-width: 100%;
+        margin: 30px auto;
+        padding: 0px;
+        /* border: 1px solid #ddd; */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        "  ></video>
+        <div class="slide-overlay">
+          <!-- <h2>Fa mels</h2> -->
+          <h3></h3>
+          <!-- <button>
+            Listen Now <i class="fa-solid fa-circle-play"></i>
+          </button> -->
+
+
+
+          <!-- <audio controls preload="auto">
+
+
+            <source src="./music/Fatmelz-QueFue.mp3" type="audio/ogg">
+            <source src="./music/Fatmelz-QueFue.mp3" type="audio/mpeg">
+
+
+            Your browser does not support the audio element
+            .
+          </audio> -->
+
+
+
+
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+  </section>
+
+
+
+
+
+
+  <!-- Music Player -->
+  <!-- Music Player -->
+  <!-- Music Player -->
+  <section id="playlist">
+
+    <h2 class="" style="
+        display: flex; justify-content: space-around; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
+
+
+        left: auto;
+        /* bottom: 32px; */
+        z-index: 0;
+        margin-top: 0;
+        color: rgb(255, 255, 255);
+        font-size: 7vw;
+        text-align: center;
+        letter-spacing: 0;">ΞΞΞPlaylistΞΞΞ</h2>
+    
+    
+    <!-- Music Player -->
+    <!-- Music Player -->
+    <!-- Music Player -->
+    <div id="player" class="player">
+      <div class="wrapper">
+        <div class="details">
+          <div class="now-playing">PLAYING x OF y</div>
+          <div class="track-art"></div>
+          <div class="track-name">Track Name</div>
+          <div class="track-artist">Track Artist</div>
+        </div>
+
+        <div class="slider_container">
+          <div class="current-time">00:00</div>
+          <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+          <div class="total-duration">00:00</div>
+        </div>
+
+        <div class="slider_container">
+          <i class="fa fa-volume-down"></i>
+          <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+          <i class="fa fa-volume-up"></i>
+        </div>
+
+        <div class="buttons">
+          <div class="random-track" onclick="randomTrack()">
+            <i class="fas fa-random fa-2x" title="random"></i>
+          </div>
+          <div class="prev-track" onclick="prevTrack()">
+            <i class="fa fa-step-backward fa-2x"></i>
+          </div>
+          <div class="playpause-track" onclick="playpauseTrack()">
+            <i class="fa fa-play-circle fa-5x"></i>
+          </div>
+          <div class="next-track" onclick="nextTrack()">
+            <i class="fa fa-step-forward fa-2x"></i>
+          </div>
+          <div class="repeat-track" onclick="repeatTrack()">
+            <i class="fa fa-repeat fa-2x" title="repeat"></i>
+          </div>
+        </div>
+
+        <div id="wave">
+          <span class="stroke"></span>
+          <span class="stroke"></span>
+          <span class="stroke"></span>
+          <span class="stroke"></span>
+          <span class="stroke"></span>
+          <span class="stroke"></span>
+          <span class="stroke"></span>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- 2nd Music PLayer -->
+    <!-- 2nd Music PLayer -->
+    <!-- 2nd Music PLayer -->
+    
+    <!-- <div id="player2" class="player2">
+      <div class="wrapper2">
+        <div class="details2">
+          <div class="now-playing2">PLAYING x OF y</div>
+          <div class="track-art2"></div>
+          <div class="track-name2">Track Name</div>
+          <div class="track-artist2">Track Artist</div>
+        </div>
+    
+        <div class="slider_container2">
+          <div class="current-time2">00:00</div>
+          <input type="range" min="1" max="100" value="0" class="seek_slider2" onchange="seekTo2()">
+          <div class="total-duration2">00:00</div>
+        </div>
+    
+        <div class="slider_container2">
+          <i class="fa fa-volume-down"></i>
+          <input type="range" min="1" max="100" value="99" class="volume_slider2" onchange="setVolume2()">
+          <i class="fa fa-volume-up"></i>
+        </div>
+    
+        <div class="buttons2">
+          <div class="random-track2" onclick="randomTrack2()">
+            <i class="fas fa-random fa-2x" title="random"></i>
+          </div>
+          <div class="prev-track2" onclick="prevTrack2()">
+            <i class="fa fa-step-backward fa-2x"></i>
+          </div>
+          <div class="playpause-track2" onclick="playpauseTrack2()">
+            <i class="fa fa-play" aria-hidden="true"></i>
+
+          </div>
+          <div class="next-track2" onclick="nextTrack2()">
+            <i class="fa fa-step-forward fa-2x"></i>
+          </div>
+          <div class="repeat-track2" onclick="repeatTrack2()">
+            <i class="fa fa-repeat fa-2x" title="repeat"></i>
+          </div>
+        </div>
+    
+        <div id="wave2">
+          <span class="stroke2"></span>
+          <span class="stroke2"></span>
+          <span class="stroke2"></span>
+          <span class="stroke2"></span>
+          <span class="stroke2"></span>
+          <span class="stroke2"></span>
+          <span class="stroke2"></span>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- 3rd music player -->
+    <!-- 3rd music player -->
+    <!-- 3rd music player -->
+
+    <div class="container">
+      <div class="song-info">
+          <div class="artist-name"></div>
+          <div class="song-name"></div>
+          <div class="progress-bar">
+              <div class="fill-bar"></div>
+          </div>
+          <div class="time">0:00 - 0:00</div>
+      </div>
+      <div class="disk">
+          <div class="circle"></div>
+          <div id="cover" class="cover"></div>
+      </div>
+      <div class="controls">
+          <i id="prev" class="prev-btn fa-solid fa-backward"></i>
+          <i id="play" class="play-btn fa-solid fa-play"></i>
+          <i id="next" class="next-btn fa-solid fa-forward"></i>
+      </div>
+  </div>
+
+
+  <script src="script3.js"></script>
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  </section>
+
   
   <!--Top MERCH-->
   <!--Top MERCH-->
@@ -1543,14 +1807,51 @@ font-size: 14px;
         z-index: 0;
         margin-top: 0;
         color: rgb(255, 255, 255);
-        font-size: 10vw;
+        font-size: 7vw;
         text-align: center;
-    letter-spacing: 0;">ΞΞΞTop MerckΞΞΞ</h2>
+    letter-spacing: 0;">ΞΞΞLa MerchΞΞΞ</h2>
+    
+
+
+
+    <marquee behavior="s" direction="">
+      <img src="./img/taatracao.gif" alt="" style="width: 200px; height: 150px; display: inline; " >
+      <h2 class="" style="
+        display: flex; justify-content: space-around; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-shadow: 0 0 2px #00fffb, 0 0 20px #0081bc;
+
+
+        left: auto;
+        /* bottom: 32px; */
+        z-index: 0;
+        margin-top: 0;
+        color: rgb(255, 255, 255);
+        font-size: 4vw;
+        text-align: center;
+    letter-spacing: 0;">Ta Atracao si llegate hasta aqui! Compra pal de vaina y apolla la causa buen mmg!!</h2>
+    </marquee>
+
+
+    <!-- <div style="display: block; align-self: center;"  >
+      <h1>Si llegate a aqui</h1>
+      <img class="meme" src="./img/taatracao.gif" alt="" style="width: 200px; height: 150px; display: flex; justify-content: center; align-items: center;  ">
+      <h1 class="typing" >TaAtracaoMMG!</h1>
+      <h1 class="typing" >Tienes-que-Comprar-algo!</h1>
+      </div>   -->
     
 
 
     <div class="product-container">
-          <!-- <img src="/LimitlessShop/images/nike_marquee_edge_mirrored_running_sunglasses_Oh8f9Gy7yP.webp"> -->
+
+
+
+
+        
+      
+      
+      
+      
+      
+      <!-- <img src="/LimitlessShop/images/nike_marquee_edge_mirrored_running_sunglasses_Oh8f9Gy7yP.webp"> -->
           <img src="https://assets2.oakley.com/cdn-record-files-pi/41ce95cd-3eb9-42c5-8480-a6ba01218223/a07b3c7a-5942-42bd-8a62-afc70167b54a/0OJ9001__900105__P21__shad__qt.png?impolicy=OO_ratio&width=2000" alt="">
           <div class="marquee -container">
             <marquee behavior="scroll" direction="left">Coming Soon!</marquee>
@@ -1688,8 +1989,7 @@ font-size: 14px;
   <br>
   <br>
   <br>
-
-
+  
 </body>
 
 </html>

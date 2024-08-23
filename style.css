@@ -956,11 +956,11 @@ p {
 }
 
 .container .disk .cover{
-  width: 145px;
-  height: 145px;
+  width: 165px;
+  height: 165px;
   position: absolute;
   top: 10px;
-  left: 130px;
+  left: 120px;
   background: url("assets/1.jpg");
   background-repeat: no-repeat;
   background-position: bottom center;

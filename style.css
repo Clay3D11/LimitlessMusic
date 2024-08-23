@@ -897,7 +897,7 @@ p {
 
 .container .song-info{
   /* background-color: #000; */
-  background-image: url(./img/trap1.gif);
+  background-image: url(./img/GhostKiller.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -960,12 +960,12 @@ p {
   height: 145px;
   position: absolute;
   top: 10px;
-  left: 10px;
+  left: 130px;
   background: url("assets/1.jpg");
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: cover;
-  border: 3px solid #fff;
+  border: 3px solid #f30505;
   border-radius: 50%;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: all 0.2s ease-in-out;

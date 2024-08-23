@@ -1,265 +1,214 @@
-let now_playing = document.querySelector('.now-playing');
-let track_art = document.querySelector('.track-art');
-let track_name = document.querySelector('.track-name');
-let track_artist = document.querySelector('.track-artist');
-
-let playpause_btn = document.querySelector('.playpause-track');
-let next_btn = document.querySelector('.next-track');
-let prev_btn = document.querySelector('.prev-track');
-
-let seek_slider = document.querySelector('.seek_slider');
-let volume_slider = document.querySelector('.volume_slider');
-let curr_time = document.querySelector('.current-time');
-let total_duration = document.querySelector('.total-duration');
-let wave = document.getElementById('wave');
-let randomIcon = document.querySelector('.fa-random');
-let curr_track = document.createElement('audio');
-
-let track_index = 0;
-let isPlaying = false;
-let isRandom = false;
-let updateTimer;
-
-const music_list = [
+const songsList = [
     {
-        img : 'images/Kulosa.png',
-        name : 'Oxlade',
-        artist : 'Kulosa',
-        music : 'music/Oxlade-Kulosa.mp3'
+        name: "Royals",
+        artist: "Rae Sremmurd",
+        src: "music/Royal.mp3",
+        cover: "img/Royal.png"
     },
     {
-        img : 'images/Lastlast.png',
-        name : 'Last last',
-        artist : 'Burna Boy',
-        music : 'music/Lastlast.mp3'
+        name: "",
+        artist: "",
+        src: "music/ChoppaHate.mp3",
+        cover: "img/ChoppaHate.png"
     },
     {
-        img : 'images/Soweto.png',
-        name : 'Soweto',
-        artist : 'Victony & Tempoe',
-        music : 'music/Victony.Tempoe-Soweto.mp3'
+        name: "",
+        artist: "",
+        src: "music/Gunna-oneofwun.mp3",
+        cover: "img/Gunna2.png"
     },
     {
-        img : 'images/kd.png',
-        name : 'God Among US',
-        artist : 'KD',
-        music : 'music/GodAmongUs.mp3'
+        name: "",
+        artist: "",
+        src: "music/thug-Guwop.mp3",
+        cover: "img/Thug.png"
     },
     {
-        img : 'images/Drake.png',
-        name : 'Push Up',
-        artist : 'Drake',
-        music : 'music/PushUp.mp3'
-
+        name: "",
+        artist: "",
+        src: "music/GhostRidersKillers.mp3",
+        cover: "img/GhostKiller.png"
     },
     {
-        img : 'images/notlikeus.png',
-        name : 'Not Like Us',
-        artist : 'Kendrick',
-        music : 'music/NotLikeUs.mp3'
-
+        name: "",
+        artist: "",
+        src: "music/thug-Dome.mp3",
+        cover: "img/thug.png"
     },
     {
-        img : 'images/Cirujano2.png',
-        name : 'Eh Eh EH',
-        artist : 'Cirujano',
-        music : 'music/Cirujano4.mp3'
-
+        name: "",
+        artist: "",
+        src: "music/thug-NeverHadit.mp3",
+        cover: "img/thug.png"
     },
     {
-        img : 'images/pero.png',
-        name : 'Peru',
-        artist : 'Pero',
-        music : 'music/Peru.mp3'
-
+        name: "",
+        artist: "",
+        src: "music/thug.mp3",
+        cover: "img/thug.png"
     },
     {
-        img : 'images/Royal.png',
-        name : 'Royal',
-        artist : 'Royal',
-        music : 'music/Royal.mp3'
-
+        name: "",
+        artist: "",
+        src: "music/Gunna-Relentless.mp3",
+        cover: "img/Gunna2.png"
     },
     {
-        img : 'images/essence.png',
-        name : 'Essence',
-        artist : 'Essence',
-        music : 'music/essence.mp3'
-
+        name: "",
+        artist: "",
+        src: "music/Gunna-Fumean.mp3",
+        cover: "img/Gunna2.png"
     },
+    {
+        name: "",
+        artist: "",
+        src: "music/lilbaby-sum2prove.mp3",
+        cover: "img/lilbaby2.png"
+    },
+    {
+        name: "",
+        artist: "",
+        src: "music/TooHotty.mp3",
+        cover: "img/migos1.png"
+    },
+    {
+        name: "",
+        artist: "",
+        src: "music/future-timmyturner.mp3",
+        cover: "img/future2.png"
+    },
+    {
+        name: "",
+        artist: "",
+        src: "music/migos-badandboogie.mp3",
+        cover: "img/migos2.png"
+    },
+    {
+        name: "",
+        artist: "",
+        src: "music/dior.mp3",
+        cover: "img/dior.png"
+    },
+    {
+        name: "",
+        artist: "",
+        src: "music/bobbyshurr-hotniigg.mp3",
+        cover: "img/bobby1.png"
+    },
+    {
+        name: "",
+        artist: "",
+        src: "music/thug-withthat.mp3",
+        cover: "img/thug11.png"
+    },
+    {
+        name: "",
+        artist: "",
+        src: "music/migos-ineedit.mp3",
+        cover: "img/migos2.png"
+    },
+    {
+        name: "",
+        artist: "",
+        src: "music/panda.mp3",
+        cover: "img/panda.png"
+    },
+    {
+        name: "",
+        artist: "",
+        src: "music/migos-3rd.mp3",
+        cover: "img/migos3rd.png"
+    },
+    
 ];
 
-loadTrack(track_index);
+const artistName = document.querySelector('.artist-name');
+const musicName = document.querySelector('.song-name');
+const fillBar = document.querySelector('.fill-bar');
+const time = document.querySelector('.time');
+const cover = document.getElementById('cover');
+const playBtn = document.getElementById('play');
+const prevBtn = document.getElementById('prev');
+const nextBtn = document.getElementById('next');
+const prog = document.querySelector('.progress-bar');
 
-function loadTrack(track_index){
-    clearInterval(updateTimer);
-    reset();
+let song = new Audio();
+let currentSong = 0;
+let playing = false;
 
-    curr_track.src = music_list[track_index].music;
-    curr_track.load();
+document.addEventListener('DOMContentLoaded', () => {
+    loadSong(currentSong);
+    song.addEventListener('timeupdate', updateProgress);
+    song.addEventListener('ended', nextSong);
+    prevBtn.addEventListener('click', prevSong);
+    nextBtn.addEventListener('click', nextSong);
+    playBtn.addEventListener('click', togglePlayPause);
+    prog.addEventListener('click', seek);
+});
 
-    track_art.style.backgroundImage = "url(" + music_list[track_index].img + ")";
-    track_name.textContent = music_list[track_index].name;
-    track_artist.textContent = music_list[track_index].artist;
-    now_playing.textContent = "Playing music " + (track_index + 1) + " of " + music_list.length;
-
-    updateTimer = setInterval(setUpdate, 1000);
-
-    curr_track.addEventListener('ended', nextTrack);
-    random_bg_color();
+function loadSong(index) {
+    const { name, artist, src, cover: thumb } = songsList[index];
+    artistName.innerText = artist;
+    musicName.innerText = name;
+    song.src = src;
+    cover.style.backgroundImage = `url(${thumb})`;
 }
 
-function random_bg_color(){
-    let hex = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e'];
-    let a;
+function updateProgress() {
+    if (song.duration) {
+        const pos = (song.currentTime / song.duration) * 100;
+        fillBar.style.width = `${pos}%`;
 
-    function populate(a){
-        for(let i=0; i<6; i++){
-            let x = Math.round(Math.random() * 14);
-            let y = hex[x];
-            a += y;
-        }
-        return a;
-    }
-    let Color1 = populate('#');
-    let Color2 = populate('#');
-    var angle = 'to right';
+        const duration = formatTime(song.duration);
+        const currentTime = formatTime(song.currentTime);
+        time.innerText = `${currentTime} - ${duration}`;
 
-    let gradient = 'linear-gradient(' + angle + ',' + Color1 + ', ' + Color2 + ")";
-    document.body.style.background = gradient;
-}
-function reset(){
-    curr_time.textContent = "00:00";
-    total_duration.textContent = "00:00";
-    seek_slider.value = 0;
-}
-function randomTrack(){
-    isRandom ? pauseRandom() : playRandom();
-}
-function playRandom(){
-    isRandom = true;
-    randomIcon.classList.add('randomActive');
-}
-function pauseRandom(){
-    isRandom = false;
-    randomIcon.classList.remove('randomActive');
-}
-function repeatTrack(){
-    let current_index = track_index;
-    loadTrack(current_index);
-    playTrack();
-}
-function playpauseTrack(){
-    isPlaying ? pauseTrack() : playTrack();
-}
-function playTrack(){
-    curr_track.play();
-    isPlaying = true;
-    track_art.classList.add('rotate');
-    wave.classList.add('loader');
-    playpause_btn.innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
-}
-function pauseTrack(){
-    curr_track.pause();
-    isPlaying = false;
-    track_art.classList.remove('rotate');
-    wave.classList.remove('loader');
-    playpause_btn.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';
-}
-function nextTrack(){
-    if(track_index < music_list.length - 1 && isRandom === false){
-        track_index += 1;
-    }else if(track_index < music_list.length - 1 && isRandom === true){
-        let random_index = Number.parseInt(Math.random() * music_list.length);
-        track_index = random_index;
-    }else{
-        track_index = 0;
-    }
-    loadTrack(track_index);
-    playTrack();
-}
-function prevTrack(){
-    if(track_index > 0){
-        track_index -= 1;
-    }else{
-        track_index = music_list.length -1;
-    }
-    loadTrack(track_index);
-    playTrack();
-}
-function seekTo(){
-    let seekto = curr_track.duration * (seek_slider.value / 100);
-    curr_track.currentTime = seekto;
-}
-function setVolume(){
-    curr_track.volume = volume_slider.value / 100;
-}
-function setUpdate(){
-    let seekPosition = 0;
-    if(!isNaN(curr_track.duration)){
-        seekPosition = curr_track.currentTime * (100 / curr_track.duration);
-        seek_slider.value = seekPosition;
-
-        let currentMinutes = Math.floor(curr_track.currentTime / 60);
-        let currentSeconds = Math.floor(curr_track.currentTime - currentMinutes * 60);
-        let durationMinutes = Math.floor(curr_track.duration / 60);
-        let durationSeconds = Math.floor(curr_track.duration - durationMinutes * 60);
-
-        if(currentSeconds < 10) {currentSeconds = "0" + currentSeconds; }
-        if(durationSeconds < 10) { durationSeconds = "0" + durationSeconds; }
-        if(currentMinutes < 10) {currentMinutes = "0" + currentMinutes; }
-        if(durationMinutes < 10) { durationMinutes = "0" + durationMinutes; }
-
-        curr_time.textContent = currentMinutes + ":" + currentSeconds;
-        total_duration.textContent = durationMinutes + ":" + durationSeconds;
     }
 }
 
+function formatTime(seconds) {
+    const minutes = Math.floor(seconds / 60);
+    const secs = Math.floor(seconds % 60);
+    return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-// small PLaylist
-// small PLaylist
-// small PLaylist
-
-console.clear();
-
-class MusicPlayer {
-  constructor() {
-    this.play = this.play.bind(this);
-    this.playBtn = document.getElementById('play');
-    this.playBtn.addEventListener('click', this.play);
-    this.controlPanel = document.getElementById('control-panel');
-    this.infoBar = document.getElementById('info');
-    this.audio = new Audio("./music/Cirujano2"); // replace with your song's path
-  }
-
-  play() {
-    let controlPanelObj = this.controlPanel,
-      infoBarObj = this.infoBar;
-
-    if (this.audio.paused) {
-      this.audio.play();
-      controlPanelObj.classList.add('active');
-      infoBarObj.classList.add('active');
+function togglePlayPause() {
+    if (playing) {
+        song.pause();
     } else {
-      this.audio.pause();
-      controlPanelObj.classList.remove('active');
-      infoBarObj.classList.remove('active');
+        song.play();
     }
-  }
+    playing = !playing;
+    playBtn.classList.toggle('fa-pause', playing);
+    playBtn.classList.toggle('fa-play', !playing);
+    cover.classList.toggle('active', playing);
 }
 
-const newMusicPlayer = new MusicPlayer();
+function nextSong() {
+    currentSong = (currentSong + 1) % songsList.length;
+    playMusic();
+}
+
+function prevSong() {
+    currentSong = (currentSong - 1 + songsList.length) % songsList.length;
+    playMusic();
+}
+
+function playMusic() {
+    loadSong(currentSong);
+    song.play();
+    playing = true;
+    playBtn.classList.add('fa-pause');
+    playBtn.classList.remove('fa-play');
+    cover.classList.add('active');
+}
+
+function seek(e) {
+    const pos = (e.offsetX / prog.clientWidth) * song.duration;
+    song.currentTime = pos;
+}
+
+
+
 
 

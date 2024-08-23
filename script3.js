@@ -1,7 +1,7 @@
 const songsList = [
     {
-        name: "Royals",
-        artist: "Rae Sremmurd",
+        name: "",
+        artist: "",
         src: "music/Royal.mp3",
         cover: "img/Royal.png"
     },

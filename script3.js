@@ -9,7 +9,7 @@ const songsList = [
         name: "",
         artist: "",
         src: "music/Badandboogie.mp3",
-        cover: "img/migos1.png"
+        cover: "img/migos3.png"
     },
     {
         name: "",

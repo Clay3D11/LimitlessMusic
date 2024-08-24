@@ -3,7 +3,7 @@ const songsList = [
         name: "",
         artist: "",
         src: "music/withthat.mp3",
-        cover: "img/Royalflush.png"
+        cover: "img/Thug.png"
     },
     {
         name: "",
@@ -21,7 +21,7 @@ const songsList = [
         name: "",
         artist: "",
         src: "music/Choppahate.mp3",
-        cover: "img/migos11.png"
+        cover: "img/Ghostkiller.png"
     },
     {
         name: "",

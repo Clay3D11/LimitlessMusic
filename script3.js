@@ -21,7 +21,7 @@ const songsList = [
         name: "",
         artist: "",
         src: "music/Choppahate.mp3",
-        cover: "img/Ghostkiller.png"
+        cover: "img/GhostKiller.png"
     },
     {
         name: "",
@@ -45,7 +45,7 @@ const songsList = [
         name: "",
         artist: "",
         src: "music/Ghostfacekillers.mp3",
-        cover: "img/Ghostkillers.png"
+        cover: "img/GhostKillers.png"
     },
     {
         name: "",

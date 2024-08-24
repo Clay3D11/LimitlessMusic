@@ -45,7 +45,7 @@ const songsList = [
         name: "",
         artist: "",
         src: "music/Ghostfacekillers.mp3",
-        cover: "img/GhostKillers.png"
+        cover: "img/GhostKiller.png"
     },
     {
         name: "",

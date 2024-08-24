@@ -25,7 +25,7 @@ const music_list = [
         img : 'images/Kulosa.png',
         name : 'Oxlade',
         artist : 'Kulosa',
-        music : 'music/Oxlade-Kulosa.mp3'
+        music : 'music/Kulosa1.mp3'
     },
     {
         img : 'images/Lastlast.png',

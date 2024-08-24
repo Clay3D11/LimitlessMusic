@@ -75,7 +75,7 @@ const songsList = [
         name: "",
         artist: "",
         src: "music/Timmy.mp3",
-        cover: "img/future2.png"
+        cover: "img/future.png"
     },
     {
         name: "",

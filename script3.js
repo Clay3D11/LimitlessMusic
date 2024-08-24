@@ -2,86 +2,26 @@ const songsList = [
     {
         name: "",
         artist: "",
-        src: "music/Royal.mp3",
-        cover: "img/Royal.png"
+        src: "music/withthat.mp3",
+        cover: "img/Royalflush.png"
     },
     {
         name: "",
         artist: "",
-        src: "music/ChoppaHate.mp3",
-        cover: "img/ChoppaHate.png"
-    },
-    {
-        name: "",
-        artist: "",
-        src: "music/Gunna-oneofwun.mp3",
-        cover: "img/Gunna2.png"
-    },
-    {
-        name: "",
-        artist: "",
-        src: "music/thug-Guwop.mp3",
-        cover: "img/Thug.png"
-    },
-    {
-        name: "",
-        artist: "",
-        src: "music/GhostRidersKillers.mp3",
-        cover: "img/GhostKiller.png"
-    },
-    {
-        name: "",
-        artist: "",
-        src: "music/thug-Dome.mp3",
-        cover: "img/thug.png"
-    },
-    {
-        name: "",
-        artist: "",
-        src: "music/thug-NeverHadit.mp3",
-        cover: "img/thug.png"
-    },
-    {
-        name: "",
-        artist: "",
-        src: "music/thug.mp3",
-        cover: "img/thug.png"
-    },
-    {
-        name: "",
-        artist: "",
-        src: "music/Gunna-Relentless.mp3",
-        cover: "img/Gunna2.png"
-    },
-    {
-        name: "",
-        artist: "",
-        src: "music/Gunna-Fumean.mp3",
-        cover: "img/Gunna2.png"
-    },
-    {
-        name: "",
-        artist: "",
-        src: "music/lilbaby-sum2prove.mp3",
-        cover: "img/lilbaby2.png"
-    },
-    {
-        name: "",
-        artist: "",
-        src: "music/TooHotty.mp3",
+        src: "music/Badandboogie.mp3",
         cover: "img/migos1.png"
     },
     {
         name: "",
         artist: "",
-        src: "music/future-timmyturner.mp3",
-        cover: "img/future2.png"
+        src: "music/Check.mp3",
+        cover: "img/Thug.png"
     },
     {
         name: "",
         artist: "",
-        src: "music/migos-badandboogie.mp3",
-        cover: "img/migos2.png"
+        src: "music/Choppahate.mp3",
+        cover: "img/migos11.png"
     },
     {
         name: "",
@@ -92,32 +32,92 @@ const songsList = [
     {
         name: "",
         artist: "",
-        src: "music/bobbyshurr-hotniigg.mp3",
-        cover: "img/bobby1.png"
+        src: "music/dome.mp3",
+        cover: "img/Thug.png"
     },
     {
         name: "",
         artist: "",
-        src: "music/thug-withthat.mp3",
-        cover: "img/thug11.png"
+        src: "music/Neverhadit.mp3",
+        cover: "img/Thug.png"
     },
     {
         name: "",
         artist: "",
-        src: "music/migos-ineedit.mp3",
+        src: "music/Ghostfacekillers.mp3",
+        cover: "img/Thug.png"
+    },
+    {
+        name: "",
+        artist: "",
+        src: "music/Gunna-Relentless.mp3",
+        cover: "img/Gunna2.png"
+    },
+    {
+        name: "",
+        artist: "",
+        src: "music/Gunna-fumean.mp3",
+        cover: "img/Gunna2.png"
+    },
+    {
+        name: "",
+        artist: "",
+        src: "music/sum2prove.mp3",
+        cover: "img/lilbaby2.png"
+    },
+    {
+        name: "",
+        artist: "",
+        src: "music/Toohotty.mp3",
+        cover: "img/migos1.png"
+    },
+    {
+        name: "",
+        artist: "",
+        src: "music/Timmy.mp3",
+        cover: "img/future2.png"
+    },
+    {
+        name: "",
+        artist: "",
+        src: "music/Badandboogie.mp3",
         cover: "img/migos2.png"
     },
     {
         name: "",
         artist: "",
-        src: "music/panda.mp3",
+        src: "music/Guwop.mp3",
+        cover: "img/Thug.png"
+    },
+    {
+        name: "",
+        artist: "",
+        src: "music/Hotniig.mp3",
+        cover: "img/bobby1.png"
+    },
+    {
+        name: "",
+        artist: "",
+        src: "music/Takeoff.mp3",
+        cover: "img/migos3rd.png"
+    },
+    {
+        name: "",
+        artist: "",
+        src: "music/Royalflush.mp3",
+        cover: "img/Royal.png"
+    },
+    {
+        name: "",
+        artist: "",
+        src: "music/Panda.mp3",
         cover: "img/panda.png"
     },
     {
         name: "",
         artist: "",
-        src: "music/migos-3rd.mp3",
-        cover: "img/migos3rd.png"
+        src: "music/Gunna-oneofwun.mp3",
+        cover: "img/Gunna2.png"
     },
     
 ];

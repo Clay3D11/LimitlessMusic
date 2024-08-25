@@ -2,14 +2,8 @@ const songsList = [
     {
         name: "",
         artist: "",
-        src: "music/withthat1.mp3",
+        src: "music/withthat.mp3",
         cover: "img/Thug.png"
-    },
-    {
-        name: "",
-        artist: "",
-        src: "music/Badandboogie.mp3",
-        cover: "img/migos3.png"
     },
     {
         name: "",
@@ -21,7 +15,7 @@ const songsList = [
         name: "",
         artist: "",
         src: "music/Choppahate.mp3",
-        cover: "img/GhostKiller.png"
+        cover: "img/Ghostkiller.png"
     },
     {
         name: "",
@@ -45,7 +39,7 @@ const songsList = [
         name: "",
         artist: "",
         src: "music/Ghostfacekillers.mp3",
-        cover: "img/GhostKiller.png"
+        cover: "img/GhoustKiller.png"
     },
     {
         name: "",
@@ -75,7 +69,7 @@ const songsList = [
         name: "",
         artist: "",
         src: "music/Timmy.mp3",
-        cover: "img/future.png"
+        cover: "img/future2.png"
     },
     {
         name: "",

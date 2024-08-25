@@ -40,30 +40,30 @@ const music_list = [
         music : 'music/Victony.Tempoe-Soweto.mp3'
     },
     {
-        img : 'images/kd.png',
-        name : 'God Among US',
-        artist : 'KD',
-        music : 'music/GodAmongUs.mp3'
+        img : 'images/biggestfan.png',
+        name : 'Biggest Fan',
+        artist : 'Vybz Kartel',
+        music : 'music/biggestfan.mp3'
     },
     {
-        img : 'images/Drake.png',
-        name : 'Push Up',
-        artist : 'Drake',
-        music : 'music/PushUp.mp3'
+        img : 'images/calm.png',
+        name : 'Calm',
+        artist : 'Ream ft Selena',
+        music : 'music/calm.mp3'
 
     },
     {
-        img : 'images/notlikeus.png',
-        name : 'Not Like Us',
-        artist : 'Kendrick',
-        music : 'music/NotLikeUs.mp3'
+        img : 'images/catchma.png',
+        name : 'Catch me if you can',
+        artist : 'Adekunle Gold',
+        music : 'music/catchmeifyoucan.mp3'
 
     },
     {
-        img : 'images/Cirujano2.png',
-        name : 'Eh Eh EH',
-        artist : 'Cirujano',
-        music : 'music/Cirujano4.mp3'
+        img : 'images/compro.png',
+        name : 'Compromise',
+        artist : 'Fireboy DML',
+        music : 'music/compromise.mp3'
 
     },
     {
@@ -74,10 +74,10 @@ const music_list = [
 
     },
     {
-        img : 'images/Royal.png',
-        name : 'Royal',
-        artist : 'Royal',
-        music : 'music/Royal.mp3'
+        img : 'images/energy.png',
+        name : 'Energy',
+        artist : 'Skepta ft Wizkid',
+        music : 'music/energy.mp3'
 
     },
     {
@@ -85,6 +85,55 @@ const music_list = [
         name : 'Essence',
         artist : 'Essence',
         music : 'music/essence.mp3'
+
+    },
+    {
+        img : 'images/Lastlast.png',
+        name : 'For My Hand',
+        artist : 'Burna Boy',
+        music : 'music/formyhand.mp3'
+
+    },
+    {
+        img : 'images/freefromdesire.png',
+        name : 'Free From Desire',
+        artist : 'Calvin Harris',
+        music : 'music/freefromdesire.mp3'
+
+    },
+    {
+        img : 'images/freemind.png',
+        name : 'Free Mind',
+        artist : 'Tems',
+        music : 'music/freemind.mp3'
+
+    },
+    {
+        img : 'images/love.png',
+        name : 'Love nwantiti',
+        artist : 'Ckay',
+        music : 'music/lovenwantiti.mp3'
+
+    },
+    {
+        img : 'images/oneandonly.png',
+        name : 'One and Only',
+        artist : 'ASE',
+        music : 'music/oneandonly.mp3'
+
+    },
+    {
+        img : 'images/soundgasm.png',
+        name : 'Soundgasm',
+        artist : 'Rema',
+        music : 'music/soundgasm.mp3'
+
+    },
+    {
+        img : 'images/thewayyou.png',
+        name : 'The Way You Move',
+        artist : 'Jenn Champion',
+        music : 'music/thewayyoumove.mp3'
 
     },
 ];
@@ -233,6 +282,45 @@ function setUpdate(){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
 
 

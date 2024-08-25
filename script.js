@@ -53,7 +53,7 @@ const music_list = [
 
     },
     {
-        img : 'images/catchma.png',
+        img : 'images/catchme.png',
         name : 'Catch me if you can',
         artist : 'Adekunle Gold',
         music : 'music/catchmeifyoucan.mp3'

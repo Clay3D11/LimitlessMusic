@@ -90,7 +90,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* width: 100%; */
+  width: 100%;
 
 }
 
@@ -110,17 +110,18 @@ body {
 }
 
 .nav-menu a {
-  color: #000000;
+  color: #ffffff;
   text-shadow: 0 0 20px #00fffb83, 0 0 40px #00acfc;
-  /* text-decoration: none; */
+  text-decoration: none;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   transition: color 0.2s ease;
   /* font-size: Clamp(2.5rem, 0.3043rem + 3.4783vw, 1.5rem); */
   font-size: 3em;
+  /* width: 100px; */
 }
 
 .nav-menu a:hover {
-  color: #ffffff;
+  color: #0e6deb;
 }
 
 .nav-toggle {
@@ -159,26 +160,29 @@ body {
 @media only screen and (max-width: 600px) {
   .nav-menu a {
     color: #ffffff;
-    text-shadow: 0 0 20px #00fffb83, 0 0 40px #00acfc;
+    /* text-shadow: 0 0 20px #00fffb83, 0 0 40px #00acfc; */
     /* text-decoration: none; */
     /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
-    /* transition: color 0.2s ease; */
-    /* font-size: Clamp(1.7em, 0.3043rem + 3.4783vw, 2.5rem); */
-    font-size: 1.7em;
-    padding: 0;
+    transition: color 0.2s ease;
+    font-size: Clamp(1.7em, 0.3043rem + 3.4783vw, 2.5rem);
+    font-size: 30px;
+    font-weight: 800;
+    font-style: italic;
   }
   .nav-menu li {
     margin-right: 10px;
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
+    
   }
   .nav-bar {
     background-color: #646262;
-    /* padding: .5em; */
+    padding: .5em;
     text-align: center;
     background: transparent;
     /* backdrop-filter: blur(10px); */
-    position: fixed;
+    /* position: fixed; */
     z-index: 10;
     width: 100%;
   
@@ -258,7 +262,7 @@ body {
 .mainvideoheaderbtn {
   top: 50%;
 
-  max-width: 500px;
+  max-width: 400px;
   display: flex;
   justify-content: space-around;
   background-image: url(./img/Fatmelz.png);
@@ -551,25 +555,15 @@ body {
 /* Slinding Albums */
 
 .card {
-  /* position: relative; */
-
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* width: 100%;
-  height: 100%;
-  background-color: #f0f0f000; */
-
+  position: relative;
   
-  /* width: 700px; */
-  height: 250px;
+  width: 700px;
+  height: 400px;
   overflow: hidden;
-
-  width: min(100%,500px);
 
   border-radius: 5px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  left: 29%;
 }
 
 /*Light blue cover above the slide show*/
@@ -584,11 +578,8 @@ body {
   width: 100%;
   height: 100%;
 
-  /* background-color: rgba(140, 22, 115, 0.2); */
+  background-color: rgba(140, 22, 115, 0.2);
 }
-
-
-
 
 .card_part {
   position: absolute;
@@ -599,42 +590,28 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
-  transform: translateX( 500px );
-  background-image: url( ./thunbnails/panda.png);
+  transform: translateX( 700px );
+  background-image: url( ./thunbnails/catchme.png );
   animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
   -webkit-animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
-  -webkit-transform: translateX( 500px );
-  -moz-transform: translateX( 500px );
-  -ms-transform: translateX( 500px );
-  -o-transform: translateX( 500px );
 }
 
 
 .card_part.card_part-two {
   z-index: 6;
-  background-image: url( ./thunbnails/catchme.png );
+  background-image: url( ./thunbnails/freefromdesire.png );
   animation-delay: 7s;
 }
 
 .card_part.card_part-three {
   z-index: 5;
-  background-image: url( ./thunbnails/quefue.png);
+  background-image: url( ./thunbnails/panda.png );
   animation-delay: 14s;
 }
 
 .card_part.card_part-four {
   z-index: 4;
-  background-image: url( ./thunbnails/Thug1.png );
-  animation-delay: 21s;
-}
-.card_part.card_part-five {
-  z-index: 3;
-  background-image: url( ./thunbnails/skulls.gif );
-  animation-delay: 21s;
-}
-.card_part.card_part-six {
-  z-index: 2;
-  background-image: url( ./thunbnails/Thug1.png );
+  background-image: url( https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/4.jpg?raw=true );
   animation-delay: 21s;
 }
 
@@ -643,18 +620,36 @@ body {
   3% { transform: translateX( 0 ); }
   25% { transform: translateX( 0 ); }
   28% { transform: translateX( -700px ); }
-  100% { transform: translateX( -700px ); -webkit-transform: translateX( -700px ); -moz-transform: translateX( -700px ); -ms-transform: translateX( -700px ); -o-transform: translateX( -700px ); }
+  100% { transform: translateX( -700px ); }
 }
 
 
 
 @media only screen and (max-width: 600px) {
   .card {
-    position: absolute;
-  top: 50%;
+  position: absolute;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+
+  width: 350px;
+  height: 250px;
+
+  top: 55%;
+
+
+
+
+
+
+
+
   }
+  
 }
 
 

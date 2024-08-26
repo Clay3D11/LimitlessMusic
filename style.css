@@ -54,13 +54,18 @@ body {
 
 .nav-bar {
   background-color: #646262;
-  /* padding: 1em; */
+  /* padding: .5em; */
   text-align: center;
   background: transparent;
   /* backdrop-filter: blur(10px); */
   position: fixed;
   z-index: 10;
   width: 100%;
+
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-container {
@@ -72,31 +77,33 @@ body {
   align-items: center;
 }
 
-.nav-logo {
+/* .nav-logo {
   margin-right: 20px;
-}
+} */
 
-.nav-logo img {
+/* .nav-logo img {
   width: 100px;
   height: 20px;
-}
+} */
 
 .nav-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* width: 100%; */
+
 }
 
 .nav-menu ul {
   list-style: none;
-  margin: 10px;
+  margin: 20px;
   /* padding: 10; */
   display: flex;
   justify-content: space-evenly;
 }
 
 .nav-menu li {
-  margin-right: 20px;
+  margin-right: 10px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -107,7 +114,8 @@ body {
   /* text-decoration: none; */
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   transition: color 0.2s ease;
-  font-size: Clamp(1.5rem, 0.3043rem + 3.4783vw, 1.5rem);
+  /* font-size: Clamp(2.5rem, 0.3043rem + 3.4783vw, 1.5rem); */
+  font-size: 3em;
 }
 
 .nav-menu a:hover {
@@ -144,6 +152,20 @@ body {
 
 .nav-toggle-button:hover span {
   background-color: #fffefe;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .nav-menu a {
+    color: #ffffff;
+    text-shadow: 0 0 20px #00fffb83, 0 0 40px #00acfc;
+    /* text-decoration: none; */
+    /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
+    /* transition: color 0.2s ease; */
+    /* font-size: Clamp(1.7em, 0.3043rem + 3.4783vw, 2.5rem); */
+    font-size: 1.7em;
+    padding: 0;
+  }
 }
 
 
@@ -184,7 +206,7 @@ body {
 /* Music Video */
 
 .videoheaderbtn {
-  background-image: url(./img/Fatmelz.png);
+  background-image: url(./img/codigosvid.gif);
   background-position: center;
   background-size: contain;
 }
@@ -194,7 +216,7 @@ body {
 /* Video Header btn */
 
 .videobtn {
-  max-width: 500px;
+  max-width: 100%;
   display: flex;
   justify-content: space-around;
   /* background-image: url(./img/Heart1.gif); */
@@ -279,24 +301,14 @@ body {
 
 .glowing-btn {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
-
-
-
-  
-  
-  
-  
-  
-  /* position: relative; */
-
-
-  color: var(--glow-color);
+  /*position: relative;
+  */color: var(--glow-color);
   cursor: pointer;
-  padding: 0.35em 1em;
+  /*padding: 0.35em 1em;
+  */
   border: 0.15em solid var(--glow-color);
   border-radius: 0.45em;
   background: none;
@@ -305,15 +317,19 @@ body {
   font-size: 2em;
   font-weight: 900;
   letter-spacing: 1em;
-
-  -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
-    0px 0px 0.5em 0px var(--glow-color);
-  -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
-    0px 0px 0.5em 0px var(--glow-color);
-  box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
-    0px 0px 0.5em 0px var(--glow-color);
+  -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),    0px 0px 0.5em 0px var(--glow-color);
+  -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),    0px 0px 0.5em 0px var(--glow-color);
+  box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),    0px 0px 0.5em 0px var(--glow-color);
   animation: border-flicker 2s linear infinite;
+  -webkit-border-radius: 0.45em;
+  -moz-border-radius: 0.45em;
+  -ms-border-radius: 0.45em;
+  -o-border-radius: 0.45em;
 }
+
+
+
+
 
 .glowing-txt {
   float: left;
@@ -325,6 +341,10 @@ body {
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--glow-color);
   animation: text-flicker 3s linear infinite;
 }
+
+
+
+
 
 .faulty-letter {
   opacity: 0.5;
@@ -490,6 +510,164 @@ body {
 
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Slinding Albums */
+/* Slinding Albums */
+/* Slinding Albums */
+
+.card {
+  /* position: relative; */
+
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* width: 100%;
+  height: 100%;
+  background-color: #f0f0f000; */
+
+  
+  /* width: 700px; */
+  height: 250px;
+  overflow: hidden;
+
+  width: min(100%,500px);
+
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/*Light blue cover above the slide show*/
+.card::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 900;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(140, 22, 115, 0.2);
+}
+
+
+
+
+.card_part {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 7;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transform: translateX( 500px );
+  background-image: url( ./thunbnails/panda.png);
+  animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+  -webkit-animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+  -webkit-transform: translateX( 500px );
+  -moz-transform: translateX( 500px );
+  -ms-transform: translateX( 500px );
+  -o-transform: translateX( 500px );
+}
+
+
+.card_part.card_part-two {
+  z-index: 6;
+  background-image: url( ./thunbnails/catchme.png );
+  animation-delay: 7s;
+}
+
+.card_part.card_part-three {
+  z-index: 5;
+  background-image: url( ./thunbnails/quefue.png);
+  animation-delay: 14s;
+}
+
+.card_part.card_part-four {
+  z-index: 4;
+  background-image: url( ./thunbnails/Thug1.png );
+  animation-delay: 21s;
+}
+.card_part.card_part-five {
+  z-index: 3;
+  background-image: url( ./thunbnails/skulls.gif );
+  animation-delay: 21s;
+}
+.card_part.card_part-six {
+  z-index: 2;
+  background-image: url( ./thunbnails/Thug1.png );
+  animation-delay: 21s;
+}
+
+
+@keyframes opaqTransition {
+  3% { transform: translateX( 0 ); }
+  25% { transform: translateX( 0 ); }
+  28% { transform: translateX( -700px ); }
+  100% { transform: translateX( -700px ); -webkit-transform: translateX( -700px ); -moz-transform: translateX( -700px ); -ms-transform: translateX( -700px ); -o-transform: translateX( -700px ); }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .card {
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

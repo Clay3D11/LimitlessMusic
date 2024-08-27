@@ -644,7 +644,7 @@ body {
 
 .card_part.card_part-five {
   z-index: 5;
-  background-image: url( ./thunbnails/astral.webp );
+  background-image: url( ./thunbnails/panda.png );
   animation-delay: 28s;
 }
 
@@ -678,7 +678,7 @@ body {
   width: 350px;
   height: 250px;
 
-  top: 55%;
+  top: 60%;
 
 
 

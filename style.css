@@ -550,6 +550,17 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 /* Slinding Albums */
 /* Slinding Albums */
 /* Slinding Albums */
@@ -564,6 +575,19 @@ body {
   border-radius: 5px;
   /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); */
   left: 29%;
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 /*Light blue cover above the slide show*/
@@ -591,28 +615,43 @@ body {
   width: 100%;
   height: 100%;
   transform: translateX( 700px );
-  background-image: url( ./thunbnails/catchme.png );
+  background-image: url( ./thunbnails/Nory-Code.png );
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
   -webkit-animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
 }
 
 
 .card_part.card_part-two {
-  z-index: 6;
-  background-image: url( ./thunbnails/freefromdesire.png );
+  z-index: 12;
+  background-image: url( ./thunbnails/quefue.png );
   animation-delay: 7s;
 }
 
 .card_part.card_part-three {
-  z-index: 5;
-  background-image: url( ./thunbnails/panda.png );
+  z-index: 3;
+  background-image: url( ./thunbnails/fa-melz1.png );
   animation-delay: 14s;
 }
 
 .card_part.card_part-four {
   z-index: 4;
-  background-image: url( https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/4.jpg?raw=true );
+  background-image: url( ./thunbnails/wow.png );
   animation-delay: 21s;
+}
+
+.card_part.card_part-five {
+  z-index: 5;
+  background-image: url( ./thunbnails/astral.webp );
+  animation-delay: 28s;
+}
+
+.card_part.card_part-six {
+  z-index: 6;
+  background-image: url( ./thunbnails/catchme.png );
+  animation-delay: 35s;
 }
 
 

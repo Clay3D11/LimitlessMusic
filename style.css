@@ -243,7 +243,8 @@ body {
 
 @media only screen and (max-width: 600px) {
   .mainvideoheaderbtn {
-    font-size: 5em;
+    font-size: 6em;
+    font-weight: 900;
     
   }
   
@@ -657,7 +658,7 @@ body {
   width: 350px;
   height: 250px;
 
-  top: 65%;
+  top: 50%;
 
 
 

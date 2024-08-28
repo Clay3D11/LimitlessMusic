@@ -245,6 +245,7 @@ body {
   .mainvideoheaderbtn {
     font-size: 6em;
     font-weight: 900;
+    background-image: cover;
     
   }
   

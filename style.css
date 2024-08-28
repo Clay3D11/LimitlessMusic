@@ -24,6 +24,8 @@ body {
 }
 
 
+body, main { place-content: center }
+
 
 
 
@@ -48,157 +50,80 @@ body {
   
 }
 
-/* Nav bar */
-/* Nav bar */
-/* Nav bar */
 
-.nav-bar {
-  background-color: #646262;
-  /* padding: .5em; */
-  text-align: center;
-  background: transparent;
-  /* backdrop-filter: blur(10px); */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* navbar#3 */
+/* navbar#3 */
+/* navbar#3 */
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #33333300;
+  overflow: hidden;
   position: fixed;
+
+
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 70%;
   z-index: 10;
-  width: 100%;
-
-  
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-container {
-  max-width: 100%;
-  /* width: 100%; */
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* .nav-logo {
-  margin-right: 20px;
-} */
-
-/* .nav-logo img {
-  width: 100px;
-  height: 20px;
-} */
-
-.nav-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
 
 }
 
-.nav-menu ul {
-  width: 100%;
-  list-style: none;
-  /* margin: 20px; */
-  /* padding: 10; */
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.nav-menu li {
-  margin-right: 20px;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.nav-menu a {
-  color: #ffffff;
-  text-shadow: 0 0 20px #00fffb83, 0 0 40px #00acfc;
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  transition: color 0.2s ease;
-  /* font-size: Clamp(2.5rem, 0.3043rem + 3.4783vw, 1.5rem); */
-  font-size: 3em;
-  /* width: 100px; */
+  font-size: 21px;
+  font-weight: 700;
+  text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc ;
 }
 
-.nav-menu a:hover {
-  color: #0e6deb;
+/* Change the color of links on hover */
+.topnav a:hover {
+  /* background-color: #ddd; */
+  /* background-color: #0081bc; */
+  color: rgb(87, 85, 85);
+  text-decoration: underline;
 }
 
-.nav-toggle {
-  display: none;
-}
-
-.nav-toggle-button {
-  background-color: #ffffff;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.nav-toggle-button span {
-  display: block;
-  width: 20px;
-  height: 2px;
-  background-color: #fff;
-  margin: 5px 0;
-  transition: all 0.2s ease;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -ms-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-}
-
-.nav-toggle-button span:nth-child(2) {
-  width: 15px;
-}
-
-.nav-toggle-button:hover span {
-  background-color: #fffefe;
-}
-
+/* Add a color to the active/current link */
+/* .topnav a.active {
+  background-color: #04AA6D;
+  background-color: #0081bc;
+  color: rgb(255, 255, 255);
+} */
 
 @media only screen and (max-width: 600px) {
-  .nav-menu a {
-    color: #ffffff;
-    /* text-shadow: 0 0 20px #00fffb83, 0 0 40px #00acfc; */
-    /* text-decoration: none; */
-    /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
-    transition: color 0.2s ease;
-    font-size: Clamp(1.7em, 0.3043rem + 3.4783vw, 2.5rem);
-    font-size: 30px;
-    font-weight: 800;
-    font-style: italic;
-  }
-  .nav-menu li {
-    margin-right: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    
-  }
-  .nav-bar {
-    background-color: #646262;
-    padding: .5em;
-    text-align: center;
-    background: transparent;
-    /* backdrop-filter: blur(10px); */
-    /* position: fixed; */
-    z-index: 10;
-    width: 100%;
-  
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .topnav{
+  padding-top: 20px;
+  left: 7%;
+
   }
 }
-
-
-
-
-
-
-
 
 
 
@@ -257,29 +182,45 @@ body {
     text-decoration: underline;
     color: #00fffb;
   }
+  
 }
 
-.mainvideoheaderbtn {
-  top: 50%;
 
-  max-width: 400px;
+
+.videobtn a:hover {
+  /* background-color: #ddd; */
+  /* background-color: #0081bc; */
+  color: rgb(87, 85, 85);
+  text-decoration: underline;
+}
+
+
+
+
+
+
+.mainvideoheaderbtn {
+  /* top: 50%; */
+  
+  max-width: 100%;
   display: flex;
   justify-content: space-around;
-  background-image: url(./img/Fatmelz.png);
+  background-image: url(./img/codigosvid.gif);
   background-size: contain;
+  background-position: top;
   /* background-position: center; */
   background-clip: text;
   color: transparent;
-  font-size: 80px;
-  font-weight: 800;
+  font-size: 15em;
+  font-weight: 900;
   
 }
 
 .submainheaderbtn {
   display: flex;
   justify-content: space-between;
-
-  font-size: 30px;
+  
+  font-size: 40px;
   font-weight: 900;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-decoration: underline;
@@ -288,7 +229,41 @@ body {
   justify-content: space-evenly;
 }
 
+.submainheaderbtn a:hover {
+  /* background-color: #ddd; */
+  /* background-color: #0081bc; */
+  color: rgb(87, 85, 85);
+  text-decoration: underline;
+}
 
+
+@media only screen and (max-width: 600px) {
+  .mainvideoheaderbtn {
+    font-size: 5em;
+    
+  }
+  
+  .submainheaderbtn {
+    
+    font-size: 25px;
+
+  }
+  
+  
+  .btnsubmain {
+    font-size: 25px;
+
+  }
+
+
+    
+  videobtn {
+    font-size: 20px;
+  
+  }
+
+
+}
 
 
 
@@ -667,7 +642,7 @@ body {
 @media only screen and (max-width: 600px) {
   .card {
   position: absolute;
-  top: 10%;
+  /* top: 10%; */
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
@@ -678,7 +653,7 @@ body {
   width: 350px;
   height: 250px;
 
-  top: 65%;
+  top: 70%;
 
 
 

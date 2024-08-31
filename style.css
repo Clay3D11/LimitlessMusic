@@ -79,23 +79,25 @@ body {
   background-color: #33333300;
   overflow: hidden;
   position: fixed;
+  width: calc(100%);
 
 
 
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: space-evenly;
   align-items: center;
-  left: 70%;
+  /* left: 70%; */
   z-index: 10;
 
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: left;
+  /* float: left; */
   color: #ffffff;
   text-align: center;
-  padding: 14px 16px;
+  /* padding: 14px 16px; */
   text-decoration: none;
   font-size: 34px;
   font-weight: 700;
@@ -119,8 +121,9 @@ body {
 
 @media only screen and (max-width: 600px) {
   .topnav{
-  padding-top: 20px;
-  left: 5%;
+  padding-top: 0px;
+  /* left: 5%; */
+  width: calc(100%);
 
   }
   .topnav a {

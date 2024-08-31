@@ -566,12 +566,6 @@ body {
 
 
 
-
-
-
-
-
-
 }
 
 /*Light blue cover above the slide show*/
@@ -609,7 +603,7 @@ body {
 
 
 .card_part.card_part-two {
-  z-index: 12;
+  z-index: 2;
   background-image: url( ./thunbnails/quefue.png );
   animation-delay: 7s;
 }
@@ -626,17 +620,17 @@ body {
   animation-delay: 21s;
 }
 
-.card_part.card_part-five {
+/* .card_part.card_part-five {
   z-index: 5;
-  background-image: url( ./thunbnails/panda.png );
+  background-image: url( ./thunbnails/skulls.gif );
   animation-delay: 28s;
-}
+} */
 
-.card_part.card_part-six {
+/* .card_part.card_part-six {
   z-index: 6;
-  background-image: url( ./thunbnails/catchme.png );
+  background-image: url( ./thunbnails/fa-melz.png );
   animation-delay: 35s;
-}
+} */
 
 
 @keyframes opaqTransition {
@@ -659,8 +653,8 @@ body {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
 
-  width: 350px;
-  height: 250px;
+  width: 360px;
+  height: 400px;
 
   top: 50%;
 

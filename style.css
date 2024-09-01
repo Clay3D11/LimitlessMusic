@@ -628,13 +628,13 @@ body {
 }
 
 
-/* .card_part.card_part-two {
+.card_part.card_part-two {
   z-index: 2;
-  background-image: url( ./thunbnails/quefue.png );
+  background-image: url( ./thunbnails/Nory-Code.png );
   animation-delay: 7s;
 }
 
-.card_part.card_part-three {
+/* .card_part.card_part-three {
   z-index: 3;
   background-image: url( ./thunbnails/fa-melz1.png );
   animation-delay: 14s;

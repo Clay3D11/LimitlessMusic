@@ -1,16 +1,13 @@
 var sliderIndex = 0;
 var sliderItems = [
     "Urban Style",
-    "Rap urbano.",
-    "Dembow.",
-    "Bachata.",
-    "Most Popular",
+    "Rap Dominicano",
+    "Dembow",
+    "Bachata",
     "New Talents",
-    "Open to Collaborations",
-    "Contact our developers",
-    "Buy our Merchandise",
-    "Easy Friendly access",
-    "to the hottest merch",
+    "Collaborations",
+    "Friendly access",
+    "Hottest Merch",
     "Visit our Store",
 
 ];

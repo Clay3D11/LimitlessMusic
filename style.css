@@ -628,7 +628,7 @@ body {
 }
 
 
-.card_part.card_part-two {
+/* .card_part.card_part-two {
   z-index: 2;
   background-image: url( ./thunbnails/quefue.png );
   animation-delay: 7s;
@@ -644,7 +644,12 @@ body {
   z-index: 4;
   background-image: url( ./thunbnails/wow.png );
   animation-delay: 21s;
-}
+} */
+
+
+
+
+
 
 /* .card_part.card_part-five {
   z-index: 5;

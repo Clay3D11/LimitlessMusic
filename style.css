@@ -724,12 +724,12 @@ body {
   width: 600px;
   display: flex;
   gap: 15px;
-  font-size: 30px;
+  font-size: 50px;
 }
 
 .dynamic-text {
   display: flex;
-  color: #0077ee;
+  color: #ffffff;
   font-weight: 700;
 }
 
@@ -777,10 +777,14 @@ body {
   width: 100%;
   margin: 0 auto;
     /* background-color: #191a1e; */
-    background-image: url(./img/transstars.gif);
+    background-image: url(./img/dior.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+
+    min-height: 5vh;
+    font-size: 40px;
     
 
 

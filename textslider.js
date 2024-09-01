@@ -1,10 +1,18 @@
 var sliderIndex = 0;
 var sliderItems = [
     "Urban Style",
-    "Clothes Brands",
+    "Rap urbano.",
+    "Dembow.",
+    "Bachata.",
+    "Most Popular",
     "New Talents",
-    "Music Video Edditor",
-    "CRM Integrations",
+    "Open to Collaborations",
+    "Contact our developers",
+    "Buy our Merchandise",
+    "Easy Friendly access",
+    "to the hottest merch",
+    "Visit our Store",
+
 ];
 var textSlider = document.querySelector("#dynamicSlider");
 var dynamicTextElement = document.querySelector("#dynamicText");

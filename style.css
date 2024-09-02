@@ -925,11 +925,24 @@ body {
 
   box-shadow: 0 0 15px #00fffb, 0 0 15px #0081bc;
   transition: all 0.2s;
+
+
 }
 
 .artist img:hover {
   border: 4px solid rgb(255, 255, 255);
-  box-shadow: 0 0 40px #00fffb, 0 0 40px #0081bc;
+  box-shadow: 0 0 20px #00fffb, 0 0 20px #0081bc;
+  overflow: hidden;
+  scale: 150%;
+  transition: scale 600ms;
+  -webkit-transform: scale 400ms;
+  -moz-transform: scale 400ms;
+  -ms-transform: scale 400ms;
+  -o-transform: scale 400ms;
+  -webkit-transition: scale 600ms;
+  -moz-transition: scale 600ms;
+  -ms-transition: scale 600ms;
+  -o-transition: scale 600ms;
 }
 
 .artist p {

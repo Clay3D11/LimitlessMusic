@@ -628,11 +628,11 @@ body {
 }
 
 
-.card_part.card_part-two {
+/* .card_part.card_part-two {
   z-index: 2;
   background-image: url( ./thunbnails/Nory-Code.png );
   animation-delay: 7s;
-}
+} */
 
 /* .card_part.card_part-three {
   z-index: 3;

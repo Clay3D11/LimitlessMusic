@@ -1,14 +1,11 @@
 var sliderIndex = 0;
 var sliderItems = [
     "Urban Style",
-    "Rap Dominicano",
-    "Dembow",
-    "Bachata",
-    "New Talents",
+    "Music Artists",
+    "Brand Owners",
     "Collaborations",
-    "Friendly access",
     "Hottest Merch",
-    "Visit our Store",
+    "Visit Our Store",
 
 ];
 var textSlider = document.querySelector("#dynamicSlider");

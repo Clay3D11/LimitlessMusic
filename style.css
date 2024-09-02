@@ -912,7 +912,7 @@ body {
 .artist img {
   object-fit: cover;
   border-radius: 50%;
-  border: 2px solid rgba(169, 150, 253, 0.5);
+  border: 2px solid hwb(0 100% 0%);
   width: 140px;
   aspect-ratio: 1/1;
   margin-bottom: 8px;
@@ -974,7 +974,7 @@ body {
   position: relative;
   width: 180px;
   aspect-ratio: 1/1;
-  border: 2px solid rgba(169, 150, 253, 0.5);
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 10px;
 
 
@@ -985,7 +985,7 @@ body {
 
 
   margin-bottom: 15px;
-  margin-top: 15px;
+  margin-top: 25px;
   overflow: hidden;
   
 }

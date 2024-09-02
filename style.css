@@ -890,8 +890,8 @@ body {
 } */
 
 .artist-container {
-  column-gap: 40px;
-  width: 2900px;
+  column-gap: 0px;
+  width: 3100px;
   height: 280px;
   
 }
@@ -912,6 +912,10 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   -o-user-select: none;
+
+  margin-left: 50px;
+
+
 }
 
 .artist img {
@@ -923,8 +927,8 @@ body {
   aspect-ratio: 1/1;
   /* margin-bottom: 8px; */
   /* margin-top: 55px; */
-  /* margin-left: 50px;
-  margin-right: 50px; */
+  /* margin-left: 50px; */
+  /* margin-right: 50px; */
 
   /* box-shadow: rgba(221, 221, 221, 0.3) 0px 6px 18px -3px,
     rgba(221, 221, 221, 0.2) 0px -3px 0px inset; */
@@ -941,15 +945,14 @@ body {
   overflow: hidden;
   scale: 150%;
   transition: scale 600ms;
-  -webkit-transform: scale 400ms;
+  /* -webkit-transform: scale 400ms;
   -moz-transform: scale 400ms;
   -ms-transform: scale 400ms;
-  -o-transform: scale 400ms;
+  -o-transform: scale 400ms; */
   -webkit-transition: scale 600ms;
   -moz-transition: scale 600ms;
   -ms-transition: scale 600ms;
   -o-transition: scale 600ms;
-  height: auto;
 }
 
 .artist p {

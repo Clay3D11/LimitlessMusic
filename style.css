@@ -986,7 +986,8 @@ body {
     -ms-transition: all 1s;
     -o-transition: all 1s;
 
-    
+    animation: scroll 15s linear infinite reverse;
+  -webkit-animation: scroll 15s linear infinite reverse;
 }
 
 
@@ -1085,8 +1086,8 @@ body {
   justify-content: space-between;
   gap: 1.5rem;
   min-width: 100%;
-  animation: scroll 15s linear infinite reverse;
-  -webkit-animation: scroll 15s linear infinite reverse;
+  animation: scroll 8s linear infinite reverse;
+  -webkit-animation: scroll 8s linear infinite reverse;
 }
 
 .marquee__group span {

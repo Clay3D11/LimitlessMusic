@@ -985,6 +985,8 @@ body {
     -moz-transition: all 1s;
     -ms-transition: all 1s;
     -o-transition: all 1s;
+
+    
 }
 
 
@@ -1042,7 +1044,7 @@ body {
   overflow: hidden;
   height: 8vh;
   user-select: none;
-  gap: 2rem;
+  gap: 1.5rem;
   padding-top: 1rem;
   padding-bottom: 1.2rem;
 /*background-color: green;*/
@@ -1065,6 +1067,15 @@ body {
 	-moz-transition: all 0.5s ease;
 	-ms-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
+
+  text-shadow: 0 0 15px #00fffb, 0 0 15px #0081bc;
+
+
+
+
+
+
+
 }
 
 .marquee__group {
@@ -1072,9 +1083,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 1.5rem;
   min-width: 100%;
   animation: scroll 15s linear infinite reverse;
+  -webkit-animation: scroll 15s linear infinite reverse;
 }
 
 .marquee__group span {
@@ -1098,7 +1110,7 @@ body {
 
 @media only screen and (min-width: 360px) {
     .marquee__group span {
-        font-size: 6.5vw;
+        font-size: 3.5vw;
     }
 }
 

@@ -409,9 +409,11 @@ a {
   /*background-image: conic-gradient(red, blue, #00ff99, #006aff, #ff0095,red);
   */
   
-  background-image: conic-gradient( from var(--angle), transparent 20%, blue, #00ff99, #006aff, #ff0095);
+  /* background-image: conic-gradient( from var(--angle), transparent 20%, blue, #00ff99, #006aff, #ff0095); */
 
   /* background-image: conic-gradient( from var(--angle), transparent 0%, blue, #00ff99); */
+
+  background-image: conic-gradient( from var(--angle), transparent -15%, #ff0095, blue, #00ff99, #006aff, #ff0095);
 
 
   top: 50%;

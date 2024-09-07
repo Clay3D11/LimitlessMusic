@@ -533,18 +533,22 @@ button {
  }
 
 
+/* Full Screen  */
+/* Full Screen  */
+/* Full Screen  */
 
 
-
- /* Pop up MODAL */
- /* Pop up MODAL */
- /* Pop up MODAL */
-
- body {
+ /* body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
- }
+ } */
+
+
+ /* Pop up MODAL */
+ /* Pop up MODAL */
+ /* Pop up MODAL */
+
 
   .containerrates {
       display: flex;

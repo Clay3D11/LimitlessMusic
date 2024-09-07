@@ -142,6 +142,95 @@ body {
   }
 }
 
+/* Navegation Pill */
+/* Navegation Pill */
+/* Navegation Pill */
+
+.navpill {
+  z-index: 100;
+  list-style-type: none;
+  border-radius: 10px;
+  background: #666;
+  margin: 0;
+  padding: 0;
+  width: 120px;
+  overflow: hidden;
+}
+
+.nav-itempill {
+  font-size: 20px;
+  /* background: #9701f0; */
+  background-image: url(./img/dior.png);
+  background-position: right;
+
+  border-bottom: 1px solid rgba(155, 38, 223, 0.3);
+}
+
+.nav-itempill:last-child {
+  border-bottom: none;
+}
+
+.nav-linkpill, .nav-submenu-linkpill {
+  text-decoration: none;
+  padding: 16px 20px;
+  display: block;
+  color: #fff;
+}
+
+.nav-submenupill {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s;
+  background: #3f2e49;
+}
+.nav-submenupill:target {
+  max-height: 10rem;
+}
+.nav-submenu-linkpill {
+  font-size: 16px;
+  background: transparent;
+  transition: background 0.2s ease-in;
+  -webkit-transition: background 0.2s ease-in;
+  -moz-transition: background 0.2s ease-in;
+  -ms-transition: background 0.2s ease-in;
+  -o-transition: background 0.2s ease-in;
+}
+.nav-submenu-linkpill:hover {
+  background: #36253f;
+}
+
+
+@media only screen and (max-width: 430px) {
+  .nav-itempill {
+    display: none;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -860,7 +949,7 @@ button {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
   
-  /* .btn-primary {
+  .btn-primary {
     border-radius: 25px;
     border: none;
     background-color: #EC1362;
@@ -870,7 +959,7 @@ button {
     margin-top: 20px;
     text-transform: uppercase;
     transition: all 0.1s ease-in-out;
-  } */
+  }
   .btn-primary:hover {
     box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.5);
     transform: translateY(-3px);
@@ -880,11 +969,12 @@ button {
     -o-transform: translateY(-3px);
   }
   .pricing-box-bg-image {
-    background-image: url('./img/UnFlowZaza.gif');
-    background-size: cover;
+    background-image: url('./img/Nory-Code.png');
+    background-size: contain;
     background-position: center center;
     color: #ffffff;
-    width: 450px;
+    width: 400px;
+    height: 100%;
   }
 }
 

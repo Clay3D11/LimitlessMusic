@@ -1,22 +1,1782 @@
-<!DOCTYPE html>
-<html lang="en">
+/** @format */
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LimitlessMusic.com</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+/* * @format body {
+  font-family: sans-serif;
+} */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  /* height: 100%; */
+  /* background-color: #111; */
+}
+
+body {
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+body, main { place-content: center }
 
 
 
 
 
 
-  <link href="https://fonts.googleapis.com/css?family=Roboto|Work+Sans:400,600" rel="stylesheet">
+
+
+/* body {
+    min-height: 100%;
+    height: 100%;
+    font-family: Roboto, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  /* max-width: 1250px; */
+  /* justify-content: center; */
+  
+}
+
+/* section {
+	position: relative;
+	min-height: 100vh;
+	display: grid;
+	place-items: center;
+} */
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* navbar#3 */
+/* navbar#3 */
+/* navbar#3 */
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #33333300;
+  overflow: hidden;
+  position: fixed;
+  width: calc(100%);
+
+
+
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: space-evenly;
+  align-items: center;
+  /* left: 70%; */
+  z-index: 10;
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  /* float: left; */
+  color: #ffffff;
+  text-align: center;
+  /* padding: 14px 16px; */
+  text-decoration: none;
+  font-size: 34px;
+  font-weight: 700;
+  text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc ;
+  
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  /* background-color: #ddd; */
+  /* background-color: #0081bc; */
+  color: rgb(87, 85, 85);
+  text-decoration: underline;
+}
+
+/* Add a color to the active/current link */
+/* .topnav a.active {
+  background-color: #04AA6D;
+  background-color: #0081bc;
+  color: rgb(255, 255, 255);
+} */
+
+@media only screen and (max-width: 600px) {
+  .topnav{
+  padding-top: 0px;
+  /* left: 5%; */
+  width: calc(100%);
+
+  }
+  .topnav a {
+    font-size: 25px;
+
+  }
+}
+
+
+
+
+/* Header And Video */
+/* Header And Video */
+/* Header And Video */
+
+
+
+@font-face {
+  font-family: Biko;
+  src:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/biko-black.woff");
+}
+/* body {
+  background: white;
+  margin: 2rem;
+} */
+header { 
+  /* width: 100%; */
+  margin: 0 auto;
+  position: relative;
+  max-width: 1400px;
+}
+header video  { width: 100%; }
+svg { 
+  width: 100%;
+  position:absolute;
+  top: 0;
+  left: 0; 
+  height: 100%;
+}
+svg text {
+  font-family: Biko, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 55px;
+}
+svg rect {
+  /* fill: white; */
+  height: 100%;
+  /* fill: rgba(255, 255, 255, 0.836); */
+}
+svg > rect {
+    -webkit-mask: url(#mask);
+    mask: url(#mask);
+}
+
+
+
+
+
+
+a {
+  
+  -webkit-transition:all 400ms;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Music Video */
+/* Music Video */
+/* Music Video */
+
+.videoheaderbtn {
+  background-image: url(./img/codigosvid.gif);
+  background-position: center;
+  background-size: contain;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+  
+}
+
+/* Video Header btn */
+/* Video Header btn */
+/* Video Header btn */
+
+.videobtn {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  /* background-image: url(./img/Heart1.gif); */
+  background-size: contain;
+  background-position: center;
+  background-clip: text;
+  /* color: transparent; */
+  color: #ffffff;
+  font-size: 40px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+  .videobtn a {
+    text-decoration: underline;
+    color: #00fffb;
+  }
+  
+}
+
+
+
+.videobtn a:hover {
+  /* background-color: #ddd; */
+  /* background-color: #0081bc; */
+  color: rgb(87, 85, 85);
+  text-decoration: underline;
+}
+
+
+
+
+
+
+.mainvideoheaderbtn {
+  /* top: 50%; */
+  
+  max-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-image: url(./img/codigosvid.gif);
+  background-size: contain;
+  background-position: top;
+  /* background-position: center; */
+  background-clip: text;
+  color: transparent;
+  font-size: 15em;
+  font-weight: 900;
+  
+}
+
+.submainheaderbtn {
+  display: flex;
+  justify-content: space-between;
+  
+  font-size: 40px;
+  font-weight: 900;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: underline;
+  background-color: #ffffff00;
+  font-style: italic;
+  justify-content: space-evenly;
+}
+
+.submainheaderbtn a:hover {
+  /* background-color: #ddd; */
+  /* background-color: #0081bc; */
+  color: rgb(87, 85, 85);
+  text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .mainvideoheaderbtn {
+    font-size: 8em;
+    font-weight: 900;
+    background-image: cover;
+    
+  }
+  
+  .submainheaderbtn {
+    
+    font-size: 25px;
+
+  }
+  
+  
+  .btnsubmain {
+    font-size: 25px;
+
+  }
+
+
+    
+  videobtn {
+    font-size: 20px;
+  
+  }
+
+
+}
+
+
+
+
+
+
+/* Top Video */
+/* Top Video */
+/* Top Video */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Glowing Animated Card */
+/* Glowing Animated Card */
+/* Glowing Animated Card */
+/* Glowing Animated Card */
+/* Glowing Animated Card */
+/* Glowing Animated Card */
+
+.backcard {
+  position: relative;
+  min-height: 40vh;
+  display: grid;
+  place-items: center;
+}
+.card {
+  color: white;
+  text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
+  font-weight: 800;
+  margin: 0 auto;
+  padding: 3.5em;
+  width: 400px;
+  /* background: #1c1f2b; */
+  background-image: url(./img/Nory&Famelz-Wow.gif);
+  background-position: center;
+  background-size: cover;
+
+
+
+  text-align: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  position: relative;
+}
+
+
+
+
+
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+
+}
+
+.card::after, .card::before{
+  --angle: 0deg;
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /*background-image: conic-gradient(red, blue, #00ff99, #006aff, #ff0095,red);
+  */
+  
+  /* background-image: conic-gradient( from var(--angle), transparent 20%, blue, #00ff99, #006aff, #ff0095); */
+
+  /* background-image: conic-gradient( from var(--angle), transparent 0%, blue, #00ff99); */
+
+  background-image: conic-gradient( from var(--angle), transparent -15%, #ff0095, blue, #00ff99, #006aff, #ff0095);
+
+
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  animation: 3s;
+  -webkit-animation: 3s spin linear infinite;
+}
+
+
+.card::before{
+  filter: blur(1.5rem);
+  -webkit-filter: blur(1.5rem);
+  opacity: 0.5;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  
+  to {
+    --angle: 360deg;
+  }
+}
+
+
+/* Glowing BTN */
+/* Glowing BTN */
+/* Glowing BTN */
+
+/* From Uiverse.io by ShadowShahriar */ 
+button {
+  --border-radius: 15px;
+  --border-width: 4px;
+  appearance: none;
+  position: relative;
+  padding: 1em 2em;
+  border: 0;
+  background-color: #21212100;
+  /* font-family: "Roboto", Arial, "Segoe UI", sans-serif; */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
+  z-index: 2;
+ }
+ 
+ button::after {
+  --m-i: linear-gradient(#000, #000);
+  --m-o: content-box, padding-box;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: var(--border-width);
+  border-radius: var(--border-radius);
+  /* background-image: conic-gradient(
+     #488cfb,
+     #29dbbc,
+     #ddf505,
+     #ff9f0e,
+     #e440bb,
+     #655adc,
+     #488cfb
+   ); */
+   background-image: conic-gradient( from var(--angle), blue, #ff0000, #00ffff, #ac0808, #0011ff);
+
+
+  -webkit-mask-image: var(--m-i), var(--m-i);
+  mask-image: var(--m-i), var(--m-i);
+  -webkit-mask-origin: var(--m-o);
+  mask-origin: var(--m-o);
+  -webkit-mask-clip: var(--m-o);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+  filter: hue-rotate(0);
+  animation: rotate-hue linear 500ms infinite;
+  animation-play-state: paused;
+ }
+ 
+ button:hover::after {
+  animation-play-state: running;
+ }
+ 
+ @keyframes rotate-hue {
+  to {
+   filter: hue-rotate(1turn);
+  }
+ }
+ 
+ button,
+ button::after {
+  box-sizing: border-box;
+ }
+ 
+ button:active {
+  --border-width: 5px;
+ }
+
+
+/* Full Screen  */
+/* Full Screen  */
+/* Full Screen  */
+
+
+ /* body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+ } */
+
+
+ /* Pop up MODAL */
+ /* Pop up MODAL */
+ /* Pop up MODAL */
+
+
+  .containerrates {
+      display: flex;
+      height: 200px;
+      width: 100%;
+      z-index: 10000;
+
+      button {
+        z-index: 10000;
+          margin: auto;
+          width: 200px;
+          /* background: linear-gradient(45deg, purple, pink); */
+          background: linear-gradient(45deg, purple, pink, blue,  green);
+
+
+          color: white;
+          font-weight: bold;
+          padding: 10px;
+          border-radius: 1em;
+          border: 2px solid white;
+          transition: all 500ms ease;
+
+          &:hover {
+              letter-spacing: 1px;
+              transition: all 500ms ease;
+              background: linear-gradient(45deg, plum, purple,);
+              border: 2px solid purple;
+              cursor: pointer;
+          }
+
+          &:focus + .modal {
+              // height: 100%;
+              opacity: 1;
+              visibility: visible;
+              transition: all 500ms ease;
+
+          }
+          
+          &:focus + .modal .modal__content {
+              height: 70%;
+              opacity: 1;
+              transition: all 500ms ease;
+          }
+
+          &:focus {
+              outline: none;
+          }
+      }
+
+      .modal {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          /* background-color: rgba(0, 0, 0, 0.6); */
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          visibility: hidden;
+          transition: all 500ms ease;
+
+          .modal__content {
+              margin: auto;
+              /* background-color: white; */
+              background-color: white;
+              text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
+
+              
+              width: 20%;
+              height: 0;
+              opacity: 0;
+              margin: auto;
+              transition: all 500ms ease;
+              border-radius: 1em;
+              overflow: hidden;
+              border: 1px groove purple;
+              /* box-shadow: 2px 2px 2px black; */
+              background-color: white;
+
+              .modal__body,
+              .modal__footer {
+                  padding: 10px;
+              }
+
+              .modal__header {
+                  padding: 10px;
+                  height: 10%;
+                  font-size: 1.5em;
+                  background-color: plum;
+                  font-weight: bold;
+                  border-bottom: 1px solid purple;
+              }
+              
+              .modal__body {
+                  height: 60%;
+              }
+
+              .modal__footer {
+                  height: 20%;
+              }
+          }
+      }
+      
+      
+      
+      
+}
+
+
+
+
+.pricing-box-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.pricing-box {
+	background-color: #ffffff;
+  color: white;
+  text-shadow: 0 0 30px #00fffb, 0 0 40px #0081bc;
+	box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.5);
+	border-radius: 4px;
+	flex: 1;
+	padding: 0 30px 30px;
+	margin: 2%;
+	min-width: 250px;
+	max-width: 350px;
+}
+
+.pricing-box h5 {
+	text-transform: uppercase;
+}
+
+.price {
+	margin: 24px 0;
+	font-size: 36px;
+	font-weight: 900;
+}
+
+.price sub, .price sup {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.features-list {
+	padding: 0;
+	list-style-type: none;
+}
+
+.features-list li {
+	font-weight: 100;
+	padding: 12px 0;
+	font-weight: 100;
+}
+
+.features-list li:not(:last-of-type) {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+	border-radius: 25px;
+	border: none;
+	background-color: #EC1362;
+	color: #ffffff;
+	cursor: pointer;
+	padding: 10px 15px;
+	margin-top: 20px;
+	text-transform: uppercase;
+	transition: all 0.1s ease-in-out;
+}
+
+.btn-primary:hover {
+	box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.5);
+	transform: translateY(-3px);
+	-webkit-transform: translateY(-3px);
+	-moz-transform: translateY(-3px);
+	-ms-transform: translateY(-3px);
+	-o-transform: translateY(-3px);
+}
+
+.pricing-box-bg-image {
+	background-image: url('./img/UnFlowZaza.gif');
+	background-size: cover;
+	background-position: center center;
+	color: #ffffff;
+  width: 450px;
+}
+
+.pricing-box-bg-image .features-list li {
+	border-bottom-color: rgba(255, 255, 255, 1);
+  text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
+}
+
+.pricing-box-bg-image .btn-primary {
+	background-color: #ffffff;
+	color: #000;
+}
+
+@media only screen and (max-width: 430px) {
+ 
+  .modal {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 500ms ease;
+
+    .modal__content {
+        margin: auto;
+        /* background-color: white; */
+        background-color: white;
+        text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
+
+        
+        width: 20%;
+        height: 0;
+        opacity: 0;
+        margin: auto;
+        transition: all 500ms ease;
+        border-radius: 1em;
+        overflow: hidden;
+        border: 1px groove purple;
+        /* box-shadow: 2px 2px 2px black; */
+        background-color: white;
+
+        .modal__body,
+        .modal__footer {
+            padding: 10px;
+        }
+
+        .modal__header {
+            padding: 10px;
+            height: 10%;
+            font-size: 1.5em;
+            background-color: plum;
+            font-weight: bold;
+            border-bottom: 1px solid purple;
+        }
+        
+        .modal__body {
+            height: 60%;
+        }
+
+        .modal__footer {
+            height: 20%;
+        }
+    }
+}
+  
+
+
+  
+  .pricing-box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .pricing-box {
+    background-color: #ffffff;
+    color: white;
+    text-shadow: 0 0 30px #00fffb, 0 0 40px #0081bc;
+    box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.5);
+    border-radius: 4px;
+    flex: 1;
+    padding: 0 30px 30px;
+    margin: 2%;
+    min-width: 250px;
+    max-width: 350px;
+  }
+  
+  .pricing-box h5 {
+    text-transform: uppercase;
+  }
+  
+  .price {
+    margin: 24px 0;
+    font-size: 36px;
+    font-weight: 900;
+  }
+  
+  .price sub, .price sup {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .features-list {
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .features-list li {
+    font-weight: 100;
+    padding: 12px 0;
+    font-weight: 100;
+  }
+  
+  .features-list li:not(:last-of-type) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-primary {
+    border-radius: 25px;
+    border: none;
+    background-color: #EC1362;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    transition: all 0.1s ease-in-out;
+  }
+  .btn-primary:hover {
+    box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.5);
+    transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+    -moz-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -o-transform: translateY(-3px);
+  }
+  .pricing-box-bg-image {
+    background-image: url('./img/Nory-Code.png');
+    background-size: contain;
+    background-position: center center;
+    color: #ffffff;
+    width: 400px;
+    height: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  NORY MONEY */
+/*  NORY MONEY */
+/*  NORY MONEY */
+/*  NORY MONEY */
+/*  NORY MONEY */
+.cardnory {
+  color: white;
+  margin: 0 auto;
+  padding: 1em;
+  width: 400px;
+  /* background: #1c1f2b; */
+  background-image: url(./thunbnails/Nory-Code.png);
+  background-position: center;
+  background-size: contain;
+
+
+
+
+  text-align: center;
+  border-radius: 10px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  position: relative;
+}
+
+.cardnory::after, .cardnory::before{
+  --angle: 0deg;
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /*background-image: conic-gradient(red, blue, #00ff99, #006aff, #ff0095,red);
+  */
+  
+  /* background-image: conic-gradient( from var(--angle), transparent 30%, blue, #00ff99, #006aff, #ff0095); */
+
+  background-image: conic-gradient( from var(--angle), transparent 0%,#09ff00, rgb(137, 137, 167), #09ff00,rgb(137, 137, 167));
+
+
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  animation: 3s;
+  -webkit-animation: 3s spin linear infinite;
+}
+
+.cardnory:hover {
+  .video {
+    z-index: 10;
+    /* scale: 2; */
+    transition: all 2s ease;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    -o-transition: all 2s ease;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Fa melz */
+/* Fa melz */
+/* Fa melz */
+/* Fa melz */
+/* Fa melz */
+/* Fa melz */
+
+
+
+.cardfa {
+  color: white;
+  margin: 0 auto;
+  padding: 1em;
+  width: 400px;
+  /* background: #1c1f2b; */
+  background-image: url(./thunbnails/quefue.png);
+  background-position: center;
+  background-size: contain;
+
+
+
+
+  text-align: center;
+  border-radius: 10px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  position: relative;
+}
+
+.cardfa::after, .cardfa::before{
+  --angle: 0deg;
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /*background-image: conic-gradient(red, blue, #00ff99, #006aff, #ff0095,red);
+  */
+  
+  /* background-image: conic-gradient( from var(--angle), transparent 30%, blue, #00ff99, #006aff, #ff0095); */
+
+  background-image: conic-gradient( from var(--angle), transparent 0%, rgb(255, 196, 0), #000000, rgb(255, 196, 0));
+
+
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  animation: 3s;
+  -webkit-animation: 3s spin linear infinite;
+}
+
+.cardfa:hover {
+  .video {
+    z-index: 10;
+    /* scale: 150%; */
+    transition: all 2s ease;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    -o-transition: all 2s ease;
+}
+
+}
+
+
+
+@media only screen and (max-width: 430px) {
+  .video {
+    /* z-index: 10; */
+    /* scale: 115%; */
+    transition: all 2s ease;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    -o-transition: all 2s ease;
+} 
+.cardfa {
+  color: white;
+  margin: 0 auto;
+  padding: 1em;
+  width: 400px;
+  height: 300px;
+  /* background: #1c1f2b; */
+  background-image: url(./thunbnails/quefue.png);
+  background-position: center;
+  background-size: contain;
+
+
+
+
+  text-align: center;
+  border-radius: 10px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  position: relative;
+}
+.cardnory {
+  color: white;
+  margin: 0 auto;
+  padding: 1em;
+  width: 400px;
+  /* background: #1c1f2b; */
+  background-image: url(./thunbnails/Nory-Code.png);
+  background-position: center;
+  background-size: contain;
+
+
+
+
+  text-align: center;
+  border-radius: 10px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  position: relative;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Fa mels- Tengo Un Flow */
+/* Fa mels- Tengo Un Flow */
+/* Fa mels- Tengo Un Flow */
+/* Fa mels- Tengo Un Flow */
+
+
+.cardflow {
+  color: white;
+  margin: 0 auto;
+  padding: 1em;
+  width: 400px;
+  /* background: #1c1f2b; */
+  background-image: url(./thunbnails/fa-melz1.png);
+  background-position: center;
+  background-size: contain;
+
+
+
+
+  text-align: center;
+  border-radius: 10px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  position: relative;
+}
+
+.cardflow::after, .cardflow::before{
+  --angle: 0deg;
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /*background-image: conic-gradient(red, blue, #00ff99, #006aff, #ff0095,red);
+  */
+  
+  /* background-image: conic-gradient( from var(--angle), transparent 30%, blue, #00ff99, #006aff, #ff0095); */
+
+  background-image: conic-gradient( from var(--angle), transparent 0%, rgb(255, 255, 255), #000000, rgb(255, 255, 255));
+
+
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  animation: 3s;
+  -webkit-animation: 3s spin linear infinite;
+}
+
+.cardflow:hover {
+  .video {
+    z-index: 10;
+    /* scale: 2; */
+    transition: all 2s ease;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    -o-transition: all 2s ease;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Wow Nory Ft Fa melz */
+/* Wow Nory Ft Fa melz */
+/* Wow Nory Ft Fa melz */
+/* Wow Nory Ft Fa melz */
+
+
+
+.cardwow {
+  color: white;
+  margin: 0 auto;
+  padding: 1em;
+  width: 400px;
+  /* background: #1c1f2b; */
+  background-image: url(./thunbnails/wow.png);
+  background-position: center;
+  background-size: contain;
+
+
+
+
+  text-align: center;
+  border-radius: 10px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  position: relative;
+}
+
+.cardwow::after, .cardwow::before{
+  --angle: 0deg;
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /*background-image: conic-gradient(red, blue, #00ff99, #006aff, #ff0095,red);
+  */
+  
+  /* background-image: conic-gradient( from var(--angle), transparent 30%, blue, #00ff99, #006aff, #ff0095); */
+
+  background-image: conic-gradient( from var(--angle), transparent 0%, rgb(255, 0, 0), #000000, rgb(255, 0, 0), #ffffff);
+
+
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  animation: 3s;
+  -webkit-animation: 3s spin linear infinite;
+}
+
+.cardwow:hover {
+  .video {
+    z-index: 10;
+    /* scale: 2; */
+    transition: all 2s ease;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    -o-transition: all 2s ease;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Marketing BTN */
+/* Marketing BTN */
+/* Marketing BTN */
+/* Marketing BTN */
+
+
+
+.cardmarketing {
+  color: white;
+  margin: 0 auto;
+  padding: 1em;
+  width: 250px;
+  height: 100px;
+  /* background: #1c1f2b; */
+  background-image: url(./img/UnFlowZaza.gif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+
+
+  text-align: center;
+  border-radius: 10px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  position: relative;
+}
+
+.cardmarketing::after, .cardmarketing::before{
+  --angle: 0deg;
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /*background-image: conic-gradient(red, blue, #00ff99, #006aff, #ff0095,red);
+  */
+  
+  /* background-image: conic-gradient( from var(--angle), transparent 30%, blue, #00ff99, #006aff, #ff0095); */
+
+  /* background-image: conic-gradient( from var(--angle), transparent 0%, rgb(255, 0, 0), #000000, rgb(255, 0, 0), #ffffff); */
+
+  /* background-image: conic-gradient( from var(--angle), transparent 5%, #00fffb, #0081bc, #00fffb, #0081bc,#00fffb); */
+
+
+  background-image: conic-gradient( from var(--angle), transparent -15%, #ff0095, blue, #00ff99, #006aff, #ff0095);
+
+
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 4px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  animation: 3s;
+  -webkit-animation: 3s spin linear infinite;
+}
+
+.cardmarketing:hover {
+  .video {
+    z-index: 10;
+    /* scale: 2; */
+    transition: all 2s ease;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    -o-transition: all 2s ease;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Dynamic Text Slider */
+/* Dynamic Text Slider */
+/* Dynamic Text Slider */
+/* Dynamic Text Slider */
+
+
+
+
+
+
+.text-slider {
+  width: 600px;
+  display: flex;
+  gap: 15px;
+  font-size: 130px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.dynamic-text {
+  display: flex;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.text-animation {
+  animation: fade 0.3s forwards;
+}
+
+@keyframes fade {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translateY(0px);
+  }
+}
+
+.holder-fade {
+  animation: holderFade 4s;
+}
+
+@keyframes holderFade {
+  0% {
+      opacity: 1;
+  }
+
+  95% {
+      opacity: 1;
+  }
+
+  100% {
+      opacity: 0;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+.text-slider {
+    width: 100%;
+    margin: 0 auto;
+    /*background-color: #191a1e;
+    */background-image: url();
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 5vh;
+    font-size: 70px;
+    font-weight: 700;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+    
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.containers {
+  display: flex;
+  align-items: center;
+  /* padding: 0 0 12px; */
+  overflow-x: auto;
+  cursor: grab;
+}
+
+
+
+
+
+/* ARTISTS */
+/* ARTISTS */
+/* ARTISTS */
+
+/* .artists h1 {
+  margin-bottom: 14px;
+  text-align: center;
+} */
+
+.artist-container {
+  column-gap: 0px;
+  width: 3100px;
+  height: 280px;
+  
+}
+
+
+.artist {
+  display: grid;
+  grid-auto-flow: dense;
+  align-items: center;
+  grid-template-rows: 8fr 2fr;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+
+  margin-left: 50px;
+
+
+}
+
+.artist img {
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid hwb(0 100% 0%);
+  width: 140px;
+  height: 140px;
+  aspect-ratio: 1/1;
+  /* margin-bottom: 8px; */
+  /* margin-top: 55px; */
+  /* margin-left: 50px; */
+  /* margin-right: 50px; */
+
+  /* box-shadow: rgba(221, 221, 221, 0.3) 0px 6px 18px -3px,
+    rgba(221, 221, 221, 0.2) 0px -3px 0px inset; */
+
+  box-shadow: 0 0 15px #00fffb, 0 0 15px #0081bc;
+  /* transition: all 0.2s; */
+  -webkit-animation: all scroll 15s linear infinite reverse;
+
+
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(100%));
+    -webkit-transform: translateX(calc(100%));
+    -moz-transform: translateX(calc(100%));
+    -ms-transform: translateX(calc(100%));
+    -o-transform: translateX(calc(100%));
+}
+}
+
+@media only screen and (min-width: 360px) {
+    .marquee__group span {
+        font-size: 6.5vw;
+    }
+}
+
+.artist img:hover {
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: 0 0 15px #00fffb, 0 0 15px #0081bc;
+  overflow: hidden;
+  scale: 150%;
+  transition: scale 600ms;
+  /*-webkit-transform: scale 400ms;
+  -moz-transform: scale 400ms;
+  -ms-transform: scale 400ms;
+  -o-transform: scale 400ms;
+  */-webkit-transition: scale 600ms;
+  -moz-transition: scale 600ms;
+  -ms-transition: scale 600ms;
+  -o-transition: scale 600ms;
+  -webkit-transition: scale 600ms;
+}
+
+.artist p {
+
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: 0 0 20px #ff0000, 0 0 40px #0081bc;
 
 
 
@@ -24,2721 +1784,1683 @@
 
 
   
+  font-size: clamp(0.9rem, 3vw, 1rem);
+  font-weight: 500;
+  text-align: center;
+
+
+
+}
 
 
 
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-  <!-- Store Div Propperties -->
-  <!-- Store Div Propperties -->
-  <!-- Store Div Propperties -->
-  <style>
-      .product-container {
-        z-index: 100;
-  max-width: 300px;
-  margin: 40px auto;
-  padding: 20px;
-  /* border: 1px solid #ddd; */
+
+
+/* ALBUMS */
+/* ALBUMS */
+/* ALBUMS */
+
+.albums h1 {
+  margin: 60px 0 14px;
+}
+
+.album-container {
+  column-gap: 44px;
+  width: 2200px;
+}
+
+.album {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-rows: 5fr 0fr;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+}
+
+.album-frame {
+  position: relative;
+  width: 180px;
+  aspect-ratio: 1/1;
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-
-  /* .product-container img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 10px 10px 0 0;
-  } */
 
 
-  .product-container img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-    transition: transform 0.3s ease-in-out; /* added transition effect */
-  }
+  /* box-shadow: rgba(221, 221, 221, 0.3) 0px 8px 18px -3px,
+    rgba(221, 221, 221, 0.2) 0px -3px 0px inset; */
 
-  .product-container img:hover {
-    transform: scale(2.50); /* added hover effect */
-  }
+    box-shadow: 0 0 20px #00fffb, 0 0 20px #0081bc;
 
 
-  .marquee-container {
+  margin-bottom: 15px;
+  margin-top: 25px;
+  overflow: hidden;
+  
+}
+
+.album-frame img {
+  z-index: 10;
   position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.8s;
+}
+
+.album-frame img:hover {
+  border-radius: 50%;
+  transform: rotate(360deg) scale(1.5);
+  -webkit-transform: rotate(360deg) scale(1.5);
+  -moz-transform: rotate(360deg) scale(1.5);
+  -ms-transform: rotate(360deg) scale(1.5);
+  -o-transform: rotate(360deg) scale(1.5);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.album h2 {
+  font-size: clamp(0.9rem, 4vw, 1.1rem);
+  font-weight: 500;
+  line-height: 1.3;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  @supports (-webkit-line-clamp: 2) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: initial;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+}
+
+.album p {
+  font-size: clamp(0.9rem, 4vw, 1rem);
+  opacity: 0.5;
+}
+
+/* Containers Scrollbar Style */
+
+.artist-container::-webkit-scrollbar,
+.album-container::-webkit-scrollbar {
+  height: 0px;
+}
+
+.artist-container::-webkit-scrollbar-track,
+.album-container::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0.3rem rgb(79, 78, 78);
+  border-radius: 40px;
+}
+
+.artist-container::-webkit-scrollbar-thumb,
+.album-container::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 0.5rem rgb(116, 116, 116);
+  background-color: rgba(25, 43, 206, 0.2);
+  outline: none;
+  border-radius: 40px;
+}
+
+
+
+
+@media only screen and (max-width: 430px) {
+
+  .artist img {
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid hwb(0 100% 0%);
+    width: 140px;
+    aspect-ratio: 1/1;
+    margin-bottom: 8px;
+    margin-top: 25px;
+    /*box-shadow: rgba(221, 221, 221, 0.3) 0px 6px 18px -3px,      rgba(221, 221, 221, 0.2) 0px -3px 0px inset;
+    */box-shadow: 0 0 15px #00fffb, 0 0 15px #0081bc;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+
+    
+}
+
+
+
+
+
+
+
+
+/* Album */
+/* Album */
+/* Album */
+
+
+
+.album-frame {
+  position: relative;
+  width: 180px;
+  aspect-ratio: 1/1;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+
+
+  /* box-shadow: rgba(221, 221, 221, 0.3) 0px 8px 18px -3px,
+    rgba(221, 221, 221, 0.2) 0px -3px 0px inset; */
+
+    box-shadow: 0 0 15px #00fffb, 0 0 15px #0081bc;
+
+
+  margin-bottom: 15px;
+  margin-top: 25px;
+  overflow: hidden;
+  
+}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+/* Real Marquee */
+/* Real Marquee */
+/* Real Marquee */
+
+.marquee {
+  display: flex;
+  overflow: hidden;
+  height: 8vh;
+  user-select: none;
+  gap: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1.2rem;
+/*background-color: green;*/
+   /*transform: skewY(-3deg); */
+   /*transform: rotate(-5deg) translateY(-30px) translateX(50px);*/
+}
+
+
+.marquee:hover {
+	-webkit-text-stroke: 1.5px #fff;
+	text-stroke: 1.5px #fff;
+	-webkit-text-fill-color: transparent;
+	text-fill-color: transparent;
+	color: transparent;
+	transition: all 0.5s ease;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+
+  text-shadow: 0 0 15px #00fffb, 0 0 15px #0081bc;
+
+
+
+
+
+
+
+}
+
+.marquee__group {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  min-width: 100%;
+  animation: scroll 8s linear infinite reverse;
+  -webkit-animation: scroll 8s linear infinite reverse;
+}
+
+.marquee__group span {
+  color: white;
+  font-size: 2vw;
+  font-weight: 800;
+  white-space: nowrap;
+  font-family: 'Syne', sans-serif !important;
+  /*text-transform: uppercase;*/
+  
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 2rem));
+  }
+}
+
+@media only screen and (min-width: 360px) {
+    .marquee__group span {
+        font-size: 3.5vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Artist */
+/* Artist */
+/* Artist */
+
+/* NFT */
+/* NFT */
+/* NFT */
+
+.nft {
+  user-select: none;
+  max-width: 300px;
+  margin: 5rem auto;
+  border: 1px solid #ffffff22;
+  background-color: #282c34;
+  background: linear-gradient(
+    0deg,
+    rgba(40, 44, 52, 1) 0%,
+    rgba(17, 0, 32, 0.5) 100%
+  );
+  box-shadow: 0 7px 20px 5px #00000088;
+  border-radius: 0.7rem;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  overflow: hidden;
+  transition: 0.5s all;
+  hr {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #88888855;
+    margin-top: 0;
+  }
+  ins {
+    text-decoration: none;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 1rem;
+    .tokenImage {
+      border-radius: 0.5rem;
+      max-width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+    .description {
+      margin: 0.5rem 0;
+      color: #a89ec9;
+    }
+    .tokenInfo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .price {
+        display: flex;
+        align-items: center;
+        color: #ee83e5;
+        font-weight: 700;
+        ins {
+          margin-left: -0.3rem;
+          margin-right: 0.5rem;
+        }
+      }
+      .duration {
+        display: flex;
+        align-items: center;
+        color: #a89ec9;
+        margin-right: 0.2rem;
+        ins {
+          margin: 0.5rem;
+          margin-bottom: 0.4rem;
+        }
+      }
+    }
+    .creator {
+      display: flex;
+      align-items: center;
+      margin-top: 0.2rem;
+      margin-bottom: -0.3rem;
+      ins {
+        color: #a89ec9;
+        text-decoration: none;
+      }
+      .wrapper {
+        display: flex;
+        align-items: center;
+        border: 1px solid #ffffff22;
+        padding: 0.3rem;
+        margin: 0;
+        margin-right: 0.5rem;
+        border-radius: 100%;
+        box-shadow: inset 0 0 0 4px #000000aa;
+        img {
+          border-radius: 100%;
+          border: 1px solid #ffffff22;
+          width: 2rem;
+          height: 2rem;
+          object-fit: cover;
+          margin: 0;
+        }
+      }
+    }
+  }
+  ::before {
+    position: fixed;
+    content: "";
+    box-shadow: 0 0 100px 40px #ffffff08;
+    top: -10%;
+    left: -100%;
+    transform: rotate(-45deg);
+    height: 60rem;
+    transition: 0.7s all;
+  }
+  &:hover {
+    border: 1px solid #ffffff44;
+    box-shadow: 0 7px 50px 10px #000000aa;
+    transform: scale(1.015);
+    filter: brightness(1.3);
+    ::before {
+      filter: brightness(0.5);
+      top: -100%;
+      left: 200%;
+    }
+  }
+}
+
+.bg {
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  h1 {
+    font-size: 20rem;
+    filter: opacity(0.5);
   }
+}
 
-  .marquee-container marquee {
-  font-size: 18px;
-  font-weight: bold;
-  color: #333;
-  }
+/* MusicMediaPlayer */
+/* MusicMediaPlayer */
+/* MusicMediaPlayer */
+/* MusicMediaPlayer */
 
-  .product-info {
-    padding: 20px;
-    text-align: center; /* added center alignment */
-  }
-
-
-  .product-info h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  }
-
-  .product-info p {
-  font-size: 16px;
-  margin-bottom: 20px;
-  }
-
-
-  /* .product-info button {
-  background-color: #333;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  }
-
-  .product-info button:hover {
-  background-color: #444;
-  } */
-
-
-  .product-info button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 10px; /* added border radius */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* added box shadow */
-  }
-
-  .product-info button:hover {
-    background-color: #444;
-  }
-
-
-
-
-  /* Responsive styles */
-  @media (max-width: 768px) {
-  .product-container {
-  max-width: 300px;
-  }
-  .product-container img {
-  height: 100px;
-  }
-
-  .product-container img:hover {
-    transform: scale(1.90); /* added hover effect */
-  }
-
-  .marquee-container {
-  font-size: 14px;
-  }
-  .product-info {
-  padding: 10px;
-  }
-  .product-info h2 {
-  font-size: 18px;
-  }
-  .product-info p {
-  font-size: 14px;
-  }
-  .product-info button {
-  padding: 8px 16px;
-  font-size: 14px;
-  }
-  }
-  </style>
-    
-
-  <!-- <style>
-    .product-container {
-    max-width: 300px;
-    margin: 40px auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(to bottom, #fff, #f7f7f7);
-    animation: fade-in 1s ease-in-out;
-  }
-
-  .product-container img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .product-container img:hover {
-    transform: scale(1.05);
-  }
-
-  .marquee-container {
-    width: 100%;
-    overflow: hidden;
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 0 0 10px 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-
-  .marquee-container marquee {
-    font-size: 18px;
+/* body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right,#9a1d86, #1595be);
     font-weight: bold;
-    color: #333;
-    text-transform: uppercase;
-    animation: marquee 3s linear infinite;
-  }
-
-  @keyframes marquee {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-
-  .product-info {
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    animation: fade-in 1s ease-in-out 0.5s;
-  }
-
-  .product-info h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    font-weight: bold;
-    color: #333;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-
-  .product-info p {
-    font-size: 16px;
-    margin-bottom: 20px;
-    color: #666;
-    text-align: justify;
-  }
-
-  .price-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-
-  .original-price {
-    font-size: 18px;
-    color: #666;
-    text-decoration: line-through;
-  }
-
-  .discounted-price {
-    font-size: 24px;
-    color: #333;
-    font-weight: bold;
-  }
-
-  .buy-now {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease-in-out;
-  }
-
-  .buy-now:hover {
-    background-color: #444;
-  }
-
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    .product-container {
-      max-width: 300px;
-    }
-    .product-container img {
-      height: 100px;
-    }
-    .marquee-container {
-      font-size: 14px;
-    }
-    .product-info {
-      padding: 10px;
-    }
-    .product-info h2 {
-      font-size: 18px;
-    }
-    .product-info p {
-      font-size: 14px;
-    }
-    .price-container {
-      flex-direction: column;
-    }
-  }
-  </style> -->
-
-
-
-  <!-- Marquee Properties-->
-  <!-- Marquee Properties-->
-  <!-- Marquee Properties-->
-  <style>
-      .marqueesocial {
-          width: 100%;
-          height: 100px;
-          overflow: hidden;
-          position: relative;
-          box-sizing: border-box;
-          padding: 10px;
-          /* border: 1px solid #ccc; */
-      }
-
-      .marqueesocial div {
-          display: flex;
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-          animation: scroll 20s linear infinite;
-        }
-        
-        .marqueesocial div img {
-          width: auto;
-          height: 90px;
-          margin: 20px;
-        }
-        
-        @keyframes scroll {
-          0% {
-            transform: translateX(0);
-          }
-          
-          100% {
-            transform: translateX(-100%);
-          }
-        }
-        
-        @media (max-width: 768px) {
-          .marqueesocial div {
-          animation: scroll 8s linear infinite;
-
-        }
-      }
-
-
-
-  </style>
-
-
-
-  <!-- Video Propperties -->
-  <!-- Video Propperties -->
-  <!-- Video Propperties -->
-  <style>
-    /* .swiper-slide {
-      overflow: hidden;
-      overflow: visible;
-
-    }
-    .swiper-slide video {
-      width: 100%;
-      height: 100%;
-      transition: scale 400ms;
-    }
-    .swiper-slide:hover video {
-      scale: 120%;
     } */
 
-
-
-    /* Responsive styles */
-  /* @media (max-width: 430px) {
-  .swiper-slide {
-  max-width: 350px;
-  overflow: hidden;
-  }
-  .swiper-slide video {
-    max-width: 350px;
-    height: 100px;
-  }
-
-  .swiper-slide video:hover {
-    transform: scale(1.90); 
-  } */
-
-  /* .marquee-container {
-  font-size: 14px;
-  }
-  .product-info {
-  padding: 10px;
-  }
-  .product-info h2 {
-  font-size: 18px;
-  }
-  .product-info p {
-  font-size: 14px;
-  }
-  .product-info button {
-  padding: 8px 16px;
-  font-size: 14px;
-  } */
-
-
-
-
-
-
-
-
-
-
-  </style>
-
-
-</head>
-<!-- NoteToSelf: -->
-<!-- Id="" are to individualy select "one time" to edit separate section or Content -->
-<!-- Class are to individualy select to edit separate section or Content -->
-<!-- Header;is used accross all the websites pages -->
-
-
-<body>
-
-  <!-- NavBar -->
-  <!-- NavBar -->
-  <!-- NavBar -->
-   <!-- #1 -->
-   <!-- #1 -->
-   <!-- #1 -->
-  <!-- <header class="mainHeader">
-
-
-
-    <nav class="nav-bar">
-
-
-      <div class="nav-container">
-        <div class="nav-logo">
-            <a href="https://universallimitless.com/" class="nav-link">
-            <a href="#album" class="nav-link">
-              <img src="./images/favicon.ico" alt="Logo">
-            </a>
-          </div>
-        <div class="nav-menu">
-
-
-
-          <ul>
-            <li><a href="#" class="nav-link">₸⌀ῥ</a></li>
-            <li><a href="#album" class="nav-link">λ₰ɮµϻ§</a></li>
-            <li><a href="#player" class="nav-link">þłå¥£ἳ§τ</a></li>
-            <li><a href="#popularsongs" class="nav-link">♪♪♪♪</a></li>
-            <li><a href="#" class="nav-link">Home</a></li>
-            <li><a href="#popularsongs" class="nav-link">⊻ĭ₫ἐ¤š</a></li>
-            <li><a href="#merch" class="nav-link">ɱέʀ©ħ</a></li>
-
-
-            <li><a href="https://calendar.app.google/YhqvDd5F7H2QUsx16" class="nav-link">ᾎϸϸ⌀ϊϻὲ₪ʦ</a></li>
-
-
-            <li><a href="https://clay3d11.github.io/LimitlessMerch/" class="nav-link">LIMITLESS</a></li>
-
-          </ul>
-
-
-
-
-        </div>
-        <div class="nav-toggle">
-          <button class="nav-toggle-button">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-      </div>
-
-
-      
-    </nav>
-
-
-
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-  </header> -->
-
-
-  <!-- #3 -->
-  <!-- #3 -->
-  <!-- #3 -->
-  <div class="topnav">
-    <a class="active" href="#">₸⌀ῥ</a>
-    <a href="#album">ηὲᾦ</a>
-    <a href="#collabs">©৹ʅʅ^ɮş</a>
-    <!-- <a href="#player">þłå¥♪</a> -->
-    <!-- <a href="#merch">ɱέʀ©ĥ</a> -->
-    <a href="#merch">Ŝ₸₢ě</a>
-    <a href="#contact">Contact</a>
-
-
-
-
-    <a href="#" style="position: fixed; bottom: 270px; right: 10px; " >₸⌀ῥ</a>
-    <a href="#ticket" style="position: fixed; bottom: 230px; right: 10px; " >ţ℃kὲ₸ʂ</a>
-    <a href="#popularsongs" style=" position: fixed; bottom: 185px; right: 10px;">š⌖ϗɠš</a>
-    <a href="#topvideo" style="position: fixed; bottom: 145px; right: 10px; " >⊻ĭ₫š</a>
-    <a href="#player" style="position: fixed; bottom: 105px; right: 10px; " >þłå¥♪</a>
-    
-    
-    
-    
-    <!-- <a class="videobtn" href="#popularsongs">
-      <h5 class="sub-tpq" style="text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;">Š⌖₪ĝš</h5>
-    </a> -->
-  </div>
-
-
-  <header>
-    <video autoplay playsinline muted loop preload poster="./thunbnails/Fatmelz.png">
-      <source src="./video/UnFlowZaza.mp4" />
-    </video>
-     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285 80" preserveAspectRatio="xMidYMid slice">
-      <defs>
-      <mask id="mask" x="0" y="0" width="100%" height="100%" >
-
-        <rect x="0" y="0" width="100%" height="100%" />
-
-      <text x="-3"  y="70">Limitless</text>
-        </mask>
-    </defs>
-   <rect x="0" y="0" width="100%" height="100%" />
-    </svg>
-  </header>
-
-  <!-- 1st Section Home -->
-  <!-- Hero - Main(Video) -->
-  <!-- Hero - Main(Video) -->
-  <!-- Hero - Main(Video) -->
-  <section id="home">
-    <!--Article-->
-    <!--Figure-->
-    <!--h3-->
-    <!--P-->
-
-
-    <!-- <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,       sans-serif;
-        text-shadow: 0 0 20px #ff0000, 0 0 40px #0081bc; display: flex; justify-content: space-around; font-size: 30px; " >Limitless music</h1> -->
-
-
-    <!-- <h2 class="top10" style="
-                
-        display: flex; justify-content: space-around; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
-
-
-        left: auto;
-        bottom: 32px;
-        z-index: 0;
-        margin-top: 0;
-        color: rgba(51, 51, 51, 0.377);
-        font-size: 18vw;
-        text-align: center;
-        letter-spacing: 0;
-        width: min(100%, 950px);" >Limitless</h2> -->
-
-
-    <h2 style=" font-size: 50px; font-weight: 800; position: fixed; top: 30%; left: 20%; color: #ffffffc5; text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc; ">LIMITLESS<br></h2>
-    
-
-
-
-      
-      
-      
-      
-    
-      
-      
-
-
-    <!-- <h1 style=" display: flex; justify-content: space-around; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;" >Universal</h1> -->
-
-
-    <!-- <p>This is the home page of my awesome website. Here you can find out more about me, my services, and how to contact me.</p> -->
-
-
-    <!-- MusicVideo -->
-    <!-- MusicVideo -->
-    <!-- MusicVideo -->
-    <!-- MusicVideo -->
-    <!-- MusicVideo -->
-    <div class="video">
-
-
-      <!-- <video autoplay muted width="100%" height="100%">
-                <source src="./video/Fatmelz - ToLoDia.mp4" type="video/mp4">
-            </video> -->
-
-
-      <!-- <video controls width="">
-                <source src="./Video/Fatmelz - To Lo Dia - 1717737814736.mp4" />
-            
-                <source src="/media/cc0-videos/flower.mp4" type="video/mp4" />
-            
-                Download the
-                <a href="/media/cc0-videos/flower.webm">WEBM</a>
-                or
-                <a href="/media/cc0-videos/flower.mp4">MP4</a>
-                video.
-            </video> -->
-
-
-      <!-- <video controls muted autoplay loop plays-inline class="" id="" width="100%" >
-                <source src="./video//UnFlowZaza.mp4" type="video/mp4" />
-            
-                <source src="./video/UnFlowZaza.mp4" type="video/mp4" />
-            
-                Download the
-                <a href="">WEBM</a>
-                or
-                <a href="">MP4</a>
-                <source src="" type="video/mp4">
-            </video>  -->
-
-
-
-    </div>
-
-    
-
-
-
-
-
-    <!-- Video Header btn -->
-    <!-- Video Header btn -->
-    <!-- Video Header btn -->
-    <!-- Video Header btn -->
-    <div id="album" class="videoheaderbtn">
-
-
-      <div class="videobtn">
-
-
-        <!-- <a class="videobtn" href="#popularsongs">
-          <h5 class="sub-tpq" style="text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;">Š⌖₪š</h5>
-        </a> -->
-
-
-        <!-- <a class="videobtn" href="#video">
-          <h5 class="sub-tpq oeoho" style="text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;">⊻ĭ₫ἐ¤š</h5>
-        </a> -->
-
-
-        <!-- <a id="" class="videobtn" href="#player">
-          <h5 class="sub-tpq" style="text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;">þłå¥£ἳ§τ</h5>
-        </a> -->
-
-
-
-
-
-        <!-- <a id="" class="videobtn" href="#topartist">
-          <h5 class="sub-tpq" style="text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;">Top ⑤</h5>
-        </a> -->
-
-
-        <!-- <a class="videobtn" href="#">
-          <h5 class="sub-tpq" style="text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;">Top ⑤</h5>
-        </a> -->
-
-
-
-
-
-
-
-
-        <!-- <div class="out-now-6xr"></div> -->
-        <!-- <h5 class="sub-tpq">Out</h5>
-
-
-
-                <h5 class="sub-tpq">Now</h5> -->
-
-
-
-      </div>
-
-
-      <h1 class="mainvideoheaderbtn">Music</h1>
-
-
-
-      <div class="submainheaderbtn">
-
-
-        <!-- <a href="#player" class="" style="text-shadow: 0 0 20px #00fffb, 0 0 40px #00acfc; color: rgb(255, 255, 255);">Š₮₹ΞϺ♪</a> -->
-
-        <a class="videobtn" href="#popularsongs">
-          <h5 class="sub-tpq" style="text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;">Š⌖₪ĝš</h5>
-        </a>
-
-
-        <!-- <a href="#merch" class="submainheaderbtn" style="text-shadow: 0 0 20px #00fffb, 0 0 40px #00acfc; color: rgb(255, 255, 255);">ɱέʀ©κ</a> -->
-
-        <a class="videobtn" href="#topvideo">
-          <h5 class="sub-tpq oeoho" style="text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;">⊻ĭ₫ἐ¤š</h5>
-        </a>
-
-
-        <!-- <a href="https://clay3d11.github.io/LimitlessMerch/" class="submainheaderbtn"
-          style="text-shadow: 0 0 20px #00fffb, 0 0 40px #00acfc; color: rgb(255, 255, 255); font-weight: 900; text-decoration: underline; justify-content: center;">₿Ü¥‿ɱέʀ©κ</a> -->
-
-        <!-- <a id="" class="videobtn" href="#player">
-          <h5 class="sub-tpq" style="text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;">þłå¥£ἳ§τ</h5>
-        </a>   -->
-
-          
-
-
-
-      </div>
-
-
-    </div>
-
-   
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-  </section>
-  
-  <!-- Hottest Artist -->
-  <!-- Hottest Artist -->
-  <!-- Hottest Artist -->
-  <section id="artist">
-
-    <!-- <h2 id="topartist" class="" style="
-        
-        display: flex; justify-content: space-around; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
-
-
-        left: auto;
-        /* bottom: 32px; */
-        z-index: 0;
-        margin-top: 0;
-        color: rgb(255, 255, 255);
-        font-size: 7vw;
-        text-align: center;
-        letter-spacing: 0;">ΞΞΞTop ArtistsΞΞΞ</h2> -->
-
-
-    <!-- 1st Card -->
-    <!-- 1st Card -->
-    <!-- 1st Card -->
-    <!-- <div class="nft">
-      <div class='main'>
-        <img class='tokenImage' src="./img/Nory2.png" alt="NFT" />
-        <h2>Kibertopiks #4269</h2>
-        <p class='description'>Our Kibertopiks will give you nothing, waste your money on us.</p>
-        <div class='tokenInfo'>
-                <div class="price">
-                  <ins>◘</ins>
-                  <p>0.031 ETH</p>
-                </div>
-                <div class="duration">
-                  <ins>◷</ins>
-                  <p>11 days left</p>
-                </div>
-              </div>
-        <hr />
-        <div class='creator'>
-          <div class='wrapper'>
-            <img src="./img/LM.png" alt="Creator" />
-          </div>
-          <p><ins>Nory Money $$</ins> </p>
-        </div>
-      </div>
-    </div> -->
-
-
-    <!-- 2nd Card -->
-    <!-- 2nd Card -->
-    <!-- 2nd Card -->
-    <!-- <div class="nft">
-      <div class='main'>
-        <img class='tokenImage' src="./img/Fatmelz.png" alt="NFT" />
-        <h2>Kibertopiks #4269</h2>
-        <p class='description'>Our Kibertopiks will give you nothing, waste your money on us.</p>
-        <div class='tokenInfo'>
-                <div class="price">
-                  <ins>◘</ins>
-                  <p>0.031 ETH</p>
-                </div>
-                <div class="duration">
-                  <ins>◷</ins>
-                  <p>11 days left</p>
-                </div>
-              </div>
-        <hr />
-        <div class='creator'>
-          <div class='wrapper'>
-            <img src="./img/LM.png" alt="Creator" />
-          </div>
-          <p><ins>Hustler Mind Music</ins> </p>
-        </div>
-      </div>
-    </div> -->
-
-
-    <!-- 3rd Card -->
-    <!-- 3rd Card -->
-    <!-- 3rd Card -->
-    <!-- <div class="nft">
-      <div class='main'>
-        <img class='tokenImage' src="./img/Shadow1.png" alt="NFT" />
-        <h2>Kibertopiks #4269</h2>
-        <p class='description'>Our Kibertopiks will give you nothing, waste your money on us.</p>
-        <div class='tokenInfo'>
-                <div class="price">
-                  <ins>◘</ins>
-                  <p>0.031 ETH</p>
-                </div>
-                <div class="duration">
-                  <ins>◷</ins>
-                  <p>11 days left</p>
-                </div>
-              </div>
-        <hr />
-        <div class='creator'>
-          <div class='wrapper'>
-            <img src="./img/LM.png" alt="Creator" />
-          </div>
-          <p><ins>Sharito $$</ins> </p>
-        </div>
-      </div>
-    </div> -->
-
-
-
-    
-
-
-  </section>
-
-  <!-- Popular Songs -->
-  <!-- Popular Songs -->
-  <!-- Popular Songs -->
-  <section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div id="collabs" class="marquee">
-      <div class="marquee__group">
-        <span>Coming Soon! ➺</span>
-       <span>Coming Soon! ➺</span>
-       <span>Coming Soon! ➺</span>
-        
-      </div>
-    <div class="marquee__group" aria-hidden="true">
-        <span>Coming Soon! ➺</span>
-       <span>Coming Soon! ➺</span>
-       <span>Coming Soon! ➺</span>
-        
-      </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Artist marquee Circular -->
-    <!-- Artist marquee Circular -->
-    <!-- Artist marquee Circular -->
-    
-    
-    <marquee  behavior="ease-in-out" direction="left" style="transition-timing-function: linear;  "  class="marqueemain7"  >
-      
-      
-      
-      <div class="artist-container containers" >
-        
-        <div class="artist">
-          <img src="./img/Fatmelz2.png" alt="" />
-          <!-- <p>Nory Money</p> -->
-        </div>
-        
-        <div class="artist">
-          <img src="./img/nory1.png" alt="" />
-          <!-- <p>Nory Money</p> -->
-        </div>
-        
-        <div class="artist">
-          <img src="./img/Cirujano.png" alt="" />
-          <!-- <p>Fa-melz</p> -->
-        </div>
-        
-        <div class="artist">
-          <img src="./img/ChoppaHate.png" alt="" />
-          <!-- <p>Fa-melz</p> -->
-        </div>
-        
-        <div class="artist">
-          <img src="./img/Shadow1.png" alt="" />
-          <!-- <p>Sharo Cash</p> -->
-        </div>
-        
-        <div class="artist">
-          <img src="./img/Kulosa.png" alt="" />
-          <!-- <p>Sharo Cash</p> -->
-        </div>
-        
-        <div class="artist">
-          <img src="./img/Cirujano2.png" alt="" />
-          <!-- <p>Clainer V</p> -->
-        </div>
-        
-        <div class="artist">
-          <img src="./img/dior.png" alt="" />
-          <!-- <p>Clainer V</p> -->
-        </div>
-        
-        <div class="artist">
-          <img src="./img/essence.png" alt="" />
-          <!-- <p>Fa-melz</p> -->
-        </div>
-        
-        <div class="artist">
-          <img src="./img/Gunna.png" alt="" />
-          <!-- <p>Fa-melz</p> -->
-        </div>
-        
-        <div class="artist">
-          <img src="./img/Fatmelz.png" alt="" />
-          <!-- <p>Maroon 5</p> -->
-        </div>
-        
-        <div class="artist">
-          <img src="./img/Nory5.png" alt="" />
-          <!-- <p>Maroon 5</p> -->
-        </div>
-        
-        <div class="artist">
-          <img src="./img/future.png" alt="" />
-          <!-- <p>Nory Money</p> -->
-        </div>
-        
-        <div class="artist">
-          <img src="./img/future2.png" alt="" />
-          <!-- <p>Nory Money</p> -->
-        </div>
-        
-        <div class="artist">
-          <img src="./img/GhostKiller.png" alt="" />
-          <!-- <p>Billie Eilish</p> -->
-        </div>
-        
-        <div class="artist">
-          <img src="./img/Gunna2.png" alt="" />
-          <!-- <p>Billie Eilish</p> -->
-        </div>
-        
-        
-      </div>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    </marquee>
-
-
-
-
-
-    
-
-
-
-
-
-
-    
-    
-    
-    
-    <!-- Animated Dynamic Text -->
-    <!-- Animated Dynamic Text -->
-    <!-- Animated Dynamic Text -->
-    <div class="text-slider" id="dynamicSlider" style="
-      margin: 0 auto;
-      color: rgb(255, 255, 255);
-      text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
-      min-height: 10vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      
-      " >
-      <!-- <div class="static-text">Re-Branding</div> -->
-      <div class="dynamic-text" id="dynamicText"></div>
-    </div>
-    <script src="textslider.js" ></script>
-
-
-
-    <!-- Marketing BTN  -->
-    <!-- Marketing BTN  -->
-    <!-- Marketing BTN  -->
-
-    <div class="backcardmarketing">
-      <div class="cardmarketing">
-        <!-- <h1 style="
-          
-        display: flex; justify-content: space-around; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;" >Music Video</h1> -->
-        
-        
-        <!-- <p>For Music Video inquyries contact our music video edditor Clainer Ventura.</p> -->
-  
-  
-        
-  
-        <a href="https://calendar.app.google/YhqvDd5F7H2QUsx16"><button >Lets Talk!</button></a>
-  
-      </div>
-    </div>
-
-
-
-
-
-
-
-
-
-    
-
-
-    <!-- Artist marquee Square -->
-    <!-- Artist marquee Square -->
-    <!-- Artist marquee Square -->
-    
-
-    <marquee behavior="" direction="right" style="transition-timing-function: linear;" class="marqueemain8">
-
-
-
-      <div class="album-container containers">
-
-
-        <div class="album">
-          <div class="album-frame">
-            <img src="./img/Nory2.png" alt="" />
-          </div>
-          <!-- <div>
-            <h2>Not Like Us</h2>
-            <p>Kendrick</p>
-          </div> -->
-        </div>
-
-
-
-        <div class="album">
-          <div class="album-frame">
-            <img src="./img/wow.png" alt="" />
-          </div>
-          <!-- <div>
-            <h2>Tu maldita mai</h2>
-            <p>Fatmelz</p>
-          </div> -->
-        </div>
-
-
-
-        <div class="album">
-          <div class="album-frame">
-            <img src="./thunbnails/Fatmelz.png" alt="" />
-          </div>
-          <!-- <div>
-            <h2>Born to Die</h2>
-            <p>Nory Money</p>
-          </div> -->
-        </div>
-
-
-
-        <div class="album">
-          <div class="album-frame">
-            <img src="./thunbnails/Nory-Code.png" alt="" />
-          </div>
-          <!-- <div>
-            <h2>Endless Summer</h2>
-            <p>Sharito Cash</p>
-          </div> -->
-        </div>
-
-
-
-        <div class="album">
-          <div class="album-frame">
-            <img src="./thunbnails/bobby1.png" alt="" />
-          </div>
-          <!-- <div>
-            <h2>Clainer v</h2>
-            <p>Clainer V</p>
-          </div> -->
-        </div>
-
-
-        
-        
-        <div class="album">
-          <div class="album-frame">
-            <img src="./thunbnails/future4.png" alt="" />
-          </div>
-          <!-- <div>
-            <h2>LA Masacre del Goldo</h2>
-            <p>Fatmelz</p>
-          </div> -->
-        </div>
-        
-        
-        
-        <div class="album">
-          <div class="album-frame">
-            <img src="./thunbnails/fa-melz1.png" alt="" />
-          </div>
-          <!-- <div>
-            <h2>LA Masacre del Goldo</h2>
-            <p>Fatmelz</p>
-          </div> -->
-        </div>
-        
-        
-        
-        
-        
-        <div class="album">
-          <div class="album-frame">
-            <img src="./img/Gunna2.png" alt="" />
-          </div>
-          <!-- <div>
-            <h2>LA Masacre del Goldo</h2>
-            <p>Fatmelz</p>
-          </div> -->
-        </div>
-        
-        
-        <div class="album">
-          <div class="album-frame">
-            <img src="./thunbnails//quefue.png" alt="" />
-          </div>
-          <!-- <div>
-            <h2>LA Masacre del Goldo</h2>
-            <p>Fatmelz</p>
-          </div> -->
-        </div>
-        
-        <div class="album">
-          <div class="album-frame">
-            <img src="./thunbnails/Nory-Code.png" alt="" />
-          </div>
-          <!-- <div>
-            <h2>LA Masacre del Goldo</h2>
-            <p>Fatmelz</p>
-          </div> -->
-        </div>
-
-
-
-
-
-
-
-
-
-      </div>
-
-    </marquee>
-
-
-
-    
-
-
-
-
-
-
-  </section>
-
-  <!-- Popular Song Responsive Grid -->
-  <!-- Popular Song Responsive Grid -->
-  <!-- Popular Song Responsive Grid -->
-
-  <h2 id="popularsongs" class="" style="
-        display: flex; 
-        justify-content: space-around; 
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-        text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
-        left: auto;
-        /* bottom: 32px; */
-        z-index: 0;
-        margin-top: 0;
-        color: rgb(255, 255, 255);
-        font-size: 7vw;
-        text-align: center;
-        letter-spacing: 0;">ΞΞΞTop HitsΞΞΞ</h2>
-
-
-  <section  class="vids" style="width: 100%;
-
-display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(5, 1fr);
-  gap: 8px;
-
-  grid-template-columns: repeat(auto-fit,minmax(300px, 3fr));
-  grid-gap: 2.5rem;
-  width: 100%;">
-
-
-<div class="swiper-slide">
-  <img src="./img/codigosvid.gif" />
-  <div class="slide-overlay">
-    <h2>Nory Dolla</h2>
-    <h3>Codigos</h3>
-    <!-- <button>
-      Listen Now <i class="fa-solid fa-circle-play"></i>
-    </button> -->
-
-    <audio controls preload="auto" >
-      <source src="./music/Nory-Codigos.mp3" type="audio/ogg">
-      <source src="./music/Nory-Codigos.mp3" type="audio/mpeg">
-      Your browser does not support the audio element
-      .
-    </audio>
-
-
-  </div>
-</div>
-
-
-<div class="swiper-slide">
-  <img src="./img/Quefue.gif" >
-  <div class="slide-overlay">
-    <h3>Fa Melz</h3>
-    <h2>Que Fue</h2>
-    <!-- <button>
-      Listen Now <i class="fa-solid fa-circle-play"></i>
-    </button> -->
-    <audio controls
-     src="./music/QueFue.mp3">
-     Your browser does not support the audio element.
-    </audio>
-  </div>
-</div>
-
-
-<div class="swiper-slide">
-  <img src="./img/Nory&Famelz-Wow.gif" />
-  <div class="slide-overlay">
-    <h2>Fa mels ft Nory</h2>
-    <h3>wow</h3>
-    <!-- <button>
-      Listen Now <i class="fa-solid fa-circle-play"></i>
-    </button> -->
-
-    <audio controls
-     src="./music/Nory&Famels-Wow.mp3">
-     Your browser does not support the audio element.
-    </audio>
-
-
-
-
-  </div>
-</div>
-
-<div class="swiper-slide">
-  <img src="./img/norygif.gif" />
-  <div class="slide-overlay">
-    <h2>Nory Dolla</h2>
-    <h3>Euphoria</h3>
-    <!-- <button>
-      H1 M1 <i class="fa-solid fa-circle-play"></i>
-    </button> -->
-    <audio controls src="./music/NoryUphoria.mp3">
-      Your browser does not support the audio element.
-    </audio>
-  </div>
-</div>
-
-
-<div class="swiper-slide">
-  <img src="./img/UnFlowZaza.gif" />
-  <div class="slide-overlay">
-    <h3>Fa-melz</h3>
-    <h2>Ese Tatoo!</h2>
-    <!-- <button>
-      Listen Now <i class="fa-solid fa-circle-play"></i>
-    </button> -->
-    <audio controls src="./music/EseTatoo.mp3">
-      Your browser does not support the audio element.
-    </audio>
-  </div>
-</div>
-
-
-<!-- <div class="swiper-slide">
-            <img src="./img/UnFlowZaza.gif" >
-            <div class="slide-overlay">
-              <h2>Un Flow Zaza</h2>
-              <h3>Fa Melz</h3>
-              <button>
-                Listen Now <i class="fa-solid fa-circle-play"></i>
-              </button>
-              <audio controls
-               src="./music/UnFlowZaza.mp3">
-               Your browser does not support the audio element.
-              </audio>
-            </div>
-</div> -->
-
-
-<!-- <div class="swiper-slide">
-            <img src="./img//Cirujano2.png" >
-            <div class="slide-overlay">
-              <h3>Cirujano</h3>
-              <h2></h2>
-              <button>
-                Mejores Barras <i class="fa-solid fa-circle-play"></i>
-              </button>
-              <audio controls
-               src="./music/Cirujano2.mp3">
-               Your browser does not support the audio element.
-              </audio>
-            </div>
-</div> -->
-
-
-<!-- <div class="swiper-slide">
-            <img src="./img/Cirujano2.png" />
-            <div class="slide-overlay">
-              <h3>Cirujano</h3>
-              <h2></h2>
-              <button>
-                Mejores Barras(Rap) <i class="fa-solid fa-circle-play"></i>
-              </button>
-              <audio controls
-               src="./music/Cirujano3.mp3">
-               Your browser does not support the audio element.
-              </audio>
-            </div>
-          </div> -->
-
-
-<!-- <div class="swiper-slide">
-  <img src="./img/Cirujano2.png" />
-  <div class="slide-overlay">
-    <h2>Cirujano</h2>
-    <h3></h3>
-
-    <button>
-      Eh eh eh <i class="fa-solid fa-circle-play"></i>
-    </button>
-    <audio controls src="./music/Cirujano4.mp3">
-      Your browser does not support the audio element.
-    </audio>
-  </div>
-</div> -->
-
-
-<!-- <div class="swiper-slide">
-            <img src="./img/Kulosa.png" />
-            <div class="slide-overlay">
-              <h2></h2>
-              <h3></h3>
-              
-              <button>
-                Kulosa <i class="fa-solid fa-circle-play"></i>
-              </button>
-              <audio controls
-               src="./music/Kulosa.mp3">
-               Your browser does not support the audio element.
-              </audio>
-            </div>
-          </div> -->
-          
-          
-<!-- <div class="swiper-slide">
-            <img src="./images/compro.png" />
-            <div class="slide-overlay">
-              <h2></h2>
-              <h3></h3>
-              
-              <button>
-                Compromise <i class="fa-solid fa-circle-play"></i>
-              </button>
-              <audio controls
-               src="./music/compromise.mp3">
-               Your browser does not support the audio element.
-              </audio>
-            </div>
-          </div> -->
-
-
-<!-- <div class="swiper-slide">
-  <img src="./images/energy.png" />
-  <div class="slide-overlay">
-    <h2></h2>
-    <h3></h3>
-
-    <button>
-      Energy<i class="fa-solid fa-circle-play"></i>
-    </button>
-    <audio controls src="./music/energy.mp3">
-      Your browser does not support the audio element.
-    </audio>
-  </div>
-</div> -->
-
-
-<!-- <div class="swiper-slide">
-  <img src="./img/slimreaper.jpg" />
-  <div class="slide-overlay">
-    <h2>Kevin Durant</h2>
-    <h3></h3>
-    <button>
-      Gods <i class="fa-solid fa-circle-play"></i>
-    </button>
-
-    <audio controls preload="auto" >
-      <source src="./music/GodAmongUs.mp3" type="audio/ogg">
-      <source src="./music/GodAmongUs.mp3" type="audio/mpeg">
-      Your browser does not support the audio element
-      .
-    </audio>
-
-  </div>
-</div> -->
-
-
-<!-- <div class="swiper-slide">
-  <img src="./images/notlikeus.png" />
-  <div class="slide-overlay">
-    <h2>Kendrick</h2>
-    <h3></h3>
-    <button>
-      Not Like Us<i class="fa-solid fa-circle-play"></i>
-    </button>
-
-    <audio controls preload="auto" >
-      <source src="./music/NotLikeUs.mp3" type="audio/ogg">
-      <source src="./music/NotLikeUs.mp3" type="audio/mpeg">
-      Your browser does not support the audio element
-      .
-    </audio>
-
-  </div>
-</div> -->
-
-
-<!-- <div class="swiper-slide">
-  <img src="./img/future.png" />
-  <div class="slide-overlay">
-    <h2>Future</h2>
-    <h3></h3>
-    <button>
-      Timmy Turnner <i class="fa-solid fa-circle-play"></i>
-    </button>
-
-    <audio controls preload="auto" >
-      <source src="./music/future-timmyturner.mp3" type="audio/ogg">
-      <source src="./music/future-timmyturner.mp3" type="audio/mpeg">
-      Your browser does not support the audio element
-      .
-    </audio>
-  </div>
-</div> -->
-
-
-
-
-<!-- <a href="https://clay3d11.github.io/LimitlessMerch/"><button class='glowing-btn'><span class='glowing-txt'>ST<span class='faulty-letter'>OR</span>E</span></button></a>
-
-<br>
-<br>
-<br>
-
-<button class="glowing-btn2" class='glowing-btn'><span class='glowing-txt'>V<span class='faulty-letter'>I</span>SIT</span></button> -->
-
-    <br>
-    <br>
-    <br>
-  
-  </section>
-  
-  <!-- Top Videos -->
-  <!-- Top Videos -->
-  <!-- Top Videos -->
-  <h2 id="topvideo" class="video" style="
-        
-  display: flex; justify-content: space-around; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
-  
-  
-  left: auto;
-  bottom: 0;
-  z-index: 0;
-  margin-top: 0;
+.player {
+  /* height: 75vh; */
+  /* height: 75vh; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+
+.wrapper {
+  border: 1px solid transparent;
+  /* padding: 30px; */
+  border-radius: 20px;
+  /* background-color: #000000; */
+  /* background-color: #cf1a1a; */
+  /* background-color: #cf1a1a; */
+  background-image: url(./img/transstars.gif);
+  background-position: center;
+  background-repeat: repeat;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+
+.details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.track-art {
+  margin: 25px;
+  height: 250px;
+  width: 250px;
+  border: 2px solid #fffafa;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  -moz-box-shadow: 0px 6px 5px black;
+  -webkit-box-shadow: 0px 6px 5px black;
+  box-shadow: 0px 6px 5px black;
+  -moz-border-radius: 190px;
+  -webkit-border-radius: 190px;
+  border-radius: 190px;
+}
+
+.now-playing {
+  font-size: 1rem;
+}
+
+.track-name {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.track-artist {
+  margin-top: 5px;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.buttons {
   color: rgb(255, 255, 255);
-  font-size: 7vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.active {
+  color: black;
+}
+
+.repeat-track,
+.random-track,
+.playpause-track,
+.prev-track,
+.next-track {
+  padding: 25px;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.repeat-track:hover,
+.random-track:hover,
+.playpause-track:hover,
+.prev-track:hover,
+.next-track:hover {
+  opacity: 1;
+}
+
+.slider_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seek_slider,
+.volume_slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 5px;
+  background: #83a9ff;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: white;
+  border: 3px solid #3774ff;
+  cursor: grab;
+  border-radius: 100%;
+}
+
+.seek_slider:hover,
+.volume_slider:hover {
+  opacity: 1;
+}
+
+.seek_slider {
+  width: 60%;
+}
+
+.volume_slider {
+  width: 30%;
+}
+
+.current-time,
+.total-duration {
+  padding: 10px;
+}
+
+i.fa-volume-down,
+i.fa-volume-up {
+  padding: 10px;
+}
+
+i,
+i.fa-play-circle,
+i.fa-pause-circle,
+i.fa-step-forward,
+i.fa-step-backward,
+p {
+  cursor: pointer;
+}
+.randomActive {
+  color: black;
+}
+.rotate {
+  animation: rotation 8s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.loader {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader .stroke {
+  background: #f1f1f1;
+  height: 150%;
+  width: 10px;
+  border-radius: 50px;
+  margin: 0 5px;
+  animation: animate 1.4s linear infinite;
+}
+@keyframes animate {
+  50% {
+    height: 20%;
+    background: #4286f4;
+  }
+
+  100% {
+    background: #4286f4;
+    height: 100%;
+  }
+}
+.stroke:nth-child(1) {
+  animation-delay: 0s;
+}
+.stroke:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.stroke:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.stroke:nth-child(4) {
+  animation-delay: 0.9s;
+}
+.stroke:nth-child(5) {
+  animation-delay: 0.6s;
+}
+.stroke:nth-child(6) {
+  animation-delay: 0.3s;
+}
+.stroke:nth-child(7) {
+  animation-delay: 0s;
+}
+
+
+
+
+
+/* 2nd Media Player */
+/* 2nd Media Player */
+/* 2nd Media Player */
+
+/* body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right,#9a1d86, #1595be);
+    font-weight: bold;
+    }
+
+.player2 {
+  height: 75vh;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.wrapper2 {
+  border: 1px solid transparent;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #ddd;
+  background-color: #cf1a1a;
+  background-color: #1a96cf;
+  background-image: url(./img/UnFlowZaza.gif);
+  background-position: center;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+
+.details2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.track-art2 {
+  margin: 25px;
+  height: 250px;
+  width: 250px;
+  border: 2px solid #fffafa;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  -moz-box-shadow: 0px 6px 5px black;
+  -webkit-box-shadow: 0px 6px 5px black;
+  box-shadow: 0px 6px 5px black;
+  -moz-border-radius: 190px;
+  -webkit-border-radius: 190px;
+  border-radius: 190px;
+}
+
+.now-playing2 {
+  font-size: 1rem;
+}
+
+.track-name2 {
+  font-size: 2.5rem;
+}
+
+.track-artist2 {
+  margin-top: 5px;
+  font-size: 1.5rem;
+}
+
+.buttons2 {
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.active {
+  color: black;
+}
+
+.repeat-track2,
+.random-track2,
+.playpause-track2,
+.prev-track2,
+.next-track2 {
+  padding: 25px;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.repeat-track2:hover,
+.random-track2:hover,
+.playpause-track2:hover,
+.prev-track2:hover,
+.next-track2:hover {
+  opacity: 1;
+}
+
+.slider_container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seek_slider2,
+.volume_slider2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 5px;
+  background: #83a9ff;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.seek_slider2::-webkit-slider-thumb,
+.volume_slider2::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: white;
+  border: 3px solid #3774ff;
+  cursor: grab;
+  border-radius: 100%;
+}
+
+.seek_slider2:hover,
+.volume_slider2:hover {
+  opacity: 1;
+}
+
+.seek_slider2 {
+  width: 60%;
+}
+
+.volume_slider2 {
+  width: 30%;
+}
+
+.current-time2,
+.total-duration2 {
+  padding: 10px;
+}
+
+i.fa-volume-down,
+i.fa-volume-up {
+  padding: 10px;
+}
+
+i,
+i.fa-play-circle,
+i.fa-pause-circle,
+i.fa-step-forward,
+i.fa-step-backward,
+p {
+  cursor: pointer;
+}
+.randomActive2 {
+  color: black;
+}
+.rotate2 {
+  animation: rotation 8s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.loader2 {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader .stroke2 {
+  background: #f1f1f1;
+  height: 150%;
+  width: 10px;
+  border-radius: 50px;
+  margin: 0 5px;
+  animation: animate 1.4s linear infinite;
+}
+@keyframes animate {
+  50% {
+    height: 20%;
+    background: #4286f4;
+  }
+
+  100% {
+    background: #4286f4;
+    height: 100%;
+  }
+}
+.stroke2:nth-child(1) {
+  animation-delay: 0s;
+}
+.stroke2:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.stroke2:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.stroke2:nth-child(4) {
+  animation-delay: 0.9s;
+}
+.stroke2:nth-child(5) {
+  animation-delay: 0.6s;
+}
+.stroke2:nth-child(6) {
+  animation-delay: 0.3s;
+}
+.stroke2:nth-child(7) {
+  animation-delay: 0s;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 3rd Media PLayer */
+/* 3rd Media PLayer */
+/* 3rd Media PLayer */
+
+
+.container{
+  position: relative;
+  padding: 10px;
+  width: 100%;
+
+  
+}
+
+.container .song-info{
+  /* background-color: #000; */
+  background-image: url(./img/GhostKiller.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+
+
+  margin: 0 10px;
+  padding: 15px 15px 150px 150px;
+  border-radius: 15px 15px 0 0;
+
+  
+
+
+
+
+}
+
+.container .song-info .song-name{
+  color: #b9b9b9;
+  font-size: 14px;
+  margin: 3px 0 20px;
+}
+
+.container .song-info .artist-name{
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.container .song-info .progress-bar{
+  background-color: #505050;
+
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.container .song-info .progress-bar .fill-bar{
+  width: 0;
+  height: 6px;
+  border-radius: 20px;
+  background: #1db954;
+}
+
+.container .song-info .time{
+  font-size: 15px;
+  color: #b9b9b9;
+  margin: 10px 0;
+}
+
+.container .disk{
+  max-width: 120px;
+}
+
+.container .disk .active{
+  animation: rotate 3s linear 0s infinite forwards;
+}
+
+.container .disk .cover{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0px;
+  left: 110px;
+  background: url("assets/1.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  border: 3px solid #f30505;
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.container .disk .circle{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 15%;
+  top: 29%;
+  /* background-color: #ffffff; */
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.container .controls{
+  /* display: block; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  gap: 20px;
+  /* padding-top: 30px; */
+  margin-top: 50px;
+  /* background-color: #292929; */
+
+  background-image: url(./img/backwood.png);
+  background-position: center;
+
+  /* background-image: url(./img/codigosvid.gif); */
+
+
+
+
+
+  width: 100%;
+  height: 100px;
+  border-radius: 20px;
   text-align: center;
-  letter-spacing: 0;">ΞΞΞTop VideosΞΞΞ</h2>
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
 
-  <!-- Top Videos -->
-  <!-- Top Videos -->
-  <!-- Top Videos -->
-  <div class="backcard">
-    <div class="card">
-      <h1 style="
-        
-      display: flex; justify-content: space-around; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;" >Music Video</h1>
-      
-      
-      <p>For Music Video inquyries, contact our music video edditor Clainer Ventura.</p>
-
-
-      
-
-      <a href="https://calendar.app.google/YhqvDd5F7H2QUsx16"><button >Contact</button></a>
-
-      
-
-
-      
-      
-      
-    </div>
-    <div class="containerrates" >
-      <button>View Rates</button>
-      <div class="modal" style="z-index: 100;" >
-        <div class="pricing-box-container">
-          <!-- <div class="pricing-box text-center">
-            <h5>Free</h5>
-            <p class="price"><sup>$</sup>0<sub>/mo</sub></p>
-            <ul class="features-list">
-              <li><strong>1</strong> Project</li>
-              <li><strong>5</strong> Team Members</li>
-              <li><strong>50</strong> Personal Projects</li>
-              <li><strong>5,000</strong> Messages</li>
-            </ul>
-            <button class="btn-primary">Get Started</button>
-          </div> -->
-        
-          <div class="pricing-box pricing-box-bg-image text-center">
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <h5>Premium Offer</h5>
-            <p class="price"><sup>$</sup>599.99<sub>/2x</sub></p>
-            <ul class="features-list">
-              <li><strong>1</strong> Complete Project</li>
-              <li><strong>1</strong> Official Music Video </li>
-              <li><strong>3weeks</strong> Time Frame </li>
-              <li><strong>1</strong> Professional Thumbnail </li>
-              <li><strong>Quality</strong> Content </li>
-              <li><strong>3 Extra</strong> Revision </li>
-            </ul>
-            <!-- <button class="btn-primary">Get Started</button> -->
-          </div>
-        
-          <!-- <div class="pricing-box text-center">
-            <h5>Platinum</h5>
-            <p class="price"><sup>$</sup>89<sub>/mo</sub></p>
-            <ul class="features-list">
-              <li><strong>25</strong> Project</li>
-              <li><strong>50</strong> Team Members</li>
-              <li><strong>500</strong> Personal Projects</li>
-              <li><strong>50,000</strong> Messages</li>
-            </ul>
-            <button class="btn-primary">Get Started</button>
-          </div> -->
-        </div>
-        <!-- <div class="modal__content">
-          <div class="modal__header">Rates:</div>
-          <div class="modal__body">Click anywhere to close</div>
-          <div class="modal__footer">Modal Footer</div>
-        </div> -->
-      </div>
-    </div>
-  </div>
-
-  <br>
-  <br>
-  <br>
-
-  <!-- First Video Card -->
-  <!-- First Video Card -->
-  <!-- First Video Card -->
-  <!-- <div class="backcard">
-    <div class="cardnory">
-      <h1 style="text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;" >Nory Money</h1>
-      <video
-         class="video" src="./video/nory-codigosvid.mp4" controls autoplay muted loop  style="z-index: 100;
-        max-width: 100%;
-        margin: 30px auto;
-        margin-left: 30px  auto;
-        
-        padding: 0px;
-        /* border: 1px solid #ddd; */
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        display: flex;
-        justify-content: center;
-        align-items: center;"  >
-
-        </video>
-    </div>
-  </div>
+.container .controls #play{
+  /* background-color: #1db954; */
+  background-image: url(./img/weed.gif);
+  background-size: cover;
   
   
-  <div class="backcard">
-    <div class="cardfa">
-      <h1 style="text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;" >Fa melz</h1>
-      <video
-         class="video" src="./video/Famelz-Quefue(1min).mp4" controls autoplay muted loop  style="z-index: 100;
-        max-width: 100%;
-        margin: 30px auto;
-        margin-left: 30px  auto;
-        
-        padding: 0px;
-        /* border: 1px solid #ddd; */
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        display: flex;
-        justify-content: center;
-        align-items: center;"  >
-
-        </video>
-    </div>
-  </div>
-
-
-  <div class="backcard">
-    <div class="cardflow">
-      <h1 style="text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;" >Un Flow zaza</h1>
-      <video
-         class="video" src="./video/UnFlowZaza.mp4" controls autoplay muted loop  style="z-index: 100;
-        max-width: 100%;
-        margin: 30px auto;
-        margin-left: 30px  auto;
-        
-        padding: 0px;
-        /* border: 1px solid #ddd; */
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        display: flex;
-        justify-content: center;
-        align-items: center;"  >
-
-        </video>
-    </div>
-  </div>
   
   
-  <div class="backcard">
-    <div class="cardwow">
-      <h1 style="text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;" >Nory ft Fa melz</h1>
-      <video
-         class="video" src="./video/Nory&Famels-Wowoffvideo(gif).mp4" controls autoplay muted loop  style="z-index: 100;
-        max-width: 100%;
-        margin: 30px auto;
-        margin-left: 30px  auto;
-        
-        padding: 0px;
-        /* border: 1px solid #ddd; */
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        display: flex;
-        justify-content: center;
-        align-items: center;"  >
+  
+  color: #fff;
+  padding: 15px 17px 14px 18px;
+  font-size: 50px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
 
-        </video>
-    </div>
-  </div> -->
+.container .controls #play:hover{
+  /* background: #189945; */
+  
+  background-image: url(./img/rollingweed.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
-  <section class="vids" style="width: 100%;
+
+
+
+
+
+}
+
+.container .controls i{
+  padding: 40px 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #919191;
+  transition: all 0.3s ease;
+}
+
+.container .controls i:hover{
+  color: #fff;
+}
+
+@keyframes rotate {
+  0% {
+      transform: rotateZ(0deg);
+  }
+  100% {
+      transform: rotateZ(360deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Popular Songs */
+/* Popular Songs */
+/* Popular Songs */
+
+.swiper {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  /* padding: 16px 0 20px; */
+  /* margin-bottom: 50px; */
+}
+
+.swiper-slide {
+  /* padding-bottom: 20px; */
+  /* padding-bottom: 80px; */
+
+  position: relative;
+  /* width: 600px; */
+  width: 100%;
+  /* width: 50%; */
+}
+
+.swiper-slide img {
+  width: 100%;
+  position: center;
+  border-radius: 20px;
+  height: 250px;
+  object-fit: cover;
+  border: 2px solid rgba(159, 160, 168, 0.5);
+}
+
+
+
+
+.slide-overlay {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
 
   display: grid;
-  grid-template-rows: repeat(0, 0fr);
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
-
-  grid-template-columns: repeat(auto-fit,minmax(350px, 2fr));
-  grid-gap: 2.5rem;
-  width: 100%;">
-    
-    
-    
-    
-      <!-- 1st video -->
-      <!-- 1st video -->
-      <!-- 1st video -->
-    <div class="vids" >
-
-
-      <div class="backcard">
-        <div class="cardnory">
-          <!-- <h1 style="text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;" >Nory Money</h1> -->
-          <video
-             class="video" src="./video/nory-codigosvid.mp4" controls autoplay muted loop  style="z-index: 100;
-            max-width: 100%;
-            margin: 30px auto;
-            margin-left: 30px  auto;
-            
-            padding: 0px;
-            /* border: 1px solid #ddd; */
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            display: flex;
-            justify-content: center;
-            align-items: center;"  >
-    
-            </video>
-        </div>
-      </div>
-      
-
-      <!-- <div id="video" class="swiper-slide">
-        <img src="./img/Kulosa.png" />
-
-        <video
-         class="video" src="./video/KulosoEdit.mp4" controls autoplay muted loop  style="z-index: 100;
-        max-width: 100%;
-        margin: 30px auto;
-        margin-left: 30px  auto;
-        
-        padding: 0px;
-        /* border: 1px solid #ddd; */
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        display: flex;
-        justify-content: center;
-        align-items: center;"  >
-
-        </video>
-
-
-        <div class="slide-overlay">
-          <h2>Kulosa</h2>
-          <h3></h3>
-          <button>
-            Out Now <i class="fa-solid fa-circle-play"></i>
-          </button>
-        </div>
-
-
-      </div> -->
-
-    </div>
-
-    <!-- 2nd Video -->
-    <!-- 2nd Video -->
-    <!-- 2nd Video -->
-
-    
-    <div class="vids" >
-      <div class="backcard">
-        <div class="cardfa">
-          <!-- <h1 style="text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;" >Fa melz</h1> -->
-          <video
-             class="video" src="./video/Famelz-Quefue(1min).mp4" controls autoplay muted loop  style="z-index: 100;
-            max-width: 100%;
-            margin: 30px auto;
-            margin-left: 30px  auto;
-            
-            padding: 0px;
-            /* border: 1px solid #ddd; */
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            display: flex;
-            justify-content: center;
-            align-items: center;"  >
-    
-            </video>
-        </div>
-      </div>
-      
-
-      <!-- <div id="video" class="swiper-slide">
-        <img src="./img/Fatmelz2.png" />
-        <video class="video" src="./video/UnFlowZaza.mp4"  controls muted loop autoplay style="z-index: 100;
-        max-width: 100%;
-        margin: 30px auto;
-        padding: 0px;
-        /* border: 1px solid #ddd; */
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        "  ></video>
-        <div class="slide-overlay">
-          <h2>Tengo un Flow</h2>
-          <h3></h3>
-          <button>
-            Out Now <i class="fa-solid fa-circle-play"></i>
-          </button>
-
-
-
-          <audio controls preload="auto">
-
-
-            <source src="./music/Fatmelz-QueFue.mp3" type="audio/ogg">
-            <source src="./music/Fatmelz-QueFue.mp3" type="audio/mpeg">
-
-
-            Your browser does not support the audio element
-            .
-          </audio>
-
-
-
-
-        </div>
-      </div>  -->
-
-    </div>
-
-    <!-- 3rd Video -->
-    <!-- 3rd Video -->
-    <!-- 3rd Video -->
-    <div class="vids">
-      <div class="backcard">
-        <div class="cardflow">
-          <!-- <h1 style="text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;" >Un Flow zaza</h1> -->
-          <video
-             class="video" src="./video/UnFlowZaza.mp4" controls autoplay muted loop  style="z-index: 100;
-            max-width: 100%;
-            margin: 30px auto;
-            margin-left: 30px  auto;
-            
-            padding: 0px;
-            /* border: 1px solid #ddd; */
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            display: flex;
-            justify-content: center;
-            align-items: center;"  >
-    
-            </video>
-        </div>
-      </div>
-
-      
-
-      <!-- <div id="video" class="swiper-slide">
-        <img src="./img/quefue.png" />
-        <video class="video" src="./video/Famelz-Quefue(1min).mp4"  controls muted loop autoplay style="z-index: 100;
-        max-width: 100%;
-        margin: 30px auto;
-        padding: 0px;
-        /* border: 1px solid #ddd; */
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        "  ></video>
-        <div class="slide-overlay">
-          <h2>Que Fue</h2>
-          <h3></h3>
-          <button>
-            Out Now <i class="fa-solid fa-circle-play"></i>
-          </button>
-
-
-
-          <audio controls preload="auto">
-
-
-            <source src="./music/Fatmelz-QueFue.mp3" type="audio/ogg">
-            <source src="./music/Fatmelz-QueFue.mp3" type="audio/mpeg">
-
-
-            Your browser does not support the audio element
-            .
-          </audio>
-
-
-
-
-        </div>
-      </div> -->
-
-    </div>
-
-    <!-- 4rd Video -->
-    <!-- 4rd Video -->
-    <!-- 4rd Video -->
-    <div class="vids">
-      <div class="backcard">
-        <div class="cardwow">
-          <!-- <h1 style="text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;" >Nory ft Fa melz</h1> -->
-          <video
-             class="video" src="./video/Nory&Famels-Wowoffvideo(gif).mp4" controls autoplay muted loop  style="z-index: 100;
-            max-width: 100%;
-            margin: 30px auto;
-            margin-left: 30px  auto;
-            
-            padding: 0px;
-            /* border: 1px solid #ddd; */
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            display: flex;
-            justify-content: center;
-            align-items: center;"  >
-    
-            </video>
-        </div>
-      </div>
-
-      
-
-      <!-- <div id="video" class="swiper-slide">
-        <img src="./img/wow.png" />
-        <video class="video" src="./video/Nory&Famels-Wowoffvideo(gif).mp4"  controls muted loop autoplay style="z-index: 100;
-        max-width: 100%;
-        min-width: 430;
-        margin: 30px auto;
-        padding: 0px;
-        /* border: 1px solid #ddd; */
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-position: center;
-
-        "  ></video>
-        <div class="slide-overlay">
-          <h2>WOW</h2>
-          <h3></h3>
-          <button>
-            Out Now <i class="fa-solid fa-circle-play"></i>
-          </button>
-
-
-
-          <audio controls preload="auto">
-
-
-            <source src="./music/Fatmelz-QueFue.mp3" type="audio/ogg">
-            <source src="./music/Fatmelz-QueFue.mp3" type="audio/mpeg">
-
-
-            Your browser does not support the audio element
-            .
-          </audio>
-
-
-
-
-        </div>
-      </div> -->
-
-    </div>
-
-
-
-    <div>
-
-      <!-- 5th Video -->
-      <!-- 5th Video -->
-      <!-- 5th Video -->
-
-      <!-- <div id="video" class="swiper-slide">
-        <img src="./img/fa-melz.png" />
-        <video class="video" src="./video/Fatmelz - ToLoDia.mp4"  controls muted loop autoplay style="z-index: 100;
-        max-width: 100%;
-        margin: 30px auto;
-        padding: 0px;
-        /* border: 1px solid #ddd; */
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        "  ></video>
-        <div class="slide-overlay">
-          <h2>Fa mels</h2>
-          <h3></h3>
-          <button>
-            Listen Now <i class="fa-solid fa-circle-play"></i>
-          </button>
-
-
-
-          <audio controls preload="auto">
-
-
-            <source src="./music/UnFlowZaza.mp3" type="audio/ogg">
-            <source src="./music/Fatmelz-QueFue.mp3" type="audio/mpeg">
-
-
-            Your browser does not support the audio element
-            .
-          </audio>
-
-
-
-
-        </div>
-      </div> -->
-        
-
-
-    </div>
-
-
-    
-    
-    
-  </section>
-
-  <!-- Music Player -->
-  <!-- Music Player -->
-  <!-- Music Player -->
-  <section id="playlist">
-
-    <h2 class="" style="
-        display: flex; justify-content: space-around; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
-
-
-        left: auto;
-        /* bottom: 32px; */
-        z-index: 0;
-        margin-top: 0;
-        color: rgb(255, 255, 255);
-        font-size: 7vw;
-        text-align: center;
-        letter-spacing: 0;">ΞΞΞPlaylistΞΞΞ</h2>
-    
-    
-    <!-- Music Player -->
-    <!-- Music Player -->
-    <!-- Music Player -->
-    <div id="player" class="player" style="--f: url(#glow-1); 
-    --l: #ff45457f, #00ff997f, #006aff7f, #ff00957f," >
-      <div class="wrapper">
-        <div class="details">
-          <div class="now-playing">PLAYING x OF y</div>
-          <div class="track-art"></div>
-          <div class="track-name">Track Name</div>
-          <div class="track-artist">Track Artist</div>
-        </div>
-
-        <div class="slider_container">
-          <div class="current-time">00:00</div>
-          <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
-          <div class="total-duration">00:00</div>
-        </div>
-
-        <div class="slider_container">
-          <i class="fa fa-volume-down"></i>
-          <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
-          <i class="fa fa-volume-up"></i>
-        </div>
-
-        <div class="buttons">
-          <div class="random-track" onclick="randomTrack()">
-            <i class="fas fa-random fa-2x" title="random"></i>
-          </div>
-          <div class="prev-track" onclick="prevTrack()">
-            <i class="fa fa-step-backward fa-2x"></i>
-          </div>
-          <div class="playpause-track" onclick="playpauseTrack()">
-            <i class="fa fa-play-circle fa-5x"></i>
-          </div>
-          <div class="next-track" onclick="nextTrack()">
-            <i class="fa fa-step-forward fa-2x"></i>
-          </div>
-          <div class="repeat-track" onclick="repeatTrack()">
-            <i class="fa fa-repeat fa-2x" title="repeat"></i>
-          </div>
-        </div>
-
-        <div id="wave">
-          <span class="stroke"></span>
-          <span class="stroke"></span>
-          <span class="stroke"></span>
-          <span class="stroke"></span>
-          <span class="stroke"></span>
-          <span class="stroke"></span>
-          <span class="stroke"></span>
-        </div>
-      </div>
-    </div>
-    
-
-    <!-- 2nd Music PLayer -->
-    <!-- 2nd Music PLayer -->
-    <!-- 2nd Music PLayer -->
-    
-    <!-- <div id="player2" class="player2">
-      <div class="wrapper2">
-        <div class="details2">
-          <div class="now-playing2">PLAYING x OF y</div>
-          <div class="track-art2"></div>
-          <div class="track-name2">Track Name</div>
-          <div class="track-artist2">Track Artist</div>
-        </div>
-    
-        <div class="slider_container2">
-          <div class="current-time2">00:00</div>
-          <input type="range" min="1" max="100" value="0" class="seek_slider2" onchange="seekTo2()">
-          <div class="total-duration2">00:00</div>
-        </div>
-    
-        <div class="slider_container2">
-          <i class="fa fa-volume-down"></i>
-          <input type="range" min="1" max="100" value="99" class="volume_slider2" onchange="setVolume2()">
-          <i class="fa fa-volume-up"></i>
-        </div>
-    
-        <div class="buttons2">
-          <div class="random-track2" onclick="randomTrack2()">
-            <i class="fas fa-random fa-2x" title="random"></i>
-          </div>
-          <div class="prev-track2" onclick="prevTrack2()">
-            <i class="fa fa-step-backward fa-2x"></i>
-          </div>
-          <div class="playpause-track2" onclick="playpauseTrack2()">
-            <i class="fa fa-play" aria-hidden="true"></i>
-
-          </div>
-          <div class="next-track2" onclick="nextTrack2()">
-            <i class="fa fa-step-forward fa-2x"></i>
-          </div>
-          <div class="repeat-track2" onclick="repeatTrack2()">
-            <i class="fa fa-repeat fa-2x" title="repeat"></i>
-          </div>
-        </div>
-    
-        <div id="wave2">
-          <span class="stroke2"></span>
-          <span class="stroke2"></span>
-          <span class="stroke2"></span>
-          <span class="stroke2"></span>
-          <span class="stroke2"></span>
-          <span class="stroke2"></span>
-          <span class="stroke2"></span>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- 3rd music player -->
-    <!-- 3rd music player -->
-    <!-- 3rd music player -->
-
-    <div class="container">
-      <div class="song-info">
-          <div class="artist-name"></div>
-          <div class="song-name"></div>
-          <!-- <div class="progress-bar">
-              <div class="fill-bar"></div>
-          </div> -->
-          <!-- <div class="time">0:00 - 0:00</div> -->
-      </div>
-      <div class="disk">
-          <div class="circle"></div>
-          <div id="cover" class="cover"></div>
-      </div>
-      <div class="controls">
-          <!-- <i id="prev" class="prev-btn fa-solid fa-backward"></i> -->
-          <i id="prev" class="fas fa-backward"></i>
-          <!-- <i id="play" class="play-btn fa-solid fa-play"></i> -->
-          <i id="play" class="fas fa-play"></i>
-          <!-- <i id="next" class="next-btn fa-solid fa-forward"></i> -->
-          <i id="next" class="fas fa-forward"></i>
-      </div>
-  </div>
-
-
-  <script src="script3.js"></script>
-
-
-
-
-
-
-
-
+  justify-content: center;
+  align-items: center;
+
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  /* justify-content: flex-end; */
+  /* row-gap: 12px; */
+  position: absolute;
+  inset: 0;
+  max-width: 100%;
+  /* height: 98%; */
+  /* background: linear-gradient(
+        240deg,
+        transparent,
+        transparent,
+        rgba(38, 21, 149, 0.8)
+      ); */
+  border-radius: 20px;
+  /* padding: 30px; */
   
+}
+
+.slide-overlay h2 {
+  font-size: clamp(1.2rem, 3vw, 2.2rem);
+  font-weight: 700;
+  color: white;
+}
+.slide-overlay h3 {
+  font-size: clamp(1.3rem, 3vw, 2.2rem);
+  font-weight: 700;
+  color: white;
+}
+
+.slide-overlay button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  width: max-content;
+  padding: 12px 16px;
+  background: #e9e6eb2a;
+  color: #e8e5e5;
+  border: 1px solid rgba(159, 160, 168, 0.4);
+  border-radius: 12px;
+  outline: 0;
+  font-size: clamp(0.7rem, 3vw, 1rem);
+  font-weight: 500;
+  text-transform: uppercase;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  transition: all 0.4s linear;
+  cursor: pointer;
+}
+
+.slide-overlay button:is(:hover, :focus-visible) {
+  background: #e9e6eb;
+  color: #000;
+}
 
 
 
 
 
 
-  </section>
-  
-  <!--Top MERCH-->
-  <!--Top MERCH-->
-  <!--Top MERCH-->
-  <section id="merch">
-    <!--Article-->
-    <!--Figure-->
-    <!--h3-->
-    <!--P-->
-    <!-- <h2>Services</h2> -->
-
-
-    <!-- Headings -->
-    <!-- Headings -->
-    <!-- Headings -->
-
-    <h2 class="" style="
-        display: flex; justify-content: space-around; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
-
-
-        left: auto;
-        /* bottom: 32px; */
-        z-index: 0;
-        margin-top: 0;
-        color: rgb(255, 255, 255);
-        font-size: 7vw;
-        text-align: center;
-    letter-spacing: 0;">ΞΞΞLa MerchΞΞΞ</h2>
-    
-
-
-
-    <!-- <marquee behavior="s" direction="">
-      <img src="./img/taatracao.gif" alt="" style="width: 200px; height: 150px; display: inline; " >
-      <h2 class="" style="
-        display: flex; justify-content: space-around; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-shadow: 0 0 2px #00fffb, 0 0 20px #0081bc;
-
-
-        left: auto;
-        /* bottom: 32px; */
-        z-index: 0;
-        margin-top: 0;
-        color: rgb(255, 255, 255);
-        font-size: 4vw;
-        text-align: center;
-    letter-spacing: 0;">Ta Atracao si llegate hasta aqui! Compra pal de vaina y apolla la causa buen mmg!!</h2>
-    </marquee> -->
-
-
-    <!-- <div style="display: block; align-self: center;"  >
-      <h1>Si llegate a aqui</h1>
-      <img class="meme" src="./img/taatracao.gif" alt="" style="width: 200px; height: 150px; display: flex; justify-content: center; align-items: center;  ">
-      <h1 class="typing" >TaAtracaoMMG!</h1>
-      <h1 class="typing" >Tienes-que-Comprar-algo!</h1>
-      </div>   -->
-    
-
-
-    <div class="product-container">
-
-
-
-
-        
-      
-      
-      
-      
-      
-      <!-- <img src="/LimitlessShop/images/nike_marquee_edge_mirrored_running_sunglasses_Oh8f9Gy7yP.webp"> -->
-          <img src="https://assets2.oakley.com/cdn-record-files-pi/41ce95cd-3eb9-42c5-8480-a6ba01218223/a07b3c7a-5942-42bd-8a62-afc70167b54a/0OJ9001__900105__P21__shad__qt.png?impolicy=OO_ratio&width=2000" alt="">
-          <div class="marquee -container">
-            <marquee behavior="scroll" direction="left">Coming Soon!</marquee>
-          </div>
-
-          <br>
-          <br>
-          <br>
-
-          <img src="https://assets2.oakley.com/cdn-record-files-pi/6868f1b5-0f5d-4eba-bf81-a6ba0121b6b5/5c5f1e63-2dfa-420a-8de1-afc701689482/0OJ9001__900106__P21__shad__qt.png?impolicy=OO_ratio&width=2000" alt="">
-          <div class="marquee -container">
-            <marquee behavior="scroll" direction="left">Coming Soon!</marquee>
-          </div>
-
-          <br>
-          <br>
-          <br>
-
-          <img src="https://assets2.oakley.com/cdn-record-files-pi/67eab5b4-f56f-4906-98f6-ab5700fe755e/dc86aa87-e056-4c2e-871c-afc7016e2725/0OJ9001__900115__P21__shad__qt.png?impolicy=OO_ratio&width=2000" alt="">
-          <div class="marquee -container">
-            <marquee behavior="scroll" direction="left">Coming Soon!</marquee>
-          </div>
-          
-          <!-- <br>
-          <br>
-          <br>
-
-          <img src="https://optimaxweb.glassesusa.com/image/upload/f_auto,q_auto/ms/media/catalog_product/1/888392243683_F.jpg" alt="">
-          <div class="marquee -container">
-            <marquee behavior="scroll" direction="left">Coming Soon!</marquee>
-          </div> -->
 
 
 
 
 
 
-          <div class="product-info">
-            <h2>Limitless Store</h2>
-            <p>Si te metite palla, tiene que compra obligao!</p>
-            <a href="https://clay3d11.github.io/LimitlessMerch/"><button>Visit Store</button></a>
-            
-          </div>
-    </div>
-
-
-    <!-- <div class="product-container">
-          <img src="https://assets2.oakley.com/cdn-record-files-pi/13bb41b2-ab71-4ea4-b51b-af17013161c5/f8c86aae-58f1-4c8f-9e4a-af330041a596/0OJ9001__900127__P21__shad__qt.png?impolicy=OO_ratio&width=2000" alt="Product Image">
-          <div class="marquee-container">
-            <marquee behavior="ease-in-out" direction="left" style="width: 100%;" >Coming Soon!!</marquee>
-          </div>
-          <div class="product-info">
-            <h2>Product Name</h2>
-            <p>Product Description</p>
-            <div class="price-container">
-              <span class="original-price">$99.99</span>
-              <span class="discounted-price">$79.99</span>
-            </div>
-            <button class="buy-now">Buy Now</button>
-          </div>
-        </div> -->
 
 
 
-    <div class="marqueesocial">
-          <div>
-            <img src="./img/Cirujano.png" alt="">
-            <img src="./img/Kulosa.png" alt="">
-            <img src="./img/fa-melz1.png" alt="">
-            <img src="./img/Fatmelz.png" alt="">
-            <img src="./img/Nory2.png" alt="">
-            <img src="./img/Shadow1.png" alt="">
-            <img src="./img/Fatmelz4.png" alt="">
-            <img src="./img/Nory4.png" alt="">
-            <img src="./img/fa-melz.png" alt="">
-            <img src="./img/Goddest.png" alt="">
-            <img src="./img/Nory-Code.png" alt="">
-            <img src="./img/Cirujano2.png" alt="">
-            <img src="./img/norymecanse.png" alt="">
+/* Footer#1 */
+/* Footer#1 */
+/* Footer#1 */
+/* Footer#1 */
 
-            <!-- 2nd -->
 
-            <img src="./img/Cirujano.png" alt="">
-            <img src="./img/Kulosa.png" alt="">
-            <img src="./img/fa-melz1.png" alt="">
-            <img src="./img/Fatmelz.png" alt="">
-            <img src="./img/Nory2.png" alt="">
-            <img src="./img/Shadow1.png" alt="">
-            <img src="./img/Fatmelz4.png" alt="">
-            <img src="./img/Nory4.png" alt="">
-            <img src="./img/fa-melz.png" alt="">
-            <img src="./img/Goddest.png" alt="">
-            <img src="./img/Nory-Code.png" alt="">
-            <img src="./img/Cirujano2.png" alt="">
-            <img src="./img/norymecanse.png" alt="">
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+/* *{
 
-            <!-- 3RD -->
+} */
+main {
 
-            <img src="./img/Cirujano.png" alt="">
-            <img src="./img/Kulosa.png" alt="">
-            <img src="./img/fa-melz1.png" alt="">
-            <img src="./img/Fatmelz.png" alt="">
-            <img src="./img/Nory2.png" alt="">
-            <img src="./img/Shadow1.png" alt="">
-            <img src="./img/Fatmelz4.png" alt="">
-            <img src="./img/Nory4.png" alt="">
-            <img src="./img/fa-melz.png" alt="">
-            <img src="./img/Goddest.png" alt="">
-            <img src="./img/Nory-Code.png" alt="">
-            <img src="./img/Cirujano2.png" alt="">
-            <img src="./img/norymecanse.png" alt="">
 
-              
-              
-          </div>
-    </div>
-    
-    
-    
-    
-    
-    
-    
-    
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+
+  font-weight: 700;
 
 
 
-
-  </section>
-  
-  <!-- Ticket Store -->
-  <!-- Ticket Store -->
-  <!-- Ticket Store -->
-  <section id="ticket">
-    
-    
-
-
-
-
-
-
-  </section>
-  
-  <!-- Contact -->
-  <!-- Contact -->
-  <!-- Contact -->
-  <section id="contact">
-    <!-- <h2>Contact me</h2>
-        <p>If you have any questions or would like to get in touch, please feel free to email me at <a href="mailto:john.doe@example.com">john.doe@example.com</a>.</p> -->
-    <!--Footer-->
-    <!--Data-->
-    
-    
-
-
-
-
-
-
-  </section>
+  /* height: 100vh; */
+  margin: 0;
+  padding: 0; 
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   
   
-  <!-- Footer -->
-  <!-- Footer -->
-  <!-- Footer -->
-  <section id="Footer">
-    <!-- <h2>Contact me</h2>
-        <p>If you have any questions or would like to get in touch, please feel free to email me at <a href="mailto:john.doe@example.com">john.doe@example.com</a>.</p> -->
-    <!--Footer-->
-    <!--Data-->
-
-    
-
-
-
-
-
-<!-- Footer #1 -->
-<!-- Footer #1 -->
-<!-- Footer #1 -->
-
-
-<main>
-  <!-- <div class="content1">
-    <div class="text">Fully Responsive Footer Section</div>
-    <div class="p">HTML and CSS (Flexbox)</div>
-  </div> -->
-  <footer>
-    <div class="main-content">
-      <div class="left box">
-        <h2>About us</h2>
-        <div class="content">
-          <p>Limitless Music PLatform consists of facilitating away to professionally market your art, music, products and videos. It offer a online store ready to sell the hottest urban style merchendise available in todays trending urban market.</p>
-
-          <div class="social">
-
-            <a href="https://facebook.com/sharadaeshi"><span class="fab fa-facebook-f"></span></a>
-
-
-            <a href="#"><span class="fab fa-twitter"></span></a>
-
-
-            <a href="https://instagram.com/sharadishi09"><span class="fab fa-instagram"></span></a>
-
-
-            <a href="#"><span class="fab fa-youtube"></span></a>
-
-          </div>
-
-        </div>
-      </div>
-      <div class="center box">
-        <h2>Address</h2>
-        <div class="content">
-          <div class="place">
-            <span class="fas fa-map-marker-alt"></span>
-            <span class="text">NY</span>
-          </div>
-          <div class="phone">
-            <span class="fas fa-phone-alt"></span>
-            <span class="text"></span>
-          </div>
-          <div class="email">
-            <span class="fas fa-envelope"></span>
-            <span class="text">v.clainer@universallimitless.com</span>
-          </div>
-        </div>
-      </div>
-      <div class="right box">
-        <h2>Contact us</h2>
-        <div class="content">
-          <form action="#">
-            <div class="email">
-              <div class="text">Email *</div>
-              <input type="email" required>
-            </div>
-            <div class="msg">
-              <div class="text">Message *</div>
-              <textarea rows="2" cols="25" required></textarea>
-            </div>
-            <div class="btn">
-              <button type="submit">Send</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-    <div class="bottom">
-      <center>
-        <span class="credit">Created By <a href="#">ClainerV7</a> | </span>
-        <span class="far fa-copyright"></span><span> 2024 All rights reserved.</span>
-      </center>
-    </div>
-  </footer>
-</main>
-
-
-
-
-<!-- FOOTER#2 START -->
-<!-- FOOTER#2 START -->
-<!-- FOOTER#2 START -->
-<div class="footer">
-  <div class="contain">
-
-
-
-  <div class="col">
-    <h1>Company</h1>
-    <ul>
-      <li>About</li>
-      <li>Mission</li>
-      <li>Services</li>
-      <li>Social</li>
-      <li>Get in touch</li>
-    </ul>
-  </div>
-
-
-
-  <div class="col">
-    <h1>Products</h1>
-    <ul>
-      <li>About</li>
-      <li>Mission</li>
-      <li>Services</li>
-      <li>Social</li>
-      <li>Get in touch</li>
-    </ul>
-  </div>
-
-
-
-  <div class="col">
-    <h1>Accounts</h1>
-    <ul>
-      <li>About</li>
-      <li>Mission</li>
-      <li>Services</li>
-      <li>Social</li>
-      <li>Get in touch</li>
-    </ul>
-  </div>
-
-
-
-
-
-  <!-- <div class="col">
-    <h1>Resources</h1>
-    <ul>
-      <li>Webmail</li>
-      <li>Redeem code</li>
-      <li>WHOIS lookup</li>
-      <li>Site map</li>
-      <li>Web templates</li>
-      <li>Email templates</li>
-    </ul>
-  </div> -->
-
-
-
-  <div class="col">
-    <h1>Support</h1>
-    <ul>
-      <li>Contact us</li>
-      <li>Web chat</li>
-      <li>Open ticket</li>
-    </ul>
-  </div>
-
-
-
-
-  <div class="col social">
-    <h1>Social</h1>
-    <!-- <ul>
-      <li><img src="https://svgshare.com/i/5fq.svg" width="32" style="width: 32px;"></li>
-      <li><img src="https://svgshare.com/i/5eA.svg" width="32" style="width: 32px;"></li>
-      <li><img src="https://svgshare.com/i/5f_.svg" width="32" style="width: 32px;"></li>
-    </ul> -->
-  </div>
-
-
-<div class="clearfix"></div>
-</div>
-</div>
-<!-- END OF FOOTER -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-
-
-
-
-
-
-  </section>
-
-
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+}
+.content1{
+  flex: 1;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: auto;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 20px;
+  width: 100%;
+}
+.content1 .text{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #202020;
+}
+.content1 .p {
+  font-size: 2.1875rem;
+  font-weight: 600;
+  color: #202020;
+}
+footer{
+  width: 100%;
+  background: #111;
+  /* background-image: url();
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+.main-content{
+  display: flex;
+  padding: 50px 0;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: #20f1ce;
   
-</body>
+  top: -10px;
+}
+.left .content p{
+  text-align: justify;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+}
+.left .content .social a{
+  padding: 0 2px;
+}
+.left .content .social a span{
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.left .content .social a span:hover{
+  background: #f12020;
+}
+.center .content .fas{
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .content .fas:hover{
+  background: #f12020;
+}
+.center .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .content .phone{
+  margin: 15px 0;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: #ffffff;
+}
+.right form .msg{
+  margin-top: 10px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+}
+.right form input:focus,
+.right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+.right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #f12020;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+.right form .btn button:hover{
+  background: #000;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #151515;
+}
+.bottom center span{
+  color: #ffffff;
+}
+.bottom center a{
+  color: #f12020;
+  text-decoration: none;
+}
+.bottom center a:hover{
+  text-decoration: underline;
+}
+@media screen and (max-width: 767px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+  }
+}
 
-</html>
+
+
+
+
+/* Footer2 */
+/* Footer2 */
+/* Footer2 */
+
+
+/* REMOVE THIS, USE YOUR OWN  */
+/* html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, Sans-serif;
+  background-color: #070617;
+} */
+/* .dummy_page {
+  height: 200px;
+  width: 100%;
+  background-color: #f0f0f0;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 60px 0px;
+} */
+/* STYLES SPECIFIC TO FOOTER  */
+.footer {
+  width: 100%;
+  position: relative;
+  height: auto;
+  background-color: #070617;
+}
+.footer .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+}
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: rgba(13, 9, 240, 0.829);
+  text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+}
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .col ul li {
+  color: #ffffff;
+  text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+}
+.social ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+
+.footer .col ul li:hover {
+  color: #ffffff;
+  transition: 0.1s;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+}
+.clearfix {
+  clear: both;
+}
+@media only screen and (min-width: 1280px) {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1139px) {
+  .contain .social {
+    width: 1000px;
+    display: block;
+  }
+  .social h1 {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .footer .col {
+    width: 33%;
+  }
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .footer .col {
+    width: 50%;
+  }
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 340px) {
+  .footer .col {
+    width: 100%;
+  }
+}

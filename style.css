@@ -752,7 +752,60 @@ button {
 
 @media only screen and (max-width: 430px) {
  
+  .modal {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 500ms ease;
 
+    .modal__content {
+        margin: auto;
+        /* background-color: white; */
+        background-color: white;
+        text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
+
+        
+        width: 20%;
+        height: 0;
+        opacity: 0;
+        margin: auto;
+        transition: all 500ms ease;
+        border-radius: 1em;
+        overflow: hidden;
+        border: 1px groove purple;
+        /* box-shadow: 2px 2px 2px black; */
+        background-color: white;
+
+        .modal__body,
+        .modal__footer {
+            padding: 10px;
+        }
+
+        .modal__header {
+            padding: 10px;
+            height: 10%;
+            font-size: 1.5em;
+            background-color: plum;
+            font-weight: bold;
+            border-bottom: 1px solid purple;
+        }
+        
+        .modal__body {
+            height: 60%;
+        }
+
+        .modal__footer {
+            height: 20%;
+        }
+    }
+}
   
 
 
@@ -3331,7 +3384,8 @@ body {
   font-size: 12px;
   line-height: 17px;
   padding: 20px 0px 5px 0px;
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(13, 9, 240, 0.829);
+  text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 0.25em;
@@ -3342,7 +3396,8 @@ body {
   padding: 0;
 }
 .footer .col ul li {
-  color: #999999;
+  color: #ffffff;
+  text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
   font-size: 14px;
   font-family: inherit;
   font-weight: bold;

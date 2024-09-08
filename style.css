@@ -3761,7 +3761,7 @@ htmlx {
     -moz-osx-font-smoothing: grayscale;
 } 
 
-:root { 
+:rootx { 
     --zi-header: 9996; 
     --zi-header-behind: calc(var(--zi-header) - 1); 
     --zi-shot-overlay: calc(var(--zi-header) + 1); 
@@ -3781,14 +3781,14 @@ htmlx {
     --zi-playbook-edit-links: calc(var(--zi-playbook-head) + 1);
 } 
 
-:root { 
+:rootx { 
     --btn-bg-color: #0d0c22; 
     --btn-bg-color-hover: #565564; 
     --btn-border-color: var(--btn-bg-color); 
     --btn-border-color-hover: var(--btn-bg-color-hover); 
 } 
 
-:root { 
+:rootx { 
     color-scheme: light; 
     --sl-color-gray-50: hsl(0 0% 97.5%); 
     --sl-color-gray-100: hsl(240 4.8% 95.9%); 
@@ -3980,7 +3980,7 @@ htmlx {
     --sl-tooltip-padding: var(--sl-spacing-2x-small) var(--sl-spacing-x-small); 
 } 
 
-:root { 
+:rootx { 
     --sl-color-primary-500: rgb(234 76 137); 
     --sl-color-primary-600: rgb(228 74 133); 
     --sl-z-index-dialog: var(--zi-default-overlay, 10000);

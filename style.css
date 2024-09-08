@@ -575,7 +575,7 @@ button {
  }
  
  button::after {
-  --m-i: linear-gradient(#000, #000);
+  --m-i: linear-gradient(#000000, #000);
   --m-o: content-box, padding-box;
   content: "";
   position: absolute;
@@ -585,7 +585,7 @@ button {
   height: 100%;
   padding: var(--border-width);
   border-radius: var(--border-radius);
-  /* background-image: conic-gradient(
+  background-image: conic-gradient(
      #488cfb,
      #29dbbc,
      #ddf505,
@@ -593,8 +593,8 @@ button {
      #e440bb,
      #655adc,
      #488cfb
-   ); */
-   background-image: conic-gradient( from var(--angle), blue, #ff0000, #00ffff, #ac0808, #0011ff);
+   );
+   /* background-image: conic-gradient( from var(--angle), blue, #ff0000, #00ffff, #ac0808, #0011ff); */
 
 
   -webkit-mask-image: var(--m-i), var(--m-i);
@@ -718,7 +718,7 @@ img {
 
 .modal__button {
   display: inline-block;
-  background-color: var(--first-color);
+  /* background-color: var(--first-color); */
   color: #fff;
   padding: 1rem 1.25rem;
   border-radius: 0.5rem;
@@ -726,7 +726,8 @@ img {
 }
 
 .modal__button:hover {
-  background-color: var(--first-color-alt);
+  /* background-color: var(--first-color-alt); */
+  background-color: transparent;
 }
 
 .modal__container {
@@ -2327,7 +2328,7 @@ img {
 /* NFT */
 /* NFT */
 
-.nft {
+/* .nft {
   user-select: none;
   max-width: 300px;
   margin: 5rem auto;
@@ -2454,7 +2455,16 @@ img {
     font-size: 20rem;
     filter: opacity(0.5);
   }
-}
+} */
+
+
+
+
+
+
+
+
+
 
 /* MusicMediaPlayer */
 /* MusicMediaPlayer */
@@ -3440,7 +3450,7 @@ footer{
   width: 100%;
   border: none;
   outline: none;
-  background: #f12020;
+  background: #ffffff00;
   font-size: 1.0625rem;
   font-weight: 500;
   cursor: pointer;
@@ -3458,8 +3468,11 @@ footer{
   color: #ffffff;
 }
 .bottom center a{
-  color: #f12020;
-  text-decoration: none;
+  /* color: #f12020; */
+  color: #ffffff;
+  background-image: conic-gradient( from var(--angle), transparent -15%, #ff0095, blue, #00ff99, #006aff, #ff0095);
+  text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
+  text-decoration: underline;
 }
 .bottom center a:hover{
   text-decoration: underline;

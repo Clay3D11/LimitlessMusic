@@ -3655,7 +3655,7 @@ body {
   font-family:'Mona Sans';
   font-stretch:75% 125%;
   font-weight:200 900;
-  src:url(https://cdn.dribbble.comhttps://cdn.dribbble.com/assets/mona-sans/Mona-Sans-870dff5a10221ba7d01cc47eca10d0b2f911bd4196bb941985490bd8c7363cd9.woff2) format("woff2 supports variations"),url(/assets/mona-sans/Mona-Sans-870dff5a10221ba7d01cc47eca10d0b2f911bd4196bb941985490bd8c7363cd9.woff2) format("woff2-variations");
+  src:url() format("woff2 supports variations"),url() format("woff2-variations");
 } 
   bodyx {  
     background:transparent;
@@ -3976,7 +3976,7 @@ htmlx {
 } 
 
 .footer-1db { 
-    --item-speed: 4s; 
+    --item-speed: 3.5s; 
     --grid-gap: 24px; 
     position: relative; 
     z-index: 2; 
@@ -3986,6 +3986,9 @@ htmlx {
     overflow: hidden; 
     overflow-x: scroll;
 } 
+
+
+
 
 @media (hover: hover){ 
   .footer-1db { 
@@ -4000,16 +4003,35 @@ htmlx {
     color: #0d0c22;
 } 
 
-.footer-3q9 { 
-    width: -webkit-fit-content; 
-    width: -moz-fit-content; 
-    width: fit-content; 
+.footer-3q9 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     animation: footer-marquee-mobile-wiggle 1.8s alternate-reverse infinite ease-in-out;
+    -webkit-animation: footer-marquee-mobile-wiggle 1.8s alternate-reverse infinite ease-in-out;
 } 
+
+
+
+
 
 @media (hover: hover){ 
   .footer-3q9 { 
     -webkit-animation: footer-marquee-desktop linear infinite; 
+    animation: footer-marquee-desktop linear infinite; 
+    -webkit-animation-duration: calc(var(--item-speed) * var(--item-count, 8)); 
+    animation-duration: calc(var(--item-speed) * var(--item-count, 8));
+  } 
+
+  .footer-3q9:hover { 
+    --grid-x-offset: -16px; 
+    -webkit-animation-play-state: paused; 
+    animation-play-state: paused;
+  } 
+}     
+@media (hover: hover){ 
+  .footer-3q9 { 
+    -webkit-animation: footer-marquee-desktop2 linear infinite; 
     animation: footer-marquee-desktop linear infinite; 
     -webkit-animation-duration: calc(var(--item-speed) * var(--item-count, 8)); 
     animation-duration: calc(var(--item-speed) * var(--item-count, 8));
@@ -4059,7 +4081,7 @@ ax {
 } 
 
 a:link { 
-    -webkit-transition: color 200ms ease; 
+    -webkit-transition: color 300ms ease; 
     transition: color 200ms ease; 
     color: #0d0c22; 
     text-decoration: none;
@@ -4218,12 +4240,25 @@ a img  {
   }  
 
 } 
+@keyframes footer-marquee-desktop2 { 
+  0% {  
+      -webkit-transform: translate3d(0, 0, 0); 
+      transform: translate3d(0, 0, 0); 
+      transform: translate3d(0px, 0px, 0px); 
+  }  
+  100% {  
+      -webkit-transform: translate3d(calc(-50% - 16px), 0, 0); 
+      transform: translate3d(calc(-50% - 16px), 0, 0); 
+      transform: translate3d(calc(-50% - 16px), 0px, 0px); 
+  }  
+
+} 
 /* These were inline style tags. Uses id+class to override almost everything */
 /* #style-6MKcK.style-6MKcK {  
    --item-count: 8;  
     outline: rgb(255, 0, 0) dashed 1px;  
 }   */
-#style-2m6MF.style-2m6MF {  
+/* #style-2m6MF.style-2m6MF {  
    --stack-color-1: #F6D9FB;  
     --stack-color-2: #E3EBFD;  
 }  
@@ -4286,4 +4321,4 @@ a img  {
 #style-FsPRc.style-FsPRc {  
    --stack-color-1: #EDDDFB;  
     --stack-color-2: #DDFDE8;  
-}  
+}   */

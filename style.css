@@ -474,7 +474,7 @@ a {
   text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
   font-weight: 800;
   margin: 0 auto;
-  padding: 3.5em;
+  padding: 5.5em;
   width: 400px;
   height: 500px;
   /* background: #1c1f2b; */
@@ -751,24 +751,23 @@ img {
 
 .modal__content {
   position: relative;
-  /* background-color: var(--container-color); */
-  background-image: url(./img/UnFlowZaza.gif);
+  /*background-color: var(--container-color);
+  */background-image: url(./img/UnFlowZaza.gif);
   background-position: center;
   background-size: cover;
   text-align: center;
-  padding: 3rem 2rem 2rem;
-  border-radius: 1rem 1rem 0 0;
-  transition: all 0.3s;
-
-  /*=== Effect 1 ===*/
-  transform: translateY(10%);
-
-  /*=== Effect 2 ===*/
-  /* transform: scale(.5) translateY(10%); */
-
-  /*=== Effect 3 ===*/
-  /* transform: rotateX(65deg) scale(.75) translateY(10%);
-  transform-origin: 50% 100%; */
+  /*padding: 2rem 2rem 2rem;
+  */border-radius: 1rem 1rem 0 0;
+  transition: all 1s;
+  /*===Effect1===*/transform: translateY(10%);
+  /*===Effect2===*//*transform: scale(.5) translateY(10%);
+  *//*===Effect3===*//*transform: rotateX(65deg) scale(.75) translateY(10%);
+  transform-origin: 50% 100%;
+  */-webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
 }
 
 .modal__img {
@@ -1315,7 +1314,7 @@ img {
   margin: 0 auto;
   padding: 1em;
   width: 250px;
-  height: 100px;
+  height: 150px;
   /* background: #1c1f2b; */
   background-image: url(./img/UnFlowZaza.gif);
   background-position: center;
@@ -1420,7 +1419,7 @@ img {
   max-width: 400px;
   min-height: 250px;
   border-radius: 8px;
-  padding: 48px 32px;
+  padding: 45px 32px;
   cursor: pointer;
   border: 1px solid var(--primary-blue);
   background: #F7FAFF;
@@ -1431,31 +1430,41 @@ img {
   background: transparent;
 }
 
+
+/* Pop up modal 1st Div */
+/* Pop up modal 1st Div */
+/* Pop up modal 1st Div */
+/* Pop up modal 1st Div */
+/* Pop up modal 1st Div */
+/* Pop up modal 1st Div */
+
 .pricing-card__price {
   /* background: var(--background-blue); */
   background-image: url(./img/UnFlowZaza.gif);
   width: 100%;
-  height: 150px;
-
-  font-size: 23px;
-
-
+  height: 200px;
+  
+  font-size: 25px;
+  
+  
   
   min-height: 56px;
   padding: 6px 16px;
   display: flex;
-  gap: 6px;
+  gap: 5px;
   align-items: center;
   border-radius: 8px;
   font-weight: 900;
   flex-wrap: wrap;
   line-height: 20.6px;
+  color: #8c00ff;
 }
 
 .pricing-card__price > s {
-  color: var(--text-color-neutral);
+  /* color: var(--text-color-neutral); */
+  color: #006aff;
   font-size: 0.975rem;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .pricing-card > h3 {
@@ -1466,7 +1475,7 @@ img {
 }
 
 .pricing-card > .divider {
-  border: 1px solid #E6E8F0;
+  border: 1px solid #0033ff;
 }
 
 .pricing-card > .enroll {
@@ -1491,15 +1500,46 @@ img {
   transition: border-width 0.2s linear;
 }
 
+
+
+
+
+
+
+
+
+/* Pop up modal 2nd Div */
+/* Pop up modal 2nd Div */
+/* Pop up modal 2nd Div */
+/* Pop up modal 2nd Div */
+
+
 .pricing-card--primary > .enroll {
-  background: linear-gradient(
+  /* background: linear-gradient(
     90deg, #605DFF, #AD63F6 50%, 
     #AD63F6 50%, #605DFF 80%, #5DA8FF 100%
+  ); */
+  background: linear-gradient(
+    90deg, #ff0095, blue, #00ff99, #006aff, #ff0095
   );
+
+
+  /* background-image: conic-gradient( from var(--angle), transparent -15%, #ff0095, blue, #00ff99, #006aff, #ff0095); */
+
+
+
+
   background-size: 200% 200%;
   background-position: 0% 0%;
   transition: background-position 1s;
-  color: rgb(4, 1, 160);
+  /* color: rgb(4, 1, 160); */
+  background-image: url(./img/UnFlowZaza.gif);
+  background-position: center;
+  background-size: cover;
+
+  height: 100px;
+
+
   font-size: 20px;
   font-weight: 800;
 }
@@ -1531,7 +1571,7 @@ img {
   left: -32px;
   width: 32px;
   height: 32px;
-  background-image: url('assets/benefit.svg');
+  background-image: url('');
   background-repeat: no-repeat;
 }
 

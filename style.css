@@ -465,7 +465,7 @@ a {
 
 .backcard {
   position: relative;
-  min-height: 40vh;
+  min-height: 20vh;
   display: grid;
   place-items: center;
 }
@@ -1312,9 +1312,9 @@ img {
 .cardmarketing {
   color: white;
   margin: 0 auto;
-  padding: 1em;
-  width: 250px;
-  height: 150px;
+  padding: 1.2em;
+  width: 270px;
+  height: 100px;
   /* background: #1c1f2b; */
   background-image: url(./img/UnFlowZaza.gif);
   background-position: center;

@@ -2465,7 +2465,8 @@ img {
 .artist-container {
   column-gap: 0px;
   width: 3100px;
-  height: 210px;
+  height: 280px;
+  /* margin-bottom: 50px; */
   
 }
 @media only screen and (max-width: 430px) {
@@ -2494,6 +2495,10 @@ img {
   margin-left: 50px;
 
 
+}
+
+.artist p {
+  display: none;
 }
 
 .artist img {
@@ -2590,7 +2595,7 @@ img {
 
 .album-container {
   column-gap: 44px;
-  width: 2200px;
+  width: 4500px;
 }
 
 .album {
@@ -2771,8 +2776,8 @@ img {
   /* height: 8vh; */
   user-select: none;
   gap: 1.5rem;
-  padding-top: 1rem;
-  padding-bottom: 1.2rem;
+  /* padding-top: 1rem; */
+  /* padding-bottom: 1.2rem; */
 /*background-color: green;*/
    /*transform: skewY(-3deg); */
    /*transform: rotate(-5deg) translateY(-30px) translateX(50px);*/

@@ -1,0 +1,578 @@
+/* Album Sliding */
+/* Album Sliding */
+/* Album Sliding */
+/* Nory */
+/* Nory */
+/* Nory */
+/* Nory */
+/* Nory */
+/* Nory */
+/* Nory */
+/* Nory */
+
+
+/* body{
+  background:#000;
+} */
+
+.moxybaulnory{
+    width: 500px;
+    height: 500px;
+    background:url(./img/Nory-Code.png);
+    background-position: center;
+    background-size: contain;
+    margin:auto;
+    border:20px solid #080808;
+    outline:1px solid #111;
+    overflow: hidden;
+    transition: all ease-in-out 1s;
+  }
+  
+  
+  .nameboxmnory{
+    display: flex;
+    /* color: #f50b0b; */
+    text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
+    text-transform:capitalize;
+    text-align: center;
+    width: 500px;
+    height: 550px;
+    margin: auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nmox1nory{
+    font-family: chill;
+    font-size: 250px;
+    position: relative;
+    left:-60px;
+    transition: all ease-in-out 0.9s;
+    transition-delay: 0.8s;
+  }
+  
+  .nmox2nory{
+    font-family: chill;
+    font-size: 250px;
+    position: relative;
+    right: -30px;
+    transition: all ease-in-out 0.8s;
+    transition-delay: 0.8s;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .moxybaulnory:hover .nmox1nory{
+    left: -250px;
+    transition: all ease-in-out 0.8s;
+  }
+  
+  .moxybaulnory:hover .nmox2nory{
+    right: -271px;
+    transition: all ease-in-out 0.8s;
+  }
+  
+  /* .moxybaul:hover{
+    background:url(https://i.imgur.com/GrOTXYz.png);
+    transition: all ease-in-out 1s;
+  } */
+  
+  
+  
+  /* Inside Content to move */
+  /* Inside Content to move */
+  /* Inside Content to move */
+  /* Inside Content to move */
+  /* Inside Content to move */
+  /* Inside Content to move */
+  
+  
+  
+  .box-dmoxnory{
+
+    
+    width: 490px;
+    height: 450px;
+  
+  
+  
+  
+  
+    position: relative;
+    top: -550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: rajdhani;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing:1px;
+  }
+  
+  .datosmoxnory{
+    width: 240px;
+    height: 380px;
+    background:rgba(0,0,0,0.6);
+    color: #ccc;
+    /* padding:40px; */
+    line-height: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: -520px;
+    transition: all ease-in-out 0.8s;
+  }
+  
+  .dmoxnory{
+    width: 240px;
+    border-bottom:1px solid #5c4763;
+    display: flex;
+    align-items: center;
+    margin-top:10px;
+    padding-bottom:1px;
+    justify-content: space-between;
+  }
+  
+  .datosmoxnory m{
+    font-weight: 700;
+  }
+  
+  .datosmoxnory n{
+    text-align: right;
+  }
+  
+  .moxquonory{
+    background:#5c4763;
+    padding:10px;
+    text-align:justify;
+    height: 50px;
+    line-height: 10px;
+  }
+  
+  .moxgifnory{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border:10px solid #222;
+    margin: auto;
+    margin-bottom: 20px;
+    background:url(./img/codigosvid.gif);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .musicmoxnory{
+    width: 240px;
+    height: 380px;
+    background:rgba(0,0,0,0.6);
+    margin-left: 40px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: -520px;
+    transition: all ease-in-out 0.8s;
+  }
+  
+  .moxybaulnory:hover .musicmoxnory{
+    bottom: 0px;
+    transition: all ease-in-out 0.8s;
+    transition-delay: 0.8s;
+  }
+  
+  
+  .mmoxnory{
+    width: 240px;
+    display: flex;
+    align-items: center;
+    background:rgba(0,0,0,0.4);
+    padding:8px;
+    line-height: 10px;
+  }
+  
+  .moxybaulnory:hover .datosmoxnory{
+    top: 0px;
+    transition: all ease-in-out 0.8s;
+    transition-delay: 0.8s;
+  }
+  
+  .mmoxnory i{
+    font-size: 20px;
+    color: #ccc;
+    padding:10px;
+  }
+  
+  .mmoxnory a:hover{
+    color: #ccc;
+    transition: all ease-in-out 0.3s;
+  }
+  
+  .mmoxnory a{
+    width: 70px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #52e90d;
+    border:0;
+    text-decoration: none;
+    transition: all ease-in-out 0.3s;
+  }
+  
+  .mmoxnory m{
+    font-size: 11px;
+    color: #999;
+    margin-left: 5px;
+    display: flex;
+  }
+  
+  .mmoxnory m:before{
+    content: '/';
+    font-weight: 700;
+    color: #5c4763;
+    margin-right: 10px;
+  }
+  
+  .botonmoxnory{
+    width: 250px;
+    margin: auto;
+    display: flex;
+    align-items:center;
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+  
+  .botonmoxnory a{
+    color: #33ff00;
+    font-size: 20px;
+    -webkit-text-stroke: 1px transparent;
+    transition: all ease-in-out 0.4s;
+  }
+  
+  .botonmoxnory a:hover{
+    -webkit-text-stroke: 1px #5c4763;
+    color: transparent;
+    transition: all ease-in-out 0.4s;
+  }
+  
+  .bottomlyrmnory{
+    font-family: rajdhani;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: #ccc;
+    position: relative;
+    top: -600px;
+    text-align: center;
+    line-height: 10px;
+    transition: all ease-in-out 0.8s;
+    transition-delay: 1s;
+  }
+  
+  .moxybaulnory:hover .bottomlyrmnory{
+    filter:blur(10px);
+    opacity:0;
+    transition: all ease-in-out 0.8s;
+  }
+  
+  /* @font-face {
+  font-family: 'Chill';
+  font-style: normal;
+  font-weight: normal;
+  src: url('https://dl.dropbox.com/s/agpnu5irqlaaeco/Chillvornia%20Stamp%20Slant.otf') format('woff');
+  } */
+  
+  
+  
+  
+  @media only screen and (max-width: 430px) {
+    .moxybaulnory{
+      width: 400px;
+      height: 400px;
+      background:url(./img/Nory-Code.png);
+      background-position: center;
+      background-size: contain;
+      margin:auto;
+      border:20px solid #080808;
+      outline:1px solid #111;
+      overflow: hidden;
+      transition: all ease-in-out 1s;
+    }
+  
+    .nameboxmnory{
+      display: flex;
+      /* color: #f50b0b; */
+      text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
+      text-transform:capitalize;
+      text-align: center;
+      width: 400px;
+      height: 550px;
+      margin: auto;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .nmox1nory{
+      font-family: chill;
+      font-size: 150px;
+      position: relative;
+      left:-30px;
+      transition: all ease-in-out 0.9s;
+      transition-delay: 0.8s;
+    }
+    
+    .nmox2nory{
+      font-family: chill;
+      font-size: 150px;
+      position: relative;
+      right: -0px;
+      transition: all ease-in-out 0.8s;
+      transition-delay: 0.8s;
+    }
+  
+  
+    .moxybaulnory:hover .nmox1nory{
+      
+      left: -250px;
+      transition: all ease-in-out 0.8s;
+    }
+    
+    .moxybaulnory:hover .nmox2nory{
+      right: -271px;
+      transition: all ease-in-out 0.8s;
+    }
+    
+    /* .moxybaulnory:hover{
+      background:url(https://i.imgur.com/GrOTXYz.png);
+      transition: all ease-in-out 1s;
+    } */
+    
+    .box-dmoxnory{
+      width: 400px;
+      height: 150px;
+      position: relative;
+      top: -550px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: rajdhani;
+      text-transform: uppercase;
+      font-size: 10px;
+      letter-spacing:1px;
+  
+  
+  
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 1rem;
+      
+    }
+    
+    .datosmoxnory{
+      /* width: 200px;
+      height: 280px;
+      background:rgba(0,0,0,0.6);
+      color: #ccc;
+      padding:40px;
+      line-height: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      top: -520px;
+      transition: all ease-in-out 0.8s; */
+  
+      /* display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 1rem; */
+       display: none;
+  
+  
+      
+    }
+    
+    .dmoxnory{
+      width: 240px;
+      border-bottom:1px solid #5c4763;
+      display: flex;
+      align-items: center;
+      margin-top:10px;
+      padding-bottom:1px;
+      justify-content: space-between;
+    }
+    
+    .datosmoxnory m{
+      font-weight: 700;
+    }
+    
+    /* .datosmox n{
+      text-align: right;
+    } */
+    
+    .moxquonory{
+      background:#5c4763;
+      padding:10px;
+      text-align:justify;
+      height: 50px;
+      line-height: 10px;
+    }
+    
+    .moxgifnory{
+      width: 100px;
+      height: 100px;
+      border-radius: 100%;
+      border:10px solid #222;
+      margin: auto;
+      margin-bottom: 20px;
+      background:url(./img/codigosvid.gif);
+      background-position: center;
+      background-size: cover;
+  
+    }
+  
+  
+  
+  
+  .musicmoxnory{
+    width: 285px;
+    height: 370px;
+    /* background:rgba(0,0,0,0.6); */
+    background-image: url(./img/codigosvid.gif);
+    background-position: center;
+    background-size: cover;
+  
+    margin-left: 40px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: -520px;
+    transition: all ease-in-out 0.8s;
+  }
+  
+  .moxybaulnory:hover .musicmoxnory{
+    bottom: 0px;
+    transition: all ease-in-out 0.8s;
+    transition-delay: 0.8s;
+  }
+  
+  
+  .mmoxnory{
+    display: none;
+    /* width: 200px;
+    display: flex;
+    align-items: center;
+    background:rgba(0,0,0,0.4);
+    
+    padding:8px;
+    line-height: 10px; */
+  }
+  
+  .moxybaulnory:hover .datosmoxnory{
+    top: 0px;
+    transition: all ease-in-out 0.8s;
+    transition-delay: 0.8s;
+  }
+  
+  .mmoxnory i{
+    font-size: 20px;
+    color: #ccc;
+    padding:10px;
+  }
+  
+  .mmoxnory a:hover{
+    color: #ccc;
+    transition: all ease-in-out 0.3s;
+  }
+  
+  .mmoxnory a{
+    width: 70px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #5c4763;
+    border:0;
+    text-decoration: none;
+    transition: all ease-in-out 0.3s;
+  }
+  
+  .mmoxnory m{
+    font-size: 11px;
+    color: #999;
+    margin-left: 5px;
+    display: flex;
+  }
+  
+  .mmoxnorynory m:before{
+    content: '/';
+    font-weight: 700;
+    color: #5c4763;
+    /* margin-right: 10px; */
+  }
+  
+  .botonmoxnory{
+    width: 250px;
+    margin: auto;
+    display: flex;
+    align-items:center;
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+  
+  .botonmoxnory a{
+    color: #5c4763;
+    font-size: 20px;
+    -webkit-text-stroke: 1px transparent;
+    transition: all ease-in-out 0.4s;
+  }
+  
+  .botonmoxnory a:hover{
+    -webkit-text-stroke: 1px #5c4763;
+    color: transparent;
+    transition: all ease-in-out 0.4s;
+  }
+  
+  .bottomlyrmnory{
+    font-family: rajdhani;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: #ccc;
+    position: relative;
+    top: -600px;
+    text-align: center;
+    line-height: 10px;
+    transition: all ease-in-out 0.8s;
+    transition-delay: 1s;
+  }
+  
+  .moxybaulnory:hover .bottomlyrmnory{
+    filter:blur(10px);
+    opacity:0;
+    transition: all ease-in-out 0.8s;
+  }
+  
+  /* @font-face {
+  font-family: 'Chill';
+  font-style: normal;
+  font-weight: normal;
+  src: url('https://dl.dropbox.com/s/agpnu5irqlaaeco/Chillvornia%20Stamp%20Slant.otf') format('woff');
+  } */
+  
+  
+  
+  }

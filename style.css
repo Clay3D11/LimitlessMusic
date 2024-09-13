@@ -1316,6 +1316,7 @@ img {
   /* padding: 1rem 1.25rem; */
   border-radius: 0.5rem;
   transition: 0.3s;
+  font-size: 15px;
 }
 
 .modal__button:hover {

@@ -1063,7 +1063,7 @@ src: url('https://dl.dropbox.com/s/agpnu5irqlaaeco/Chillvornia%20Stamp%20Slant.o
   width: 400px;
   height: 400px;
   /* background: #1c1f2b; */
-  background-image: url(./img/Nory&Famelz-Wow.gif);
+  background-image: url(./img/Clinvidremix1min-ezgif.com-effects.gif);
   background-position: center;
   background-size: cover;
 
@@ -1079,6 +1079,10 @@ src: url('https://dl.dropbox.com/s/agpnu5irqlaaeco/Chillvornia%20Stamp%20Slant.o
   -o-border-radius: 10px;
   position: relative;
 }
+
+
+
+
 
 
 
@@ -2182,7 +2186,7 @@ img {
   background-position: 0% 0%;
   transition: background-position 1s;
   /* color: rgb(4, 1, 160); */
-  background-image: url(./img/UnFlowZaza.gif);
+  background-image: url(./img/Clinvidremix1min-ezgif.com-effects.gif);
   background-position: center;
   background-size: cover;
 
@@ -5056,7 +5060,7 @@ body {
 
 :root {
   --marquee-width: 80vw;
-  --marquee-height: 20vh;
+  --marquee-height: 25vh;
   /* --marquee-elements: 12; */ /* defined with JavaScript */
   --marquee-elements-displayed: 5;
   --marquee-element-width: calc(
@@ -5141,5 +5145,12 @@ body {
     width: 5rem;
   }
 }
+
+
+
+
+
+
+
 
 

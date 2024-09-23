@@ -1429,7 +1429,7 @@ img {
   -webkit-transition: all 1s;
 
 
-  color: #ffffff;
+  color: #000000;
 
 
 
@@ -3391,6 +3391,7 @@ img {
 
 .now-playing {
   font-size: 1rem;
+  color: transparent;
 }
 
 .track-name {

@@ -148,71 +148,107 @@ body {
   }
 }
 
-/* Navegation Pill */
-/* Navegation Pill */
-/* Navegation Pill */
 
-.navpill {
-  z-index: 100;
-  list-style-type: none;
-  border-radius: 10px;
-  background: #666;
+
+
+
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 10px 20px;
+}
+.navbar img {
+  height: 40px;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
   margin: 0;
   padding: 0;
-  width: 110px;
-  overflow: hidden;
 }
-
-.nav-itempill {
-  font-size: 20px;
-  /* background: #9701f0; */
-  background-image: url(./img/dior.png);
-  background-position: right;
-
-  border-bottom: 1px solid rgba(155, 38, 223, 0.3);
+.navbar li {
+  margin-left: 20px;
 }
-
-.nav-itempill:last-child {
-  border-bottom: none;
-}
-
-.nav-linkpill, .nav-submenu-linkpill {
+.navbar a {
+  color: white;
   text-decoration: none;
-  padding: 16px 20px;
-  display: block;
-  color: #fff;
+  font-weight: bold;
+  padding: 8px 15px;
 }
-
-.nav-submenupill {
-  overflow: hidden;
-  max-height: 0;
-  transition: max-height 0.5s;
-  background: #3f2e49;
+.navbar a:hover {
+  color: #0073e6;
 }
-.nav-submenupill:target {
-  max-height: 10rem;
+.navbar .social-icons {
+  display: flex;
+  align-items: center;
 }
-.nav-submenu-linkpill {
-  font-size: 16px;
-  background: transparent;
-  transition: background 0.2s ease-in;
-  -webkit-transition: background 0.2s ease-in;
-  -moz-transition: background 0.2s ease-in;
-  -ms-transition: background 0.2s ease-in;
-  -o-transition: background 0.2s ease-in;
-}
-.nav-submenu-linkpill:hover {
-  background: #36253f;
+.navbar .social-icons a {
+  margin-left: 15px;
+  font-size: 20px;
 }
 
 
-@media only screen and (max-width: 430px) {
-  .nav-itempill {
-    display: none;
-  }
 
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1053,6 +1089,7 @@ src: url('https://dl.dropbox.com/s/agpnu5irqlaaeco/Chillvornia%20Stamp%20Slant.o
   min-height: 20vh;
   display: grid;
   place-items: center;
+  padding-top: 55px;
 }
 .card {
   color: white;
@@ -1257,7 +1294,7 @@ button {
 
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
-  --big-font-size: 1.5rem;
+  /* --big-font-size: 1.5rem; */
   --normal-font-size: 0.938rem;
 
   /*========== z index ==========*/
@@ -1437,6 +1474,70 @@ img {
     width: 170px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 430px) {
+  .hitsection{
+    background-size: contain;
+  }
+ 
+  
+
+  
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

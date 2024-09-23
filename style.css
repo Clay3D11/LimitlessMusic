@@ -26,7 +26,7 @@ html {
 
 body {
   /* display: flex; */
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
 }
 
@@ -3303,9 +3303,15 @@ img {
   /* background-color: #000000; */
   /* background-color: #cf1a1a; */
   /* background-color: #cf1a1a; */
-  background-image: url(./img/transstars.gif);
+  background-image: url(./img/clinclingif-ezgif.com.gif);
   background-position: center;
   background-repeat: repeat;
+  background-size: cover;
+
+
+
+
+
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
@@ -3340,17 +3346,17 @@ img {
 
 .track-name {
   font-size: 2.5rem;
-  color: white;
+  color: rgb(255, 0, 0);
 }
 
 .track-artist {
   margin-top: 5px;
   font-size: 1.5rem;
-  color: white;
+  color: rgb(255, 0, 0);
 }
 
 .buttons {
-  color: rgb(255, 255, 255);
+  color: rgb(255, 0, 0);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -3390,7 +3396,7 @@ img {
   -moz-appearance: none;
   appearance: none;
   height: 5px;
-  background: #83a9ff;
+  background: #6f6f70;
   -webkit-transition: 0.2s;
   transition: opacity 0.2s;
 }
@@ -3403,7 +3409,7 @@ img {
   width: 15px;
   height: 15px;
   background: white;
-  border: 3px solid #3774ff;
+  border: 3px solid #ff0000;
   cursor: grab;
   border-radius: 100%;
 }
@@ -3857,8 +3863,9 @@ p {
   margin-top: 50px;
   /* background-color: #292929; */
 
-  background-image: url(./img/backwood.png);
+  background-image: url(./img/transstars.gif);
   background-position: center;
+  background-repeat: repeat-x;
 
   /* background-image: url(./img/codigosvid.gif); */
 

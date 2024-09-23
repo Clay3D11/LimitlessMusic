@@ -1100,7 +1100,7 @@ src: url('https://dl.dropbox.com/s/agpnu5irqlaaeco/Chillvornia%20Stamp%20Slant.o
   width: 400px;
   height: 400px;
   /* background: #1c1f2b; */
-  background-image: url(./img/Clinvidremix1min-ezgif.com-effects.gif);
+  background-image: url(./img/clinclingif-ezgif.com.gif);
   background-position: center;
   background-size: cover;
 
@@ -1294,7 +1294,7 @@ button {
 
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
-  /* --big-font-size: 1.5rem; */
+  --big-font-size: 1.5rem;
   --normal-font-size: 0.938rem;
 
   /*========== z index ==========*/

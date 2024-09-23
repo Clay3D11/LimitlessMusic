@@ -114,9 +114,9 @@ body {
   text-align: center;
   /* padding: 14px 16px; */
   text-decoration: none;
-  font-size: 40px;
+  font-size: 60px;
   font-weight: 700;
-  text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc ;
+  text-shadow: 0 0 20px #00fffb, 0 0 40px #001aff ;
   
 }
 
@@ -124,8 +124,16 @@ body {
 .topnav a:hover {
   /* background-color: #ddd; */
   /* background-color: #0081bc; */
-  color: rgb(87, 85, 85);
+  color: rgb(255, 255, 255);
   text-decoration: underline;
+
+  /* color: rgb(255, 255, 255); */
+  text-shadow: 0 0 20px #0a06ff, 0 0 40px #0400ff;
+
+
+
+
+
 }
 
 /* Add a color to the active/current link */
@@ -143,7 +151,7 @@ body {
 
   }
   .topnav a {
-    font-size: 25px;
+    font-size: 45px;
 
   }
 }
@@ -181,8 +189,17 @@ body {
   padding: 8px 15px;
 }
 .navbar a:hover {
-  color: #0073e6;
+  color: #0011ff;
 }
+
+
+
+.navbar a:hover {
+  color: #ffffff;
+}
+
+
+
 .navbar .social-icons {
   display: flex;
   align-items: center;
@@ -1093,7 +1110,7 @@ src: url('https://dl.dropbox.com/s/agpnu5irqlaaeco/Chillvornia%20Stamp%20Slant.o
 }
 .card {
   color: white;
-  text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
+  text-shadow: 0 0 20px #0011ff, 0 0 40px #0081bc;
   font-weight: 800;
   margin: 0 auto;
   padding: 2em;
@@ -1104,7 +1121,7 @@ src: url('https://dl.dropbox.com/s/agpnu5irqlaaeco/Chillvornia%20Stamp%20Slant.o
   background-position: center;
   background-size: cover;
 
-  font-size: 17px;
+  font-size: 20px;
 
 
 
@@ -1537,6 +1554,10 @@ img {
 @media only screen and (max-width: 430px) {
   .hitsection{
     background-size: contain;
+  }
+
+  .albumnone {
+    text-decoration: none;
   }
  
   

@@ -1116,6 +1116,15 @@ src: url('https://dl.dropbox.com/s/agpnu5irqlaaeco/Chillvornia%20Stamp%20Slant.o
   -o-border-radius: 10px;
   position: relative;
 }
+.card:hover {
+  
+  scale: 106%;
+  transition: all 2s;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  -ms-transition: all 2s;
+  -o-transition: all 2s;
+}
 
 
 
@@ -1145,7 +1154,7 @@ src: url('https://dl.dropbox.com/s/agpnu5irqlaaeco/Chillvornia%20Stamp%20Slant.o
 
   /* background-image: conic-gradient( from var(--angle), transparent 0%, blue, #00ff99); */
 
-  background-image: conic-gradient( from var(--angle), transparent -15%, #ff0000, blue, #00ff99, #006aff, #ff0000);
+  background-image: conic-gradient( from var(--angle), transparent -25%, #ff0000, blue, #00ff99, #006aff, #ff0000);
 
 
   top: 50%;
@@ -1160,6 +1169,21 @@ src: url('https://dl.dropbox.com/s/agpnu5irqlaaeco/Chillvornia%20Stamp%20Slant.o
   -o-border-radius: 10px;
   animation: 3s;
   -webkit-animation: 3s spin linear infinite;
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
 }
 
 
@@ -1353,7 +1377,7 @@ img {
 .modal__button {
   display: inline-block;
   /* background-color: var(--first-color); */
-  color: #fff;
+  color: #ffffff;
   /* padding: 1rem 1.25rem; */
   border-radius: 0.5rem;
   transition: 0.3s;
@@ -1387,7 +1411,7 @@ img {
 .modal__content {
   position: relative;
   /*background-color: var(--container-color);
-  */background-image: url(./);
+  */background-image: url(./img/clinclingif-ezgif.com.gif);
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -1403,6 +1427,31 @@ img {
   -ms-transition: all 1s;
   -o-transition: all 1s;
   -webkit-transition: all 1s;
+
+
+  color: #ffffff;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 .modal__img {
@@ -1414,7 +1463,7 @@ img {
   display: inline-flex;
   background-color: var(--first-color);
   border-radius: 0.25rem;
-  color: #fff;
+  color: #ff0000;
   font-size: 1.5rem;
   position: absolute;
   top: 2rem;
@@ -1683,7 +1732,7 @@ img {
 .cardnory:hover {
   .video {
     z-index: 10;
-    scale: 200%;
+    /* scale: 200%; */
     transition: all 2s ease;
     -webkit-transition: all 2s ease;
     -moz-transition: all 2s ease;

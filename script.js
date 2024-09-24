@@ -22,6 +22,12 @@ let updateTimer;
 
 const music_list = [
     {
+        img : 'img/clinclingif-ezgif.com.gif',
+        name : 'Fa Melz',
+        artist : 'Tengo Un Flow',
+        music : 'music/UnFlowZaza.mp3'
+    },
+    {
         img : 'images/Kulosa.png',
         name : 'Oxlade',
         artist : 'Kulosa',

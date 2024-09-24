@@ -128,7 +128,7 @@ body {
   text-decoration: underline;
 
   /* color: rgb(255, 255, 255); */
-  text-shadow: 0 0 20px #0a06ff, 0 0 40px #0400ff;
+  text-shadow: 0 0 20px #ff0606, 0 0 40px #0400ff;
 
 
 
@@ -151,7 +151,7 @@ body {
 
   }
   .topnav a {
-    font-size: 45px;
+    font-size: 35px;
 
   }
 }
@@ -189,7 +189,7 @@ body {
   padding: 8px 15px;
 }
 .navbar a:hover {
-  color: #0011ff;
+  color: #ff0800;
 }
 
 

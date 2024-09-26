@@ -2533,6 +2533,24 @@ img {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Dynamic Text Slider */
 /* Dynamic Text Slider */
 /* Dynamic Text Slider */
@@ -4250,7 +4268,7 @@ footer{
 }
 .main-content{
   display: flex;
-  padding: 50px 0;
+  padding: 10px 0;
 }
 .main-content .box{
   flex-basis: 50%;
@@ -4395,6 +4413,9 @@ footer{
   .main-content .box{
     margin: 5px 0;
   }
+  .main-content p {
+    font-size: 15px;
+  }
 }
 
 
@@ -4427,10 +4448,14 @@ body {
   width: 100%;
   position: relative;
   height: auto;
-  background-color: #070617;
+  /* background-color: #070617; */
+  background-image: url(./img/transstars.gif);
+  background-position: center;
+  background-size: contain;
+  /* background-repeat: no-repeat; */
 }
 .footer .col {
-  width: 190px;
+  width: 200px;
   height: auto;
   float: left;
   box-sizing: border-box;
@@ -4442,12 +4467,14 @@ body {
   margin: 0;
   padding: 0;
   font-family: inherit;
-  font-size: 12px;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 800;
   line-height: 17px;
   padding: 20px 0px 5px 0px;
   color: rgba(13, 9, 240, 0.829);
   text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
-  font-weight: normal;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.25em;
 }
@@ -4513,10 +4540,13 @@ body {
     width: 50%;
   }
   .footer .col h1 {
-    font-size: 14px;
+    font-size: 18px;
+    font-weight: 800;
+    font-style: italic;
   }
   .footer .col ul li {
-    font-size: 13px;
+    font-size: 15px;
+    font-weight: 800;
   }
 }
 @media only screen and (max-width: 340px) {
@@ -5343,6 +5373,9 @@ body {
     width: 5rem;
   }
 }
+
+
+
 
 
 

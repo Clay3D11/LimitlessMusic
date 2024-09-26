@@ -1109,7 +1109,7 @@ src: url('https://dl.dropbox.com/s/agpnu5irqlaaeco/Chillvornia%20Stamp%20Slant.o
   padding-top: 55px;
 }
 .card {
-  color: white;
+  color: rgb(255, 255, 255);
   text-shadow: 0 0 20px #0011ff, 0 0 40px #0081bc;
   font-weight: 800;
   margin: 0 auto;
@@ -1339,7 +1339,7 @@ button {
   --normal-font-size: 0.938rem;
 
   /*========== z index ==========*/
-  --z-modal: 1000;
+  --z-modal: 1;
 }
 
 @media screen and (min-width: 968px) {
@@ -2200,6 +2200,28 @@ img {
 }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -5359,10 +5381,13 @@ body {
   border: 2px solid #eee;
 }
 
+
+
+
 @media (max-width: 600px) {
-  html {
-    font-size: 12px;
-  }
+  /* html {
+    font-size: 22px;
+  } */
   :root {
     --marquee-width: 100vw;
     --marquee-height: 16vh;

@@ -14,15 +14,17 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
-  transition: ease-in-out all 3s;
+  transition: ease-in-out all 1.5s;
   /*height: 100%;
   *//*background-color: #111;
   */-webkit-transition: all 2s;
-  -moz-transition: ease-in-out all 3s;
-  -ms-transition: ease-in-out all 3s;
-  -o-transition: ease-in-out all 3s;
-  -webkit-transition: ease-in-out all 3s;
+  -moz-transition: ease-in-out all 1.5s;
+  -ms-transition: ease-in-out all 1.5s;
+  -o-transition: ease-in-out all 1.5s;
+  -webkit-transition: ease-in-out all 1.5s;
 }
+
+
 
 body {
   /* display: flex; */
@@ -58,12 +60,17 @@ body {
   
 }
 
-/* section {
-	position: relative;
+section {
+	/* position: relative;
 	min-height: 100vh;
 	display: grid;
-	place-items: center;
-} */
+	place-items: center; */
+
+  background-color: #080808;
+  /* background-image: url(./img/clinclingif-ezgif.com.gif);
+  background-position: center;
+  background-repeat: repeat-x; */
+}
 
 
 
@@ -4693,7 +4700,7 @@ bodyx {
     padding-top: 0;
 } 
 
-htmlx { 
+html { 
     margin: 0; 
     padding: 0; 
     border: 0; 
@@ -5383,7 +5390,7 @@ body {
 
 
 
-
+/
 @media (max-width: 600px) {
   /* html {
     font-size: 22px;

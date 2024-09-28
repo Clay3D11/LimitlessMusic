@@ -3477,13 +3477,49 @@ img {
 
 .track-name {
   font-size: 2.5rem;
-  color: rgb(255, 0, 0);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  /* color: rgb(255, 0, 0); */
+
+  background-position: center;
+        
+        background-image: url(./img/eyelooping.gif);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        background-size: contain;
+
+
+
+
+
+
+
 }
 
 .track-artist {
   margin-top: 5px;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem;
   color: rgb(255, 0, 0);
+
+  background-image: url(./); */
+
+
+
+  font-size: 2.5rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  /* color: rgb(255, 0, 0); */
+
+  background-position: center;
+        
+        background-image: url(./img/eyelooping.gif);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        background-size: contain;
+
+
+
+
 }
 
 .buttons {
@@ -3911,7 +3947,7 @@ p {
 
 .container .song-info{
   /*background-color: #000;
-  */background-image: url(./img/dior.png);
+  */background-image: url(./img/);
   background-size: contain;
   background-position: center;
   background-repeat: repeat-x;

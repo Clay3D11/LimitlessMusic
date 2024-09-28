@@ -404,14 +404,16 @@ section {
   max-width: 100%;
   display: flex;
   justify-content: space-around;
-  background-image: url(./img/UnFlowZaza.gif);
+  background-image: url(./img/clinclingif-ezgif.com.gif);
   background-size: contain;
-  background-position: top;
+  background-position: center;
   background-clip: text;
   color: transparent;
-  font-size: 10em;
+  font-size: 7em;
   font-weight: 900;
   height: 340px;
+
+  padding-top: 50px;
   
 }
 
@@ -3909,7 +3911,7 @@ p {
 
 .container .song-info{
   /*background-color: #000;
-  */background-image: url(./img/);
+  */background-image: url(./img/dior.png);
   background-size: contain;
   background-position: center;
   background-repeat: repeat-x;
@@ -3997,7 +3999,7 @@ p {
   margin-top: 20px;
   /* background-color: #292929; */
 
-  background-image: url(./img/);
+  background-image: url(./img/crystalsbubble.gif);
   background-position: center;
   background-repeat: repeat-x;
 

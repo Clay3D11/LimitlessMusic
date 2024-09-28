@@ -67,6 +67,9 @@ section {
 	place-items: center; */
 
   background-color: #080808;
+  background-color: #000;
+
+
   /* background-image: url(./img/clinclingif-ezgif.com.gif);
   background-position: center;
   background-repeat: repeat-x; */
@@ -2401,6 +2404,7 @@ img {
 
   font-size: 20px;
   font-weight: 800;
+
 }
 
 .pricing-card--primary > .enroll:hover, .enroll:focus {

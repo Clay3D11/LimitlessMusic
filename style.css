@@ -3486,7 +3486,7 @@ img {
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
-        background-size: contain;
+        background-size: cover;
 
 
 
@@ -3515,7 +3515,7 @@ img {
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
-        background-size: contain;
+        background-size: cover;
 
 
 
@@ -3950,7 +3950,7 @@ p {
   */background-image: url(./img/);
   background-size: contain;
   background-position: center;
-  background-repeat: repeat-x;
+  background-repeat:no-repeat;
   margin: 0 10px;
   padding: 15px 15px 150px 150px;
   border-radius: 15px 15px 0 0;
@@ -4046,7 +4046,7 @@ p {
   margin-top: 20px;
   /* background-color: #292929; */
 
-  background-image: url(./img/crystalsbubble.gif);
+  background-image: url(./img/);
   background-position: center;
   background-repeat: repeat-x;
 

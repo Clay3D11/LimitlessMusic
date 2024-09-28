@@ -3104,6 +3104,8 @@ img {
 
 }
 
+
+
 .marquee__group {
   flex-shrink: 0;
   display: flex;
@@ -3122,6 +3124,34 @@ img {
   white-space: nowrap;
   font-family: 'Syne', sans-serif !important;
   /*text-transform: uppercase;*/
+
+
+
+  background-image: url(./img/clinclingif-ezgif.com.gif);
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: contain;
+  
+  text-shadow: 0 0 20px #1bff0600, 0 0 40px #2bff0000;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 }
 
@@ -3138,10 +3168,16 @@ img {
     .marquee__group span {
         font-size: 3.5vw;
     }
+  }
+  
+  
+  @media only screen and (max-width: 430px) {
+  .marquee__group span {
+      font-size: 11.5vw;
+  }
+
+
 }
-
-
-
 
 
 

@@ -4003,7 +4003,7 @@ p {
   height: 200px;
   position: absolute;
   top: 0px;
-  left: 110px;
+  left: 845px;
   background: url("assets/1.jpg");
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -4013,6 +4013,17 @@ p {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: all 0.2s ease-in-out;
 }
+
+
+@media only screen and (max-width: 430px) {
+  .container .disk .cover{
+    left: 110px;
+  }
+}
+
+
+
+
 
 .container .disk .circle{
   position: absolute;
@@ -5448,7 +5459,6 @@ body {
     width: 5rem;
   }
 }
-
 
 
 

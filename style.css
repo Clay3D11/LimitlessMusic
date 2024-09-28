@@ -1496,6 +1496,7 @@ img {
   top: 2rem;
   right: 2rem;
   cursor: pointer;
+  z-index: 100;
 }
 
 .modal__title {
@@ -3430,7 +3431,7 @@ img {
   /* background-color: #000000; */
   /* background-color: #cf1a1a; */
   /* background-color: #cf1a1a; */
-  background-image: url(./img/clinclingif-ezgif.com.gif);
+  background-image: url(./img/transstars.gif);
   background-position: center;
   background-repeat: repeat;
   background-size: cover;
@@ -3908,7 +3909,7 @@ p {
 
 .container .song-info{
   /*background-color: #000;
-  */background-image: url(./img//clinclingif-ezgif.com.gif);
+  */background-image: url(./img/);
   background-size: contain;
   background-position: center;
   background-repeat: repeat-x;
@@ -3996,7 +3997,7 @@ p {
   margin-top: 20px;
   /* background-color: #292929; */
 
-  background-image: url(./img/transstars.gif);
+  background-image: url(./img/);
   background-position: center;
   background-repeat: repeat-x;
 

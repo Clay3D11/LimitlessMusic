@@ -22,7 +22,13 @@ let updateTimer;
 
 const music_list = [
     {
-        img : 'img/clinclingif-ezgif.com.gif',
+        img : 'img/codigosvid.gif',
+        name : 'Nory Dolla',
+        artist : 'Codigos',
+        music : 'music/Nory-Codigos.mp3'
+    },
+    {
+        img : 'img/UnFlowZaza.gif',
         name : 'Fa Melz',
         artist : 'Tengo Un Flow',
         music : 'music/UnFlowZaza.mp3'

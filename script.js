@@ -34,6 +34,18 @@ const music_list = [
         music : 'music/UnFlowZaza.mp3'
     },
     {
+        img : 'img/drake11.png',
+        name : 'Family Matter',
+        artist : 'Drake',
+        music : 'music/Drake-familymatter.mp3'
+    },
+    {
+        img : 'img/notlikeus.png',
+        name : 'Not Like US',
+        artist : 'Kendric',
+        music : 'music/NotLikeUs.mp3'
+    },
+    {
         img : 'images/Kulosa.png',
         name : 'Oxlade',
         artist : 'Kulosa',

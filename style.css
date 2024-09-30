@@ -3167,14 +3167,16 @@ img {
 
 
 
-  background-image: url(./img/clinclingif-ezgif.com.gif);
+  background-image: url(./img/);
   background-position: center;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   background-size: contain;
   
-  text-shadow: 0 0 20px #1bff0600, 0 0 40px #2bff0000;
+
+  color: #ffffff;
+  text-shadow: 0 0 20px #06a4ff, 0 0 40px #00ccff;
 
 
 

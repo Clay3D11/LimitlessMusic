@@ -1278,16 +1278,53 @@ button {
   height: 100%;
   padding: var(--border-width);
   border-radius: var(--border-radius);
+
+
   background-image: conic-gradient(
-     #488cfb,
+     #0263ff,
+     #00ffd5,
+     #053df5,
+     #d70eff,
+     #e44040,
+     #9900ff,
+     #0062ff
+   );
+
+
+   /* background-image: conic-gradient( from var(--angle), blue, #ff0000, #00ffff, #ac0808, #0011ff); */
+
+
+
+
+
+
+   /* background-image: conic-gradient(
+     #6348fb,
      #29dbbc,
-     #ddf505,
+     #2905f5,
      #ff9f0e,
-     #e440bb,
+     #40e4ce,
      #655adc,
      #488cfb
-   );
-   /* background-image: conic-gradient( from var(--angle), blue, #ff0000, #00ffff, #ac0808, #0011ff); */
+   ); */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   -webkit-mask-image: var(--m-i), var(--m-i);

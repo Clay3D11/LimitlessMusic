@@ -1772,11 +1772,75 @@ h3 {
 
 
 
+/* MainHEading Fading to right */
+/* MainHEading Fading to right */
+/* MainHEading Fading to right */
+/* MainHEading Fading to right */
+/* MainHEading Fading to right */
+
+
+
+
+/* * {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000;
+} */
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 24px;
+}
+
+p {
+  font-weight: 700;
+  text-align: center;
+  font-size: 40px;
+  font-family: Hack, sans-serif;
+  text-transform: uppercase;
+
+
+
+
+  background: linear-gradient(90deg, #000, #fff, #000);
+  
+  
+  /* background: linear-gradient(90deg, #000,#000, #fff,#fd0000,#fff,#fff,#e100ff,#fff,#fff,#002fff,#fff, #000); */
+
+  /* background-color: white; */
+  text-shadow: 0 0 20px #00fffb, 0 0 40px #00aeff;
 
 
 
 
 
+  letter-spacing: 5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: shine 4s linear infinite;
+  position: relative;
+  -webkit-animation: shine 7s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position-x: -400%;
+  }
+  100% {
+    background-position-x: 400%;
+  }
+}
+
+/*  Checkout my other pens on  https://codepen.io/grohit/  */
 
 
 

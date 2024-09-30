@@ -1635,6 +1635,26 @@ img {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Check Top Latest hits */
+/* Check Top Latest hits */
+/* Check Top Latest hits */
+
+
+
 @import url(https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap);
 
 @keyframes bounce {
@@ -1720,7 +1740,7 @@ h3 {
  bottom: 8rem;
  left: calc(50% - 225px);
  margin: 0 auto;
- font-size: 25rem;
+ font-size: 20rem;
  opacity: 1;
  transition: opacity 0.3s ease;
  font-family: monospace;
@@ -1732,6 +1752,10 @@ h3 {
  animation: bounce 3s cubic-bezier(0.37, 0, 0.21, 1.02) infinite,
   fonts 5s linear infinite;
 }
+
+
+
+
 
 
 

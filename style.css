@@ -1151,7 +1151,7 @@ src: url('https://dl.dropbox.com/s/agpnu5irqlaaeco/Chillvornia%20Stamp%20Slant.o
   -o-border-radius: 10px;
   position: relative;
 }
-.card:hover {
+/* .card:hover {
   
   scale: 106%;
   transition: all 2s;
@@ -1159,7 +1159,7 @@ src: url('https://dl.dropbox.com/s/agpnu5irqlaaeco/Chillvornia%20Stamp%20Slant.o
   -moz-transition: all 2s;
   -ms-transition: all 2s;
   -o-transition: all 2s;
-}
+} */
 
 
 
@@ -1483,7 +1483,7 @@ img {
 .modal__content {
   position: relative;
   /*background-color: var(--container-color);
-  */background-image: url(./img/clinclingif-ezgif.com.gif);
+  */background-image: url(./img/);
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -1920,7 +1920,16 @@ img {
     -ms-transition: all 2s ease;
     -o-transition: all 2s ease;
 } 
-.videovid{
+
+
+
+
+ /* ClinClin Video Remix Comparison */
+ /* ClinClin Video Remix Comparison */
+ /* ClinClin Video Remix Comparison */
+
+
+  .videovid{
     color: white;
     margin: 0 auto;
     /* padding: 1em; */
@@ -2258,330 +2267,6 @@ img {
 }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.pricing-container {
-  /* margin-top: 16px; */
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 32px;
-  /* padding: 16px; */
-}
-
-.pricing-card {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  gap: 16px;
-  width: 100%;
-  max-width: 400px;
-  min-height: 250px;
-  border-radius: 8px;
-  padding: 45px 32px;
-  cursor: pointer;
-  border: 1px solid var(--primary-blue);
-  background: #F7FAFF;
-}
-
-.pricing-card--primary {
-  /* background: white; */
-  background: transparent;
-}
-
-
-/* Pop up modal 1st Div */
-/* Pop up modal 1st Div */
-/* Pop up modal 1st Div */
-/* Pop up modal 1st Div */
-/* Pop up modal 1st Div */
-/* Pop up modal 1st Div */
-
-.pricing-card__price {
-  /* background: var(--background-blue); */
-  background-image: url(./img/clinclingif-ezgif.com.gif);
-  background-position: center;
-
-
-  width: 100%;
-  height: 200px;
-  
-  font-size: 50px;
-  text-decoration: underline;
-  
-  
-  
-  min-height: 56px;
-  padding: 6px 16px;
-  display: flex;
-  gap: 9px;
-  align-items: center;
-  border-radius: 8px;
-  font-weight: 900;
-  flex-wrap: wrap;
-  line-height: 22.6px;
-  color: #0004ff;
-  
-
-
-}
-
-.pricing-card__price > s {
-  /* color: var(--text-color-neutral); */
-  color: #ffffff;
-  text-shadow: 0 0 20px #00fffb, 0 0 40px #1c00bc;
-  font-size: 1.3rem;
-  text-decoration: underline;
-}
-
-.pricing-card > h3 {
-  margin: 0;
-  font-size: 1.125rem;
-  font-weight: 800;
-  text-align: left;
-}
-
-.pricing-card > .divider {
-  border: 1px solid #0033ff;
-}
-
-.pricing-card > .enroll {
-  display: block;
-  width: 100%;
-  font-weight: 700;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 48px;
-  border-radius: 8px;
-  background: #605DFF1A;
-  color: var(--primary-blue-violet);
-  text-decoration: none;
-  letter-spacing: 0.75px;
-  border: 0px solid var(--primary-blue-violet);
-}
-
-.pricing-card > .enroll:hover {
-  border: 1px solid var(--primary-blue-violet);
-  transition: border-width 0.2s linear;
-}
-
-
-
-
-
-
-
-
-
-/* Pop up modal 2nd Div */
-/* Pop up modal 2nd Div */
-/* Pop up modal 2nd Div */
-/* Pop up modal 2nd Div */
-
-
-.pricing-card--primary > .enroll {
-  /* background: linear-gradient(
-    90deg, #605DFF, #AD63F6 50%, 
-    #AD63F6 50%, #605DFF 80%, #5DA8FF 100%
-  ); */
-  background: linear-gradient(
-    90deg, #ff0095, blue, #00ff99, #006aff, #ff0095
-  );
-
-
-  /* background-image: conic-gradient( from var(--angle), transparent -15%, #ff0095, blue, #00ff99, #006aff, #ff0095); */
-
-
-
-
-  background-size: 100% 100%;
-  background-position: 0% 0%;
-  transition: background-position 1s;
-  /* color: rgb(4, 1, 160); */
-  background-image: url(./img/clinclingif-ezgif.com.gif);
-  background-position: center;
-  background-size: cover;
-
-  height: 60px;
-
-
-  font-size: 20px;
-  font-weight: 800;
-
-}
-
-.pricing-card--primary > .enroll:hover, .enroll:focus {
-  border: none;
-  background-position: 100% 100%;
-  transition: background-position 1s;
-}
-
-.pricing-card > ul {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.pricing-card > ul > li {
-  position: relative;
-  font-weight: 500;
-  list-style-type: none;
-  font-size: 0.875rem;
-}
-
-.pricing-card > ul > li:before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -32px;
-  width: 32px;
-  height: 32px;
-  background-image: url('');
-  background-repeat: no-repeat;
-}
-
-.pricing-card > .plan-icon {
-  position: absolute;
-  left: -20px;
-  top: -30px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

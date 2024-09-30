@@ -1124,7 +1124,7 @@ src: url('https://dl.dropbox.com/s/agpnu5irqlaaeco/Chillvornia%20Stamp%20Slant.o
   min-height: 20vh;
   display: grid;
   place-items: center;
-  padding-top: 55px;
+  /* padding-top: 55px; */
 }
 .card {
   color: rgb(255, 255, 255);

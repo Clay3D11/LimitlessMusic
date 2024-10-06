@@ -205,7 +205,7 @@ section {
 
 .videoheaderbtn {
   
-  background-image: url(./img/clinclingif-ezgif.com.gif);
+  background-image: url(./img/);
   background-position: center;
   background-size: cover;
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
@@ -267,11 +267,11 @@ section {
 
   
   color: transparent;
-  font-size: 7em;
+  font-size: 10em;
   font-weight: 900;
-  height: 300px;
+  height: 250px;
 
-  padding-top: 45px;
+  padding-top: 55px;
   
 }
 
@@ -301,8 +301,8 @@ section {
 
 
   .mainvideoheaderbtn {
-    height: 150px;
-    font-size: 5em;
+    height: 200px;
+    font-size: 7em;
     font-weight: 900;
     background-image: cover;
     

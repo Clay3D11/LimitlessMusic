@@ -1025,9 +1025,9 @@ h3 {
  color: #fff;
  font-family: "Zefani";
  font-family: "Abril Fatface";
- margin: 3rem auto;
+ /* margin: 3rem auto; */
  position: relative;
- padding: 2rem 0 9rem;
+ padding: 2rem 0 2rem;
  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff,
   0 0 35px #228dff, 0 0 40px #228dff;
 
@@ -1059,6 +1059,108 @@ h3 {
       transform: translateZ(20px);
   }
 }
+
+
+
+h5 {
+ font-size: 1.5rem;
+ /* line-height: 80%; */
+ transform: rotateX(0) rotateY(-25deg);
+ text-transform: uppercase;
+ /*width: 400px;
+ */text-align: center;
+ color: #b9dfff;
+ color: #fff;
+ font-family: "Zefani";
+ font-family: "Abril Fatface";
+ /*margin: 3rem auto;
+ */position: relative;
+ /* padding: 2rem 0 2rem; */
+ text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff,  0 0 35px #228dff, 0 0 40px #228dff;
+  /* span :; */
+ -webkit-transform: rotateX(0) rotateY(-25deg);
+ -moz-transform: rotateX(0) rotateY(-25deg);
+ -ms-transform: rotateX(0) rotateY(-25deg);
+ -o-transform: rotateX(0) rotateY(-25deg);
+{
+  display: inline-block;
+ }
+
+  span:first-child {
+      transform: translateZ(10px);
+  }
+
+  span:nth-child(2) {
+      transform: translateZ(5px);
+  }
+
+  span:nth-child(3) {
+      transform: translateZ(8px);
+  }
+
+  span:nth-child(4) {
+      transform: translateZ(20px);
+  }
+
+  span:nth-child(5) {
+      transform: translateZ(6px);
+  }
+
+  span:nth-child(6) {
+      transform: translateZ(20px);
+  }
+}
+
+
+h6 {
+  font-size: 2.5rem;
+  line-height: 80%;
+  transform: rotateX(0) rotateY(-25deg);
+  text-transform: uppercase;
+  width: 400px;
+  text-align: center;
+  color: #b9dfff;
+  color: #fff;
+  font-family: "Zefani";
+  font-family: "Abril Fatface";
+  margin: 3rem auto;
+  position: relative;
+  padding: 2rem 0 9rem;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff,
+   0 0 35px #228dff, 0 0 40px #228dff;
+ 
+  span {
+   display: inline-block;
+  }
+ 
+   span:first-child {
+       transform: translateZ(10px);
+   }
+ 
+   span:nth-child(2) {
+       transform: translateZ(5px);
+   }
+ 
+   span:nth-child(3) {
+       transform: translateZ(8px);
+   }
+ 
+   span:nth-child(4) {
+       transform: translateZ(20px);
+   }
+ 
+   span:nth-child(5) {
+       transform: translateZ(6px);
+   }
+ 
+   span:nth-child(6) {
+       transform: translateZ(20px);
+   }
+ }
+
+
+
+
 
 .scroll-more {
  color: white;
@@ -3307,17 +3409,23 @@ body {
   bottom: 0;
   /* height: 125%; */
 
+
+
+
+
+
   /* background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))),
    url(./img/clinclingif-ezgif.com.gif); */
 
-  /* background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(./img/Concert2.gif);
-  background-position: 0 0, 50% 50%;
-  background-size: auto, contain; */
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(./img/Concert2.gif);
+  /* background-position: 0 0, 50% 50%; */
+  background-size: auto;
+  background-position: center;
 
-  background-image: url(./img/Concert1.gif);
+  /* background-image: url(./img/);
   background-position: center;
   background-size: contain;
-  background-repeat: repeat-x;
+  background-repeat: repeat-x; */
 
 
 }
@@ -3514,6 +3622,66 @@ body {
 
 
 
+
+
+
+
+/* .nav-link-ej8.button-yfj.rsv-f7w {
+  margin-right: 0;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+} */
+
+.nav-link-ej8.button-yfj {
+  display: inline-block;
+  /* margin-top: 32px; */
+  margin-right: auto;
+  margin-left: 0;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background-color: #071ac4c4;
+}
+
+.nav-link-ej8 {
+  position: relative;
+  margin-right: 8px;
+  margin-left: 8px;
+  padding: 4px 8px;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+  color: #fff;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 991px) {
+  .item-wgb {
+      width: 99vw;
+      margin-bottom: 24px;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+  }
+}
 
 
 

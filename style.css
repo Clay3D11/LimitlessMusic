@@ -117,7 +117,7 @@ body {
   animation-delay: 18s;
 }
 .slideshow li:nth-child(5) span {
-  background-image: url("./img/eyelooping.gif");
+  background-image: url("./img/");
   /* background-position: center;
   background-size: contain; */
   animation-delay: 24s;

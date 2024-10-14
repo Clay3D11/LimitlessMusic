@@ -567,6 +567,22 @@
 
 
 
+
+        <li>
+          
+          <a href="#streamrates"><i class="fa fa-cc-paypal" aria-hidden="true"></i></a>
+        
+        </li>
+
+
+
+
+
+
+
+
+
+
         <li><a href="#merch"><i class="fab fa-shopify"  style="background-image: url(./img/eyelooping.gif);
           background-position: center;
           background-clip: text;
@@ -575,9 +591,32 @@
           background-size: contain;
   
           text-shadow: 0 0 20px #1bff0600, 0 0 40px #2bff0000;"  ></i></a></li>
+        
+        
+        
+        
+        
+        
+        
+        <!-- <li><a href="#merch">
+          <i class="fab fa-shopify"  style="background-image: url(./img/lucy.jpg);
+          background-position: center;
+          background-clip: text;
+          -webkit-background-clip: text;
+          color: transparent;
+          background-size: contain;
+  
+          text-shadow: 0 0 20px #1bff0600, 0 0 40px #2bff0000;"  ></i></a></li> -->
 
 
 
+        
+        
+        
+        
+        
+        
+        
         <li><a href="#contact"><i class="fa fa-handshake-o" aria-hidden="true"></i></a></li>
 
 
@@ -1455,7 +1494,11 @@
 
 
         </button></a>
-  
+
+        <br>
+        <br>
+        <br>
+
       </div>
     </div>
 
@@ -1849,6 +1892,70 @@
 
 
 
+  <section id="streamrates" class="streamrates" style="
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(./img/lucy.jpg);
+  background-size: contain;
+  background-position: center;
+
+  
+
+  
+  
+  " >
+
+    <fieldset style="
+    
+    
+    
+    " >
+      
+      <legend>
+
+        <h7>$19.99/mon <br> Stream your <br> Music & Videos</h7>
+      </legend>
+      <br>
+
+      <div id="paypal-button-container-P-8M693440KJ312780VM4GDVGA"></div>
+
+
+      <script src="https://www.paypal.com/sdk/js?client-id=AYVld8jz4ZpsIx5F-PsNjcx1ekj1xX6oV7tvVSbzdAbGhXqBZCOCKUcDqOMNP3Kr1M63xd1QirhsZ5x8&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+      <script>
+        paypal.Buttons({
+            style: {
+                shape: 'pill',
+                color: 'blue',
+                layout: 'vertical',
+                label: 'subscribe'
+            },
+            createSubscription: function(data, actions) {
+              return actions.subscription.create({
+                /* Creates the subscription */
+                plan_id: 'P-8M693440KJ312780VM4GDVGA'
+              });
+            },
+            onApprove: function(data, actions) {
+              alert(data.subscriptionID); // You can add optional success message for the subscriber here
+            }
+        }).render('#paypal-button-container-P-8M693440KJ312780VM4GDVGA'); // Renders the PayPal button
+      </script>
+      </fieldset>
+
+
+
+
+
+  </section>
+
+  
+
+
+
   <!-- Artist Song Marquee -->
   <!-- Artist Song Marquee -->
   <!-- Artist Song Marquee -->
@@ -1919,6 +2026,24 @@
           <!-- <span> internet</span> -->
           <div class="scroll-more">↓</div>
           </h6>
+
+
+
+
+
+          
+
+
+
+
+
+
+
+
+
+
+
+          
 
 
 

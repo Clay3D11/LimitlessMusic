@@ -175,7 +175,7 @@ const music_list = [
 
     },
     {
-        img : 'img/Ghostkiller.png',
+        img : 'img/ChoppaHate.png',
         name : 'Choppa Hate',
         artist : '21 Savage ft Off SET',
         music : 'music/Choppahate.mp3'
@@ -206,7 +206,7 @@ const music_list = [
         img : 'img/GhostKiller.png',
         name : 'Ghoust Killer',
         artist : '21 Savage',
-        music : 'music/GhostRiderskillers.mp3'
+        music : 'music/Ghostfacekillers.mp3'
 
     },
     {
@@ -227,7 +227,7 @@ const music_list = [
         img : 'img/lilbaby2.png',
         name : 'Sum 2 Prove',
         artist : 'Lil Baby',
-        music : 'music/lilbaby-sum2prove.mp3'
+        music : 'music/sum2prove.mp3'
 
     },
     {
@@ -241,21 +241,21 @@ const music_list = [
         img : 'img/future2.png',
         name : 'Timmmy',
         artist : 'Future',
-        music : 'music/future-timmyturner.mp3'
+        music : 'music/Timmy.mp3'
 
     },
     {
         img : 'img/migos2.png',
         name : 'Guwop',
         artist : 'Young Thug',
-        music : 'music/Thug-Guwop.mp3'
+        music : 'music/Guwop.mp3'
 
     },
     {
         img : 'img/bobby1.png',
         name : 'Hot Nigg',
         artist : 'Bobby Swmurda',
-        music : 'music/bobbyshurr-hotniigg.mp3'
+        music : 'music/hotniig.mp3'
 
     },
     {

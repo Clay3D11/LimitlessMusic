@@ -160,6 +160,149 @@ const music_list = [
         music : 'music/thewayyoumove.mp3'
 
     },
+    {
+        img : 'img/thug11.png',
+        name : 'With That',
+        artist : 'Young Thug',
+        music : 'music/withthat.mp3'
+
+    },
+    {
+        img : 'img/Thug.png',
+        name : 'With That',
+        artist : 'Young Thug',
+        music : 'music/Check.mp3'
+
+    },
+    {
+        img : 'img/Ghostkiller.png',
+        name : 'Choppa Hate',
+        artist : '21 Savage ft Off SET',
+        music : 'music/Choppahate.mp3'
+
+    },
+    {
+        img : 'img/dior.png',
+        name : 'Dior',
+        artist : 'Dior',
+        music : 'music/dior.mp3'
+
+    },
+    {
+        img : 'img/thug111.png',
+        name : 'Dome',
+        artist : 'Young Thug',
+        music : 'music/dome.mp3'
+
+    },
+    {
+        img : 'img/Thug.png',
+        name : 'Never Had IT',
+        artist : 'Young Thug',
+        music : 'music/Neverhadit.mp3'
+
+    },
+    {
+        img : 'img/GhostKiller.png',
+        name : 'Ghoust Killer',
+        artist : '21 Savage',
+        music : 'music/GhostRiderskillers.mp3'
+
+    },
+    {
+        img : 'img/Gunna2.png',
+        name : 'Gunna',
+        artist : 'Relentless',
+        music : 'music/Gunna-Relentless.mp3'
+
+    },
+    {
+        img : 'img/Gunna2.png',
+        name : 'Gunna',
+        artist : 'F U Mean',
+        music : 'music/Gunna-fumean.mp3'
+
+    },
+    {
+        img : 'img/lilbaby2.png',
+        name : 'Sum 2 Prove',
+        artist : 'Lil Baby',
+        music : 'music/lilbaby-sum2prove.mp3'
+
+    },
+    {
+        img : 'img/migos1.png',
+        name : 'Too Hoty',
+        artist : 'Migos',
+        music : 'music/Toohotty.mp3'
+
+    },
+    {
+        img : 'img/future2.png',
+        name : 'Timmmy',
+        artist : 'Future',
+        music : 'music/future-timmyturner.mp3'
+
+    },
+    {
+        img : 'img/migos2.png',
+        name : 'Guwop',
+        artist : 'Young Thug',
+        music : 'music/Thug-Guwop.mp3'
+
+    },
+    {
+        img : 'img/bobby1.png',
+        name : 'Hot Nigg',
+        artist : 'Bobby Swmurda',
+        music : 'music/bobbyshurr-hotniigg.mp3'
+
+    },
+    {
+        img : 'img/migos3rd.png',
+        name : 'Rocket Man',
+        artist : 'Take Off',
+        music : 'music/migos-3rd.mp3'
+
+    },
+    {
+        img : 'img/Royal.png',
+        name : 'Royal Flush',
+        artist : 'Thug ft.',
+        music : 'music/Royal.mp3'
+
+    },
+    {
+        img : 'img/panda.png',
+        name : 'Panda',
+        artist : 'Panda',
+        music : 'music/Panda.mp3'
+
+    },
+    {
+        img : 'img/Gunna2.png',
+        name : 'One of Wu',
+        artist : 'Gunna',
+        music : 'music/Gunna-oneofwun.mp3'
+
+    },
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ];
 
 

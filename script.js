@@ -239,7 +239,7 @@ const music_list = [
     },
     {
         img : 'img/future2.png',
-        name : 'Timmmy',
+        name : 'Timmmy Turner',
         artist : 'Future',
         music : 'music/Timmy.mp3'
 
@@ -260,7 +260,7 @@ const music_list = [
     },
     {
         img : 'img/migos3rd.png',
-        name : 'Rocket Man',
+        name : 'Casper',
         artist : 'Take Off',
         music : 'music/migos-3rd.mp3'
 

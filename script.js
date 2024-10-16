@@ -255,7 +255,7 @@ const music_list = [
         img : 'img/bobby1.png',
         name : 'Hot Nigg',
         artist : 'Bobby Swmurda',
-        music : 'music/hotniig.mp3'
+        music : 'music/Hotniig.mp3'
 
     },
     {

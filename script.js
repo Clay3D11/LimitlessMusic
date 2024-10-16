@@ -239,7 +239,7 @@ const music_list = [
     },
     {
         img : 'img/future2.png',
-        name : 'Timmmy Turner',
+        name : 'Timmy Turner',
         artist : 'Future',
         music : 'music/Timmy.mp3'
 

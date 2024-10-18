@@ -1651,9 +1651,9 @@ h7 {
   width: 400px;
   height: 300px;
   /* background: #1c1f2b; */
-  background-image: url(./thunbnails/quefue.png);
+  background-image: url(./img/Quefue.gif);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 
 
 
@@ -1676,9 +1676,9 @@ h7 {
   padding: 1em;
   width: 400px;
   /* background: #1c1f2b; */
-  background-image: url(./thunbnails/Nory-Code.png);
+  background-image: url(./img/codigosvid.gif);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 
 
 
@@ -1707,9 +1707,9 @@ h7 {
   padding: 1em;
   width: 400px;
   /* background: #1c1f2b; */
-  background-image: url(./thunbnails/fa-melz1.png);
+  background-image: url(./img/UnFlowZaza.gif);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 
 
 
@@ -1733,15 +1733,15 @@ h7 {
 
 
 
-.cardsniper {
+.cardwow {
   color: white;
   margin: 0 auto;
   padding: 1em;
   width: 400px;
   /* background: #1c1f2b; */
-  background-image: url(./img/glass-swirls-3.jpg);
+  background-image: url(./img/Nory&Famelz-Wow.gif);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 
 
 

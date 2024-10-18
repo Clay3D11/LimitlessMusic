@@ -1359,6 +1359,55 @@ h7 {
        transform: translateZ(20px);
    }
  }
+ 
+ 
+ 
+ 
+ h8 {
+  font-size: 2rem;
+  line-height: 80%;
+  transform: rotateX(0) rotateY(-25deg);
+  text-transform: uppercase;
+  width: 400px;
+  text-align: center;
+  color: #b9dfff;
+  color: #fff;
+  font-family: "Zefani";
+  font-family: "Abril Fatface";
+  margin: 3rem auto;
+  position: relative;
+  padding: 2rem 0 2rem;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff,
+   0 0 35px #228dff, 0 0 40px #228dff;
+ 
+  span {
+   display: inline-block;
+  }
+ 
+   span:first-child {
+       transform: translateZ(10px);
+   }
+ 
+   span:nth-child(2) {
+       transform: translateZ(5px);
+   }
+ 
+   span:nth-child(3) {
+       transform: translateZ(8px);
+   }
+ 
+   span:nth-child(4) {
+       transform: translateZ(20px);
+   }
+ 
+   span:nth-child(5) {
+       transform: translateZ(6px);
+   }
+ 
+   span:nth-child(6) {
+       transform: translateZ(20px);
+   }
+ }
 
 
 
@@ -1569,6 +1618,31 @@ h7 {
 
 
 
+.cardclinclin {
+  color: white;
+  margin: 0 auto;
+  padding: 1em;
+  width: 400px;
+  /* background: #1c1f2b; */
+  background-image: url(./img/clinclingif-ezgif.com.gif);
+  background-position: center;
+  background-size: contain;
+
+
+
+
+  text-align: center;
+  border-radius: 10px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  position: relative;
+}
+
+
+
+
 
 .cardfa {
   color: white;
@@ -1634,6 +1708,38 @@ h7 {
   width: 400px;
   /* background: #1c1f2b; */
   background-image: url(./thunbnails/fa-melz1.png);
+  background-position: center;
+  background-size: contain;
+
+
+
+
+  text-align: center;
+  border-radius: 10px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  position: relative;
+}
+
+
+
+/* Card Sniper */
+/* Card Sniper */
+/* Card Sniper */
+/* Card Sniper */
+
+
+
+
+.cardsniper {
+  color: white;
+  margin: 0 auto;
+  padding: 1em;
+  width: 400px;
+  /* background: #1c1f2b; */
+  background-image: url(./img/glass-swirls-3.jpg);
   background-position: center;
   background-size: contain;
 

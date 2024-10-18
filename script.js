@@ -22,28 +22,25 @@ let updateTimer;
 
 const music_list = [
     {
-        img : 'img/codigosvid.gif',
-        name : 'Nory Dolla',
-        artist : 'Codigos',
-        music : 'music/Nory-Codigos.mp3'
+        img : 'img/thug11.png',
+        name : 'With That',
+        artist : 'Young Thug',
+        music : 'music/withthat.mp3'
+
     },
     {
-        img : 'img/UnFlowZaza.gif',
-        name : 'Fa Melz',
-        artist : 'Tengo Un Flow',
-        music : 'music/UnFlowZaza.mp3'
+        img : 'img/Thug.png',
+        name : 'Check',
+        artist : 'Young Thug',
+        music : 'music/Check.mp3'
+
     },
     {
-        img : 'img/drake11.png',
-        name : 'Family Matter',
-        artist : 'Drake',
-        music : 'music/Drake-familymatter.mp3'
-    },
-    {
-        img : 'img/notlikeus.png',
-        name : 'Not Like US',
-        artist : 'Kendric',
-        music : 'music/NotLikeUs.mp3'
+        img : 'images/catchme.png',
+        name : 'Catch me if you can',
+        artist : 'Adekunle Gold',
+        music : 'music/catchmeifyoucan.mp3'
+
     },
     {
         img : 'images/Kulosa.png',
@@ -51,12 +48,36 @@ const music_list = [
         artist : 'Kulosa',
         music : 'music/Kulosa1.mp3'
     },
+
+
+
+    
     {
-        img : 'images/Lastlast.png',
-        name : 'Last last',
-        artist : 'Burna Boy',
-        music : 'music/Lastlast.mp3'
+        img : 'img/Royal.png',
+        name : 'Royal Flush',
+        artist : 'Thug ft.',
+        music : 'music/Royal.mp3'
+
     },
+    {
+        img : 'img/panda.png',
+        name : 'Panda',
+        artist : 'Panda',
+        music : 'music/Panda.mp3'
+
+    },
+    {
+        img : 'img/Gunna2.png',
+        name : 'One of Wu',
+        artist : 'Gunna',
+        music : 'music/Gunna-oneofwun.mp3'
+
+    },
+
+
+
+
+
     {
         img : 'images/Soweto.png',
         name : 'Soweto',
@@ -74,42 +95,41 @@ const music_list = [
         name : 'Calm',
         artist : 'Ream ft Selena',
         music : 'music/calm.mp3'
-
-    },
-    {
-        img : 'images/catchme.png',
-        name : 'Catch me if you can',
-        artist : 'Adekunle Gold',
-        music : 'music/catchmeifyoucan.mp3'
-
+        
     },
     {
         img : 'images/compro.png',
         name : 'Compromise',
         artist : 'Fireboy DML',
         music : 'music/compromise.mp3'
-
+        
     },
     {
         img : 'images/pero.png',
         name : 'Peru',
         artist : 'Pero',
         music : 'music/Peru.mp3'
-
+        
     },
     {
         img : 'images/energy.png',
         name : 'Energy',
         artist : 'Skepta ft Wizkid',
         music : 'music/energy.mp3'
-
+        
     },
     {
         img : 'images/essence.png',
         name : 'Essence',
         artist : 'Essence',
         music : 'music/essence.mp3'
-
+        
+    },
+    {
+        img : 'images/Lastlast.png',
+        name : 'Last last',
+        artist : 'Burna Boy',
+        music : 'music/Lastlast.mp3'
     },
     {
         img : 'images/Lastlast.png',
@@ -160,20 +180,23 @@ const music_list = [
         music : 'music/thewayyoumove.mp3'
 
     },
+
+
     {
-        img : 'img/thug11.png',
-        name : 'With That',
-        artist : 'Young Thug',
-        music : 'music/withthat.mp3'
+        img : 'img/migos3rd.png',
+        name : 'Casper',
+        artist : 'Take Off',
+        music : 'music/migos-3rd.mp3'
 
     },
-    {
-        img : 'img/Thug.png',
-        name : 'With That',
-        artist : 'Young Thug',
-        music : 'music/Check.mp3'
 
-    },
+
+
+
+
+
+
+    
     {
         img : 'img/ChoppaHate.png',
         name : 'Choppa Hate',
@@ -239,7 +262,7 @@ const music_list = [
     },
     {
         img : 'img/future2.png',
-        name : 'Timmy Turner',
+        name : 'Timmmy Turner',
         artist : 'Future',
         music : 'music/Timmy.mp3'
 
@@ -258,33 +281,39 @@ const music_list = [
         music : 'music/Hotniig.mp3'
 
     },
-    {
-        img : 'img/migos3rd.png',
-        name : 'Casper',
-        artist : 'Take Off',
-        music : 'music/migos-3rd.mp3'
 
+
+
+
+
+    
+
+
+
+
+    {
+        img : 'img/codigosvid.gif',
+        name : 'Nory Dolla',
+        artist : 'Codigos',
+        music : 'music/Nory-Codigos.mp3'
     },
     {
-        img : 'img/Royal.png',
-        name : 'Royal Flush',
-        artist : 'Thug ft.',
-        music : 'music/Royal.mp3'
-
+        img : 'img/UnFlowZaza.gif',
+        name : 'Fa Melz',
+        artist : 'Tengo Un Flow',
+        music : 'music/UnFlowZaza.mp3'
     },
     {
-        img : 'img/panda.png',
-        name : 'Panda',
-        artist : 'Panda',
-        music : 'music/Panda.mp3'
-
+        img : 'img/drake11.png',
+        name : 'Family Matter',
+        artist : 'Drake',
+        music : 'music/Drake-familymatter.mp3'
     },
     {
-        img : 'img/Gunna2.png',
-        name : 'One of Wu',
-        artist : 'Gunna',
-        music : 'music/Gunna-oneofwun.mp3'
-
+        img : 'img/notlikeus.png',
+        name : 'Not Like US',
+        artist : 'Kendric',
+        music : 'music/NotLikeUs.mp3'
     },
    
 

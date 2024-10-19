@@ -70,6 +70,7 @@ body {
 }
 
 /** SLIDESHOW **/
+/** SLIDESHOW **/
 .slideshow,
 .slideshow:after {
   top: -16px; /*Not sure why I needed this fix*/
@@ -1119,6 +1120,44 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

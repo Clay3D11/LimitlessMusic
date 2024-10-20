@@ -1415,7 +1415,7 @@ h7 {
   font-family: "Abril Fatface";
   margin: 3rem auto;
   position: relative;
-  padding: 2rem 0 2rem;
+  /* padding: 2rem 0 2rem; */
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff,
    0 0 35px #228dff, 0 0 40px #228dff;
  
@@ -2836,7 +2836,7 @@ html {
     position: relative; 
     z-index: 2; 
     margin: 0 auto; 
-    padding-top: 10px; 
+    /* padding-top: 10px;  */
     padding-inline: 24px; 
     overflow: hidden; 
     overflow-x: scroll;
@@ -2921,7 +2921,7 @@ html {
 
 .footer-t51 { 
     --item-media-width: 200px; 
-    --item-media-height: 150px; 
+    --item-media-height: 100px; 
     position: relative; 
     -webkit-transform: perspective(300px) translate3d(0, 0, 0); 
     transform: perspective(300px) translate3d(0, 0, 0); 

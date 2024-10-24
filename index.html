@@ -3,29 +3,16 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="shortcut icon" href="./img/eyelooping.gif" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LimitlessMusic.app</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="slidingalbums.css">
+
+
   <script src="script.js" defer></script>
 
-
-
-
-
-
   <link href="https://fonts.googleapis.com/css?family=Roboto|Work+Sans:400,600" rel="stylesheet">
-
-
-
-
-
-
-
-
-
-  
-
 
 
 
@@ -37,17 +24,17 @@
   <!-- Store Div Propperties -->
   <!-- Store Div Propperties -->
   <style>
-      .product-container {
-        z-index: 100;
-  max-width: 300px;
-  margin: 40px auto;
-  /* padding: 20px; */
-  /* border: 1px solid #ddd; */
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+    .product-container {
+      z-index: 100;
+      max-width: 300px;
+      margin: 40px auto;
+      /* padding: 20px; */
+      /* border: 1px solid #ddd; */
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
-  /* .product-container img {
+    /* .product-container img {
   width: 100%;
   height: 150px;
   object-fit: cover;
@@ -55,55 +42,58 @@
   } */
 
 
-  .product-container img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-    transition: transform 0.3s ease-in-out; /* added transition effect */
-  }
+    .product-container img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+      /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+      transition: transform 0.3s ease-in-out;
+      /* added transition effect */
+    }
 
-  .product-container img:hover {
-    transform: scale(2.50); /* added hover effect */
-  }
-
-
-  .marquee-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-
-  .marquee-container marquee {
-  font-size: 18px;
-  font-weight: bold;
-  color: #333;
-  }
-
-  .product-info {
-    padding: 20px;
-    text-align: center; /* added center alignment */
-  }
+    .product-container img:hover {
+      transform: scale(2.50);
+      /* added hover effect */
+    }
 
 
-  .product-info h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  }
+    .marquee-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
-  .product-info p {
-  font-size: 16px;
-  margin-bottom: 20px;
-  }
+    .marquee-container marquee {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .product-info {
+      padding: 20px;
+      text-align: center;
+      /* added center alignment */
+    }
 
 
-  /* .product-info button {
+    .product-info h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .product-info p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+
+    /* .product-info button {
   background-color: #333;
   color: #fff;
   border: none;
@@ -117,56 +107,64 @@
   } */
 
 
-  .product-info button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 10px; /* added border radius */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* added box shadow */
-  }
+    .product-info button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 10px;
+      /* added border radius */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      /* added box shadow */
+    }
 
-  .product-info button:hover {
-    background-color: #444;
-  }
+    .product-info button:hover {
+      background-color: #444;
+    }
 
 
 
 
-  /* Responsive styles */
-  @media (max-width: 768px) {
-  .product-container {
-  max-width: 300px;
-  }
-  .product-container img {
-  height: 100px;
-  }
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .product-container {
+        max-width: 300px;
+      }
 
-  .product-container img:hover {
-    transform: scale(1.90); /* added hover effect */
-  }
+      .product-container img {
+        height: 100px;
+      }
 
-  .marquee-container {
-  font-size: 14px;
-  }
-  .product-info {
-  padding: 5px;
-  }
-  .product-info h2 {
-  font-size: 18px;
-  }
-  .product-info p {
-  font-size: 14px;
-  }
-  .product-info button {
-  padding: 8px 16px;
-  font-size: 14px;
-  }
-  }
+      .product-container img:hover {
+        transform: scale(1.90);
+        /* added hover effect */
+      }
+
+      .marquee-container {
+        font-size: 14px;
+      }
+
+      .product-info {
+        padding: 5px;
+      }
+
+      .product-info h2 {
+        font-size: 18px;
+      }
+
+      .product-info p {
+        font-size: 14px;
+      }
+
+      .product-info button {
+        padding: 8px 16px;
+        font-size: 14px;
+      }
+    }
   </style>
-    
+
 
   <!-- <style>
     .product-container {
@@ -315,52 +313,49 @@
   <!-- Marquee Properties-->
   <!-- Marquee Properties-->
   <style>
-      .marqueesocial {
-          width: 100%;
-          height: 100px;
-          overflow: hidden;
-          position: relative;
-          box-sizing: border-box;
-          padding: 10px;
-          /* border: 1px solid #ccc; */
+    .marqueesocial {
+      width: 100%;
+      height: 100px;
+      overflow: hidden;
+      position: relative;
+      box-sizing: border-box;
+      padding: 10px;
+      /* border: 1px solid #ccc; */
+    }
+
+    .marqueesocial div {
+      display: flex;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      animation: scroll 20s linear infinite;
+    }
+
+    .marqueesocial div img {
+      width: auto;
+      height: 90px;
+      margin: 20px;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
       }
 
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    @media (max-width: 768px) {
       .marqueesocial div {
-          display: flex;
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-          animation: scroll 20s linear infinite;
-        }
-        
-        .marqueesocial div img {
-          width: auto;
-          height: 90px;
-          margin: 20px;
-        }
-        
-        @keyframes scroll {
-          0% {
-            transform: translateX(0);
-          }
-          
-          100% {
-            transform: translateX(-100%);
-          }
-        }
-        
-        @media (max-width: 768px) {
-          .marqueesocial div {
-          animation: scroll 8s linear infinite;
+        animation: scroll 8s linear infinite;
 
-        }
       }
-
-
-
+    }
   </style>
 
 
@@ -386,7 +381,7 @@
 
 
     /* Responsive styles */
-  /* @media (max-width: 430px) {
+    /* @media (max-width: 430px) {
   .swiper-slide {
   max-width: 350px;
   overflow: hidden;
@@ -400,7 +395,7 @@
     transform: scale(1.90); 
   } */
 
-  /* .marquee-container {
+    /* .marquee-container {
   font-size: 14px;
   }
   .product-info {
@@ -416,16 +411,6 @@
   padding: 8px 16px;
   font-size: 14px;
   } */
-
-
-
-
-
-
-
-
-
-
   </style>
 
 
@@ -441,9 +426,11 @@
   <!-- NavBar -->
   <!-- NavBar -->
   <!-- NavBar -->
-   <!-- #1 -->
-   <!-- #1 -->
-   <!-- #1 -->
+  <!-- #1 -->
+  <!-- #1 -->
+  <!-- #1 -->
+
+  
   <!-- <header class="mainHeader">
 
 
@@ -495,20 +482,6 @@
 
       
     </nav>
-
-
-
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
     
     
   </header> -->
@@ -518,7 +491,7 @@
   <!-- #3 -->
   <!-- #3 -->
   <div class="topnav" style="z-index: 100;">
-    
+
     <!-- <a class="active" href="#">₸⌀ῥ</a>
     <a href="#album">ηὲᾦ</a>
     <a href="#collabs">₵৹ʅʅ^ɮş</a>
@@ -540,14 +513,7 @@
 
         <!-- <li><a href="#collabs"><i class="fa fa-users" aria-hidden="true" ></i></a></li> -->
 
-
-
-
-        <li>
-          
-          <a href="#streamrates"><i class="fa fa-cc-paypal" aria-hidden="true"></i></a>
-        
-        </li>
+        <li><a href="#streamrates"><i class="fa fa-cc-paypal" aria-hidden="true"></i></a></li>
 
 
 
@@ -558,21 +524,21 @@
 
 
 
-        <li><a href="#merch"><i class="fab fa-shopify"  style="background-image: url(./img/eyelooping.gif);
+        <li><a href="#merch"><i class="fab fa-shopify" style="background-image: url(./img/eyelooping.gif);
           background-position: center;
           background-clip: text;
           -webkit-background-clip: text;
           color: transparent;
           background-size: contain;
   
-          text-shadow: 0 0 20px #1bff0600, 0 0 40px #2bff0000;"  ></i></a></li>
-        
-        
-        
-        
-        
-        
-        
+          text-shadow: 0 0 20px #1bff0600, 0 0 40px #2bff0000;"></i></a></li>
+
+
+
+
+
+
+
         <!-- <li><a href="#merch">
           <i class="fab fa-shopify"  style="background-image: url(./img/lucy.jpg);
           background-position: center;
@@ -585,13 +551,13 @@
 
 
 
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
         <li><a href="#contact"><i class="fa fa-handshake-o" aria-hidden="true"></i></a></li>
 
 
@@ -630,7 +596,8 @@
 
 
 
-    <a href="#"  style="position: fixed; top: 45%; right: 24px;  " ><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
+    <a href="#" style="position: fixed; top: 45%; right: 24px;  "><i class="fa fa-arrow-circle-up"
+        aria-hidden="true"></i></a>
 
 
 
@@ -654,7 +621,7 @@
     
     
     
-    "  ><i class="fa fa-music" aria-hidden="true"></i></a>
+    "><i class="fa fa-music" aria-hidden="true"></i></a>
 
 
 
@@ -672,8 +639,8 @@
     " ><i class="fab fa-teamspeak"></i></a> -->
 
 
-        
-    <a href="#topvideo"  style="position: fixed; top: 59%; right: 20px;
+
+    <a href="#topvideo" style="position: fixed; top: 59%; right: 20px;
 
 
 
@@ -688,13 +655,13 @@
         /* text-shadow: 0 0 20px #ff060600, 0 0 40px #1100ff00; */
 
     
-    " ><i class="fa fa-video-camera" aria-hidden="true"></i></a>
+    "><i class="fa fa-video-camera" aria-hidden="true"></i></a>
 
 
 
 
-    
-    <a href="#playlist"  style="position: fixed; top: 66%; right: 25px;
+
+    <a href="#playlist" style="position: fixed; top: 66%; right: 25px;
 
     /* background-image: url(./img/eyelooping.gif);
     background-position: center;
@@ -705,12 +672,12 @@
   
     text-shadow: 0 0 20px #1bff0600, 0 0 40px #2bff0000; */
     
-    " ><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+    "><i class="fa fa-play-circle" aria-hidden="true"></i></a>
 
 
 
 
-    <a href="#merch"  style="position: fixed; top: 73%; right: 28px;
+    <a href="#merch" style="position: fixed; top: 73%; right: 28px;
 
     background-image: url(./img/eyelooping.gif);
     background-position: center;
@@ -720,7 +687,7 @@
     background-size: contain;
     text-shadow: 0 0 20px #1bff0600, 0 0 40px #2bff0000;
     
-    "  ><i class="fab fa-shopify"></i></a>
+    "><i class="fab fa-shopify"></i></a>
 
 
 
@@ -730,24 +697,24 @@
 
 
 
-   <a href="#events"  style="position: fixed; top: 80%; right: 20px; " >
-   <i class="fa fa-ticket" aria-hidden="true"></i></i> </a>
+    <a href="#events" style="position: fixed; top: 80%; right: 20px; ">
+      <i class="fa fa-ticket" aria-hidden="true"></i></i> </a>
 
-        
-    
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-    <a href="#contact"  style="position: fixed; top: 87%; right: 20px; " >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <a href="#contact" style="position: fixed; top: 87%; right: 20px; ">
       <i class="fa fa-handshake-o" aria-hidden="true"></i> </a>
 
 
@@ -757,8 +724,6 @@
 
 
 
-  
-        
 
 
 
@@ -771,28 +736,12 @@
 
 
 
-    
-    
+
+
+
+
   </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
 
   <!-- 1st Section Home -->
   <!-- Hero - Main(Video) -->
@@ -826,7 +775,7 @@
 
 
     <!-- <h2 style=" font-size: 50px; font-weight: 800; position: fixed; top: 30%; left: 20%; color: #ffffffc5; text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc; ">LIMITLESS<br></h2> -->
-    
+
 
     <!-- <h1 style=" display: flex; justify-content: space-around; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;" >Universal</h1> -->
 
@@ -840,7 +789,7 @@
     <div class="video">
 
 
-      
+
 
 
       <!-- <video  muted width="100%" height="100%">
@@ -932,7 +881,7 @@
 
       </div> -->
 
-      
+
 
 
       <h1 class="mainvideoheaderbtn" style="
@@ -945,10 +894,10 @@
       
       
       ">Limitless</h1>
-      
 
 
-      
+
+
 
       <!-- MainHEading Fading to right -->
       <!-- MainHEading Fading to right -->
@@ -979,7 +928,7 @@
 
 
 
-      
+
 
       <!-- <div class="submainheaderbtn">
 
@@ -1031,10 +980,10 @@
   background-repeat: repeat-x;
   
   
-  " >
+  ">
 
 
-    
+
 
 
 
@@ -1043,8 +992,8 @@
     <!-- Artist marquee Circle -->
     <!-- Artist marquee Circle -->
     <!-- Artist marquee Circle -->
-    
-    
+
+
     <!-- <marquee  behavior="ease-in-out" direction="left" style="transition-timing-function: linear;  "  class="marqueemain7"  >
       
       
@@ -1168,7 +1117,7 @@
             <p>Fatmelz</p>
           </div> -->
         </div>
-        
+
         <div class="album">
           <div class="album-frame">
             <img src="./thunbnails/Nory-Code.png" alt="" />
@@ -1239,8 +1188,8 @@
         </div>
 
 
-        
-        
+
+
         <div class="album">
           <div class="album-frame">
             <img src="./thunbnails/future4.png" alt="" />
@@ -1250,9 +1199,9 @@
             <p>Fatmelz</p>
           </div> -->
         </div>
-        
-        
-        
+
+
+
         <div class="album">
           <div class="album-frame">
             <img src="./thunbnails/fa-melz1.png" alt="" />
@@ -1262,11 +1211,11 @@
             <p>Fatmelz</p>
           </div> -->
         </div>
-        
-        
-        
-        
-        
+
+
+
+
+
         <div class="album">
           <div class="album-frame">
             <img src="./img/Gunna2.png" alt="" />
@@ -1276,8 +1225,8 @@
             <p>Fatmelz</p>
           </div> -->
         </div>
-        
-        
+
+
 
 
 
@@ -1298,9 +1247,9 @@
 
 
 
-        
-        
-        
+
+
+
         <div class="album">
           <div class="album-frame">
             <img src="./thunbnails//quefue.png" alt="" />
@@ -1310,7 +1259,7 @@
             <p>Fatmelz</p>
           </div> -->
         </div>
-        
+
         <div class="album">
           <div class="album-frame">
             <img src="./thunbnails/Nory-Code.png" alt="" />
@@ -1381,8 +1330,8 @@
         </div>
 
 
-        
-        
+
+
         <div class="album">
           <div class="album-frame">
             <img src="./thunbnails/future4.png" alt="" />
@@ -1392,9 +1341,9 @@
             <p>Fatmelz</p>
           </div> -->
         </div>
-        
-        
-        
+
+
+
         <div class="album">
           <div class="album-frame">
             <img src="./thunbnails/fa-melz1.png" alt="" />
@@ -1404,11 +1353,11 @@
             <p>Fatmelz</p>
           </div> -->
         </div>
-        
-        
-        
-        
-        
+
+
+
+
+
         <div class="album">
           <div class="album-frame">
             <img src="./img/Gunna2.png" alt="" />
@@ -1426,9 +1375,9 @@
 
     </marquee>
 
-    
-    
-    
+
+
+
     <!-- Animated Dynamic Text -->
     <!-- Animated Dynamic Text -->
     <!-- Animated Dynamic Text -->
@@ -1441,11 +1390,11 @@
       align-items: center;
       justify-content: center;
       
-      " >
+      ">
       <!-- <div class="static-text">Re-Branding</div> -->
       <div class="dynamic-text" id="dynamicText"></div>
     </div>
-    <script src="textslider.js" ></script>
+    <script src="textslider.js"></script>
 
 
 
@@ -1453,7 +1402,7 @@
     <!-- Marketing BTN  -->
     <!-- Marketing BTN  -->
 
-    
+
 
     <div class="backcardmarketing">
       <div class="cardmarketing">
@@ -1469,24 +1418,24 @@
         
         
         " >20% OFF <br> videos Edits <br> (Dec Only)</h1> -->
-        
-        
+
+
         <!-- <p>For Music Video inquyries contact our music video edditor Clainer Ventura.</p> -->
-  
-  
-        
-  
-        <a href="https://calendar.app.google/YhqvDd5F7H2QUsx16"  ><button style="font-size: 20px;" >
-
-          Contact
 
 
+
+
+        <a href="https://calendar.app.google/YhqvDd5F7H2QUsx16"><button style="font-size: 20px;">
+
+            Contact
 
 
 
 
 
-        </button></a>
+
+
+          </button></a>
 
         <br>
         <br>
@@ -1653,13 +1602,13 @@
 
 
 
-    
 
 
+
     <!-- Artist marquee Square -->
     <!-- Artist marquee Square -->
     <!-- Artist marquee Square -->
-    
+
 
     <!-- <marquee behavior="ease-in-out" direction="right" style="transition-timing-function: linear;" class="marqueemain8">
 
@@ -1800,7 +1749,7 @@
 
 
 
- 
+
     <!-- Marquee Logos -->
     <!-- Marquee Logos -->
     <!-- Marquee Logos -->
@@ -1884,14 +1833,6 @@
   </section>
 
 
-
-  
-
-
-
-
-
-
   <section id="streamrates" class="streamrates" style="
   width: 100%;
   height: 50vh;
@@ -1907,54 +1848,52 @@
 
   
   
-  " >
+  ">
 
     <fieldset style="
     
     
     
-    " >
-      
+    ">
+
       <legend>
 
-        <h7>Stream & publish <br> Music & Videos <br> for only <br><br>  $19.99/mon</h7>
+        <h7>Stream & publish <br> Music & Videos <br> for only <br><br> $19.99/mon</h7>
       </legend>
       <br>
 
       <div id="paypal-button-container-P-8M693440KJ312780VM4GDVGA"></div>
 
 
-      <script src="https://www.paypal.com/sdk/js?client-id=AYVld8jz4ZpsIx5F-PsNjcx1ekj1xX6oV7tvVSbzdAbGhXqBZCOCKUcDqOMNP3Kr1M63xd1QirhsZ5x8&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+      <script
+        src="https://www.paypal.com/sdk/js?client-id=AYVld8jz4ZpsIx5F-PsNjcx1ekj1xX6oV7tvVSbzdAbGhXqBZCOCKUcDqOMNP3Kr1M63xd1QirhsZ5x8&vault=true&intent=subscription"
+        data-sdk-integration-source="button-factory"></script>
       <script>
         paypal.Buttons({
-            style: {
-                shape: 'pill',
-                color: 'blue',
-                layout: 'vertical',
-                label: 'subscribe'
-            },
-            createSubscription: function(data, actions) {
-              return actions.subscription.create({
-                /* Creates the subscription */
-                plan_id: 'P-8M693440KJ312780VM4GDVGA'
-              });
-            },
-            onApprove: function(data, actions) {
-              alert(data.subscriptionID); // You can add optional success message for the subscriber here
-            }
+          style: {
+            shape: 'pill',
+            color: 'blue',
+            layout: 'vertical',
+            label: 'subscribe'
+          },
+          createSubscription: function (data, actions) {
+            return actions.subscription.create({
+              /* Creates the subscription */
+              plan_id: 'P-8M693440KJ312780VM4GDVGA'
+            });
+          },
+          onApprove: function (data, actions) {
+            alert(data.subscriptionID); // You can add optional success message for the subscriber here
+          }
         }).render('#paypal-button-container-P-8M693440KJ312780VM4GDVGA'); // Renders the PayPal button
       </script>
-      </fieldset>
+    </fieldset>
 
 
 
 
 
   </section>
-
-
-
-
 
 
   <!-- Artist Song Marquee -->
@@ -1967,25 +1906,25 @@
   background-size: contain;
   
   
-  " >
+  ">
 
-<a href="https://calendar.app.google/YhqvDd5F7H2QUsx16"  ><button style="font-size: 20px;
+    <a href="https://calendar.app.google/YhqvDd5F7H2QUsx16"><button style="font-size: 20px;
 margin: 0 auto;
 /* width: 50%; */
 display: block;
 
 
-" >
+">
 
-  Contact for more info.
-
-
+        Contact for more info.
 
 
 
 
 
-</button></a>
+
+
+      </button></a>
 
 
 
@@ -2026,8 +1965,8 @@ display: block;
         
         ">Create<br> Artist Porfolio</h2>
 
-<!-- <p class="label-iyg featured-a5o">Songs <br> Albums <br> Videos </p> -->
-<!-- <p class="label-iyg">Limitless Music</p> -->
+    <!-- <p class="label-iyg featured-a5o">Songs <br> Albums <br> Videos </p> -->
+    <!-- <p class="label-iyg">Limitless Music</p> -->
 
 
 
@@ -2035,7 +1974,7 @@ display: block;
 
 
 
-        <!-- <h3>
+    <!-- <h3>
           <span>Check</span>
           <span> me</span>
           <span> out</span>
@@ -2044,22 +1983,16 @@ display: block;
           <span> internet</span>
           <div class="scroll-more">↓</div>
           </h3> -->
-        
-          <h6>
-          <span>Check</span>
-          <span> The</span>
-          <span> Top</span>
-          <span> Lattest</span>
-          <span> Hits</span>
-          <!-- <span> internet</span> -->
-          <div class="scroll-more">↓</div>
-          </h6>
 
-
-
-
-
-          
+    <h6>
+      <span>Check</span>
+      <span> The</span>
+      <span> Top</span>
+      <span> Lattest</span>
+      <span> Hits</span>
+      <!-- <span> internet</span> -->
+      <div class="scroll-more">↓</div>
+    </h6>
 
 
 
@@ -2070,7 +2003,13 @@ display: block;
 
 
 
-      <!-- <h2 class="titles" style="
+
+
+
+
+
+
+    <!-- <h2 class="titles" style="
         display: flex; 
         justify-content: space-around; 
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
@@ -2103,35 +2042,35 @@ display: block;
 
 
     letter-spacing: 0;">◆Top Hits◆</h2> -->
-    
 
 
 
 
-   
 
-        
+
+
+
     <h8>Rap/Hip Hop:</h8>
-    
 
 
-      <!-- 1st Marquee -->
-      <!-- 1st Marquee -->
-      <!-- 1st Marquee -->
-      <!-- 1st Marquee -->
+
+    <!-- 1st Marquee -->
+    <!-- 1st Marquee -->
+    <!-- 1st Marquee -->
+    <!-- 1st Marquee -->
     <div class="footer-1db style-6MKcK" id="style-6MKcK">
-        
+
       <div class="footer-3q9">
-    
+
         <div class="footer-ogw" style="width: 100%; height: 250px;">
-    
-          
 
 
 
 
 
-          
+
+
+
           <!-- <a  class="footer-t51 style-zO5m9" id="style-zO5m9">
             <div class="footer-m8a">
             </div>
@@ -2148,10 +2087,6 @@ display: block;
 
 
 
-          
-          
-          
-          
 
 
 
@@ -2159,7 +2094,11 @@ display: block;
 
 
 
-          <a  class="footer-t51 style-7Tgr3" id="style-7Tgr3">
+
+
+
+
+          <a class="footer-t51 style-7Tgr3" id="style-7Tgr3">
             <div style="width: 200px; height: 100px;" class="swiper-slide">
               <img style="background-image: center; background-size: cover;" src="./img/codigosvid.gif" />
               <div class="slide-overlay">
@@ -2168,14 +2107,14 @@ display: block;
                 <button>
                   Nory Dolla <i class="fa-solid fa-circle-play"></i>
                 </button>
-            
-                <audio style="width: 100px; color: transparent;" controls preload="auto" >
+
+                <audio style="width: 100px; color: transparent;" controls preload="auto">
                   <source src="./music/Nory-Codigos.mp3" type="audio/ogg">
                   <source src="./music/Nory-Codigos.mp3" type="audio/mpeg">
                   Your browser does not support the audio element
                   .
                 </audio>
-            
+
               </div>
             </div>
           </a>
@@ -2187,7 +2126,6 @@ display: block;
 
 
 
-          
 
 
 
@@ -2195,23 +2133,24 @@ display: block;
 
 
 
-          <a  class="footer-t51 style-7Tgr3" id="style-7Tgr3">
+
+          <a class="footer-t51 style-7Tgr3" id="style-7Tgr3">
             <div style="width: 200px; height: 100px;" class="swiper-slide">
               <img src="./img/Quefue.gif" />
               <div class="slide-overlay">
                 <!-- <h2>Nory Dolla</h2>
                 <h3>Codigos</h3> -->
                 <button>
-                Fa Melz <i class="fa-solid fa-circle-play"></i>
+                  Fa Melz <i class="fa-solid fa-circle-play"></i>
                 </button>
-            
-                <audio style="width: 100px; color: transparent;" controls preload="auto" >
+
+                <audio style="width: 100px; color: transparent;" controls preload="auto">
                   <source src="./music/QueFue.mp3" type="audio/ogg">
                   <source src="./music/QueFue.mp3" type="audio/mpeg">
                   Your browser does not support the audio element
                   .
                 </audio>
-            
+
               </div>
             </div>
           </a>
@@ -2226,39 +2165,39 @@ display: block;
 
 
 
-          
-          <a  class="footer-t51 style-7Tgr3" id="style-7Tgr3">
+
+          <a class="footer-t51 style-7Tgr3" id="style-7Tgr3">
             <div style="width: 200px; height: 100px;" class="swiper-slide">
               <img src="./img/UnFlowZaza.gif" />
               <div class="slide-overlay">
                 <!-- <h2>Nory Dolla</h2>
                 <h3>Codigos</h3> -->
                 <button>
-                   Fa Melz <i class="fa-solid fa-circle-play"></i>
+                  Fa Melz <i class="fa-solid fa-circle-play"></i>
                 </button>
-            
-                <audio style="width: 100px; color: transparent;" controls preload="auto" >
+
+                <audio style="width: 100px; color: transparent;" controls preload="auto">
                   <source src="./music/UnFlowZaza.mp3" type="audio/ogg">
                   <source src="./music/UnFlowZaza.mp3" type="audio/mpeg">
                   Your browser does not support the audio element
                   .
                 </audio>
-            
+
               </div>
             </div>
           </a>
-          
-          
-          
-          
-          
-          
 
 
 
 
 
-          <a  class="footer-t51 style-7Tgr3" id="style-7Tgr3">
+
+
+
+
+
+
+          <a class="footer-t51 style-7Tgr3" id="style-7Tgr3">
             <div style="width: 200px; height: 100px;" class="swiper-slide">
               <img src="./img/Nory&Famelz-Wow.gif" />
               <div class="slide-overlay">
@@ -2267,14 +2206,14 @@ display: block;
                 <button>
                   Fa Melz Ft Nory <i class="fa-solid fa-circle-play"></i>
                 </button>
-            
-                <audio style="width: 100px; color: transparent;" controls preload="auto" >
+
+                <audio style="width: 100px; color: transparent;" controls preload="auto">
                   <source src="./music/Nory&Famels-Wow.mp3" type="audio/ogg">
                   <source src="./music/Nory&Famels-Wow.mp3" type="audio/mpeg">
                   Your browser does not support the audio element
                   .
                 </audio>
-            
+
               </div>
             </div>
           </a>
@@ -2284,50 +2223,50 @@ display: block;
 
 
 
-          <a  class="footer-t51 style-7Tgr3" id="style-7Tgr3"></a>
-            <div style="width: 200px; height: 100px;" class="swiper-slide">
-              <img src="./img/goldo.gif" />
-              <div class="slide-overlay">
-                <!-- <h2>Fa Melzs</h2> -->
-                <!-- <h3>Codigos</h3> -->
-                <button>
-                  Fa melz <i class="fa-solid fa-circle-play"></i>
-                </button>
-            
-                <audio style="width: 100px; color: transparent;" controls preload="auto" >
-                  <source src="./music/EseTatoo.mp3" type="audio/ogg">
-                  <source src="./music/EseTatoo.mp3" type="audio/mpeg">
-                  Your browser does not support the audio element
-                  .
-                </audio>
-            
-              </div>
+          <a class="footer-t51 style-7Tgr3" id="style-7Tgr3"></a>
+          <div style="width: 200px; height: 100px;" class="swiper-slide">
+            <img src="./img/goldo.gif" />
+            <div class="slide-overlay">
+              <!-- <h2>Fa Melzs</h2> -->
+              <!-- <h3>Codigos</h3> -->
+              <button>
+                Fa melz <i class="fa-solid fa-circle-play"></i>
+              </button>
+
+              <audio style="width: 100px; color: transparent;" controls preload="auto">
+                <source src="./music/EseTatoo.mp3" type="audio/ogg">
+                <source src="./music/EseTatoo.mp3" type="audio/mpeg">
+                Your browser does not support the audio element
+                .
+              </audio>
+
             </div>
+          </div>
           </a>
 
 
 
 
 
-          <a  class="footer-t51 style-7Tgr3" id="style-7Tgr3"></a>
-            <div style="width: 200px; height: 100px;" class="swiper-slide">
-              <img src="./img/panda.png" />
-              <div class="slide-overlay">
-                <!-- <h2>Nory Dolla</h2>
+          <a class="footer-t51 style-7Tgr3" id="style-7Tgr3"></a>
+          <div style="width: 200px; height: 100px;" class="swiper-slide">
+            <img src="./img/panda.png" />
+            <div class="slide-overlay">
+              <!-- <h2>Nory Dolla</h2>
                 <h3>Codigos</h3> -->
-                <button>
-                  Panda <i class="fa-solid fa-circle-play"></i>
-                </button>
-            
-                <audio style="width: 100px; color: transparent;" controls preload="auto" >
-                  <source src="./music/panda.mp3" type="audio/ogg">
-                  <source src="./music/panda.mp3" type="audio/mpeg">
-                  Your browser does not support the audio element
-                  .
-                </audio>
-            
-              </div>
+              <button>
+                Panda <i class="fa-solid fa-circle-play"></i>
+              </button>
+
+              <audio style="width: 100px; color: transparent;" controls preload="auto">
+                <source src="./music/panda.mp3" type="audio/ogg">
+                <source src="./music/panda.mp3" type="audio/mpeg">
+                Your browser does not support the audio element
+                .
+              </audio>
+
             </div>
+          </div>
           </a>
 
 
@@ -2337,7 +2276,7 @@ display: block;
 
 
 
-          <a  class="footer-t51 style-7Tgr3" id="style-7Tgr3">
+          <a class="footer-t51 style-7Tgr3" id="style-7Tgr3">
             <div style="width: 200px; height: 100px;" class="swiper-slide">
               <img src="./images/oneandonly.png" />
               <div class="slide-overlay">
@@ -2346,14 +2285,14 @@ display: block;
                 <button>
                   ASE <i class="fa-solid fa-circle-play"></i>
                 </button>
-            
-                <audio style="width: 100px; color: transparent;" controls preload="auto" >
+
+                <audio style="width: 100px; color: transparent;" controls preload="auto">
                   <source src="./music/oneandonly.mp3" type="audio/ogg">
                   <source src="./music/oneandonly.mp3" type="audio/mpeg">
                   Your browser does not support the audio element
                   .
                 </audio>
-            
+
               </div>
             </div>
           </a>
@@ -2363,8 +2302,8 @@ display: block;
 
 
 
-          
-          <a  class="footer-t51 style-7Tgr3" id="style-7Tgr3">
+
+          <a class="footer-t51 style-7Tgr3" id="style-7Tgr3">
             <div style="width: 200px; height: 100px;" class="swiper-slide">
               <img src="./images/kd.png" />
               <div class="slide-overlay">
@@ -2373,14 +2312,14 @@ display: block;
                 <button>
                   Kevin Durant <i class="fa-solid fa-circle-play"></i>
                 </button>
-            
-                <audio style="width: 100px; color: transparent;" controls preload="auto" >
+
+                <audio style="width: 100px; color: transparent;" controls preload="auto">
                   <source src="./music/GodAmongUs.mp3" type="audio/ogg">
                   <source src="./music/GodAmongUs.mp3" type="audio/mpeg">
                   Your browser does not support the audio element
                   .
                 </audio>
-            
+
               </div>
             </div>
           </a>
@@ -2389,10 +2328,10 @@ display: block;
 
 
 
-          
-          
-          
-          <a  class="footer-t51 style-7Tgr3" id="style-7Tgr3">
+
+
+
+          <a class="footer-t51 style-7Tgr3" id="style-7Tgr3">
             <div style="width: 200px; height: 100px;" class="swiper-slide">
               <img src="./img/Cirujano2.png" />
               <div class="slide-overlay">
@@ -2401,14 +2340,14 @@ display: block;
                 <button>
                   Cirujano <i class="fa-solid fa-circle-play"></i>
                 </button>
-            
-                <audio style="width: 100px; color: transparent;" controls preload="auto" >
+
+                <audio style="width: 100px; color: transparent;" controls preload="auto">
                   <source src="./music//Cirujano4.mp3" type="audio/ogg">
                   <source src="./music//Cirujano4.mp3" type="audio/mpeg">
                   Your browser does not support the audio element
                   .
                 </audio>
-            
+
               </div>
             </div>
           </a>
@@ -2418,13 +2357,13 @@ display: block;
 
 
 
-          
 
 
 
 
 
-          <a  class="footer-t51 style-7Tgr3" id="style-7Tgr3">
+
+          <a class="footer-t51 style-7Tgr3" id="style-7Tgr3">
             <div style="width: 200px; height: 100px;" class="swiper-slide">
               <img src="./img/Cirujano2.png" />
               <div class="slide-overlay">
@@ -2433,14 +2372,14 @@ display: block;
                 <button>
                   Cirujano <i class="fa-solid fa-circle-play"></i>
                 </button>
-            
-                <audio style="width: 100px; color: transparent;" controls preload="auto" >
+
+                <audio style="width: 100px; color: transparent;" controls preload="auto">
                   <source src="./music//Cirujano3.mp3" type="audio/ogg">
                   <source src="./music//Cirujano3.mp3" type="audio/mpeg">
                   Your browser does not support the audio element
                   .
                 </audio>
-            
+
               </div>
             </div>
           </a>
@@ -2449,7 +2388,7 @@ display: block;
 
 
 
-          <a  class="footer-t51 style-7Tgr3" id="style-7Tgr3">
+          <a class="footer-t51 style-7Tgr3" id="style-7Tgr3">
             <div style="width: 200px; height: 100px;" class="swiper-slide">
               <img src="./images/Cirujano2.png" />
               <div class="slide-overlay">
@@ -2458,14 +2397,14 @@ display: block;
                 <button>
                   Cirujano <i class="fa-solid fa-circle-play"></i>
                 </button>
-            
-                <audio style="width: 100px; color: transparent;" controls preload="auto" >
+
+                <audio style="width: 100px; color: transparent;" controls preload="auto">
                   <source src="./music/Cirujano2.mp3" type="audio/ogg">
                   <source src="./music/Cirujano2.mp3" type="audio/mpeg">
                   Your browser does not support the audio element
                   .
                 </audio>
-            
+
               </div>
             </div>
           </a>
@@ -2474,7 +2413,7 @@ display: block;
 
 
 
-          <a  class="footer-t51 style-7Tgr3" id="style-7Tgr3">
+          <a class="footer-t51 style-7Tgr3" id="style-7Tgr3">
             <div style="width: 200px; height: 100px;" class="swiper-slide">
               <img src="./img/thug111.png" />
               <div class="slide-overlay">
@@ -2483,14 +2422,14 @@ display: block;
                 <button>
                   Young Thug <i class="fa-solid fa-circle-play"></i>
                 </button>
-            
-                <audio style="width: 100px; color: transparent;" controls preload="auto" >
+
+                <audio style="width: 100px; color: transparent;" controls preload="auto">
                   <source src="./music/Thug-NeverHadIt.mp3" type="audio/ogg">
                   <source src="./music/Thug-NeverHadIt.mp3" type="audio/mpeg">
                   Your browser does not support the audio element
                   .
                 </audio>
-            
+
               </div>
             </div>
           </a>
@@ -2499,31 +2438,31 @@ display: block;
 
 
 
-          <a  class="footer-t51 style-7Tgr3" id="style-7Tgr3"></a>
-            <div style="width: 200px; height: 100px;" class="swiper-slide">
-              <img src="./img/Gunna2.png" />
-              <div class="slide-overlay">
-                <!-- <h2>Nory Dolla</h2>
+          <a class="footer-t51 style-7Tgr3" id="style-7Tgr3"></a>
+          <div style="width: 200px; height: 100px;" class="swiper-slide">
+            <img src="./img/Gunna2.png" />
+            <div class="slide-overlay">
+              <!-- <h2>Nory Dolla</h2>
                 <h3>Codigos</h3> -->
-                <button>
-                  Gunna <i class="fa-solid fa-circle-play"></i>
-                </button>
-            
-                <audio style="width: 100px; color: transparent;" controls preload="auto" >
-                  <source src="./music/Gunna-Relentless.mp3" type="audio/ogg">
-                  <source src="./music/Gunna-Relentless.mp3" type="audio/mpeg">
-                  Your browser does not support the audio element
-                  .
-                </audio>
-            
-              </div>
+              <button>
+                Gunna <i class="fa-solid fa-circle-play"></i>
+              </button>
+
+              <audio style="width: 100px; color: transparent;" controls preload="auto">
+                <source src="./music/Gunna-Relentless.mp3" type="audio/ogg">
+                <source src="./music/Gunna-Relentless.mp3" type="audio/mpeg">
+                Your browser does not support the audio element
+                .
+              </audio>
+
             </div>
+          </div>
           </a>
-          
-          
-          
-          
-          <a  class="footer-t51 style-7Tgr3" id="style-7Tgr3">
+
+
+
+
+          <a class="footer-t51 style-7Tgr3" id="style-7Tgr3">
             <div style="width: 200px; height: 100px;" class="swiper-slide">
               <img src="./img/Gunna2.png" />
               <div class="slide-overlay">
@@ -2532,21 +2471,21 @@ display: block;
                 <button>
                   Gunna <i class="fa-solid fa-circle-play"></i>
                 </button>
-            
-                <audio style="width: 100px; color: transparent;" controls preload="auto" >
+
+                <audio style="width: 100px; color: transparent;" controls preload="auto">
                   <source src="./music/Gunna-oneofwun.mp3" type="audio/ogg">
                   <source src="./music/Gunna-oneofwun.mp3" type="audio/mpeg">
                   Your browser does not support the audio element
                   .
                 </audio>
-            
+
               </div>
             </div>
           </a>
 
 
 
-          <a  class="footer-t51 style-7Tgr3" id="style-7Tgr3">
+          <a class="footer-t51 style-7Tgr3" id="style-7Tgr3">
             <div style="width: 200px; height: 100px;" class="swiper-slide">
               <img src="./img/Gunna2.png" />
               <div class="slide-overlay">
@@ -2555,40 +2494,17 @@ display: block;
                 <button>
                   Gunna <i class="fa-solid fa-circle-play"></i>
                 </button>
-            
-                <audio style="width: 100px; color: transparent;" controls preload="auto" >
+
+                <audio style="width: 100px; color: transparent;" controls preload="auto">
                   <source src="./music/Gunna-Fumean.mp3" type="audio/ogg">
                   <source src="./music/Gunna-Fumean.mp3" type="audio/mpeg">
                   Your browser does not support the audio element
                   .
                 </audio>
-            
+
               </div>
             </div>
           </a>
-          
-
-
-
-
-
-
-
-    
-    
-    
-          
-    
-    
-    
-    
-          
-    
-    
-          
-    
-    
-          
 
 
 
@@ -2604,8 +2520,31 @@ display: block;
 
 
 
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           <!-- <a  class="footer-t51 footer-5ps style-FsPRc" id="style-FsPRc">
             <div class="footer-m8a">
             </div>
@@ -2616,33 +2555,33 @@ display: block;
               Product Design
             </div>
           </a> -->
-    
+
         </div>
       </div>
     </div>
 
 
- 
-    <h8>Rap/Hip Hop:</h8> 
-    
+
+    <h8>Rap/Hip Hop:</h8>
+
 
     <!-- 2nd Marquee -->
     <!-- 2nd Marquee -->
     <!-- 2nd Marquee -->
     <!-- 2nd Marquee -->
     <div class="footer-1db style-6MKcK" id="style-6MKcK">
-        
+
       <div class="footer-3q9">
-    
+
         <div class="footer-ogw" style="width: 100%; height: 250px;">
-    
-          
 
 
 
 
 
-          
+
+
+
           <!-- <a  class="footer-t51 style-zO5m9" id="style-zO5m9">
             <div class="footer-m8a">
             </div>
@@ -2653,9 +2592,6 @@ display: block;
               Web Design
             </div>
           </a> -->
-          
-          
-          
 
 
 
@@ -2663,7 +2599,10 @@ display: block;
 
 
 
-          <a  class="footer-t51 style-7Tgr3" id="style-7Tgr3">
+
+
+
+          <a class="footer-t51 style-7Tgr3" id="style-7Tgr3">
             <div style="width: 200px; height: 100px;" class="swiper-slide">
               <img style="background-image: center; background-size: cover;" src="./img/Royal.png" />
               <div class="slide-overlay">
@@ -2672,14 +2611,14 @@ display: block;
                 <button>
                   Royals <i class="fa-solid fa-circle-play"></i>
                 </button>
-            
-                <audio style="width: 100px; color: transparent;" controls preload="auto" >
+
+                <audio style="width: 100px; color: transparent;" controls preload="auto">
                   <source src="./music/Royal.mp3" type="audio/ogg">
                   <source src="./music/Royal.mp3" type="audio/mpeg">
                   Your browser does not support the audio element
                   .
                 </audio>
-            
+
               </div>
             </div>
           </a>
@@ -2691,7 +2630,7 @@ display: block;
 
 
 
-          <a  class="footer-t51 style-7Tgr3" id="style-7Tgr3">
+          <a class="footer-t51 style-7Tgr3" id="style-7Tgr3">
             <div style="width: 200px; height: 100px;" class="swiper-slide">
               <img src="./img/allofthesudden.png" />
               <div class="slide-overlay">
@@ -2700,14 +2639,14 @@ display: block;
                 <button>
                   Lil baby <i class="fa-solid fa-circle-play"></i>
                 </button>
-            
-                <audio style="width: 100px; color: transparent;" controls preload="auto" >
+
+                <audio style="width: 100px; color: transparent;" controls preload="auto">
                   <source src="./music/Allofasudden2.mp3" type="audio/ogg">
                   <source src="./music/Allofasudden2.mp3" type="audio/mpeg">
                   Your browser does not support the audio element
                   .
                 </audio>
-            
+
               </div>
             </div>
           </a>
@@ -2718,7 +2657,7 @@ display: block;
 
 
 
-          <a  class="footer-t51 style-7Tgr3" id="style-7Tgr3">
+          <a class="footer-t51 style-7Tgr3" id="style-7Tgr3">
             <div style="width: 200px; height: 100px;" class="swiper-slide">
               <img src="./img/Thug.png" />
               <div class="slide-overlay">
@@ -2727,14 +2666,14 @@ display: block;
                 <button>
                   Thug <i class="fa-solid fa-circle-play"></i>
                 </button>
-            
-                <audio style="width: 100px; color: transparent;" controls preload="auto" >
+
+                <audio style="width: 100px; color: transparent;" controls preload="auto">
                   <source src="./music/withthat.mp3" type="audio/ogg">
                   <source src="./music/withthat.mp3" type="audio/mpeg">
                   Your browser does not support the audio element
                   .
                 </audio>
-            
+
               </div>
             </div>
           </a>
@@ -2749,33 +2688,33 @@ display: block;
 
 
 
-          
-          <a  class="footer-t51 style-7Tgr3" id="style-7Tgr3">
+
+          <a class="footer-t51 style-7Tgr3" id="style-7Tgr3">
             <div style="width: 200px; height: 100px;" class="swiper-slide">
               <img src="./img/GhostKiller.png" />
               <div class="slide-overlay">
                 <!-- <h2>Nory Dolla</h2>
                 <h3>Codigos</h3> -->
                 <button>
-                   21 Savage <i class="fa-solid fa-circle-play"></i>
+                  21 Savage <i class="fa-solid fa-circle-play"></i>
                 </button>
-            
-                <audio style="width: 100px; color: transparent;" controls preload="auto" >
+
+                <audio style="width: 100px; color: transparent;" controls preload="auto">
                   <source src="./music/GhostRidersKillers.mp3" type="audio/ogg">
                   <source src="./music/GhostRidersKillers.mp3" type="audio/mpeg">
                   Your browser does not support the audio element
                   .
                 </audio>
-            
+
               </div>
             </div>
           </a>
-          
-          
-          
-          
-          
-          <a  class="footer-t51 style-7Tgr3" id="style-7Tgr3">
+
+
+
+
+
+          <a class="footer-t51 style-7Tgr3" id="style-7Tgr3">
             <div style="width: 200px; height: 100px;" class="swiper-slide">
               <img src="./img/Thug.png" />
               <div class="slide-overlay">
@@ -2784,14 +2723,14 @@ display: block;
                 <button>
                   Thug <i class="fa-solid fa-circle-play"></i>
                 </button>
-            
-                <audio style="width: 100px; color: transparent;" controls preload="auto" >
+
+                <audio style="width: 100px; color: transparent;" controls preload="auto">
                   <source src="./music/NeverHadIt.mp3" type="audio/ogg">
                   <source src="./music/NeverHadIt.mp3" type="audio/mpeg">
                   Your browser does not support the audio element
                   .
                 </audio>
-            
+
               </div>
             </div>
           </a>
@@ -2803,7 +2742,7 @@ display: block;
 
 
 
-          <a  class="footer-t51 style-7Tgr3" id="style-7Tgr3">
+          <a class="footer-t51 style-7Tgr3" id="style-7Tgr3">
             <div style="width: 200px; height: 100px;" class="swiper-slide">
               <img src="./images/Drake.png" />
               <div class="slide-overlay">
@@ -2812,14 +2751,14 @@ display: block;
                 <button>
                   Drake <i class="fa-solid fa-circle-play"></i>
                 </button>
-            
-                <audio style="width: 100px; color: transparent;" controls preload="auto" >
+
+                <audio style="width: 100px; color: transparent;" controls preload="auto">
                   <source src="./music/PushUp.mp3" type="audio/ogg">
                   <source src="./music/PushUp.mp3" type="audio/mpeg">
                   Your browser does not support the audio element
                   .
                 </audio>
-            
+
               </div>
             </div>
           </a>
@@ -2829,8 +2768,8 @@ display: block;
 
 
 
-          
-          <a  class="footer-t51 style-7Tgr3" id="style-7Tgr3">
+
+          <a class="footer-t51 style-7Tgr3" id="style-7Tgr3">
             <div style="width: 200px; height: 100px;" class="swiper-slide">
               <img src="./img/bobby1.png" />
               <div class="slide-overlay">
@@ -2839,14 +2778,14 @@ display: block;
                 <button>
                   Bobby Smurdda <i class="fa-solid fa-circle-play"></i>
                 </button>
-            
-                <audio style="width: 100px; color: transparent;" controls preload="auto" >
+
+                <audio style="width: 100px; color: transparent;" controls preload="auto">
                   <source src="./music/Hotniig.mp3" type="audio/ogg">
                   <source src="./music/Hotniig.mp3" type="audio/mpeg">
                   Your browser does not support the audio element
                   .
                 </audio>
-            
+
               </div>
             </div>
           </a>
@@ -2855,7 +2794,7 @@ display: block;
 
 
 
-          <a  class="footer-t51 style-7Tgr3" id="style-7Tgr3">
+          <a class="footer-t51 style-7Tgr3" id="style-7Tgr3">
             <div style="width: 200px; height: 100px;" class="swiper-slide">
               <img src="./thunbnails/future.png" />
               <div class="slide-overlay">
@@ -2864,14 +2803,14 @@ display: block;
                 <button>
                   Future <i class="fa-solid fa-circle-play"></i>
                 </button>
-            
-                <audio style="width: 100px; color: transparent;" controls preload="auto" >
+
+                <audio style="width: 100px; color: transparent;" controls preload="auto">
                   <source src="./music/Timmy.mp3" type="audio/ogg">
                   <source src="./music/Timmy.mp3" type="audio/mpeg">
                   Your browser does not support the audio element
                   .
                 </audio>
-            
+
               </div>
             </div>
           </a>
@@ -2880,7 +2819,7 @@ display: block;
 
 
 
-          <a  class="footer-t51 style-7Tgr3" id="style-7Tgr3">
+          <a class="footer-t51 style-7Tgr3" id="style-7Tgr3">
             <div style="width: 200px; height: 100px;" class="swiper-slide">
               <img src="./img/ChoppaHate.png" />
               <div class="slide-overlay">
@@ -2889,22 +2828,22 @@ display: block;
                 <button>
                   21 Savage <i class="fa-solid fa-circle-play"></i>
                 </button>
-            
-                <audio style="width: 100px; color: transparent;" controls preload="auto" >
+
+                <audio style="width: 100px; color: transparent;" controls preload="auto">
                   <source src="./music/Choppahate.mp3" type="audio/ogg">
                   <source src="./music/Choppahate.mp3" type="audio/mpeg">
                   Your browser does not support the audio element
                   .
                 </audio>
-            
+
               </div>
             </div>
           </a>
-          
-          
-          
-          
-          <a  class="footer-t51 style-7Tgr3" id="style-7Tgr3">
+
+
+
+
+          <a class="footer-t51 style-7Tgr3" id="style-7Tgr3">
             <div style="width: 200px; height: 100px;" class="swiper-slide">
               <img src="./img/dior.png" />
               <div class="slide-overlay">
@@ -2913,21 +2852,21 @@ display: block;
                 <button>
                   Pop Smoke<i class="fa-solid fa-circle-play"></i>
                 </button>
-            
-                <audio style="width: 100px; color: transparent;" controls preload="auto" >
+
+                <audio style="width: 100px; color: transparent;" controls preload="auto">
                   <source src="./music/dior.mp3" type="audio/ogg">
                   <source src="./music/dior.mp3" type="audio/mpeg">
                   Your browser does not support the audio element
                   .
                 </audio>
-            
+
               </div>
             </div>
           </a>
 
 
 
-          <a  class="footer-t51 style-7Tgr3" id="style-7Tgr3">
+          <a class="footer-t51 style-7Tgr3" id="style-7Tgr3">
             <div style="width: 200px; height: 100px;" class="swiper-slide">
               <img src="./img/drake11.png" />
               <div class="slide-overlay">
@@ -2936,22 +2875,22 @@ display: block;
                 <button>
                   Drakea <i class="fa-solid fa-circle-play"></i>
                 </button>
-            
-                <audio style="width: 100px; color: transparent;" controls preload="auto" >
+
+                <audio style="width: 100px; color: transparent;" controls preload="auto">
                   <source src="./music/Drake-familymatter.mp3" type="audio/ogg">
                   <source src="./music/Drake-familymatter.mp3" type="audio/mpeg">
                   Your browser does not support the audio element
                   .
                 </audio>
-            
+
               </div>
             </div>
           </a>
-          
-          
-          
-          
-          <a  class="footer-t51 style-7Tgr3" id="style-7Tgr3">
+
+
+
+
+          <a class="footer-t51 style-7Tgr3" id="style-7Tgr3">
             <div style="width: 200px; height: 100px;" class="swiper-slide">
               <img src="./img/euforia.png" />
               <div class="slide-overlay">
@@ -2960,14 +2899,14 @@ display: block;
                 <button>
                   Kendrick Lamar <i class="fa-solid fa-circle-play"></i>
                 </button>
-            
-                <audio style="width: 100px; color: transparent;" controls preload="auto" >
+
+                <audio style="width: 100px; color: transparent;" controls preload="auto">
                   <source src="./music/Euforia.mp3" type="audio/ogg">
                   <source src="./music/Euforia.mp3" type="audio/mpeg">
                   Your browser does not support the audio element
                   .
                 </audio>
-            
+
               </div>
             </div>
           </a>
@@ -2977,13 +2916,13 @@ display: block;
 
 
 
-          
 
 
 
 
 
-          <a  class="footer-t51 style-7Tgr3" id="style-7Tgr3">
+
+          <a class="footer-t51 style-7Tgr3" id="style-7Tgr3">
             <div style="width: 200px; height: 100px;" class="swiper-slide">
               <img src="./img/lilbaby2.png" />
               <div class="slide-overlay">
@@ -2992,14 +2931,14 @@ display: block;
                 <button>
                   Lil baby <i class="fa-solid fa-circle-play"></i>
                 </button>
-            
-                <audio style="width: 100px; color: transparent;" controls preload="auto" >
+
+                <audio style="width: 100px; color: transparent;" controls preload="auto">
                   <source src="./music/sum2prove.mp3" type="audio/ogg">
                   <source src="./music/sum2prove.mp3" type="audio/mpeg">
                   Your browser does not support the audio element
                   .
                 </audio>
-            
+
               </div>
             </div>
           </a>
@@ -3008,7 +2947,7 @@ display: block;
 
 
 
-          <a  class="footer-t51 style-7Tgr3" id="style-7Tgr3">
+          <a class="footer-t51 style-7Tgr3" id="style-7Tgr3">
             <div style="width: 200px; height: 100px;" class="swiper-slide">
               <img src="./images/notlikeus.png" />
               <div class="slide-overlay">
@@ -3017,14 +2956,14 @@ display: block;
                 <button>
                   Kendrick Lamar <i class="fa-solid fa-circle-play"></i>
                 </button>
-            
-                <audio style="width: 100px; color: transparent;" controls preload="auto" >
+
+                <audio style="width: 100px; color: transparent;" controls preload="auto">
                   <source src="./music/NotLikeUs.mp3" type="audio/ogg">
                   <source src="./music/NotLikeUs.mp3" type="audio/mpeg">
                   Your browser does not support the audio element
                   .
                 </audio>
-            
+
               </div>
             </div>
           </a>
@@ -3033,7 +2972,7 @@ display: block;
 
 
 
-          <a  class="footer-t51 style-7Tgr3" id="style-7Tgr3">
+          <a class="footer-t51 style-7Tgr3" id="style-7Tgr3">
             <div style="width: 200px; height: 100px;" class="swiper-slide">
               <img src="./img/Nory2.png" />
               <div class="slide-overlay">
@@ -3042,26 +2981,26 @@ display: block;
                 <button>
                   Nory <i class="fa-solid fa-circle-play"></i>
                 </button>
-            
-                <audio style="width: 100px; color: transparent;" controls preload="auto" >
+
+                <audio style="width: 100px; color: transparent;" controls preload="auto">
                   <source src="./music/Nory-hit1.mp3" type="audio/ogg">
                   <source src="./music/Nory-hit1.mp3" type="audio/mpeg">
                   Your browser does not support the audio element
                   .
                 </audio>
-            
+
               </div>
             </div>
           </a>
-          
 
 
 
 
 
 
-    
-    
+
+
+
           <!-- <a  class="footer-t51 footer-5ps style-FsPRc" id="style-FsPRc">
             <div class="footer-m8a">
             </div>
@@ -3072,7 +3011,7 @@ display: block;
               Product Design
             </div>
           </a> -->
-    
+
         </div>
       </div>
     </div>
@@ -3091,12 +3030,12 @@ display: block;
 
 
     <h8>Dembow:</h8>
-    
+
     <!-- 3rd Marquee -->
     <!-- 3rd Marquee -->
     <!-- 3rd Marquee -->
     <!-- 3rd Marquee -->
-    <div class="footer-1db style-6MKcK" id="style-6MKcK"  style="
+    <div class="footer-1db style-6MKcK" id="style-6MKcK" style="
     background-image: url(./img/music3.gif);
     background-position: center;
     background-repeat: no-repeat;
@@ -3108,31 +3047,30 @@ display: block;
 
 
 
-    " >
+    ">
 
-    <marquee behavior="ease-in-out" direction="left" style="width: 100%;
+      <marquee behavior="ease-in-out" direction="left" style="width: 100%;
     font-size: 40px;
     color: #ffffff;
     text-shadow: 0 0 2px #00fffb, 0 0 20px #0400ff;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
-    "
-    >Coming Soon!!</marquee>
+    ">Coming Soon!!</marquee>
 
 
 
 
 
 
-        
-      <div class="footer-3q9" >
-    
+
+      <div class="footer-3q9">
+
         <div class="footer-ogw" style="width: 100%; height: 250px;">
 
 
 
 
-          
+
           <!-- <a  class="footer-t51 style-zO5m9" id="style-zO5m9">
             <div class="footer-m8a">
             </div>
@@ -3149,7 +3087,7 @@ display: block;
 
 
 
-          
+
 
           <!-- <a  class="footer-t51 style-7Tgr3" id="style-7Tgr3">
             <div style="width: 200px; height: 100px;" class="swiper-slide">
@@ -3176,8 +3114,8 @@ display: block;
 
 
 
-    
-    
+
+
           <!-- <a  class="footer-t51 footer-5ps style-FsPRc" id="style-FsPRc">
             <div class="footer-m8a">
             </div>
@@ -3188,19 +3126,19 @@ display: block;
               Product Design
             </div>
           </a> -->
-    
+
         </div>
       </div>
     </div>
 
-    
+
     <h8>Bachata:</h8>
-    
+
     <!-- 3rd Marquee -->
     <!-- 3rd Marquee -->
     <!-- 3rd Marquee -->
     <!-- 3rd Marquee -->
-    <div class="footer-1db style-6MKcK" id="style-6MKcK"  style="
+    <div class="footer-1db style-6MKcK" id="style-6MKcK" style="
     background-image: url(./img/music3.gif);
     background-position: center;
     background-repeat: no-repeat;
@@ -3212,31 +3150,30 @@ display: block;
 
 
 
-    " >
+    ">
 
-    <marquee behavior="ease-in-out" direction="left" style="width: 100%;
+      <marquee behavior="ease-in-out" direction="left" style="width: 100%;
     font-size: 40px;
     color: #ffffff;
     text-shadow: 0 0 2px #00fffb, 0 0 20px #0400ff;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
-    "
-    >Coming Soon!!</marquee>
+    ">Coming Soon!!</marquee>
 
 
 
 
 
 
-        
-      <div class="footer-3q9" >
-    
+
+      <div class="footer-3q9">
+
         <div class="footer-ogw" style="width: 100%; height: 250px;">
 
 
 
 
-          
+
           <!-- <a  class="footer-t51 style-zO5m9" id="style-zO5m9">
             <div class="footer-m8a">
             </div>
@@ -3253,7 +3190,7 @@ display: block;
 
 
 
-          
+
 
           <!-- <a  class="footer-t51 style-7Tgr3" id="style-7Tgr3">
             <div style="width: 200px; height: 100px;" class="swiper-slide">
@@ -3280,8 +3217,8 @@ display: block;
 
 
 
-    
-    
+
+
           <!-- <a  class="footer-t51 footer-5ps style-FsPRc" id="style-FsPRc">
             <div class="footer-m8a">
             </div>
@@ -3292,7 +3229,7 @@ display: block;
               Product Design
             </div>
           </a> -->
-    
+
         </div>
       </div>
     </div>
@@ -3300,18 +3237,16 @@ display: block;
 
 
 
-    
+
 
   </section>
 
 
-
   <!-- Videos -->
   <!-- Videos -->
   <!-- Videos -->
-
   <section class="">
-      <!-- Top Videos -->
+    <!-- Top Videos -->
     <!-- Top Videos -->
     <!-- Top Videos -->
     <!-- <h2 id="topvideo"  class="title" style="
@@ -3332,9 +3267,9 @@ display: block;
     
     ">ΞΞΞTop VideosΞΞΞ</h2> -->
 
-  <br>
-  <br>
-  <br>
+    <br>
+    <br>
+    <br>
     <h2 id="topvideo" class="titles" style="
     
     display: flex; 
@@ -3363,13 +3298,13 @@ display: block;
 
   letter-spacing: 0;">Videos</h2>
 
-  <br>
-  <br>
-  <br>
+    <br>
+    <br>
+    <br>
 
 
 
-  <h1 style="
+    <h1 style="
             
           display: flex; 
           justify-content: space-around; 
@@ -3380,37 +3315,37 @@ display: block;
           font-size: 20px;
           
           
-          " >30% OFF Music Videos Edits (Dec Only)</h1>
+          ">30% OFF Music Videos Edits (Dec Only)</h1>
 
 
-  <br>
-  <br>
-
-
-
+    <br>
+    <br>
 
 
 
-  <div class="modal-container">
-    <button class="modal-button show">Show Rates</button>
-    <span class="modal-overlay"></span>
 
-    <div class="modal-content">
-      <i class="fa-regular fa-circle-check"></i>
 
-      <h2 style="color: #ff0000;
+
+    <div class="modal-container">
+      <button class="modal-button show">Show Rates</button>
+      <span class="modal-overlay"></span>
+
+      <div class="modal-content">
+        <i class="fa-regular fa-circle-check"></i>
+
+        <h2 style="color: #ff0000;
       font-size: 50px;
       text-decoration: line-through;
       
-      " >●●$750.00●●</h2>
-      
-      
-      
-      <h2 style="color: #51ff00;
+      ">●●$750.00●●</h2>
+
+
+
+        <h2 style="color: #51ff00;
       font-size: 50px;
       
-      " >●●$525.00●●</h2>
-      <!-- <h2 style="
+      ">●●$525.00●●</h2>
+        <!-- <h2 style="
       
       background-image: url(./img/clinclingif-ezgif.com.gif);
       background-clip: text;
@@ -3421,23 +3356,23 @@ display: block;
       
       
       ">●●Balse Eh MMG ●●</h2> -->
-      <h2 style="color: #ff0000;">●●Open 24/7●●</h2>
-      <h2 style="color: #ff0000; font-size: 25px; ">●●Only Video Edditing●●</h2>
-      <!-- <h2 style="color: red;">For now:</h2> -->
-      <h2 style="color: #ff0000;" >HD Quality Video</h2>
-      <h2 style="color: #ff0000;" >2 previews Scene</h2>
-      <h2 style="color: #ff0000;" >2 Thumbnail Covers</h2>
+        <h2 style="color: #ff0000;">●●Open 24/7●●</h2>
+        <h2 style="color: #ff0000; font-size: 25px; ">●●Only Video Edditing●●</h2>
+        <!-- <h2 style="color: red;">For now:</h2> -->
+        <h2 style="color: #ff0000;">HD Quality Video</h2>
+        <h2 style="color: #ff0000;">2 previews Scene</h2>
+        <h2 style="color: #ff0000;">2 Thumbnail Covers</h2>
 
-      <div class="buttons">
-        <button class="modal-button close-btn">Close</button>
-        <a href="https://www.paypal.com/ncp/payment/F68JZ2U28YBDS"><button class="modal-button">Hired</button></a>
+        <div class="buttons">
+          <button class="modal-button close-btn">Close</button>
+          <a href="https://www.paypal.com/ncp/payment/F68JZ2U28YBDS"><button class="modal-button">Hired</button></a>
+        </div>
       </div>
     </div>
-  </div>
-  <script src="modal.js"></script>
+    <script src="modal.js"></script>
 
-  <br>
-  <br>
+    <br>
+    <br>
 
 
 
@@ -3455,48 +3390,48 @@ display: block;
     <!-- lETTERS MARQUEE -->
     <!-- lETTERS MARQUEE -->
     <!-- lETTERS MARQUEE -->
-    <div class="marquee" >
-    <div class="marquee__group">
-    <span>Urban ➺ Style ➺</span>
-    <span>Rap ➺ HipHop ➺</span>
-    <span>Dembow ➺ Bachata ➺</span>
-          
+    <div class="marquee">
+      <div class="marquee__group">
+        <span>Urban ➺ Style ➺</span>
+        <span>Rap ➺ HipHop ➺</span>
+        <span>Dembow ➺ Bachata ➺</span>
+
+      </div>
+
+
+
+      <div class="marquee__group" aria-hidden="true">
+        <span>Urban ➺ Style ➺</span>
+        <span>Rap ➺ HipHop ➺</span>
+        <span>Dembow ➺ Bachata ➺</span>
+
+      </div>
+
+
     </div>
 
 
 
-    <div class="marquee__group" aria-hidden="true">
-    <span>Urban ➺ Style ➺</span>
-    <span>Rap ➺ HipHop ➺</span>
-    <span>Dembow ➺ Bachata ➺</span>
-          
-    </div>
 
 
-    </div>
+    <!-- Marquee Videos -->
+    <!-- Marquee Videos -->
+    <!-- Marquee Videos -->
 
+    <div class="footer-1db style-6MKcK" id="style-6MKcK">
 
+      <div class="footer-3q9">
 
-
-
-  <!-- Marquee Videos -->
-  <!-- Marquee Videos -->
-  <!-- Marquee Videos -->
-
-  <div class="footer-1db style-6MKcK" id="style-6MKcK">
-    
-  <div class="footer-3q9">
-
-      <div class="footer-ogw" style="width: 100%; height: 250px;">
-
-        
+        <div class="footer-ogw" style="width: 100%; height: 250px;">
 
 
 
 
 
-        
-        <!-- <a  class="footer-t51 style-zO5m9" id="style-zO5m9">
+
+
+
+          <!-- <a  class="footer-t51 style-zO5m9" id="style-zO5m9">
           <div class="footer-m8a">
           </div>
           <div class="footer-ekg">
@@ -3514,11 +3449,10 @@ display: block;
 
 
 
-        <div class="backcard">
-          <div class="cardclinclin">
-          <!-- <h1 style="text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;" >Un Flow zaza</h1> -->
-          <video
-            class="video" src="./video/Clinvidremix1min.mp4" controls  muted loop  style="z-index: 100;
+          <div class="backcard">
+            <div class="cardclinclin">
+              <!-- <h1 style="text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;" >Un Flow zaza</h1> -->
+              <video class="video" src="./video/Clinvidremix1min.mp4" controls muted loop style="z-index: 100;
             max-width: 100%;
             margin: 30px auto;
             margin-left: 30px  auto;
@@ -3529,13 +3463,12 @@ display: block;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             display: flex;
             justify-content: center;
-            align-items: center;"  >
-    
-            </video>
-          </div>
-    
+            align-items: center;">
+
+              </video>
             </div>
 
+          </div>
 
 
 
@@ -3543,11 +3476,11 @@ display: block;
 
 
 
-        <div class="backcard">
-    <div class="cardnory">
-      <!-- <h1 style="text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;" >Nory Money</h1> -->
-      <video
-        class="video" src="./video/nory-codigosvid.mp4" controls  muted loop  style="z-index: 100;
+
+          <div class="backcard">
+            <div class="cardnory">
+              <!-- <h1 style="text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;" >Nory Money</h1> -->
+              <video class="video" src="./video/nory-codigosvid.mp4" controls muted loop style="z-index: 100;
         max-width: 100%;
         margin: 30px auto;
         margin-left: 30px  auto;
@@ -3558,22 +3491,21 @@ display: block;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         display: flex;
         justify-content: center;
-        align-items: center;"  >
+        align-items: center;">
 
-        </video>
-    </div>
-        </div>
-
-
+              </video>
+            </div>
+          </div>
 
 
 
 
-        <div class="backcard">
-    <div class="cardfa">
-      <!-- <h1 style="text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;" >Fa melz</h1> -->
-      <video
-        class="video" src="./video/Famelz-Quefue(1min).mp4" controls  muted loop  style="z-index: 100;
+
+
+          <div class="backcard">
+            <div class="cardfa">
+              <!-- <h1 style="text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;" >Fa melz</h1> -->
+              <video class="video" src="./video/Famelz-Quefue(1min).mp4" controls muted loop style="z-index: 100;
         max-width: 100%;
         margin: 30px auto;
         margin-left: 30px  auto;
@@ -3584,24 +3516,23 @@ display: block;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         display: flex;
         justify-content: center;
-        align-items: center;"  >
+        align-items: center;">
 
-        </video>
-    </div>
-        </div>
-        
-
+              </video>
+            </div>
+          </div>
 
 
 
 
 
 
-        <div class="backcard">
-      <div class="cardflow">
-      <!-- <h1 style="text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;" >Un Flow zaza</h1> -->
-      <video
-        class="video" src="./video/UnFlowZaza.mp4" controls  muted loop  style="z-index: 100;
+
+
+          <div class="backcard">
+            <div class="cardflow">
+              <!-- <h1 style="text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;" >Un Flow zaza</h1> -->
+              <video class="video" src="./video/UnFlowZaza.mp4" controls muted loop style="z-index: 100;
         max-width: 100%;
         margin: 30px auto;
         margin-left: 30px  auto;
@@ -3612,23 +3543,22 @@ display: block;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         display: flex;
         justify-content: center;
-        align-items: center;"  >
+        align-items: center;">
 
-        </video>
-      </div>
+              </video>
+            </div>
 
-        </div>
-
-
+          </div>
 
 
 
 
-        <div class="backcard">
-          <div class="cardwow">
-          <!-- <h1 style="text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;" >Un Flow zaza</h1> -->
-          <video
-            class="video" src="./video/Nory&Famels-Wowoffvideo(gif).mp4" controls  muted loop  style="z-index: 100;
+
+
+          <div class="backcard">
+            <div class="cardwow">
+              <!-- <h1 style="text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;" >Un Flow zaza</h1> -->
+              <video class="video" src="./video/Nory&Famels-Wowoffvideo(gif).mp4" controls muted loop style="z-index: 100;
             max-width: 100%;
             margin: 30px auto;
             margin-left: 30px  auto;
@@ -3639,26 +3569,12 @@ display: block;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             display: flex;
             justify-content: center;
-            align-items: center;"  >
-    
-            </video>
-          </div>
-    
+            align-items: center;">
+
+              </video>
             </div>
-        
-        
-        
 
-
-
-
-
-
-        
-        
-        
-        
-        
+          </div>
 
 
 
@@ -3669,7 +3585,6 @@ display: block;
 
 
 
-        
 
 
 
@@ -3678,8 +3593,23 @@ display: block;
 
 
 
-        
-        <!-- <a  class="footer-t51 style-7Tgr3" id="style-7Tgr3">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <!-- <a  class="footer-t51 style-7Tgr3" id="style-7Tgr3">
           <div style="width: 200px; height: 100px;" class="swiper-slide">
             <img src="./images/kd.png" />
             <div class="slide-overlay">
@@ -3881,29 +3811,6 @@ display: block;
             </div>
           </div>
         </a> -->
-        
-
-
-
-
-
-
-
-
-
-
-        
-
-
-
-
-        
-
-
-        
-
-
-        
 
 
 
@@ -3921,7 +3828,30 @@ display: block;
 
 
 
-        <!-- <a  class="footer-t51 footer-5ps style-FsPRc" id="style-FsPRc">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <!-- <a  class="footer-t51 footer-5ps style-FsPRc" id="style-FsPRc">
           <div class="footer-m8a">
           </div>
           <div class="footer-ekg">
@@ -3932,23 +3862,23 @@ display: block;
           </div>
         </a> -->
 
+        </div>
       </div>
+
+
+
+
+
+      <br>
+      <br>
+      <br>
+      <br>
     </div>
 
 
 
-
-    
-    <br>
-    <br>
-    <br>
-    <br>
-  </div>
-
-
-
   </section>
-  
+
 
   <!-- Music Player -->
   <!-- Music Player -->
@@ -3959,7 +3889,7 @@ display: block;
   background-size: contain;
   background-position: center;
   
-  "  >
+  ">
 
 
 
@@ -3987,7 +3917,7 @@ display: block;
         letter-spacing: 0;">ΞΞΞPlaylistΞΞΞ</h2> -->
 
 
-        <h2 class="titles" style="
+    <h2 class="titles" style="
         display: flex; 
         justify-content: space-around; 
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
@@ -4021,12 +3951,12 @@ display: block;
 
     letter-spacing: 0;">◆P♪aylist◆</h2>
 
-    
+
     <!-- Music Player -->
     <!-- Music Player -->
     <!-- Music Player -->
     <div id="player" class="player" style="--f: url(#glow-1); 
-    --l: #ff45457f, #00ff997f, #006aff7f, #ff00957f," >
+    --l: #ff45457f, #00ff997f, #006aff7f, #ff00957f,">
       <div class="wrapper">
         <div class="details">
           <div class="now-playing">PLAYING x OF y</div>
@@ -4076,7 +4006,6 @@ display: block;
         </div> -->
       </div>
     </div>
-    
 
 
 
@@ -4085,7 +4014,8 @@ display: block;
 
 
 
-  
+
+
 
 
 
@@ -4093,7 +4023,8 @@ display: block;
 
 
   </section>
-  
+
+
   <!--Top MERCH-->
   <!--Top MERCH-->
   <!--Top MERCH-->
@@ -4125,8 +4056,8 @@ display: block;
 
 
     letter-spacing: 0;">ΞΞΞŜ₸₢ěΞΞΞ</h2> -->
-    
-    
+
+
     <h2 class="titles" style="
         display: flex; 
         justify-content: space-around; 
@@ -4161,334 +4092,366 @@ display: block;
 
 
 
-<!-- 1st Marquee -->
-<!-- 1st Marquee -->
-<!-- 1st Marquee -->
-<!-- 1st Marquee -->
+    <!-- 1st Marquee -->
+    <!-- 1st Marquee -->
+    <!-- 1st Marquee -->
+    <!-- 1st Marquee -->
 
 
 
-<div class="footer-1db style-6MKcK" id="style-6MKcK">
-        
-  <div class="footer-3q9">
+    <div class="footer-1db style-6MKcK" id="style-6MKcK">
 
-    <div class="footer-ogw" style="">
+      <div class="footer-3q9">
 
-      <a  class="footer-t51 style-2m6MF" id="style-2m6MF">
-        <div style="width: 350px;" class="product-container">
-          <img src="https://assets2.oakley.com/cdn-record-files-pi/13bb41b2-ab71-4ea4-b51b-af17013161c5/f8c86aae-58f1-4c8f-9e4a-af330041a596/0OJ9001__900127__P21__shad__qt.png?impolicy=OO_ratio&width=2000" alt="Product Image">
-          <!-- <div class="marquee-container">
+        <div class="footer-ogw" style="">
+
+          <a class="footer-t51 style-2m6MF" id="style-2m6MF">
+            <div style="width: 350px;" class="product-container">
+              <img
+                src="https://assets2.oakley.com/cdn-record-files-pi/13bb41b2-ab71-4ea4-b51b-af17013161c5/f8c86aae-58f1-4c8f-9e4a-af330041a596/0OJ9001__900127__P21__shad__qt.png?impolicy=OO_ratio&width=2000"
+                alt="Product Image">
+              <!-- <div class="marquee-container">
             <marquee behavior="ease-in-out" direction="left" style="width: 100%;" >Coming Soon!!</marquee>
           </div> -->
-          <div class="product-info">
-            <h2>Coming Soon!</h2>
-            <p>Sport Glasses</p>
-            <div class="price-container">
-              <span class="original-price">$99.99</span>
-              <!-- <span class="discounted-price">$79.99</span> -->
+              <div class="product-info">
+                <h2>Coming Soon!</h2>
+                <p>Sport Glasses</p>
+                <div class="price-container">
+                  <span class="original-price">$99.99</span>
+                  <!-- <span class="discounted-price">$79.99</span> -->
+                </div>
+                <button class="buy-now">Buy Now</button>
+              </div>
             </div>
-            <button class="buy-now">Buy Now</button>
-          </div>
-        </div>
-      </a>
+          </a>
 
 
-      <a  class="footer-t51 style-2m6MF" id="style-2m6MF">
-        <div style="width: 350px;" class="product-container">
-          <img src="https://assets2.oakley.com/cdn-record-files-pi/67eab5b4-f56f-4906-98f6-ab5700fe755e/dc86aa87-e056-4c2e-871c-afc7016e2725/0OJ9001__900115__P21__shad__qt.png?impolicy=OO_ratio&width=2000" alt="Product Image">
-          <!-- <div class="marquee-container">
+          <a class="footer-t51 style-2m6MF" id="style-2m6MF">
+            <div style="width: 350px;" class="product-container">
+              <img
+                src="https://assets2.oakley.com/cdn-record-files-pi/67eab5b4-f56f-4906-98f6-ab5700fe755e/dc86aa87-e056-4c2e-871c-afc7016e2725/0OJ9001__900115__P21__shad__qt.png?impolicy=OO_ratio&width=2000"
+                alt="Product Image">
+              <!-- <div class="marquee-container">
             <marquee behavior="ease-in-out" direction="left" style="width: 100%;" >Coming Soon!!</marquee>
           </div> -->
-          <div class="product-info">
-            <h2>Coming Soon!</h2>
-            <p>Sport Glasses</p>
-            <div class="price-container">
-              <span class="original-price">$99.99</span>
-              <!-- <span class="discounted-price">$79.99</span> -->
+              <div class="product-info">
+                <h2>Coming Soon!</h2>
+                <p>Sport Glasses</p>
+                <div class="price-container">
+                  <span class="original-price">$99.99</span>
+                  <!-- <span class="discounted-price">$79.99</span> -->
+                </div>
+                <button class="buy-now">Buy Now</button>
+              </div>
             </div>
-            <button class="buy-now">Buy Now</button>
-          </div>
-        </div>
-      </a>
+          </a>
 
-      
-      <a  class="footer-t51 style-2m6MF" id="style-2m6MF">
-        <div style="width: 350px;" class="product-container">
-          <img src="https://assets2.oakley.com/cdn-record-files-pi/6868f1b5-0f5d-4eba-bf81-a6ba0121b6b5/5c5f1e63-2dfa-420a-8de1-afc701689482/0OJ9001__900106__P21__shad__qt.png?impolicy=OO_ratio&width=2000" alt="Product Image">
-          <!-- <div class="marquee-container">
+
+          <a class="footer-t51 style-2m6MF" id="style-2m6MF">
+            <div style="width: 350px;" class="product-container">
+              <img
+                src="https://assets2.oakley.com/cdn-record-files-pi/6868f1b5-0f5d-4eba-bf81-a6ba0121b6b5/5c5f1e63-2dfa-420a-8de1-afc701689482/0OJ9001__900106__P21__shad__qt.png?impolicy=OO_ratio&width=2000"
+                alt="Product Image">
+              <!-- <div class="marquee-container">
             <marquee behavior="ease-in-out" direction="left" style="width: 100%;" >Coming Soon!!</marquee>
           </div> -->
-          <div class="product-info">
-            <h2>Coming Soon!</h2>
-            <p>Sport Glasses</p>
-            <div class="price-container">
-              <span class="original-price">$99.99</span>
-              <!-- <span class="discounted-price">$79.99</span> -->
+              <div class="product-info">
+                <h2>Coming Soon!</h2>
+                <p>Sport Glasses</p>
+                <div class="price-container">
+                  <span class="original-price">$99.99</span>
+                  <!-- <span class="discounted-price">$79.99</span> -->
+                </div>
+                <button class="buy-now">Buy Now</button>
+              </div>
             </div>
-            <button class="buy-now">Buy Now</button>
-          </div>
-        </div>
-      </a>
-      
-      
-      
-      <a  class="footer-t51 style-2m6MF" id="style-2m6MF">
-        <div style="width: 350px;" class="product-container">
-          <img src="https://assets2.oakley.com/cdn-record-files-pi/41ce95cd-3eb9-42c5-8480-a6ba01218223/a07b3c7a-5942-42bd-8a62-afc70167b54a/0OJ9001__900105__P21__shad__qt.png?impolicy=OO_ratio&width=2000" alt="Product Image">
-          <!-- <div class="marquee-container">
+          </a>
+
+
+
+          <a class="footer-t51 style-2m6MF" id="style-2m6MF">
+            <div style="width: 350px;" class="product-container">
+              <img
+                src="https://assets2.oakley.com/cdn-record-files-pi/41ce95cd-3eb9-42c5-8480-a6ba01218223/a07b3c7a-5942-42bd-8a62-afc70167b54a/0OJ9001__900105__P21__shad__qt.png?impolicy=OO_ratio&width=2000"
+                alt="Product Image">
+              <!-- <div class="marquee-container">
             <marquee behavior="ease-in-out" direction="left" style="width: 100%;" >Coming Soon!!</marquee>
           </div> -->
-          <div class="product-info">
-            <h2>Coming Soon!</h2>
-            <p>Sport Glasses</p>
-            <div class="price-container">
-              <span class="original-price">$99.99</span>
-              <!-- <span class="discounted-price">$79.99</span> -->
+              <div class="product-info">
+                <h2>Coming Soon!</h2>
+                <p>Sport Glasses</p>
+                <div class="price-container">
+                  <span class="original-price">$99.99</span>
+                  <!-- <span class="discounted-price">$79.99</span> -->
+                </div>
+                <button class="buy-now">Buy Now</button>
+              </div>
             </div>
-            <button class="buy-now">Buy Now</button>
-          </div>
-        </div>
-      </a>
-      
-      
-      
-      
-      
-      <a  class="footer-t51 style-2m6MF" id="style-2m6MF">
-        <div style="width: 350px;" class="product-container">
-          <img src="https://assets2.oakley.com/cdn-record-files-pi/13bb41b2-ab71-4ea4-b51b-af17013161c5/f8c86aae-58f1-4c8f-9e4a-af330041a596/0OJ9001__900127__P21__shad__qt.png?impolicy=OO_ratio&width=2000" alt="Product Image">
-          <!-- <div class="marquee-container">
+          </a>
+
+
+
+
+
+          <a class="footer-t51 style-2m6MF" id="style-2m6MF">
+            <div style="width: 350px;" class="product-container">
+              <img
+                src="https://assets2.oakley.com/cdn-record-files-pi/13bb41b2-ab71-4ea4-b51b-af17013161c5/f8c86aae-58f1-4c8f-9e4a-af330041a596/0OJ9001__900127__P21__shad__qt.png?impolicy=OO_ratio&width=2000"
+                alt="Product Image">
+              <!-- <div class="marquee-container">
             <marquee behavior="ease-in-out" direction="left" style="width: 100%;" >Coming Soon!!</marquee>
           </div> -->
-          <div class="product-info">
-            <h2>Coming Soon!</h2>
-            <p>Sport Glasses</p>
-            <div class="price-container">
-              <span class="original-price">$99.99</span>
-              <!-- <span class="discounted-price">$79.99</span> -->
+              <div class="product-info">
+                <h2>Coming Soon!</h2>
+                <p>Sport Glasses</p>
+                <div class="price-container">
+                  <span class="original-price">$99.99</span>
+                  <!-- <span class="discounted-price">$79.99</span> -->
+                </div>
+                <button class="buy-now">Buy Now</button>
+              </div>
             </div>
-            <button class="buy-now">Buy Now</button>
-          </div>
-        </div>
-      </a>
+          </a>
 
 
-      <a  class="footer-t51 style-2m6MF" id="style-2m6MF">
-        <div style="width: 350px;" class="product-container">
-          <img src="https://assets2.oakley.com/cdn-record-files-pi/67eab5b4-f56f-4906-98f6-ab5700fe755e/dc86aa87-e056-4c2e-871c-afc7016e2725/0OJ9001__900115__P21__shad__qt.png?impolicy=OO_ratio&width=2000" alt="Product Image">
-          <!-- <div class="marquee-container">
+          <a class="footer-t51 style-2m6MF" id="style-2m6MF">
+            <div style="width: 350px;" class="product-container">
+              <img
+                src="https://assets2.oakley.com/cdn-record-files-pi/67eab5b4-f56f-4906-98f6-ab5700fe755e/dc86aa87-e056-4c2e-871c-afc7016e2725/0OJ9001__900115__P21__shad__qt.png?impolicy=OO_ratio&width=2000"
+                alt="Product Image">
+              <!-- <div class="marquee-container">
             <marquee behavior="ease-in-out" direction="left" style="width: 100%;" >Coming Soon!!</marquee>
           </div> -->
-          <div class="product-info">
-            <h2>Coming Soon!</h2>
-            <p>Sport Glasses</p>
-            <div class="price-container">
-              <span class="original-price">$99.99</span>
-              <!-- <span class="discounted-price">$79.99</span> -->
+              <div class="product-info">
+                <h2>Coming Soon!</h2>
+                <p>Sport Glasses</p>
+                <div class="price-container">
+                  <span class="original-price">$99.99</span>
+                  <!-- <span class="discounted-price">$79.99</span> -->
+                </div>
+                <button class="buy-now">Buy Now</button>
+              </div>
             </div>
-            <button class="buy-now">Buy Now</button>
-          </div>
-        </div>
-      </a>
+          </a>
 
-      
-      <a  class="footer-t51 style-2m6MF" id="style-2m6MF">
-        <div style="width: 350px;" class="product-container">
-          <img src="https://assets2.oakley.com/cdn-record-files-pi/6868f1b5-0f5d-4eba-bf81-a6ba0121b6b5/5c5f1e63-2dfa-420a-8de1-afc701689482/0OJ9001__900106__P21__shad__qt.png?impolicy=OO_ratio&width=2000" alt="Product Image">
-          <!-- <div class="marquee-container">
+
+          <a class="footer-t51 style-2m6MF" id="style-2m6MF">
+            <div style="width: 350px;" class="product-container">
+              <img
+                src="https://assets2.oakley.com/cdn-record-files-pi/6868f1b5-0f5d-4eba-bf81-a6ba0121b6b5/5c5f1e63-2dfa-420a-8de1-afc701689482/0OJ9001__900106__P21__shad__qt.png?impolicy=OO_ratio&width=2000"
+                alt="Product Image">
+              <!-- <div class="marquee-container">
             <marquee behavior="ease-in-out" direction="left" style="width: 100%;" >Coming Soon!!</marquee>
           </div> -->
-          <div class="product-info">
-            <h2>Coming Soon!</h2>
-            <p>Sport Glasses</p>
-            <div class="price-container">
-              <span class="original-price">$99.99</span>
-              <!-- <span class="discounted-price">$79.99</span> -->
+              <div class="product-info">
+                <h2>Coming Soon!</h2>
+                <p>Sport Glasses</p>
+                <div class="price-container">
+                  <span class="original-price">$99.99</span>
+                  <!-- <span class="discounted-price">$79.99</span> -->
+                </div>
+                <button class="buy-now">Buy Now</button>
+              </div>
             </div>
-            <button class="buy-now">Buy Now</button>
-          </div>
-        </div>
-      </a>
-      
-      
-      
-      <a  class="footer-t51 style-2m6MF" id="style-2m6MF">
-        <div style="width: 350px;" class="product-container">
-          <img  src="https://assets2.oakley.com/cdn-record-files-pi/41ce95cd-3eb9-42c5-8480-a6ba01218223/a07b3c7a-5942-42bd-8a62-afc70167b54a/0OJ9001__900105__P21__shad__qt.png?impolicy=OO_ratio&width=2000" alt="Product Image">
-          <!-- <div class="marquee-container">
+          </a>
+
+
+
+          <a class="footer-t51 style-2m6MF" id="style-2m6MF">
+            <div style="width: 350px;" class="product-container">
+              <img
+                src="https://assets2.oakley.com/cdn-record-files-pi/41ce95cd-3eb9-42c5-8480-a6ba01218223/a07b3c7a-5942-42bd-8a62-afc70167b54a/0OJ9001__900105__P21__shad__qt.png?impolicy=OO_ratio&width=2000"
+                alt="Product Image">
+              <!-- <div class="marquee-container">
             <marquee behavior="ease-in-out" direction="left" style="width: 100%;" >Coming Soon!!</marquee>
           </div> -->
-          <div class="product-info">
-            <h2>Coming Soon!</h2>
-            <p>Sport Glasses</p>
-            <div class="price-container">
-              <span class="original-price">$99.99</span>
-              <!-- <span class="discounted-price">$79.99</span> -->
+              <div class="product-info">
+                <h2>Coming Soon!</h2>
+                <p>Sport Glasses</p>
+                <div class="price-container">
+                  <span class="original-price">$99.99</span>
+                  <!-- <span class="discounted-price">$79.99</span> -->
+                </div>
+                <button class="buy-now">Buy Now</button>
+              </div>
             </div>
-            <button class="buy-now">Buy Now</button>
-          </div>
-        </div>
-      </a>
-      
-      
-      
-      
-      
-      <a  class="footer-t51 style-2m6MF" id="style-2m6MF">
-        <div style="width: 350px;" class="product-container">
-          <img src="https://assets2.oakley.com/cdn-record-files-pi/13bb41b2-ab71-4ea4-b51b-af17013161c5/f8c86aae-58f1-4c8f-9e4a-af330041a596/0OJ9001__900127__P21__shad__qt.png?impolicy=OO_ratio&width=2000" alt="Product Image">
-          <!-- <div class="marquee-container">
+          </a>
+
+
+
+
+
+          <a class="footer-t51 style-2m6MF" id="style-2m6MF">
+            <div style="width: 350px;" class="product-container">
+              <img
+                src="https://assets2.oakley.com/cdn-record-files-pi/13bb41b2-ab71-4ea4-b51b-af17013161c5/f8c86aae-58f1-4c8f-9e4a-af330041a596/0OJ9001__900127__P21__shad__qt.png?impolicy=OO_ratio&width=2000"
+                alt="Product Image">
+              <!-- <div class="marquee-container">
             <marquee behavior="ease-in-out" direction="left" style="width: 100%;" >Coming Soon!!</marquee>
           </div> -->
-          <div class="product-info">
-            <h2>Coming Soon!</h2>
-            <p>Sport Glasses</p>
-            <div class="price-container">
-              <span class="original-price">$99.99</span>
-              <!-- <span class="discounted-price">$79.99</span> -->
+              <div class="product-info">
+                <h2>Coming Soon!</h2>
+                <p>Sport Glasses</p>
+                <div class="price-container">
+                  <span class="original-price">$99.99</span>
+                  <!-- <span class="discounted-price">$79.99</span> -->
+                </div>
+                <button class="buy-now">Buy Now</button>
+              </div>
             </div>
-            <button class="buy-now">Buy Now</button>
-          </div>
-        </div>
-      </a>
+          </a>
 
 
-      <a  class="footer-t51 style-2m6MF" id="style-2m6MF">
-        <div style="width: 350px;" class="product-container">
-          <img src="https://assets2.oakley.com/cdn-record-files-pi/67eab5b4-f56f-4906-98f6-ab5700fe755e/dc86aa87-e056-4c2e-871c-afc7016e2725/0OJ9001__900115__P21__shad__qt.png?impolicy=OO_ratio&width=2000" alt="Product Image">
-          <!-- <div class="marquee-container">
+          <a class="footer-t51 style-2m6MF" id="style-2m6MF">
+            <div style="width: 350px;" class="product-container">
+              <img
+                src="https://assets2.oakley.com/cdn-record-files-pi/67eab5b4-f56f-4906-98f6-ab5700fe755e/dc86aa87-e056-4c2e-871c-afc7016e2725/0OJ9001__900115__P21__shad__qt.png?impolicy=OO_ratio&width=2000"
+                alt="Product Image">
+              <!-- <div class="marquee-container">
             <marquee behavior="ease-in-out" direction="left" style="width: 100%;" >Coming Soon!!</marquee>
           </div> -->
-          <div class="product-info">
-            <h2>Coming Soon!</h2>
-            <p>Sport Glasses</p>
-            <div class="price-container">
-              <span class="original-price">$99.99</span>
-              <!-- <span class="discounted-price">$79.99</span> -->
+              <div class="product-info">
+                <h2>Coming Soon!</h2>
+                <p>Sport Glasses</p>
+                <div class="price-container">
+                  <span class="original-price">$99.99</span>
+                  <!-- <span class="discounted-price">$79.99</span> -->
+                </div>
+                <button class="buy-now">Buy Now</button>
+              </div>
             </div>
-            <button class="buy-now">Buy Now</button>
-          </div>
-        </div>
-      </a>
+          </a>
 
-      
-      <a  class="footer-t51 style-2m6MF" id="style-2m6MF">
-        <div style="width: 350px;" class="product-container">
-          <img src="https://assets2.oakley.com/cdn-record-files-pi/6868f1b5-0f5d-4eba-bf81-a6ba0121b6b5/5c5f1e63-2dfa-420a-8de1-afc701689482/0OJ9001__900106__P21__shad__qt.png?impolicy=OO_ratio&width=2000" alt="Product Image">
-          <!-- <div class="marquee-container">
+
+          <a class="footer-t51 style-2m6MF" id="style-2m6MF">
+            <div style="width: 350px;" class="product-container">
+              <img
+                src="https://assets2.oakley.com/cdn-record-files-pi/6868f1b5-0f5d-4eba-bf81-a6ba0121b6b5/5c5f1e63-2dfa-420a-8de1-afc701689482/0OJ9001__900106__P21__shad__qt.png?impolicy=OO_ratio&width=2000"
+                alt="Product Image">
+              <!-- <div class="marquee-container">
             <marquee behavior="ease-in-out" direction="left" style="width: 100%;" >Coming Soon!!</marquee>
           </div> -->
-          <div class="product-info">
-            <h2>Coming Soon!</h2>
-            <p>Sport Glasses</p>
-            <div class="price-container">
-              <span class="original-price">$99.99</span>
-              <!-- <span class="discounted-price">$79.99</span> -->
+              <div class="product-info">
+                <h2>Coming Soon!</h2>
+                <p>Sport Glasses</p>
+                <div class="price-container">
+                  <span class="original-price">$99.99</span>
+                  <!-- <span class="discounted-price">$79.99</span> -->
+                </div>
+                <button class="buy-now">Buy Now</button>
+              </div>
             </div>
-            <button class="buy-now">Buy Now</button>
-          </div>
-        </div>
-      </a>
-      
-      
-      
-      <a  class="footer-t51 style-2m6MF" id="style-2m6MF">
-        <div style="width: 350px;" class="product-container">
-          <img src="https://assets2.oakley.com/cdn-record-files-pi/41ce95cd-3eb9-42c5-8480-a6ba01218223/a07b3c7a-5942-42bd-8a62-afc70167b54a/0OJ9001__900105__P21__shad__qt.png?impolicy=OO_ratio&width=2000" alt="Product Image">
-          <!-- <div class="marquee-container">
+          </a>
+
+
+
+          <a class="footer-t51 style-2m6MF" id="style-2m6MF">
+            <div style="width: 350px;" class="product-container">
+              <img
+                src="https://assets2.oakley.com/cdn-record-files-pi/41ce95cd-3eb9-42c5-8480-a6ba01218223/a07b3c7a-5942-42bd-8a62-afc70167b54a/0OJ9001__900105__P21__shad__qt.png?impolicy=OO_ratio&width=2000"
+                alt="Product Image">
+              <!-- <div class="marquee-container">
             <marquee behavior="ease-in-out" direction="left" style="width: 100%;" >Coming Soon!!</marquee>
           </div> -->
-          <div class="product-info">
-            <h2>Coming Soon!</h2>
-            <p>Sport Glasses</p>
-            <div class="price-container">
-              <span class="original-price">$99.99</span>
-              <!-- <span class="discounted-price">$79.99</span> -->
+              <div class="product-info">
+                <h2>Coming Soon!</h2>
+                <p>Sport Glasses</p>
+                <div class="price-container">
+                  <span class="original-price">$99.99</span>
+                  <!-- <span class="discounted-price">$79.99</span> -->
+                </div>
+                <button class="buy-now">Buy Now</button>
+              </div>
             </div>
-            <button class="buy-now">Buy Now</button>
-          </div>
-        </div>
-      </a>
-      
-      
-      
-      
-      
-      <a  class="footer-t51 style-2m6MF" id="style-2m6MF">
-        <div style="width: 350px;" class="product-container">
-          <img src="https://assets2.oakley.com/cdn-record-files-pi/13bb41b2-ab71-4ea4-b51b-af17013161c5/f8c86aae-58f1-4c8f-9e4a-af330041a596/0OJ9001__900127__P21__shad__qt.png?impolicy=OO_ratio&width=2000" alt="Product Image">
-          <!-- <div class="marquee-container">
+          </a>
+
+
+
+
+
+          <a class="footer-t51 style-2m6MF" id="style-2m6MF">
+            <div style="width: 350px;" class="product-container">
+              <img
+                src="https://assets2.oakley.com/cdn-record-files-pi/13bb41b2-ab71-4ea4-b51b-af17013161c5/f8c86aae-58f1-4c8f-9e4a-af330041a596/0OJ9001__900127__P21__shad__qt.png?impolicy=OO_ratio&width=2000"
+                alt="Product Image">
+              <!-- <div class="marquee-container">
             <marquee behavior="ease-in-out" direction="left" style="width: 100%;" >Coming Soon!!</marquee>
           </div> -->
-          <div class="product-info">
-            <h2>Coming Soon!</h2>
-            <p>Sport Glasses</p>
-            <div class="price-container">
-              <span class="original-price">$99.99</span>
-              <!-- <span class="discounted-price">$79.99</span> -->
+              <div class="product-info">
+                <h2>Coming Soon!</h2>
+                <p>Sport Glasses</p>
+                <div class="price-container">
+                  <span class="original-price">$99.99</span>
+                  <!-- <span class="discounted-price">$79.99</span> -->
+                </div>
+                <button class="buy-now">Buy Now</button>
+              </div>
             </div>
-            <button class="buy-now">Buy Now</button>
-          </div>
-        </div>
-      </a>
+          </a>
 
 
-      <a  class="footer-t51 style-2m6MF" id="style-2m6MF">
-        <div style="width: 350px;" class="product-container">
-          <img src="https://assets2.oakley.com/cdn-record-files-pi/67eab5b4-f56f-4906-98f6-ab5700fe755e/dc86aa87-e056-4c2e-871c-afc7016e2725/0OJ9001__900115__P21__shad__qt.png?impolicy=OO_ratio&width=2000" alt="Product Image">
-          <!-- <div class="marquee-container">
+          <a class="footer-t51 style-2m6MF" id="style-2m6MF">
+            <div style="width: 350px;" class="product-container">
+              <img
+                src="https://assets2.oakley.com/cdn-record-files-pi/67eab5b4-f56f-4906-98f6-ab5700fe755e/dc86aa87-e056-4c2e-871c-afc7016e2725/0OJ9001__900115__P21__shad__qt.png?impolicy=OO_ratio&width=2000"
+                alt="Product Image">
+              <!-- <div class="marquee-container">
             <marquee behavior="ease-in-out" direction="left" style="width: 100%;" >Coming Soon!!</marquee>
           </div> -->
-          <div class="product-info">
-            <h2>Coming Soon!</h2>
-            <p>Sport Glasses</p>
-            <div class="price-container">
-              <span class="original-price">$99.99</span>
-              <!-- <span class="discounted-price">$79.99</span> -->
+              <div class="product-info">
+                <h2>Coming Soon!</h2>
+                <p>Sport Glasses</p>
+                <div class="price-container">
+                  <span class="original-price">$99.99</span>
+                  <!-- <span class="discounted-price">$79.99</span> -->
+                </div>
+                <button class="buy-now">Buy Now</button>
+              </div>
             </div>
-            <button class="buy-now">Buy Now</button>
-          </div>
-        </div>
-      </a>
+          </a>
 
-      
-      <a  class="footer-t51 style-2m6MF" id="style-2m6MF">
-        <div style="width: 350px;" class="product-container">
-          <img src="https://assets2.oakley.com/cdn-record-files-pi/6868f1b5-0f5d-4eba-bf81-a6ba0121b6b5/5c5f1e63-2dfa-420a-8de1-afc701689482/0OJ9001__900106__P21__shad__qt.png?impolicy=OO_ratio&width=2000" alt="Product Image">
-          <!-- <div class="marquee-container">
+
+          <a class="footer-t51 style-2m6MF" id="style-2m6MF">
+            <div style="width: 350px;" class="product-container">
+              <img
+                src="https://assets2.oakley.com/cdn-record-files-pi/6868f1b5-0f5d-4eba-bf81-a6ba0121b6b5/5c5f1e63-2dfa-420a-8de1-afc701689482/0OJ9001__900106__P21__shad__qt.png?impolicy=OO_ratio&width=2000"
+                alt="Product Image">
+              <!-- <div class="marquee-container">
             <marquee behavior="ease-in-out" direction="left" style="width: 100%;" >Coming Soon!!</marquee>
           </div> -->
-          <div class="product-info">
-            <h2>Coming Soon!</h2>
-            <p>Sport Glasses</p>
-            <div class="price-container">
-              <span class="original-price">$99.99</span>
-              <!-- <span class="discounted-price">$79.99</span> -->
+              <div class="product-info">
+                <h2>Coming Soon!</h2>
+                <p>Sport Glasses</p>
+                <div class="price-container">
+                  <span class="original-price">$99.99</span>
+                  <!-- <span class="discounted-price">$79.99</span> -->
+                </div>
+                <button class="buy-now">Buy Now</button>
+              </div>
             </div>
-            <button class="buy-now">Buy Now</button>
-          </div>
-        </div>
-      </a>
-      
-      
-      
-      <a  class="footer-t51 style-2m6MF" id="style-2m6MF">
-        <div style="width: 350px;" class="product-container">
-          <img src="https://assets2.oakley.com/cdn-record-files-pi/41ce95cd-3eb9-42c5-8480-a6ba01218223/a07b3c7a-5942-42bd-8a62-afc70167b54a/0OJ9001__900105__P21__shad__qt.png?impolicy=OO_ratio&width=2000" alt="Product Image">
-          <!-- <div class="marquee-container">
+          </a>
+
+
+
+          <a class="footer-t51 style-2m6MF" id="style-2m6MF">
+            <div style="width: 350px;" class="product-container">
+              <img
+                src="https://assets2.oakley.com/cdn-record-files-pi/41ce95cd-3eb9-42c5-8480-a6ba01218223/a07b3c7a-5942-42bd-8a62-afc70167b54a/0OJ9001__900105__P21__shad__qt.png?impolicy=OO_ratio&width=2000"
+                alt="Product Image">
+              <!-- <div class="marquee-container">
             <marquee behavior="ease-in-out" direction="left" style="width: 100%;" >Coming Soon!!</marquee>
           </div> -->
-          <div class="product-info">
-            <h2>Coming Soon!</h2>
-            <p>Sport Glasses</p>
-            <div class="price-container">
-              <span class="original-price">$99.99</span>
-              <!-- <span class="discounted-price">$79.99</span> -->
+              <div class="product-info">
+                <h2>Coming Soon!</h2>
+                <p>Sport Glasses</p>
+                <div class="price-container">
+                  <span class="original-price">$99.99</span>
+                  <!-- <span class="discounted-price">$79.99</span> -->
+                </div>
+                <button class="buy-now">Buy Now</button>
+              </div>
             </div>
-            <button class="buy-now">Buy Now</button>
-          </div>
-        </div>
-      </a>
+          </a>
 
 
 
@@ -4504,27 +4467,27 @@ display: block;
 
 
 
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
 
 
-      <!-- <a  class="footer-t51 footer-5ps style-srEAo" id="style-srEAo">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <!-- <a  class="footer-t51 footer-5ps style-srEAo" id="style-srEAo">
         <div class="footer-m8a">
         </div>
         <div class="footer-ekg">
@@ -4547,40 +4510,40 @@ display: block;
         </div>
       </a> -->
 
-      
 
+
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-    
 
 
 
 
 
 
-<div class="product-container">
 
-  <div class="product-info">
-    <!-- <h2>Limitless Store</h2> -->
-    <!-- <p>Si te metite palla, tiene que compra obligao!</p> -->
-    <a href="https://clay3d11.github.io/LimitlessMerch/"><button>Visit Store</button></a>
+    <div class="product-container">
 
-
-    <!-- <a href="https://clay3d11.github.io/LimitlessMerch/"><button class='glowing-btn'><span class='glowing-txt'>ST<span class='faulty-letter'>OR</span>E</span></button></a> -->
-    
-  </div>
+      <div class="product-info">
+        <!-- <h2>Limitless Store</h2> -->
+        <!-- <p>Si te metite palla, tiene que compra obligao!</p> -->
+        <a href="https://clay3d11.github.io/LimitlessMerch/"><button>Visit Store</button></a>
 
 
+        <!-- <a href="https://clay3d11.github.io/LimitlessMerch/"><button class='glowing-btn'><span class='glowing-txt'>ST<span class='faulty-letter'>OR</span>E</span></button></a> -->
+
+      </div>
 
 
-    
-  
-  
-  
-  
-  
-  <!-- <img src="/LimitlessShop/images/nike_marquee_edge_mirrored_running_sunglasses_Oh8f9Gy7yP.webp"> -->
+
+
+
+
+
+
+
+
+      <!-- <img src="/LimitlessShop/images/nike_marquee_edge_mirrored_running_sunglasses_Oh8f9Gy7yP.webp"> -->
 
 
 
@@ -4606,7 +4569,7 @@ display: block;
       <div class="marquee -container">
         <marquee behavior="scroll" direction="left">Coming Soon!</marquee>
       </div> -->
-      
+
       <!-- <br>
       <br>
       <br>
@@ -4621,23 +4584,23 @@ display: block;
 
 
 
-      
-</div>
+
+    </div>
 
 
-  <!-- <p>25% Revenue</p> -->
-  <br>
-  <br>
-  <h8 style="
+    <!-- <p>25% Revenue</p> -->
+    <br>
+    <br>
+    <h8 style="
   margin: 0 auto;
   width: 50%;
   display: block;
   
-  " >25% Revenue <br> we cover: </h8>
-  
-  
-  
-  <!-- <h8 style="
+  ">25% Revenue <br> we cover: </h8>
+
+
+
+    <!-- <h8 style="
   margin: 0 auto;
   width: 50%;
   display: block;
@@ -4646,8 +4609,8 @@ display: block;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   
   " >we Cover:</h8> -->
-    
-   <p>stocking Selling Shipping</p>
+
+    <p>stocking Selling Shipping</p>
 
 
 
@@ -4673,38 +4636,38 @@ display: block;
 
 
 
-    <a href="https://calendar.app.google/YhqvDd5F7H2QUsx16"  ><button style="font-size: 20px;
+    <a href="https://calendar.app.google/YhqvDd5F7H2QUsx16"><button style="font-size: 20px;
       margin: 0 auto;
       /* width: 50%; */
       display: block;
       
       
-      " >
-      
+      ">
+
         Lets Become Partners!
-      
-      
-      
-      
-      
-      
-      
+
+
+
+
+
+
+
       </button></a>
 
-      <br>
-      <br>
-      <br>
+    <br>
+    <br>
+    <br>
 
 
 
 
 
 
-    
-    
 
 
-    
+
+
+
 
 
     <!-- <div class="product-container">
@@ -4731,7 +4694,7 @@ display: block;
 
 
 
-        
+
     <!-- small Mini img Marque -->
     <!-- small Mini img Marque -->
     <!-- small Mini img Marque -->
@@ -4791,36 +4754,36 @@ display: block;
               
           </div>
     </div> -->
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
 
 
 
 
   </section>
-  
+
+
   <!-- Events & Tickets -->
   <!-- Events & Tickets -->
   <!-- Events & Tickets -->
-  
   <section id="events">
 
-    
- 
+
+
 
     <div class="section-p4b sho-vvl">
       <div class="container-rtl">
-          <div class="column-br2">
+        <div class="column-br2">
 
-              <div>
+          <div>
 
-                    <h2 class="titles" style="
+            <h2 class="titles" style="
                       display: flex; 
                       justify-content: space-around; 
                       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
@@ -4847,87 +4810,85 @@ display: block;
                      letter-spacing: 0;">Tickets Events</h2>
 
 
-                    <h2 class="background-234 light-g6h">Up Coming SHOWS</h2> 
+            <h2 class="background-234 light-g6h">Up Coming SHOWS</h2>
 
 
 
 
 
-                  <div class="sho-vvl">
+            <div class="sho-vvl">
 
-                      
 
-                      <div class="item-wgb style-KQEpB" id="style-KQEpB">
-                          <div  style="
+
+              <div class="item-wgb style-KQEpB" id="style-KQEpB">
+                <div style="
                           background-image: url(./img/Concert1.gif);
                           background-size: cover;
                           width: 100%;
                           
-                          " >
-                              <h3 class="title-lf6">United Palace</h3>
-                              
-                              
-                              
-                              
-                              <marquee behavior="ease-in-out" direction="left" style="width: 100%;
+                          ">
+                  <h3 class="title-lf6">United Palace</h3>
+
+
+
+
+                  <marquee behavior="ease-in-out" direction="left" style="width: 100%;
                               font-size: 40px;
                               color: #ffffff;
                               text-shadow: 0 0 2px #00fffb, 0 0 20px #0400ff;
                               font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
                               
-                              "
-                               >Coming Soon!!</marquee>
-                               
-                               
-                               
-                               
-                               
-                               
-                               
-                               
-                               
-                               
-                               
-                               <div class="show-qlj">
-                                 <h5 class="show-9ar">Jun 18, 2025</h5>
-                                 <h5 class="show-cqt">NY</h5>
-                                </div>
-                            </div>
-
-
-                              <a href="#contact" class="nav-link-ej8 button-yfj rsv-f7">TICKETS</a>
+                              ">Coming Soon!!</marquee>
 
 
 
-                            </div>
 
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="item-wgb style-E8TDq" id="style-E8TDq">
-                          <div  style="
+
+
+
+
+
+
+
+                  <div class="show-qlj">
+                    <h5 class="show-9ar">Jun 18, 2025</h5>
+                    <h5 class="show-cqt">NY</h5>
+                  </div>
+                </div>
+
+
+                <a href="#contact" class="nav-link-ej8 button-yfj rsv-f7">TICKETS</a>
+
+
+
+              </div>
+
+
+
+
+
+
+
+
+              <div class="item-wgb style-E8TDq" id="style-E8TDq">
+                <div style="
                           background-image: url(./img/Concert2.gif);
                           
                           width: 100%;
-                            " >
+                            ">
 
 
 
 
-                              <h3 class="title-lf6">Prudential</h3>
-                             
-                              <marquee behavior="ease-in-out" direction="left" style="width: 100%;
+                  <h3 class="title-lf6">Prudential</h3>
+
+                  <marquee behavior="ease-in-out" direction="left" style="width: 100%;
                               font-size: 40px;
                               color: #ffffff;
                               text-shadow: 0 0 2px #00fffb, 0 0 20px #0400ff;
                               font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
                               
-                              "
-                               >Coming Soon!!</marquee>
+                              ">Coming Soon!!</marquee>
 
 
 
@@ -4938,16 +4899,16 @@ display: block;
 
 
 
-                              <div class="show-qlj">
-                                  <h5 class="show-9ar">Jul 11, 2025</h5>
-                                  <h5 class="show-cqt">NJ</h5>
-                              </div>
-                          </div><a href="#contact" class="nav-link-ej8 button-yfj rsv-f7w">TICKETS</a>
-                      </div>
+                  <div class="show-qlj">
+                    <h5 class="show-9ar">Jul 11, 2025</h5>
+                    <h5 class="show-cqt">NJ</h5>
+                  </div>
+                </div><a href="#contact" class="nav-link-ej8 button-yfj rsv-f7w">TICKETS</a>
+              </div>
 
 
 
-                      <!-- <div class="item-wgb style-Lhone" id="style-Lhone">
+              <!-- <div class="item-wgb style-Lhone" id="style-Lhone">
                           <div>
                               <h3 class="title-lf6">Lollapalooza</h3>
 
@@ -5016,25 +4977,25 @@ display: block;
 
 
 
-                  </div>
+            </div>
 
 
-              </div>
-
-              
           </div>
+
+
+        </div>
       </div>
       <div class="shows-parallax-qvi style-lzTZo" id="style-lzTZo"></div>
       <!-- <h2 class="background-234 light-g6h">SHOWS</h2> -->
-  </div>
+    </div>
 
 
 
-    
 
-    
-    
-    
+
+
+
+
 
 
 
@@ -5042,7 +5003,8 @@ display: block;
 
 
   </section>
-  
+
+
   <!-- Contact -->
   <!-- Contact -->
   <!-- Contact -->
@@ -5053,9 +5015,9 @@ display: block;
     <!--Data-->
 
 
-    
-    
-    
+
+
+
 
 
 
@@ -5063,8 +5025,8 @@ display: block;
 
 
   </section>
-  
-  
+
+
   <!-- Footer -->
   <!-- Footer -->
   <!-- Footer -->
@@ -5078,52 +5040,52 @@ display: block;
     <!--Footer-->
     <!--Data-->
 
-    
 
 
 
 
 
-  <!-- Footer #1 -->
-  <!-- Footer #1 -->
-  <!-- Footer #1 -->
+
+    <!-- Footer #1 -->
+    <!-- Footer #1 -->
+    <!-- Footer #1 -->
 
 
-  <main>
-    <!-- <div class="content1">
+    <main>
+      <!-- <div class="content1">
       <div class="text">Fully Responsive Footer Section</div>
       <div class="p">HTML and CSS (Flexbox)</div>
     </div> -->
-    <footer>
-      <div class="main-content">
-        <div class="left box">
-          <h2>About us</h2>
-          <div class="content">
-            <h2>Limitless Universal is a platform that provides marketting a wide range of services and products.</h2>
+      <footer>
+        <div class="main-content">
+          <div class="left box">
+            <h2>About us</h2>
+            <div class="content">
+              <h2>Limitless Universal is a platform that provides marketting a wide range of services and products.</h2>
 
-            <div class="social">
+              <div class="social">
 
-              <a href="https://facebook.com/sharadaeshi"><span class="fab fa-facebook-f"></span></a>
-
-
-              <a href="#"><span class="fab fa-twitter"></span></a>
+                <a href="https://facebook.com/sharadaeshi"><span class="fab fa-facebook-f"></span></a>
 
 
-              <a href="https://instagram.com/sharadishi09"><span class="fab fa-instagram"></span></a>
+                <a href="#"><span class="fab fa-twitter"></span></a>
 
 
-              <a href="#"><span class="fab fa-youtube"></span></a>
+                <a href="https://instagram.com/sharadishi09"><span class="fab fa-instagram"></span></a>
+
+
+                <a href="#"><span class="fab fa-youtube"></span></a>
+
+              </div>
 
             </div>
-
           </div>
-        </div>
 
 
 
-        <div class="center box">
-          <!-- <h2>Trust by Company</h2> -->
-          <!-- <div class="content">
+          <div class="center box">
+            <!-- <h2>Trust by Company</h2> -->
+            <!-- <div class="content">
             <div class="place">
               <span class="fas fa-map-marker-alt"></span>
               <span class="text">NY</span>
@@ -5137,7 +5099,7 @@ display: block;
               <span class="text">v.clainer@universallimitless.com</span>
             </div>
           </div> -->
-        </div>
+          </div>
 
 
 
@@ -5147,28 +5109,28 @@ display: block;
 
 
 
-        <div class="right box">
-          <h2>Contact us</h2>
-          <div class="content">
-            <form action="#">
-              <div class="email">
-                <div class="text">Email *</div>
-                <input type="email" required>
-              </div>
-              <div class="msg">
-                <div class="text">Message *</div>
-                <textarea rows="2" cols="25" required></textarea>
-              </div>
-              <div class="btn">
-                <button type="submit">Send</button>
-              </div>
-            </form>
+          <div class="right box">
+            <h2>Contact us</h2>
+            <div class="content">
+              <form action="#">
+                <div class="email">
+                  <div class="text">Email *</div>
+                  <input type="email" required>
+                </div>
+                <div class="msg">
+                  <div class="text">Message *</div>
+                  <textarea rows="2" cols="25" required></textarea>
+                </div>
+                <div class="btn">
+                  <button type="submit">Send</button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
 
 
-      <!-- <div class="bottom">
+        <!-- <div class="bottom">
         <center>
           <span class="credit">Created and Design By <a href="https://clainerjvl.com/" target="_blank" >ClainerV7</a> | </span>
 
@@ -5176,20 +5138,20 @@ display: block;
           <span class="far fa-copyright"></span><span> 2024 All rights reserved.</span>
         </center>
       </div> -->
-    
-    
-    </footer>
-  </main>
+
+
+      </footer>
+    </main>
 
 
 
 
-  <!-- FOOTER#2 START -->
-  <!-- FOOTER#2 START -->
-  <!-- FOOTER#2 START -->
+    <!-- FOOTER#2 START -->
+    <!-- FOOTER#2 START -->
+    <!-- FOOTER#2 START -->
 
 
-  <!-- <div class="footer">
+    <!-- <div class="footer">
     <div class="contain">
 
 
@@ -5291,7 +5253,7 @@ display: block;
   <div class="clearfix"></div>
   </div>
   </div> -->
-  <!-- END OF FOOTER -->
+    <!-- END OF FOOTER -->
 
 
 
@@ -5300,45 +5262,43 @@ display: block;
 
 
 
-  <!-- Marquee Logos -->
-  <!-- Marquee Logos -->
-  <!-- Marquee Logos -->
-  <!-- Marquee Logos -->
-  <!-- Marquee Logos -->
+    <!-- Marquee Logos -->
+    <!-- Marquee Logos -->
+    <!-- Marquee Logos -->
+    <!-- Marquee Logos -->
+    <!-- Marquee Logos -->
 
-  <div class="marquee">
-    <ul class="marquee-content">
-
-
-
-      <li><img src="./thunbnails/freefromdesire.png" alt=""></li>
-      <li><img src="./thunbnails/Nory-Code.png" alt=""></li>
-      <li><img src="./thunbnails/catchme.png" alt=""></li>
-      <li><img src="./thunbnails//Fatmelz.png" alt=""></li>
-      <li><img src="./thunbnails/future.png" alt=""></li>
-      <li><img src="./thunbnails/quefue.png" alt=""></li>
-      <li><img src="./thunbnails/wow.png" alt=""></li>
-      <li><img src="./img/Cirujano2.png" alt=""></li>
-      <li><img src="./img/Nory-Code.png" alt=""></li>
-      <li><img src="./img/dior.png" alt=""></li>
-      <li><img src="./img/Fatmelz.png" alt=""></li>
-      <li><img src="./img/Gunna2.png" alt=""></li>
-      
-      
-      <li><img src="./thunbnails/freefromdesire.png" alt=""></li>
-      <li><img src="./thunbnails/Nory-Code.png" alt=""></li>
-      <li><img src="./thunbnails/catchme.png" alt=""></li>
-      <li><img src="./thunbnails//Fatmelz.png" alt=""></li>
-      <li><img src="./thunbnails/future.png" alt=""></li>
-      <li><img src="./thunbnails/quefue.png" alt=""></li>
-      <li><img src="./thunbnails/wow.png" alt=""></li>
-      <li><img src="./img/Cirujano2.png" alt=""></li>
-      <li><img src="./img/Nory-Code.png" alt=""></li>
-      <li><img src="./img/dior.png" alt=""></li>
-      <li><img src="./img/Fatmelz.png" alt=""></li>
-      <li><img src="./img/Gunna2.png" alt=""></li>
+    <div class="marquee">
+      <ul class="marquee-content">
 
 
+
+        <li><img src="./thunbnails/freefromdesire.png" alt=""></li>
+        <li><img src="./thunbnails/Nory-Code.png" alt=""></li>
+        <li><img src="./thunbnails/catchme.png" alt=""></li>
+        <li><img src="./thunbnails//Fatmelz.png" alt=""></li>
+        <li><img src="./thunbnails/future.png" alt=""></li>
+        <li><img src="./thunbnails/quefue.png" alt=""></li>
+        <li><img src="./thunbnails/wow.png" alt=""></li>
+        <li><img src="./img/Cirujano2.png" alt=""></li>
+        <li><img src="./img/Nory-Code.png" alt=""></li>
+        <li><img src="./img/dior.png" alt=""></li>
+        <li><img src="./img/Fatmelz.png" alt=""></li>
+        <li><img src="./img/Gunna2.png" alt=""></li>
+
+
+        <li><img src="./thunbnails/freefromdesire.png" alt=""></li>
+        <li><img src="./thunbnails/Nory-Code.png" alt=""></li>
+        <li><img src="./thunbnails/catchme.png" alt=""></li>
+        <li><img src="./thunbnails//Fatmelz.png" alt=""></li>
+        <li><img src="./thunbnails/future.png" alt=""></li>
+        <li><img src="./thunbnails/quefue.png" alt=""></li>
+        <li><img src="./thunbnails/wow.png" alt=""></li>
+        <li><img src="./img/Cirujano2.png" alt=""></li>
+        <li><img src="./img/Nory-Code.png" alt=""></li>
+        <li><img src="./img/dior.png" alt=""></li>
+        <li><img src="./img/Fatmelz.png" alt=""></li>
+        <li><img src="./img/Gunna2.png" alt=""></li>
 
 
 
@@ -5354,7 +5314,9 @@ display: block;
 
 
 
-      <!-- <li><i class="fa fa-headphones"></i></li>
+
+
+        <!-- <li><i class="fa fa-headphones"></i></li>
       <li><i class="fa fa-headphones"></i></li>
       <li><i class="fa fa-headphones"></i></li>
       <li><i class="fa fa-headphones"></i></li>
@@ -5368,7 +5330,7 @@ display: block;
       <li><i class="fa fa-headphones"></i></li>
       <li><i class="fa fa-headphones"></i></li> -->
 
-      <!-- <li><i class="fab fa-github"></i></li>
+        <!-- <li><i class="fab fa-github"></i></li>
       <li><i class="fab fa-codepen"></i></li>
       <li><i class="fab fa-free-code-camp"></i></li>
       <li><i class="fab fa-dev"></i></li>
@@ -5380,9 +5342,9 @@ display: block;
       <li><i class="fab fa-aws"></i></li>
       <li><i class="fab fa-docker"></i></li>
       <li><i class="fab fa-android"></i></li> -->
-    </ul>
-  </div>
-  <script src="logos.js"></script>
+      </ul>
+    </div>
+    <script src="logos.js"></script>
 
 
 
@@ -5391,22 +5353,16 @@ display: block;
   </section>
 
 
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-
-
   <div class="bottom">
     <center>
-      <span class="credit">Created and Design By <a href="https://clainerjvl.com/" target="_blank" >ClainerV7</a> | </span>
+      <span class="credit">Created and Design By <a href="https://clainerjvl.com/" target="_blank">ClainerV7</a> |
+      </span>
 
       <br>
       <span class="far fa-copyright"></span><span> 2024 All rights reserved.</span>
     </center>
   </div>
-  
+
 </body>
 
 </html>

@@ -1,7 +1,8 @@
 var sliderIndex = 0;
 var sliderItems = [
-    "Urban Style",
+    "LimitlessMusic",
     "Music Artists",
+    "Urban Style",
     "Brand Owners",
     "Collaborations",
     "Hottest Merch",
@@ -38,3 +39,11 @@ function slideText() {
 
 slideText();
 setInterval(slideText, 4000);
+
+
+
+
+
+
+
+

@@ -112,7 +112,7 @@ body {
   background-size: contain; */
 }
 .slideshow li:nth-child(2) span {
-  background-image: url("./img/");
+  background-image: url("./img/UnFlowZaza.gif");
   /* background-position: center;
   background-size: contain; */
   animation-delay: 6s;
@@ -125,7 +125,7 @@ body {
   animation-delay: 12s;
 }
 .slideshow li:nth-child(4) span {
-  background-image: url("./img/");
+  background-image: url("./img/norygif.gif");
   animation-delay: 18s;
 }
 .slideshow li:nth-child(5) span {
@@ -135,7 +135,7 @@ body {
   animation-delay: 24s;
 }
 .slideshow li:nth-child(6) span {
-  background-image: url("./img/");
+  background-image: url("./img/eyelooping.gif");
   /* background-position: center;
   background-size: contain; */
   animation-delay: 30s;
@@ -378,29 +378,24 @@ section {
 
 
 .mainvideoheaderbtn {
-  /* top: 50%; */
-  
-  max-width: 100%;
+  /*top: 50%;
+  */max-width: 100%;
   display: flex;
   justify-content: space-around;
-
-
-
-  background-image: url(./img/clinclingif-ezgif.com.gif);
+  background-image: url(./img/lucy.jpg);
   background-size: contain;
   background-position: center;
   background-clip: text;
-  
-
-  
   color: transparent;
   font-size: 10em;
   font-weight: 900;
   height: 250px;
-
   padding-top: 55px;
   
 }
+
+
+
 
 
 .submainheaderbtn {
@@ -502,6 +497,7 @@ p {
 
   /* background-color: white; */
   text-shadow: 0 0 20px #00fffb, 0 0 40px #00aeff;
+  
 
 
 
@@ -642,7 +638,7 @@ p {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
+  
 
 
 
@@ -671,7 +667,7 @@ p {
   /* background-image: conic-gradient( from var(--angle), transparent 5%, #00fffb, #0081bc, #00fffb, #0081bc,#00fffb); */
 
 
-  background-image: conic-gradient( from var(--angle), transparent -15%, #ff0095, blue, #00ff99, #006aff, #ff0095);
+  /* background-image: conic-gradient( from var(--angle), transparent -15%, #ff0095, blue, #00ff99, #006aff, #ff0095); */
 
 
   top: 50%;
@@ -941,7 +937,7 @@ h5 {
  -moz-transform: rotateX(0) rotateY(-25deg);
  -ms-transform: rotateX(0) rotateY(-25deg);
  -o-transform: rotateX(0) rotateY(-25deg);
-{
+span { 
   display: inline-block;
  }
 

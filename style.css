@@ -228,8 +228,8 @@ section {
 	display: grid;
 	place-items: center; */
 
-  background-color: #080808;
-  background-color: #000;
+  /* background-color: #080808;
+  background-color: #000; */
 
 
   /* background-image: url(./img/clinclingif-ezgif.com.gif);
@@ -459,16 +459,6 @@ section {
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* MainHEading Fading to right */
 /* MainHEading Fading to right */
 /* MainHEading Fading to right */
@@ -550,299 +540,11 @@ p {
 
 
 
-/* Artist First Square marquee */
-/* Artist First Square marquee */
-/* Artist First Square marquee */
-/* Artist First Square marquee */
 
-/* .artists h1 {
-  margin-bottom: 14px;
-  text-align: center;
-} */
 
-.artist-container {
-  column-gap: 0px;
-  width: 3100px;
-  height: 280px;
-  /* margin-bottom: 50px; */
-  
-}
 
 
-@media only screen and (max-width: 430px) {
-  .artist-container {
-    column-gap: 0px;
-    width: 3100px;
-    height: 280px;
-    
-  }
-  
 
-}
-
-
-.artist {
-  display: grid;
-  grid-auto-flow: dense;
-  align-items: center;
-  grid-template-rows: 8fr 2fr;
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-
-  margin-left: 50px;
-
-
-}
-
-.artist p {
-  display: none;
-}
-
-.artist img {
-  object-fit: cover;
-  border-radius: 50%;
-  border: 2px solid hwb(0 100% 0%);
-  width: 140px;
-  height: 140px;
-  aspect-ratio: 1/1;
-  /* margin-bottom: 8px; */
-  /* margin-top: 55px; */
-  /* margin-left: 50px; */
-  /* margin-right: 50px; */
-
-  /* box-shadow: rgba(221, 221, 221, 0.3) 0px 6px 18px -3px,
-    rgba(221, 221, 221, 0.2) 0px -3px 0px inset; */
-
-  box-shadow: 0 0 15px #00fffb, 0 0 15px #0081bc;
-  /* transition: all 0.2s; */
-  -webkit-animation: all scroll 15s linear infinite reverse;
-
-
-}
-
-@keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(calc(100%));
-    -webkit-transform: translateX(calc(100%));
-    -moz-transform: translateX(calc(100%));
-    -ms-transform: translateX(calc(100%));
-    -o-transform: translateX(calc(100%));
-}
-}
-
-@media only screen and (min-width: 360px) {
-    .marquee__group span {
-        font-size: 6.5vw;
-    }
-}
-
-.artist img:hover {
-  border: 2px solid rgb(255, 255, 255);
-  box-shadow: 0 0 15px #00fffb, 0 0 15px #0081bc;
-  overflow: hidden;
-  scale: 150%;
-  transition: scale 600ms;
-  /*-webkit-transform: scale 400ms;
-  -moz-transform: scale 400ms;
-  -ms-transform: scale 400ms;
-  -o-transform: scale 400ms;
-  */-webkit-transition: scale 600ms;
-  -moz-transition: scale 600ms;
-  -ms-transition: scale 600ms;
-  -o-transition: scale 600ms;
-  -webkit-transition: scale 600ms;
-}
-
-.artist p {
-
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-shadow: 0 0 20px #ff0000, 0 0 40px #0081bc;
-
-
-
-
-
-
-  
-  font-size: clamp(0.9rem, 3vw, 1rem);
-  font-weight: 500;
-  text-align: center;
-
-
-
-}
-
-
-@media only screen and (max-width: 430px) {
-  .hitsection{
-    background-size: contain;
-  }
-
-  
- 
-  .hitsection h2 {
-
-    font-size: 45px;
-  }
-
-
-}
-
-
-
-.albums h1 {
-  margin: 60px 0 14px;
-}
-
-.album-container {
-  column-gap: 44px;
-  width: 4500px;
-}
-
-.album {
-  display: grid;
-  grid-auto-flow: dense;
-  grid-template-rows: 5fr 0fr;
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-}
-
-.album-frame {
-  position: relative;
-  width: 180px;
-  aspect-ratio: 1/1;
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 10px;
-
-
-  /* box-shadow: rgba(221, 221, 221, 0.3) 0px 8px 18px -3px,
-    rgba(221, 221, 221, 0.2) 0px -3px 0px inset; */
-
-    box-shadow: 0 0 20px #00fffb, 0 0 20px #0081bc;
-
-
-  margin-bottom: 15px;
-  margin-top: 25px;
-  overflow: hidden;
-  
-}
-
-.album-frame img {
-  z-index: 10;
-  position: absolute;
-  inset: 0;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  transition: transform 0.8s;
-}
-
-.album-frame img:hover {
-  border-radius: 50%;
-  transform: rotate(360deg) scale(1.5);
-  -webkit-transform: rotate(360deg) scale(1.5);
-  -moz-transform: rotate(360deg) scale(1.5);
-  -ms-transform: rotate(360deg) scale(1.5);
-  -o-transform: rotate(360deg) scale(1.5);
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-}
-
-.album h2 {
-  font-size: clamp(0.9rem, 4vw, 1.1rem);
-  font-weight: 500;
-  line-height: 1.3;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-
-  @supports (-webkit-line-clamp: 2) {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: initial;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-  }
-}
-
-.album p {
-  font-size: clamp(0.9rem, 4vw, 1rem);
-  opacity: 0.5;
-}
-
-/* Containers Scrollbar Style */
-
-.artist-container::-webkit-scrollbar,
-.album-container::-webkit-scrollbar {
-  height: 0px;
-}
-
-.artist-container::-webkit-scrollbar-track,
-.album-container::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 0.3rem rgb(79, 78, 78);
-  border-radius: 40px;
-}
-
-.artist-container::-webkit-scrollbar-thumb,
-.album-container::-webkit-scrollbar-thumb {
-  box-shadow: inset 0 0 0.5rem rgb(116, 116, 116);
-  background-color: rgba(25, 43, 206, 0.2);
-  outline: none;
-  border-radius: 40px;
-}
-
-@media only screen and (max-width: 430px) {
-
-  .artist img {
-    object-fit: cover;
-    border-radius: 50%;
-    border: 2px solid hwb(0 100% 0%);
-    width: 140px;
-    aspect-ratio: 1/1;
-    margin-bottom: 8px;
-    margin-top: 25px;
-    /*box-shadow: rgba(221, 221, 221, 0.3) 0px 6px 18px -3px,      rgba(221, 221, 221, 0.2) 0px -3px 0px inset;
-    */box-shadow: 0 0 15px #00fffb, 0 0 15px #0081bc;
-    transition: all 1s;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-
-  }
-
-  .album-frame {
-    position: relative;
-    width: 180px;
-    aspect-ratio: 1/1;
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 10px;
-
-
-    /* box-shadow: rgba(221, 221, 221, 0.3) 0px 8px 18px -3px,
-      rgba(221, 221, 221, 0.2) 0px -3px 0px inset; */
-
-      box-shadow: 0 0 15px #00fffb, 0 0 15px #0081bc;
-
-
-    margin-bottom: 15px;
-    margin-top: 25px;
-    overflow: hidden;
-  
-  }
-}
 
 
 
@@ -2160,7 +1862,7 @@ h7 {
   /* background-color: #000000; */
   /* background-color: #cf1a1a; */
   /* background-color: #cf1a1a; */
-  background-image: url(./img/);
+  background-image: url(./img/okok13.gif);
   background-position: center;
   background-repeat: repeat;
   background-size: cover;

@@ -236,11 +236,13 @@ section {
   background-position: center;
   background-repeat: repeat-x; */
 
-  /* min-height: 100vh; */
+  min-height: 100vh;
 
 
 
 }
+
+
 
 .containers {
   display: flex;

@@ -201,6 +201,15 @@ section {
   min-height: 100vh;
 }
 
+
+
+
+
+
+
+
+
+
 .containers {
   display: flex;
   align-items: center;
@@ -1959,6 +1968,11 @@ html {
   vertical-align: baseline;
 }
 
+
+
+
+
+
 .footer-1db {
   --item-speed: 3.5s;
   --grid-gap: 24px;
@@ -2235,75 +2249,11 @@ a img {
     transform: translate3d(calc(-50% - 16px), 0px, 0px);
   }
 }
-/* These were inline style tags. Uses id+class to override almost everything */
-/* #style-6MKcK.style-6MKcK {  
-   --item-count: 8;  
-    outline: rgb(255, 0, 0) dashed 1px;  
-}   */
-/* #style-2m6MF.style-2m6MF {  
-   --stack-color-1: #F6D9FB;  
-    --stack-color-2: #E3EBFD;  
-}  
-#style-zO5m9.style-zO5m9 {  
-   --stack-color-1: #EDF3D8;  
-    --stack-color-2: #EDDDFB;  
-}  
-#style-7Tgr3.style-7Tgr3 {  
-   --stack-color-1: #E6FDC9;  
-    --stack-color-2: #EDF3D8;  
-}  
-#style-ghvcT.style-ghvcT {  
-   --stack-color-1: #DDFDE8;  
-    --stack-color-2: #EDF3D8;  
-}  
-#style-ZdmfT.style-ZdmfT {  
-   --stack-color-1: #E6FBFE;  
-    --stack-color-2: #EDF3D8;  
-}  
-#style-FjxJI.style-FjxJI {  
-   --stack-color-1: #E6FBFE;  
-    --stack-color-2: #DDFDE8;  
-}  
-#style-TXbOO.style-TXbOO {  
-   --stack-color-1: #E3EBFD;  
-    --stack-color-2: #EDF3D8;  
-}  
-#style-iNlGq.style-iNlGq {  
-   --stack-color-1: #EDDDFB;  
-    --stack-color-2: #DDFDE8;  
-}  
-#style-jiMI9.style-jiMI9 {  
-   --stack-color-1: #F6D9FB;  
-    --stack-color-2: #E3EBFD;  
-}  
-#style-GQVq8.style-GQVq8 {  
-   --stack-color-1: #EDF3D8;  
-    --stack-color-2: #EDDDFB;  
-}  
-#style-Zeksq.style-Zeksq {  
-   --stack-color-1: #E6FDC9;  
-    --stack-color-2: #EDF3D8;  
-}  
-#style-o1AyY.style-o1AyY {  
-   --stack-color-1: #DDFDE8;  
-    --stack-color-2: #EDF3D8;  
-}  
-#style-XyKYV.style-XyKYV {  
-   --stack-color-1: #E6FBFE;  
-    --stack-color-2: #EDF3D8;  
-}  
-#style-ophyy.style-ophyy {  
-   --stack-color-1: #E6FBFE;  
-    --stack-color-2: #DDFDE8;  
-}  
-#style-srEAo.style-srEAo {  
-   --stack-color-1: #E3EBFD;  
-    --stack-color-2: #EDF3D8;  
-}  
-#style-FsPRc.style-FsPRc {  
-   --stack-color-1: #EDDDFB;  
-    --stack-color-2: #DDFDE8;  
-}   */
+
+
+
+
+
 
 /* Marquee Logo */
 /* Marquee Logo */

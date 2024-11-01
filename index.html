@@ -19,402 +19,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
-  <!-- Store Div Propperties -->
-  <!-- Store Div Propperties -->
-  <!-- Store Div Propperties -->
-  <style>
-    .product-container {
-      z-index: 100;
-      max-width: 300px;
-      margin: 40px auto;
-      /* padding: 20px; */
-      /* border: 1px solid #ddd; */
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .product-container img {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 10px 10px 0 0;
-    }
-
-
-    .product-container img {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 10px 10px 0 0;
-      /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-      transition: transform 0.3s ease-in-out;
-      /* added transition effect */
-    }
-
-    .product-container img:hover {
-      transform: scale(2.50);
-      /* added hover effect */
-    }
-
-
-    .marquee-container {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: #fff;
-      padding: 10px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .marquee-container marquee {
-      font-size: 18px;
-      font-weight: bold;
-      color: #333;
-    }
-
-    .product-info {
-      padding: 20px;
-      text-align: center;
-      /* added center alignment */
-    }
-
-
-    .product-info h2 {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-
-    .product-info p {
-      font-size: 16px;
-      margin-bottom: 20px;
-    }
-
-
-    /* .product-info button {
-  background-color: #333;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  }
-
-  .product-info button:hover {
-  background-color: #444;
-  } */
-
-
-    .product-info button {
-      background-color: #333;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-      border-radius: 10px;
-      /* added border radius */
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      /* added box shadow */
-    }
-
-    .product-info button:hover {
-      background-color: #444;
-    }
-
-
-
-
-    /* Responsive styles */
-    @media (max-width: 768px) {
-      .product-container {
-        max-width: 300px;
-      }
-
-      .product-container img {
-        height: 100px;
-      }
-
-      .product-container img:hover {
-        transform: scale(1.90);
-        /* added hover effect */
-      }
-
-      .marquee-container {
-        font-size: 14px;
-      }
-
-      .product-info {
-        padding: 5px;
-      }
-
-      .product-info h2 {
-        font-size: 18px;
-      }
-
-      .product-info p {
-        font-size: 14px;
-      }
-
-      .product-info button {
-        padding: 8px 16px;
-        font-size: 14px;
-      }
-    }
-  </style>
-
-
-  <!-- <style>
-    .product-container {
-    max-width: 300px;
-    margin: 40px auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(to bottom, #fff, #f7f7f7);
-    animation: fade-in 1s ease-in-out;
-  }
-
-  .product-container img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .product-container img:hover {
-    transform: scale(1.05);
-  }
-
-  .marquee-container {
-    width: 100%;
-    overflow: hidden;
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 0 0 10px 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-
-  .marquee-container marquee {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    text-transform: uppercase;
-    animation: marquee 3s linear infinite;
-  }
-
-  @keyframes marquee {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-
-  .product-info {
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    animation: fade-in 1s ease-in-out 0.5s;
-  }
-
-  .product-info h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    font-weight: bold;
-    color: #333;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-
-  .product-info p {
-    font-size: 16px;
-    margin-bottom: 20px;
-    color: #666;
-    text-align: justify;
-  }
-
-  .price-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-
-  .original-price {
-    font-size: 18px;
-    color: #666;
-    text-decoration: line-through;
-  }
-
-  .discounted-price {
-    font-size: 24px;
-    color: #333;
-    font-weight: bold;
-  }
-
-  .buy-now {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease-in-out;
-  }
-
-  .buy-now:hover {
-    background-color: #444;
-  }
-
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    .product-container {
-      max-width: 300px;
-    }
-    .product-container img {
-      height: 100px;
-    }
-    .marquee-container {
-      font-size: 14px;
-    }
-    .product-info {
-      padding: 10px;
-    }
-    .product-info h2 {
-      font-size: 18px;
-    }
-    .product-info p {
-      font-size: 14px;
-    }
-    .price-container {
-      flex-direction: column;
-    }
-  }
-  </style> -->
-
-
-
-  <!-- Marquee Properties-->
-  <!-- Marquee Properties-->
-  <!-- Marquee Properties-->
-  <style>
-    .marqueesocial {
-      width: 100%;
-      height: 100px;
-      overflow: hidden;
-      position: relative;
-      box-sizing: border-box;
-      padding: 10px;
-      /* border: 1px solid #ccc; */
-    }
-
-    .marqueesocial div {
-      display: flex;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      animation: scroll 20s linear infinite;
-    }
-
-    .marqueesocial div img {
-      width: auto;
-      height: 90px;
-      margin: 20px;
-    }
-
-    @keyframes scroll {
-      0% {
-        transform: translateX(0);
-      }
-
-      100% {
-        transform: translateX(-100%);
-      }
-    }
-
-    @media (max-width: 768px) {
-      .marqueesocial div {
-        animation: scroll 8s linear infinite;
-
-      }
-    }
-  </style>
-
-
-
-  <!-- Video Propperties -->
-  <!-- Video Propperties -->
-  <!-- Video Propperties -->
-  <style>
-    /* .swiper-slide {
-      overflow: hidden;
-      overflow: visible;
-
-    }
-    .swiper-slide video {
-      width: 100%;
-      height: 100%;
-      transition: scale 400ms;
-    }
-    .swiper-slide:hover video {
-      scale: 120%;
-    } */
-
-
-
-    /* Responsive styles */
-    /* @media (max-width: 430px) {
-  .swiper-slide {
-  max-width: 350px;
-  overflow: hidden;
-  }
-  .swiper-slide video {
-    max-width: 350px;
-    height: 100px;
-  }
-
-  .swiper-slide video:hover {
-    transform: scale(1.90); 
-  } */
-
-    /* .marquee-container {
-  font-size: 14px;
-  }
-  .product-info {
-  padding: 10px;
-  }
-  .product-info h2 {
-  font-size: 18px;
-  }
-  .product-info p {
-  font-size: 14px;
-  }
-  .product-info button {
-  padding: 8px 16px;
-  font-size: 14px;
-  } */
-  </style>
-
-
 </head>
+
+
+
 <!-- NoteToSelf: -->
 <!-- Id="" are to individualy select "one time" to edit separate section or Content -->
 <!-- Class are to individualy select to edit separate section or Content -->
@@ -643,8 +251,8 @@
 
 
 
-      <a href="#events" style="position: fixed; top: 80%; right: 20px; ">
-        <i class="fa fa-ticket" aria-hidden="true"></i></i> </a>
+      <!-- <a href="#events" style="position: fixed; top: 80%; right: 20px; ">
+        <i class="fa fa-ticket" aria-hidden="true"></i></i> </a> -->
 
 
 
@@ -660,7 +268,7 @@
 
 
 
-      <a href="#contact" style="position: fixed; top: 87%; right: 20px; ">
+      <a href="#contact" style="position: fixed; top: 80%; right: 20px; ">
         <i class="fa fa-handshake-o" aria-hidden="true"></i> </a>
 
 
@@ -1176,8 +784,9 @@
   <!-- Popular Song -->
   <section id="popularsongs" class="hitsection" style="
   
-  background-image: url(./img/); 
+  background-image: url(./img/Cirujano.png); 
   background-size: contain;
+  
   
   
   ">
@@ -1208,7 +817,7 @@
 
 
 
-    <!-- <h2 class="titles" style="
+    <h2 class="titles" style="
         display: flex; 
         justify-content: space-around; 
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
@@ -1221,26 +830,18 @@
         z-index: 0;
         margin-top: 0;
         color: rgb(255, 255, 255);
-        font-size: 6vw;
+        font-size: 60px;
         text-align: center;
         
         
         
         /* background-position: center;
-        
         background-image: url(./img/clinclingif-ezgif.com.gif);
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
         background-size: contain; */
-
-
-
-
-
-
-
-    letter-spacing: 0;">◆Top Hits◆</h2> -->
+        letter-spacing: 0;">◆Top Hits◆</h2>
 
 
 
@@ -1248,10 +849,10 @@
 
 
 
-    <!-- 1st Marquee -->
-    <!-- 1st Marquee -->
-    <!-- 1st Marquee -->
-    <!-- 1st Marquee -->
+    <!-- Track Marquee -->
+    <!-- Track Marquee -->
+    <!-- Track Marquee -->
+    <!-- Track Marquee -->
     <div class="footer-1db style-6MKcK" id="style-6MKcK">
 
       <div class="footer-3q9">
@@ -2153,30 +1754,12 @@
 
 
 
-    <!-- Coming Soon! -->
-    <!-- Coming Soon! -->
-    <!-- Coming Soon! -->
-
-
-    <h8>Dembow:</h8>
-
-    <!-- 3rd Marquee -->
-    <!-- 3rd Marquee -->
-    <!-- 3rd Marquee -->
-    <!-- 3rd Marquee -->
-    <div class="footer-1db style-6MKcK" id="style-6MKcK" style="
-    background-image: url(./img/music3.gif);
-    background-position: center;
-    background-repeat: no-repeat;
-
-
-
-    height: 100px;
     
 
 
+    <h8>Dembow & Bachata:</h8>
 
-    ">
+    
 
       <marquee behavior="ease-in-out" direction="left" style="width: 100%;
     font-size: 40px;
@@ -2185,187 +1768,6 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
     ">Coming Soon!!</marquee>
-
-
-
-
-
-
-
-      <div class="footer-3q9">
-
-        <div class="footer-ogw" style="width: 100%; height: 250px;">
-
-
-
-
-
-          <!-- <a  class="footer-t51 style-zO5m9" id="style-zO5m9">
-            <div class="footer-m8a">
-            </div>
-            <div class="footer-ekg">
-              <img src="./img/trapnationgif.gif" width="200" height="150" class="laz-3o6">
-            </div>
-            <div class="footer-coh">
-              Web Design
-            </div>
-          </a> -->
-
-
-
-
-
-
-
-
-          <!-- <a  class="footer-t51 style-7Tgr3" id="style-7Tgr3">
-            <div style="width: 200px; height: 100px;" class="swiper-slide">
-              <img style="background-image: center; background-size: cover;" src="" />
-              <div class="slide-overlay">
-                <h2>Nory Dolla</h2>
-                <h3>Codigos</h3>
-                <button>
-                  Coming Soon! <i class="fa-solid fa-circle-play"></i>
-                </button>
-            
-                <audio style="width: 100px; color: transparent;" controls preload="auto" >
-                  <source src="" type="audio/ogg">
-                  <source src="" type="audio/mpeg">
-                  Your browser does not support the audio element
-                  .
-                </audio>
-            
-              </div>
-            </div>
-          </a> -->
-
-
-
-
-
-
-
-          <!-- <a  class="footer-t51 footer-5ps style-FsPRc" id="style-FsPRc">
-            <div class="footer-m8a">
-            </div>
-            <div class="footer-ekg">
-              <img src="./IMG/JellyBlue.jpg" width="200" height="150" class="laz-3o6">
-            </div>
-            <div class="footer-coh">
-              Product Design
-            </div>
-          </a> -->
-
-        </div>
-      </div>
-    </div>
-
-
-    <h8>Bachata:</h8>
-
-    <!-- 3rd Marquee -->
-    <!-- 3rd Marquee -->
-    <!-- 3rd Marquee -->
-    <!-- 3rd Marquee -->
-    <div class="footer-1db style-6MKcK" id="style-6MKcK" style="
-    background-image: url(./img/music3.gif);
-    background-position: center;
-    background-repeat: no-repeat;
-
-
-
-    height: 100px;
-    
-
-
-
-    ">
-
-      <marquee behavior="ease-in-out" direction="left" style="width: 100%;
-    font-size: 40px;
-    color: #ffffff;
-    text-shadow: 0 0 2px #00fffb, 0 0 20px #0400ff;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
-    ">Coming Soon!!</marquee>
-
-
-
-
-
-
-
-      <div class="footer-3q9">
-
-        <div class="footer-ogw" style="width: 100%; height: 250px;">
-
-
-
-
-
-          <!-- <a  class="footer-t51 style-zO5m9" id="style-zO5m9">
-            <div class="footer-m8a">
-            </div>
-            <div class="footer-ekg">
-              <img src="./img/trapnationgif.gif" width="200" height="150" class="laz-3o6">
-            </div>
-            <div class="footer-coh">
-              Web Design
-            </div>
-          </a> -->
-
-
-
-
-
-
-
-
-          <!-- <a  class="footer-t51 style-7Tgr3" id="style-7Tgr3">
-            <div style="width: 200px; height: 100px;" class="swiper-slide">
-              <img style="background-image: center; background-size: cover;" src="" />
-              <div class="slide-overlay">
-                <h2>Nory Dolla</h2>
-                <h3>Codigos</h3>
-                <button>
-                  Coming Soon! <i class="fa-solid fa-circle-play"></i>
-                </button>
-            
-                <audio style="width: 100px; color: transparent;" controls preload="auto" >
-                  <source src="" type="audio/ogg">
-                  <source src="" type="audio/mpeg">
-                  Your browser does not support the audio element
-                  .
-                </audio>
-            
-              </div>
-            </div>
-          </a> -->
-
-
-
-
-
-
-
-          <!-- <a  class="footer-t51 footer-5ps style-FsPRc" id="style-FsPRc">
-            <div class="footer-m8a">
-            </div>
-            <div class="footer-ekg">
-              <img src="./IMG/JellyBlue.jpg" width="200" height="150" class="laz-3o6">
-            </div>
-            <div class="footer-coh">
-              Product Design
-            </div>
-          </a> -->
-
-        </div>
-      </div>
-    </div>
-
-
-
-
 
 
   </section>
@@ -3154,10 +2556,20 @@
   </section>
 
 
-  <!--Top MERCH-->
-  <!--Top MERCH-->
-  <!--Top MERCH-->
-  <section id="merch">
+  <!-- Store -->
+  <!-- Store -->
+  <!-- Store -->
+   
+  <section id="merch" style="
+  background-image: url(./img/eyelooping.gif);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+  
+  
+
+  ">
 
 
 
@@ -3202,20 +2614,34 @@
 
 
 
-    
-
-
-
-
-
-
 
     <div class="product-container">
 
       <div class="product-info">
         <!-- <h2>Limitless Store</h2> -->
         <!-- <p>Si te metite palla, tiene que compra obligao!</p> -->
-        <a href="https://clay3d11.github.io/LimitlessMerch/"><button>Visit Store</button></a>
+        <!-- <a href="https://clay3d11.github.io/LimitlessMerch/"><button>Visit Store</button></a> -->
+
+        <a href="https://clay3d11.github.io/LimitlessMerch/"><button style="font-size: 20px;
+          margin: 0 auto;
+          /* width: 50%; */
+          display: block;
+          
+          
+          ">
+    
+            Visit Store
+    
+    
+    
+    
+    
+    
+    
+          </button></a>
+
+
+
 
 
         <!-- <a href="https://clay3d11.github.io/LimitlessMerch/"><button class='glowing-btn'><span class='glowing-txt'>ST<span class='faulty-letter'>OR</span>E</span></button></a> -->
@@ -3455,229 +2881,7 @@
   </section>
 
 
-  <!-- Events & Tickets -->
-  <!-- Events & Tickets -->
-  <!-- Events & Tickets -->
-  <section id="events">
-
-
-
-
-    <div class="section-p4b sho-vvl">
-      <div class="container-rtl">
-        <div class="column-br2">
-
-          <div>
-
-            <h2 class="titles" style="
-                      display: flex; 
-                      justify-content: space-around; 
-                      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-                      
-                      text-shadow: 0 0 10px #001aff, 0 0 15px #1100ff;
-
-
-                      left: auto;
-                    
-                      z-index: 0;
-                      margin-top: 0;
-                      /* color: rgb(255, 255, 255); */
-                      font-size: 90px;
-                      text-align: center;
-                      background-position: center;
-                      
-                      background-image: url(./img/);
-                      background-position: center;
-                      background-clip: text;
-                      -webkit-background-clip: text;
-                      color: white;
-                      background-size: contain;
-
-                     letter-spacing: 0;">Tickets Events</h2>
-
-
-            <h2 class="background-234 light-g6h">Up Coming SHOWS</h2>
-
-
-
-
-
-            <div class="sho-vvl">
-
-
-
-              <div class="item-wgb style-KQEpB" id="style-KQEpB">
-                <div style="
-                          background-image: url(./img/Concert1.gif);
-                          background-size: cover;
-                          width: 100%;
-                          
-                          ">
-                  <h3 class="title-lf6">United Palace</h3>
-
-
-
-
-                  <marquee behavior="ease-in-out" direction="left" style="width: 100%;
-                              font-size: 40px;
-                              color: #ffffff;
-                              text-shadow: 0 0 2px #00fffb, 0 0 20px #0400ff;
-                              font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                              
-                              ">Coming Soon!!</marquee>
-
-
-
-
-
-
-
-
-
-
-
-                  <div class="show-qlj">
-                    <h5 class="show-9ar">Jun 18, 2025</h5>
-                    <h5 class="show-cqt">NY</h5>
-                  </div>
-                </div>
-
-
-                <a href="#contact" class="nav-link-ej8 button-yfj rsv-f7">TICKETS</a>
-
-
-
-              </div>
-
-
-
-
-
-
-
-
-              <div class="item-wgb style-E8TDq" id="style-E8TDq">
-                <div style="
-                          background-image: url(./img/Concert2.gif);
-                          
-                          width: 100%;
-                            ">
-
-
-
-
-                  <h3 class="title-lf6">Prudential</h3>
-
-                  <marquee behavior="ease-in-out" direction="left" style="width: 100%;
-                              font-size: 40px;
-                              color: #ffffff;
-                              text-shadow: 0 0 2px #00fffb, 0 0 20px #0400ff;
-                              font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                              
-                              ">Coming Soon!!</marquee>
-
-
-
-
-
-
-
-
-
-
-                  <div class="show-qlj">
-                    <h5 class="show-9ar">Jul 11, 2025</h5>
-                    <h5 class="show-cqt">NJ</h5>
-                  </div>
-                </div><a href="#contact" class="nav-link-ej8 button-yfj rsv-f7w">TICKETS</a>
-              </div>
-
-
-
-              <!-- <div class="item-wgb style-Lhone" id="style-Lhone">
-                          <div>
-                              <h3 class="title-lf6">Lollapalooza</h3>
-
-                              <marquee behavior="ease-in-out" direction="left" style="width: 100%;
-                              font-size: 40px;
-                              color: #ffffff;
-                              text-shadow: 0 0 2px #00fffb, 0 0 20px #0400ff;
-                              font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                              
-                              "
-                               >Coming Soon!!</marquee>
-
-
-
-
-
-
-
-
-
-
-                              <div class="show-qlj">
-                                  <h5 class="show-9ar">Mar 28, 2025</h5>
-                                  <h5 class="show-cqt">Colombia</h5>
-                              </div>
-                          </div><a href="#contact" class="nav-link-ej8 button-yfj rsv-f7w">TICKETS</a>
-                      </div>
-
-
-
-
-                      <div class="item-wgb style-Jp1Ig" id="style-Jp1Ig">
-                          <div>
-                              <h3 class="title-lf6">Centro Olimpico</h3>
-
-
-
-                              <marquee behavior="ease-in-out" direction="left" style="width: 100%;
-                              font-size: 40px;
-                              color: #ffffff;
-                              text-shadow: 0 0 2px #00fffb, 0 0 20px #0400ff;
-                              font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                              
-                              "
-                               >Coming Soon!!</marquee>
-
-
-
-
-                              
-              
-        
-
-
-
-
-
-
-
-                              <div class="show-qlj">
-                                  <h5 class="show-9ar">Agu 27, 2025</h5>
-                                  <h5 class="show-cqt">D.R.</h5>
-                              </div>
-                          </div><a href="#contact" class="nav-link-ej8 button-yfj rsv-f7w">TICKETS</a>
-                      </div> -->
-
-
-
-            </div>
-
-
-          </div>
-
-
-        </div>
-      </div>
-      <div class="shows-parallax-qvi style-lzTZo" id="style-lzTZo"></div>
-      <!-- <h2 class="background-234 light-g6h">SHOWS</h2> -->
-    </div>
-
-
-
-  </section>
+  
 
 
 
@@ -3688,124 +2892,13 @@
   <!-- Footer -->
   <section id="contact">
 
+    <!-- Footer Marquee -->
+    <!-- Footer Marquee -->
+    <!-- Footer Marquee -->
+    
 
 
 
-    <!-- <h2>Contact me</h2>
-        <p>If you have any questions or would like to get in touch, please feel free to email me at <a href="mailto:john.doe@example.com">john.doe@example.com</a>.</p> -->
-    <!--Footer-->
-    <!--Data-->
-
-
-
-
-
-
-
-    <!-- Footer #1 -->
-    <!-- Footer #1 -->
-    <!-- Footer #1 -->
-
-
-    <main>
-      <!-- <div class="content1">
-      <div class="text">Fully Responsive Footer Section</div>
-      <div class="p">HTML and CSS (Flexbox)</div>
-    </div> -->
-      <footer>
-        <div class="main-content">
-          <div class="left box">
-            <h2>About us</h2>
-            <div class="content">
-              <h2>Limitless Universal is a platform that provides marketting a wide range of services and products.</h2>
-
-              <div class="social">
-
-                <a href="https://facebook.com/sharadaeshi"><span class="fab fa-facebook-f"></span></a>
-
-
-                <a href="#"><span class="fab fa-twitter"></span></a>
-
-
-                <a href="https://instagram.com/sharadishi09"><span class="fab fa-instagram"></span></a>
-
-
-                <a href="#"><span class="fab fa-youtube"></span></a>
-
-              </div>
-
-            </div>
-          </div>
-
-
-
-          <!-- <div class="center box">
-            <h2>Contact Developer:</h2>
-            <div class="content">
-            <div class="place">
-              <span class="fas fa-map-marker-alt"></span>
-              <span class="text">NY - DR</span>
-            </div>
-            <div class="phone">
-              <span class="fas fa-phone-alt"></span>
-              <span class="text"></span>
-            </div>
-            <div class="email">
-
-
-              <span class="fas fa-envelope"></span>
-
-
-              <a href="http://clainerjvl.com"><span class="text">v.clainer@universallimitless.com</span></a>
-
-
-            </div>
-          </div>
-          </div> -->
-
-
-
-
-
-
-
-
-
-          <div class="right box">
-            <h2>Contact us</h2>
-            <div class="content">
-              <form action="#">
-                <div class="email">
-                  <div class="text">Email *</div>
-                  <input type="email" required>
-                </div>
-                <div class="msg">
-                  <div class="text">Message *</div>
-                  <textarea rows="2" cols="25" required></textarea>
-                </div>
-                <div class="btn">
-                  <button type="submit">Send</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-
-
-        
-        
-
-      </footer>
-    </main>
-
-
-
-
-    <!-- Marquee Logos -->
-    <!-- Marquee Logos -->
-    <!-- Marquee Logos -->
-    <!-- Marquee Logos -->
-    <!-- Marquee Logos -->
 
     <div class="marquee">
       <ul class="marquee-content">
@@ -3884,6 +2977,168 @@
       </ul>
     </div>
     
+    
+    <div class="marquee">
+      <ul class="marquee-content">
+
+
+
+        <li><img src="./thunbnails/freefromdesire.png" alt=""></li>
+        <li><img src="./thunbnails/Nory-Code.png" alt=""></li>
+        <li><img src="./thunbnails/catchme.png" alt=""></li>
+        <li><img src="./thunbnails//Fatmelz.png" alt=""></li>
+        <li><img src="./thunbnails/future.png" alt=""></li>
+        <li><img src="./thunbnails/quefue.png" alt=""></li>
+        <li><img src="./thunbnails/wow.png" alt=""></li>
+        <li><img src="./img/Cirujano2.png" alt=""></li>
+        <li><img src="./img/Nory-Code.png" alt=""></li>
+        <li><img src="./img/dior.png" alt=""></li>
+        <li><img src="./img/Fatmelz.png" alt=""></li>
+        <li><img src="./img/Gunna2.png" alt=""></li>
+
+
+        <li><img src="./thunbnails/freefromdesire.png" alt=""></li>
+        <li><img src="./thunbnails/Nory-Code.png" alt=""></li>
+        <li><img src="./thunbnails/catchme.png" alt=""></li>
+        <li><img src="./thunbnails//Fatmelz.png" alt=""></li>
+        <li><img src="./thunbnails/future.png" alt=""></li>
+        <li><img src="./thunbnails/quefue.png" alt=""></li>
+        <li><img src="./thunbnails/wow.png" alt=""></li>
+        <li><img src="./img/Cirujano2.png" alt=""></li>
+        <li><img src="./img/Nory-Code.png" alt=""></li>
+        <li><img src="./img/dior.png" alt=""></li>
+        <li><img src="./img/Fatmelz.png" alt=""></li>
+        <li><img src="./img/Gunna2.png" alt=""></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <li><i class="fa fa-headphones"></i></li>
+      <li><i class="fa fa-headphones"></i></li>
+      <li><i class="fa fa-headphones"></i></li>
+      <li><i class="fa fa-headphones"></i></li>
+      <li><i class="fa fa-headphones"></i></li>
+      <li><i class="fa fa-headphones"></i></li>
+      <li><i class="fa fa-headphones"></i></li>
+      <li><i class="fa fa-headphones"></i></li>
+      <li><i class="fa fa-headphones"></i></li>
+      <li><i class="fa fa-headphones"></i></li>
+      <li><i class="fa fa-headphones"></i></li>
+      <li><i class="fa fa-headphones"></i></li>
+      <li><i class="fa fa-headphones"></i></li> -->
+
+        <!-- <li><i class="fab fa-github"></i></li>
+      <li><i class="fab fa-codepen"></i></li>
+      <li><i class="fab fa-free-code-camp"></i></li>
+      <li><i class="fab fa-dev"></i></li>
+      <li><i class="fab fa-react"></i></li>
+      <li><i class="fab fa-vuejs"></i></li>
+      <li><i class="fab fa-angular"></i></li>
+      <li><i class="fab fa-node"></i></li>
+      <li><i class="fab fa-wordpress"></i></li>
+      <li><i class="fab fa-aws"></i></li>
+      <li><i class="fab fa-docker"></i></li>
+      <li><i class="fab fa-android"></i></li> -->
+      </ul>
+    </div>
+    
+    
+    <div class="marquee">
+      <ul class="marquee-content">
+
+
+
+        <li><img src="./thunbnails/freefromdesire.png" alt=""></li>
+        <li><img src="./thunbnails/Nory-Code.png" alt=""></li>
+        <li><img src="./thunbnails/catchme.png" alt=""></li>
+        <li><img src="./thunbnails//Fatmelz.png" alt=""></li>
+        <li><img src="./thunbnails/future.png" alt=""></li>
+        <li><img src="./thunbnails/quefue.png" alt=""></li>
+        <li><img src="./thunbnails/wow.png" alt=""></li>
+        <li><img src="./img/Cirujano2.png" alt=""></li>
+        <li><img src="./img/Nory-Code.png" alt=""></li>
+        <li><img src="./img/dior.png" alt=""></li>
+        <li><img src="./img/Fatmelz.png" alt=""></li>
+        <li><img src="./img/Gunna2.png" alt=""></li>
+
+
+        <li><img src="./thunbnails/freefromdesire.png" alt=""></li>
+        <li><img src="./thunbnails/Nory-Code.png" alt=""></li>
+        <li><img src="./thunbnails/catchme.png" alt=""></li>
+        <li><img src="./thunbnails//Fatmelz.png" alt=""></li>
+        <li><img src="./thunbnails/future.png" alt=""></li>
+        <li><img src="./thunbnails/quefue.png" alt=""></li>
+        <li><img src="./thunbnails/wow.png" alt=""></li>
+        <li><img src="./img/Cirujano2.png" alt=""></li>
+        <li><img src="./img/Nory-Code.png" alt=""></li>
+        <li><img src="./img/dior.png" alt=""></li>
+        <li><img src="./img/Fatmelz.png" alt=""></li>
+        <li><img src="./img/Gunna2.png" alt=""></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <li><i class="fa fa-headphones"></i></li>
+      <li><i class="fa fa-headphones"></i></li>
+      <li><i class="fa fa-headphones"></i></li>
+      <li><i class="fa fa-headphones"></i></li>
+      <li><i class="fa fa-headphones"></i></li>
+      <li><i class="fa fa-headphones"></i></li>
+      <li><i class="fa fa-headphones"></i></li>
+      <li><i class="fa fa-headphones"></i></li>
+      <li><i class="fa fa-headphones"></i></li>
+      <li><i class="fa fa-headphones"></i></li>
+      <li><i class="fa fa-headphones"></i></li>
+      <li><i class="fa fa-headphones"></i></li>
+      <li><i class="fa fa-headphones"></i></li> -->
+
+        <!-- <li><i class="fab fa-github"></i></li>
+      <li><i class="fab fa-codepen"></i></li>
+      <li><i class="fab fa-free-code-camp"></i></li>
+      <li><i class="fab fa-dev"></i></li>
+      <li><i class="fab fa-react"></i></li>
+      <li><i class="fab fa-vuejs"></i></li>
+      <li><i class="fab fa-angular"></i></li>
+      <li><i class="fab fa-node"></i></li>
+      <li><i class="fab fa-wordpress"></i></li>
+      <li><i class="fab fa-aws"></i></li>
+      <li><i class="fab fa-docker"></i></li>
+      <li><i class="fab fa-android"></i></li> -->
+      </ul>
+    </div>
+
+    
+
+
+
+
+
     <script src="logos.js"></script>
 
 

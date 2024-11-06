@@ -256,6 +256,7 @@ button {
  
  button:hover::after {
   animation-play-state: running;
+  cursor: pointer;
  }
  
  @keyframes rotate-hue {
